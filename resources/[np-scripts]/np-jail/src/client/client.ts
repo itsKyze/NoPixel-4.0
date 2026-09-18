@@ -17934,8 +17934,13 @@
               _0x4fb776 = _0xf5f4bb && _0xf5f4bb.interactions ? _0xf5f4bb.interactions : {
                 prisonServices: []
               };
-              if (!_0x4fb776.prisonServices) {
-                _0x4fb776.prisonServices = [];
+              const propsToDefault = [
+                'prisonServices', 'lockers', 'armouries', 'inmateListOnly',
+                'guardActions', 'prisonLockdown', 'prisonJobs', 'kitchenFood',
+                'kitchenDrink', 'kitchenSlushy', 'tokenMachine', 'rentBicycle', 'safe'
+              ];
+              for (const prop of propsToDefault) {
+                if (!_0x4fb776[prop]) _0x4fb776[prop] = [];
               }
               _0x4886bb = true;
               _0x1f1a39 = false;
@@ -23123,7 +23128,17 @@
         });
       });
       return function (_0x15e980) {
-        return _0x10ca9e.apply(this, arguments);
+        try {
+          var res = _0x10ca9e.apply(this, arguments);
+          if (res && typeof res.catch === 'function') {
+            res.catch(function (e) {
+              console.warn("[np-jail] Error in onClientResourceStart:", e);
+            });
+          }
+          return res;
+        } catch (e) {
+          console.warn("[np-jail] Error in onClientResourceStart:", e);
+        }
       };
     }());
   })();

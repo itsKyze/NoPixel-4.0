@@ -10359,7 +10359,7 @@
         const promise = new Promise((param_1_1, param_2) => {
           let varData_1557;
           if (varData_545(this, varData_1537)) {
-            varData_1557 = setTimeout(() => param_2(new Error("RPC timed out | " + param_1)), 60000);
+            varData_1557 = setTimeout(() => param_1_1(null), 60000);
           } else {
             varData_1557 = 0;
           }
@@ -10392,7 +10392,7 @@
         const promise = new Promise((param_1_1, param_2_1) => {
           let varData_1561;
           if (varData_545(this, varData_1537)) {
-            varData_1561 = setTimeout(() => param_2_1(new Error("RPC timed out | " + param_1)), param_2.timeout ?? 60000);
+            varData_1561 = setTimeout(() => param_1_1(null), param_2.timeout ?? 60000);
           } else {
             varData_1561 = 0;
           }
@@ -10497,7 +10497,7 @@
             varData_1490.error("[RPC] " + varData_1570.event + " - Failed to execute queued RPC call");
             continue;
           }
-          varData_1571.timeout = setTimeout(() => varData_1571.reject(new Error("RPC timed out | " + varData_1570.event)), 60000);
+          varData_1571.timeout = setTimeout(() => varData_1571.resolve(null), 60000);
           setTimeout(() => varData_549(this, varData_1547, varData_1548).call(this, varData_1570.event, varData_1531(varData_1570.metadata, varData_545(this, varData_1536)), varData_1570.args), 1000);
         }
       }
@@ -16974,7 +16974,7 @@
               var varData_2482 = {
                 weapons: varData_2481
               };
-              return [4, varData_1583.execute("setState", varData_2482)];
+              return [4, varData_1583.execute("setState", varData_2482).catch(function () {})];
             case 2:
               param_1.sent();
               SetWeaponDamageModifier("WEAPON_SMOKEGRENADE", 0);
@@ -17369,7 +17369,7 @@
       var varData_2528 = {
         actionbar: param_1
       };
-      varData_1583.execute("setState", varData_2528);
+      varData_1583.execute("setState", varData_2528).catch(function () {});
       varData_1432.Sync.hud.sendAppEvent({
         showLargeIcons: param_1,
         displayAllForce: param_1,
@@ -21396,14 +21396,14 @@
         show: true,
         secondaryInventories: itemList_11
       };
-      varData_1583.execute("setState", varData_2956);
+      varData_1583.execute("setState", varData_2956).catch(function () {});
       varData_1432.Sync.focusmanager.SetUIFocus(true, true);
     }
     varData_1432.Sync("OpenInventory", handleAction_365);
     function handleAction_366() {
       varData_1583.execute("setState", {
         show: false
-      });
+      }).catch(function () {});
     }
     varData_1432.Sync("CloseInventory", handleAction_366);
     function handleAction_367() {

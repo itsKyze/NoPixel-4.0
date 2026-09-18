@@ -12826,8 +12826,8 @@
         return;
       }
       var varData_2194 = {
-        show: true,
-        time: varData_2193
+        show: false,
+        time: 0
       };
       varData_1825.execute("setState", varData_2194);
     });

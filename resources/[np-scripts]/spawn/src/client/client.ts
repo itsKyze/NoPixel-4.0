@@ -14587,7 +14587,7 @@ on("__cfx_nui:nuiLog", function (data, cb) {
       timeToLive: 300000
     });
     var v_4664;
-    globalThis.ExecuteSpawnCharacter = async function (cid) {
+    globalThis.ExecuteSpawnCharacter = async function (cid, isNew, newCharData) {
       cid = cid && typeof cid === "object" ? cid.actionData || cid.charId || cid.id || 1 : cid || 1;
       console.log("[SPAWN] Executing full player spawn sequence for CID:", cid);
 
@@ -14671,10 +14671,10 @@ on("__cfx_nui:nuiLog", function (data, cb) {
       // 7. Position, resurrect, and heal player ped
       var ped = PlayerPedId();
       var spawnCoords = {
-        x: -661.39,
-        y: -1108.59,
-        z: 14.7,
-        h: 166.11
+        x: -268.0,
+        y: -957.0,
+        z: 31.2,
+        h: 205.0
       };
 
       // Resurrect native to cancel any ragdoll or death state
@@ -14723,6 +14723,32 @@ on("__cfx_nui:nuiLog", function (data, cb) {
       try {
         emit("np-clothing:applyCurrentClothing");
       } catch (e) {}
+
+      // Flow for new characters vs existing characters
+      if (isNew) {
+        var modelName = (newCharData && (newCharData.gender === 1 || newCharData.gender === "1")) ? "mp_f_freemode_01" : "mp_m_freemode_01";
+        try {
+          if (globalThis.exports && globalThis.exports.clothing && globalThis.exports.clothing.SetModel) {
+            await globalThis.exports.clothing.SetModel(modelName);
+          }
+        } catch (e) {}
+        setTimeout(function () {
+          emit("np-clothing:openClothing", true, false);
+        }, 1000);
+        var finishedHandler = function () {
+          removeEventListener("np-spawn:finishedClothing", finishedHandler);
+          removeEventListener("np-clothing:close", finishedHandler);
+          setTimeout(function () {
+            emit("apartments:spawnIntoApartment");
+          }, 500);
+        };
+        on("np-spawn:finishedClothing", finishedHandler);
+        on("np-clothing:close", finishedHandler);
+      } else {
+        setTimeout(function () {
+          emit("apartments:spawnIntoApartment");
+        }, 500);
+      }
 
       // 12. Final re-assertion: ensure NUI is closed and cursor is completely released
       function closeNui() {
@@ -14782,22 +14808,8 @@ on("__cfx_nui:nuiLog", function (data, cb) {
       } catch (e) {
         console.warn("[SPAWN] Character fetch timed out or failed, using local fallback");
       }
-      if (!_chars || _chars.length === 0) {
-        _chars = [{
-          id: 1,
-          first_name: "Kyze",
-          last_name: "Rider",
-          name: "Kyze Rider",
-          dob: "1998-05-15",
-          gender: 0,
-          phone_number: "555-0001",
-          story: "",
-          cash: 5000,
-          bank: 50000,
-          type: "citizen",
-          allowed: true,
-          info: ["Civilian", "LEVEL 1"]
-        }];
+      if (!_chars) {
+        _chars = [];
       }
 
       // Fetch ordering with 1s timeout
@@ -14926,7 +14938,7 @@ on("__cfx_nui:nuiLog", function (data, cb) {
               v_4673.reset();
               v_4664 = v_4670.cid || v_4670.characterId || 1;
               if (globalThis.ExecuteSpawnCharacter) {
-                globalThis.ExecuteSpawnCharacter(v_4664);
+                globalThis.ExecuteSpawnCharacter(v_4664, true, v_4669);
               }
               return [3, 10];
             case 8:
@@ -16520,7 +16532,7 @@ on("__cfx_nui:selectCharacterDirect", function (data, cb) {
     });
   }
   if (globalThis.ExecuteSpawnCharacter) {
-    globalThis.ExecuteSpawnCharacter(cid);
+    globalThis.ExecuteSpawnCharacter(cid, false);
   }
 });
 RegisterNuiCallbackType("newCharacterDirect");
@@ -16536,7 +16548,7 @@ on("__cfx_nui:newCharacterDirect", function (data, cb) {
   } catch (e) {}
   setTimeout(function () {
     if (globalThis.ExecuteSpawnCharacter) {
-      globalThis.ExecuteSpawnCharacter(1);
+      globalThis.ExecuteSpawnCharacter(1, true, data);
     }
   }, 1000);
 });
@@ -16545,6 +16557,6 @@ on("__cfx_nui:newCharacterDirect", function (data, cb) {
 onNet("np-base:characterCreated", function (newCid) {
   console.log("[SPAWN] Character successfully created via server event with CID:", newCid);
   if (globalThis.ExecuteSpawnCharacter) {
-    globalThis.ExecuteSpawnCharacter(newCid || 1);
+    globalThis.ExecuteSpawnCharacter(newCid || 1, true);
   }
 });

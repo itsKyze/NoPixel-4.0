@@ -13738,7 +13738,7 @@
     }
     ;
     function handleAction_231() {
-      return Object.values(varData_2258.wounds).reduce(function (param_1, param_2) {
+      return Object.values(varData_2258?.wounds || {}).reduce(function (param_1, param_2) {
         return param_1 + param_2.damage;
       }, 0);
     }
@@ -14615,7 +14615,7 @@
               if (isDisabled_4) {
                 return [2];
               }
-              varData_2163 = Object.values(varData_2258.wounds).filter(function (param_1_1) {
+              varData_2163 = Object.values(varData_2258?.wounds || {}).filter(function (param_1_1) {
                 return param_1_1.bleeding;
               }).length;
               varData_2164 = false;
@@ -14624,7 +14624,7 @@
               if (!(varData_2163 > 0) || !!varData_2258.isDead) {
                 return [3, 3];
               }
-              varData_2163 = Object.values(varData_2258.wounds).filter(function (param_1_1) {
+              varData_2163 = Object.values(varData_2258?.wounds || {}).filter(function (param_1_1) {
                 return param_1_1.bleeding;
               }).length;
               if (varData_2163 === 0) {
@@ -15590,7 +15590,7 @@
       var varData_2259 = varData_1584.Sync.isPed.isPed("cid");
       varData_1634.emitNet("np-wounds:playerState:update", varData_2259, varData_2258);
       handleAction_271();
-      var valuesList = Object.values(woundsData.wounds);
+      var valuesList = Object.values(woundsData?.wounds || {});
       var varData_2260 = valuesList.filter(function (param_1) {
         return param_1.bleeding;
       }).map(function (param_1) {
@@ -18154,7 +18154,7 @@
           var varData_2500;
           return handleAction_421(this, function (param_1_1) {
             varData_2497 = varData_2258.wounds;
-            varData_2498 = Object.values(varData_2497).reduce(function (param_1_2, param_2_1) {
+            varData_2498 = Object.values(varData_2497 || {}).reduce(function (param_1_2, param_2_1) {
               return param_1_2 + param_2_1.damage;
             }, 0);
             varData_2499 = PlayerPedId();

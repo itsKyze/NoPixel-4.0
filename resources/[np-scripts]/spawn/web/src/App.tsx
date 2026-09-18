@@ -33260,34 +33260,3 @@ try {
     action: "nuiReady"
   });
 } catch (e) {}
-
-// Global DOM Click Catcher to guarantee select works
-window.addEventListener("click", function (e) {
-  var target = e.target;
-  if (!target) {
-    return;
-  }
-  var text = (target.innerText || target.textContent || "").trim().toLowerCase();
-  var className = (target.className || "").toString().toLowerCase();
-  if (text === "select" || className.includes("select") || target.closest && (target.closest(".user-character-box") || target.closest(".user-box"))) {
-    console.log("[SPAWN-DOM-CLICK] Character or Select clicked!");
-    var charId = 1;
-    try {
-      if (window.state$5 && window.state$5.currentSelect && window.state$5.currentSelect.charId) {
-        charId = window.state$5.currentSelect.charId;
-      }
-    } catch (err) {}
-    try {
-      var resName = typeof GetParentResourceName === "function" ? GetParentResourceName() : "spawn";
-      fetch("https://" + resName + "/selectCharacterDirect", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json; charset=UTF-8"
-        },
-        body: JSON.stringify({
-          charId: charId
-        })
-      }).catch(function () {});
-    } catch (err) {}
-  }
-}, true);

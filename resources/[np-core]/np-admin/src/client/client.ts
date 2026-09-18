@@ -16202,6 +16202,7 @@
       varData_2567 = param_1;
     }
     function handleAction_191(param_1) {
+      if (!Array.isArray(param_1)) return [];
       return param_1.map(param_1_1 => {
         param_1_1.aggKey = param_1_1.serverID + " " + param_1_1.name;
         return param_1_1;
