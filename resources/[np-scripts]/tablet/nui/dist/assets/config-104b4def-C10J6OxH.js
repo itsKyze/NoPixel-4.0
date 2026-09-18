@@ -1,0 +1,1 @@
+import{p as e,tt as t,wt as n}from"./index-BmhOSwHd.js";import{t as r}from"./index-3eb10154-BBp7_HC5.js";var i=()=>n(r,{get name(){return a.name},get children(){return[t(()=>a.name),` app`]}}),a={icon:e,enabled:!0,onDock:!0,name:`explorer`,label:`Explorer`,isEnabled:!1,render:()=>n(i,{})};export{a as default};

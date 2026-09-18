@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": [
+        "build/**",
+        "dist/**",
+        "client/**",
+        "server/**"
+      ]
+    },
+    "watch": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

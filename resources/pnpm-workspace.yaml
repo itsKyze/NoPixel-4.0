@@ -1,0 +1,6 @@
+packages:
+  - "[np-core]/*"
+  - "[np-framework]/*"
+  - "[np-jobs]/*"
+  - "[np-scripts]/*"
+  - "[standalone]/*"

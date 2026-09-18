@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Large Asset & Stream Packs (3D Maps, Clothing, Vehicles, Props)
+resources/\[np-clothing\]/
+resources/\[np-maps\]/
+resources/\[np-props\]/
+resources/\[np-vehicles\]/
+resources/\[np-housing\]/
+resources/\[np-weapons\]/
+\[np-clothing\]/
+\[np-maps\]/
+\[np-props\]/
+\[np-vehicles\]/
+\[np-housing\]/
+\[np-weapons\]/
+
+# Archives & Temporary files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.bak
+*.tmp
+*.log
+
+# FiveM Server Cache & Crash Dumps
+cache/
+crash/
+dumps/
+logs/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Server Binaries & txAdmin Data
+server/
+txData/
+.replxx_history

@@ -1,0 +1,10 @@
+{
+  "name": "yellow-pages",
+  "version": "1.0.0",
+  "description": "NoPixel 4.0 - yellow-pages",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "watch": "node esbuild.config.js --watch",
+    "typecheck": "tsc --noEmit"
+  }
+}

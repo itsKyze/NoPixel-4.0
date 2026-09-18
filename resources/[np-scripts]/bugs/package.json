@@ -1,0 +1,10 @@
+{
+  "name": "bugs",
+  "version": "1.0.0",
+  "description": "NoPixel 4.0 - bugs",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "watch": "node esbuild.config.js --watch",
+    "typecheck": "tsc --noEmit"
+  }
+}

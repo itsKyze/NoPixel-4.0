@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      window.onerror = function(msg, url, line, col, error) {
+        fetch('https://' + GetParentResourceName() + '/nuiLog', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+          body: JSON.stringify({ level: 'error', message: msg + ' at ' + url + ':' + line + ':' + col })
+        }).catch(function(){});
+      };
+      window.addEventListener('unhandledrejection', function(event) {
+        fetch('https://' + GetParentResourceName() + '/nuiLog', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+          body: JSON.stringify({ level: 'error', message: 'Unhandled rejection: ' + event.reason })
+        }).catch(function(){});
+      });
+      console.log = (function(oldLog) {
+        return function(...args) {
+          oldLog.apply(console, args);
+          fetch('https://' + GetParentResourceName() + '/nuiLog', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+            body: JSON.stringify({ level: 'log', message: args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') })
+          }).catch(function(){});
+        };
+      })(console.log);
+      console.error = (function(oldErr) {
+        return function(...args) {
+          oldErr.apply(console, args);
+          fetch('https://' + GetParentResourceName() + '/nuiLog', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+            body: JSON.stringify({ level: 'error', message: args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') })
+          }).catch(function(){});
+        };
+      })(console.error);
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>NoPixel Boilerplate</title>
+    
+    
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    
+    <script type="module" src="/src/App.tsx"></script>
+</body>
+</html>
