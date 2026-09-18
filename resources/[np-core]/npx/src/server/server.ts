@@ -207,68 +207,83 @@
       return [{ characterId: 1, clothing: { model: 1 } }];
     },
     "np-character:fetchCharacterData": async (src) => {
-      var _a;
       try {
-        const license = Library.getLicense(src);
-        let user = await Library.executeQuery("SELECT id FROM users WHERE license = ?", [license]);
-        let userId = (_a = user == null ? void 0 : user[0]) == null ? void 0 : _a.id;
-        if (!userId) {
-          userId = await Library.insertQuery("INSERT INTO users (license) VALUES (?)", [license]);
+        const license = Library.getLicense(src) || "license:unknown";
+        let user = await Library.scalarQuery("SELECT id FROM users WHERE license = ?", [license]);
+        if (!user) {
+          user = await Library.insertQuery("INSERT INTO users (license) VALUES (?)", [license]);
         }
-        let rows = await Library.executeQuery("SELECT * FROM characters WHERE user_id = ? OR license = ?", [userId, license]);
-        if (!rows || rows.length === 0) {
-          // Fallback to all characters if matching license didn't find any
-          rows = await Library.executeQuery("SELECT * FROM characters LIMIT 5");
+        const userId = user || 1;
+        const rows = await Library.executeQuery("SELECT * FROM characters WHERE user_id = ? OR license = ? ORDER BY slot ASC, id ASC", [userId, license]);
+        if (!rows || rows.length === 0) return [];
+
+        const seenIds = new Set();
+        const uniqueRows = [];
+        for (const r of rows) {
+          if (!seenIds.has(r.id) && uniqueRows.length < 5) {
+            seenIds.add(r.id);
+            uniqueRows.push(r);
+          }
         }
-        console.log(`[np-character:fetchCharacterData] Returning ${rows ? rows.length : 0} characters`);
-        return (rows || []).map((r) => ({
+
+        console.log(`[np-character:fetchCharacterData] Returning ${uniqueRows.length} characters for user ${userId}`);
+        return uniqueRows.map((r) => ({
           id: r.id,
           first_name: r.firstname,
           last_name: r.lastname,
           name: `${r.firstname} ${r.lastname}`,
           dob: r.dateofbirth || "1998-05-15",
           gender: r.gender === "female" ? 1 : 0,
-          phone_number: "555-" + String(r.id).padStart(4, "0"),
-          story: r.backstory || "",
-          cash: r.cash || 5000,
-          bank: r.bank || 50000,
+          phone_number: r.phone_number || ("555-" + String(r.id).padStart(4, "0")),
+          story: r.backstory || r.story || "",
+          cash: r.cash || 500,
+          bank: r.bank || 5000,
           type: r.type || "citizen",
           allowed: true,
           info: [r.job || "Civilian", "LEVEL 1"]
         }));
       } catch (e) {
         console.error("[np-character:fetchCharacterData] Error:", e.message);
-        return [{
-          id: 1,
-          first_name: "Kyze",
-          last_name: "Rider",
-          name: "Kyze Rider",
-          dob: "1998-05-15",
-          gender: 0,
-          phone_number: "555-0001",
-          story: "",
-          cash: 5000,
-          bank: 50000,
-          type: "citizen",
-          allowed: true,
-          info: ["Civilian", "LEVEL 1"]
-        }];
+        return [];
       }
     },
     "np-character:createCharacter": async (src, data) => {
       try {
-        const license = Library.getLicense(src);
-        let user = await Library.executeQuery("SELECT id FROM users WHERE license = ?", [license]);
-        let userId = user?.[0]?.id;
-        if (!userId) {
-          userId = await Library.insertQuery("INSERT INTO users (license) VALUES (?)", [license]);
+        const license = Library.getLicense(src) || "license:unknown";
+        let user = await Library.scalarQuery("SELECT id FROM users WHERE license = ?", [license]);
+        if (!user) {
+          user = await Library.insertQuery("INSERT INTO users (license) VALUES (?)", [license]);
         }
-        const firstName = data.firstname || "John";
-        const lastName = data.lastname || "Doe";
-        const dob = data.dob || "2000-01-01";
-        const gender = data.gender == 1 || data.gender === "female" ? "female" : "male";
-        const charType = data.type || "citizen";
-        const charId = await Library.insertQuery("INSERT INTO characters (user_id, license, firstname, lastname, dateofbirth, gender, cash, bank, job) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", [userId, license, firstName, lastName, dob, gender, 500, 5000, "unemployed"]);
+        const userId = user || 1;
+
+        const existing = await Library.executeQuery("SELECT id, slot FROM characters WHERE user_id = ?", [userId]);
+        if (existing && existing.length >= 5) {
+          return {
+            success: false,
+            message: "Character limit reached (5/5)"
+          };
+        }
+
+        const usedSlots = new Set((existing || []).map((e) => e.slot));
+        let availableSlot = 1;
+        for (let s = 1; s <= 5; s++) {
+          if (!usedSlots.has(s)) {
+            availableSlot = s;
+            break;
+          }
+        }
+
+        const firstName = (data && (data.firstname || data.first_name)) || "John";
+        const lastName = (data && (data.lastname || data.last_name)) || "Doe";
+        const dob = (data && data.dob) || "2000-01-01";
+        const gender = (data && (data.gender == 1 || data.gender === "female")) ? "female" : "male";
+        const charType = (data && data.type) || "citizen";
+
+        const charId = await Library.insertQuery(
+          "INSERT INTO characters (user_id, slot, license, firstname, lastname, dateofbirth, gender, nationality, ped_model, cash, bank, job, is_new) VALUES (?, ?, ?, ?, ?, ?, ?, 'American', 'mp_m_freemode_01', 500, 5000, 'unemployed', 1)",
+          [userId, availableSlot, license, firstName, lastName, dob, gender]
+        );
+
         return {
           success: true,
           cid: charId,
@@ -277,6 +292,7 @@
             id: charId,
             first_name: firstName,
             last_name: lastName,
+            name: `${firstName} ${lastName}`,
             dob: dob,
             gender: gender === "female" ? 1 : 0,
             phone_number: "555-" + String(charId).padStart(4, "0"),
@@ -485,43 +501,6 @@
       1,
       "Alta Street Apartments"
     ],
-    "np-character:fetchCharacterData": async (src) => {
-      const license = Library.getLicense(src) || "license:unknown";
-      const user = await Library.scalarQuery("SELECT id FROM users WHERE license = ?", [license]);
-      if (!user) return [];
-      const rows = await Library.executeQuery("SELECT * FROM characters WHERE user_id = ? ORDER BY slot ASC", [user]);
-      if (!rows || rows.length === 0) return [];
-      return rows.map(r => ({
-        id: r.id,
-        first_name: r.firstname,
-        last_name: r.lastname,
-        name: `${r.firstname} ${r.lastname}`,
-        dob: r.dateofbirth,
-        gender: r.gender === "male" ? 0 : 1,
-        phone_number: r.phone_number || "555-0001",
-        story: r.story || "",
-        cash: r.cash || 5000,
-        bank: r.bank || 50000,
-        type: "citizen",
-        allowed: true,
-        info: ["Civilian", "LEVEL 1"]
-      }));
-    },
-    "np-character:createCharacter": async (src, data) => {
-      const license = Library.getLicense(src) || "license:unknown";
-      try {
-        const user = await Library.scalarQuery("SELECT id FROM users WHERE license = ?", [license]);
-        const userId = user || 1;
-        const res = await Library.insertQuery(
-          "INSERT INTO characters (user_id, slot, firstname, lastname, dateofbirth, gender, nationality, ped_model, is_new) VALUES (?, 1, ?, ?, ?, ?, 'American', 'mp_m_freemode_01', 1)",
-          [userId, (data && (data.firstname || data.first_name)) || "Kyze", (data && (data.lastname || data.last_name)) || "Rider", (data && data.dob) || "1998-01-01", (data && data.gender == 0) ? "male" : "female"]
-        );
-        return { success: true, cid: res || 1, characterId: res || 1 };
-      } catch (e) {
-        console.warn("[np-character] createCharacter err:", e.message);
-        return { success: true, cid: 1, characterId: 1 };
-      }
-    },
     "np-jail:fetchTime": () => 0,
     "np-jail:crafting:open": () => [],
     "np-jail:crafting:getPlayerInventory": () => [],

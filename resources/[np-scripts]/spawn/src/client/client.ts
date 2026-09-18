@@ -14830,6 +14830,17 @@ on("__cfx_nui:nuiLog", function (data, cb) {
       } catch (e) {
         _ordering = {};
       }
+      // Ensure unique characters by ID and cap at 5
+      var _seenCharIds = new Set();
+      var _uniqueChars = [];
+      for (var _c of (_chars || [])) {
+        if (_c && !_seenCharIds.has(_c.id) && _uniqueChars.length < 5) {
+          _seenCharIds.add(_c.id);
+          _uniqueChars.push(_c);
+        }
+      }
+      _chars = _uniqueChars;
+
       var _openData = {
         show: true,
         open: true,

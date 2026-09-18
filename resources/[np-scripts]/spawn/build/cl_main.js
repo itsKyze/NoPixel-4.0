@@ -14767,6 +14767,15 @@ on("__cfx_nui:nuiLog", function(data, cb) {
       } catch (e) {
         _ordering = {};
       }
+      var _seenCharIds = /* @__PURE__ */ new Set();
+      var _uniqueChars = [];
+      for (var _c of _chars || []) {
+        if (_c && !_seenCharIds.has(_c.id) && _uniqueChars.length < 5) {
+          _seenCharIds.add(_c.id);
+          _uniqueChars.push(_c);
+        }
+      }
+      _chars = _uniqueChars;
       var _openData = {
         show: true,
         open: true,
