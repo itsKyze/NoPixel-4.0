@@ -6,16 +6,23 @@
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
     <title>NoPixel Boilerplate</title>
-    
+    <script>
+      if (typeof Symbol !== "undefined" && Symbol.for) {
+        var _origSymbolFor = Symbol.for;
+        Symbol.for = function (key) {
+          if (key === "react.transitional.element") {
+            return _origSymbolFor.call(Symbol, "react.element");
+          }
+          return _origSymbolFor.call(Symbol, key);
+        };
+      }
+    </script>
     <link rel="modulepreload" crossorigin href="./assets/v-packages-d26cd72d.js">
-    
     <script type="module" crossorigin src="./assets/index-BgtEDGLD.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-C4htV2zB.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
-    
-</body>
+  </body>
 </html>

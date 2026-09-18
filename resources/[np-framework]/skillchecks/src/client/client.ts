@@ -1,3 +1,13 @@
+// Single unified event dispatcher to prevent EventEmitter memory leak warnings
+const _minigameResultCallbacks = new Set();
+_registerMinigameResult(function (param_1, param_2) {
+  for (const cb of _minigameResultCallbacks) {
+    try { cb(param_1, param_2); } catch (e) {}
+  }
+});
+function _registerMinigameResult(cb) {
+  _minigameResultCallbacks.add(cb);
+}
 try {
   const events = require("events");
   if (events) {
@@ -13830,7 +13840,7 @@ try {
         return varData_2360.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2357) {
         return;
       }
@@ -14309,7 +14319,7 @@ try {
         return varData_2410.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2407) {
         return;
       }
@@ -14819,7 +14829,7 @@ try {
         return varData_2464.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2461) {
         return;
       }
@@ -15333,7 +15343,7 @@ try {
         return varData_2511.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2508) {
         return;
       }
@@ -15552,7 +15562,7 @@ try {
         return varData_2532.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2529) {
         return;
       }
@@ -16123,7 +16133,7 @@ try {
         return varData_2599.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2596) {
         return;
       }
@@ -16342,7 +16352,7 @@ try {
         return varData_2620.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2617) {
         return;
       }
@@ -16561,7 +16571,7 @@ try {
         return varData_2641.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2638) {
         return;
       }
@@ -16787,7 +16797,7 @@ try {
       });
       return handleAction_247.apply(this, arguments);
     }
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2656) {
         return;
       }
@@ -17067,7 +17077,7 @@ try {
         return varData_2697.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2694) {
         return;
       }
@@ -17310,7 +17320,7 @@ try {
         return varData_2721.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2715) {
         return;
       }
@@ -17529,7 +17539,7 @@ try {
         return varData_2747.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2744) {
         return;
       }
@@ -17748,7 +17758,7 @@ try {
         return varData_2768.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2765) {
         return;
       }
@@ -17969,7 +17979,7 @@ try {
         return varData_2789.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2786) {
         return;
       }
@@ -18189,7 +18199,7 @@ try {
         return varData_2809.apply(this, arguments);
       };
     }();
-    on("skillcheck:minigameResult", function (param_1, param_2) {
+    _registerMinigameResult(function (param_1, param_2) {
       if (param_1 !== varData_2806) {
         return;
       }
