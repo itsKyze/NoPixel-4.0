@@ -14602,6 +14602,14 @@ on("__cfx_nui:nuiLog", function(data, cb) {
       } catch (e) {
         console.log("[SPAWN] LocalPlayer set character err:", e);
       }
+      try {
+        LocalPlayer.state.set("cid", cid, true);
+        LocalPlayer.state.set("character", chardata, true);
+        emit("isPedUpdate", chardata.first_name, chardata.last_name, chardata.phone_number, cid);
+        emit("temp:setBypassed");
+        emit("np-spawn:characterSpawned", cid);
+      } catch (e) {
+      }
       TriggerServerEvent("np-base:selectCharacter", cid);
       emitNet("spawn:characterSpawnedServer", cid);
       TriggerServerEvent("np-spawn:characterSpawned", cid);
@@ -15753,7 +15761,7 @@ on("__cfx_nui:nuiLog", function(data, cb) {
                       v_4883 = v_4875.find(function(v_4893) {
                         return v_4893.characterId === v_4882.id;
                       });
-                      if (!v_4883) {
+                      if (!v_4883 || !v_4883.clothing || !v_4883.clothing.model) {
                         return [2, "continue"];
                       }
                       v_4884 = v_4883.clothing.model;
@@ -15798,6 +15806,9 @@ on("__cfx_nui:nuiLog", function(data, cb) {
                         return [3, 8];
                       }
                       v_4889 = v_4883.pedData;
+                      if (!v_4889) {
+                        return [3, 8];
+                      }
                       return [4, v_3023.Sync.clothing.ApplyPedData(v_4886, v_4889.headblend, v_4889.features, v_4889.overlays, v_4889.eyeColor, v_4887.customHeadModel)];
                     case 6:
                       v_4892.sent();

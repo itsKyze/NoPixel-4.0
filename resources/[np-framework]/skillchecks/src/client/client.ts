@@ -1,5 +1,15 @@
 try {
-  require("events").EventEmitter.defaultMaxListeners = 100;
+  const events = require("events");
+  if (events) {
+    events.defaultMaxListeners = 200;
+    if (events.EventEmitter) events.EventEmitter.defaultMaxListeners = 200;
+    if (events.prototype && events.prototype.setMaxListeners) events.prototype.setMaxListeners(200);
+  }
+} catch (e) {}
+try {
+  if (typeof process !== "undefined" && process.setMaxListeners) {
+    process.setMaxListeners(200);
+  }
 } catch (e) {}
 (() => {
   var varData_1 = {

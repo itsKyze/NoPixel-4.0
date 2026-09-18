@@ -4,7 +4,7 @@ ATCRadio, ATCRadioVolume, IsATCRadioOn, IsConnected, IsTransmittingToATC = Radio
 function ConnectToATCFrequency()
     local subscribers = RPC.execute('np-voice:atc:subscribe')
 
-    for serverId, active in pairs(subscribers) do
+    for serverId, active in pairs(subscribers or {}) do
         if active then
             ATCRadio:addSubscriber(serverId)
         end

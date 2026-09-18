@@ -235,6 +235,12 @@ function isPed(checkType)
     end
 
     if checkType == "cid" then
+        if cid == 0 or not cid then
+            local stateCid = LocalPlayer.state.cid or (LocalPlayer.state.character and LocalPlayer.state.character.id)
+            if stateCid then
+                cid = tonumber(stateCid) or stateCid
+            end
+        end
         pass = cid
     end
 
@@ -466,7 +472,21 @@ AddEventHandler("isPedUpdate", function(firstname, lastname, phonenumber, pCid)
     Firstname = firstname
     Lastname = lastname
     phone_number = phonenumber
-    cid = pCid
+    cid = tonumber(pCid) or pCid
+end)
+
+RegisterNetEvent("np-spawn:characterSpawned")
+AddEventHandler("np-spawn:characterSpawned", function(pCid)
+    if pCid then
+        cid = tonumber(pCid) or pCid
+    end
+end)
+
+RegisterNetEvent("spawn:characterSpawned")
+AddEventHandler("spawn:characterSpawned", function(pCid)
+    if pCid then
+        cid = tonumber(pCid) or pCid
+    end
 end)
 
 RegisterNetEvent("disableHUD")

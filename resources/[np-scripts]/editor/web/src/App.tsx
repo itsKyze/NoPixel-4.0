@@ -74409,3 +74409,4 @@ const Ik = _0x183bc4 => {
   document.documentElement.style.fontSize = _0x59ed36 + "px";
 };
 f_.createRoot(document.getElementById("root")).render(<Kt.StrictMode><JZ /></Kt.StrictMode>);
+export default JZ;

@@ -16511,16 +16511,16 @@
         return handleAction_312(this, function (param_1) {
           switch (param_1.label) {
             case 0:
-              varData_2463 = varData_1649.GetResourceConfig("models");
-              if (!varData_2463) {
-                throw new Error("No peds found in config");
-              }
+              varData_2463 = varData_1649.GetResourceConfig("models") || {
+                male: "mp_m_freemode_01",
+                female: "mp_f_freemode_01"
+              };
               return [4, varData_2455.get()];
             case 1:
               varData_2464 = param_1.sent();
               var varData_2465 = {
-                male: varData_2463.male,
-                female: varData_2463.female,
+                male: varData_2463.male || "mp_m_freemode_01",
+                female: varData_2463.female || "mp_f_freemode_01",
                 whitelist: varData_2464 ?? []
               };
               return [2, varData_2465];
@@ -22014,6 +22014,9 @@
         return handleAction_493(this, function (param_1_1) {
           switch (param_1_1.label) {
             case 0:
+              if (!param_1 || !param_1.model) {
+                return [2];
+              }
               varData_3183 = PlayerPedId();
               varData_3184 = param_1.model;
               varData_3185 = param_1.drawables;

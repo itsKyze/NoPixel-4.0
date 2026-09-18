@@ -21381,6 +21381,10 @@
     varData_1432.Sync("CloseInventory", handleAction_366);
     function handleAction_367() {
       var varData_2957 = varData_1432.Sync.isPed.isPed("cid");
+      if (!varData_2957 || varData_2957 === 0) {
+        var state = LocalPlayer.state;
+        varData_2957 = state?.cid || state?.character && state.character.id || 1;
+      }
       return [`ply-${varData_2957}`, `backpack-${varData_2957}`, `body-${varData_2957}`];
     }
     var varData_2958 = (function() {
@@ -21411,6 +21415,7 @@
                 SetNuiFocus(param_1_1, param_2);
               });
               RegisterCommand("+inventory", function() {
+                isDisabled_18 = false;
                 if (isDisabled_17) {
                   return;
                 }
@@ -21432,6 +21437,12 @@
                 handleAction_365([], varData_2963);
               }, false);
               RegisterCommand("-inventory", function() {
+              }, false);
+              RegisterCommand("inventory", function() {
+                ExecuteCommand("+inventory");
+              }, false);
+              RegisterCommand("inv", function() {
+                ExecuteCommand("+inventory");
               }, false);
               varData_1432.Sync["np-keybinds"].registerKeyMapping("inventory", "Inventory", "Open Inventory", "+inventory", "-inventory", "K", true);
               var varData_2964 = {
@@ -21734,11 +21745,9 @@
       };
     })());
     on("np-spawn:characterSpawned", function(param_1) {
-      varData_2997(GetPlayerServerId(PlayerId()), param_1);
-      var varData_3008 = varData_1432.Sync.config.GetMiscConfig("spawn.apartments.only") ?? true;
-      if (varData_3008) {
-        isDisabled_18 = true;
-      }
+      var cid = param_1 || varData_1432.Sync.isPed.isPed("cid");
+      varData_2997(GetPlayerServerId(PlayerId()), cid);
+      isDisabled_18 = false;
     });
     onNet("temp:setBypassed", function() {
       isDisabled_18 = false;

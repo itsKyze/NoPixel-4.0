@@ -13,20 +13,12 @@ end)
 function SetUIFocus(hasFocus, hasCursor, fromCommand)
   local invoking = GetInvokingResource()
   local handler = FocusHandlers[invoking]
-  if not handler and not fromCommand then
-    print('[ERROR] No focus handler for resource: ', invoking)
-    return
-  end
-
-  while HasUIFocus and ActiveUIFocus ~= invoking and IsNuiFocused() do
-    Wait(0)
-  end
 
   if HasUIFocus and ActiveUIFocus ~= invoking then
     local oldHandler = FocusHandlers[ActiveUIFocus]
     if oldHandler then
       TriggerEvent('focusmanager:focusChanged', ActiveUIFocus, false, false)
-      oldHandler(false, false)
+      pcall(oldHandler, false, false)
     end
   end
 
@@ -40,7 +32,12 @@ function SetUIFocus(hasFocus, hasCursor, fromCommand)
 
   TriggerEvent('focusmanager:focusChanged', invoking, hasFocus, hasCursor)
   if handler then
-    handler(hasFocus, hasCursor)
+    local ok, _ = pcall(handler, hasFocus, hasCursor)
+    if not ok then
+      SetNuiFocus(hasFocus, hasCursor)
+    end
+  else
+    SetNuiFocus(hasFocus, hasCursor)
   end
 end
 

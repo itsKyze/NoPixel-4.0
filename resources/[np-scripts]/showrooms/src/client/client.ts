@@ -11259,10 +11259,10 @@
         _0x4b1628(this, _0x2459d7, _0x241394.name);
         _0x4b1628(this, _0xaa429d, _0x241394.capacity);
         _0x4b1628(this, _0x15ce26, null);
-        _0x4b1628(this, _0x48bb78, new Map(Object.entries(_0x241394.data)));
+        _0x4b1628(this, _0x48bb78, new Map(Object.entries(_0x241394.data ?? {})));
         _0x4b1628(this, _0x1fa0c5, new Map());
         _0x4b1628(this, _0x3ba7e8, null);
-        for (const _0x2fa22f of _0x241394.members) {
+        for (const _0x2fa22f of (_0x241394.members || [])) {
           const _0x733bd = new _0x2eb723(_0x2fa22f, this);
           _0x5efa88(this, _0x1fa0c5).set(_0x733bd.characterId, _0x733bd);
           if (_0x2fa22f.isLeader) {

@@ -39,6 +39,6 @@ Thumbs.db
 .idea/
 
 # Server Binaries & txAdmin Data
-server/
-txData/
+/server/
+/txData/
 .replxx_history

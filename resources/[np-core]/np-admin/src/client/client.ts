@@ -16012,11 +16012,18 @@
       }
     }
     async function handleAction_184() {
+      await handleAction_187();
       if (await varData_2562()) {
         const varData_2564 = await handleAction_124("openDefaultMenu");
-        const varData_2565 = await RPC.execute("np:admin:getCommandUI");
+        let varData_2565 = await RPC.execute("np:admin:getCommandUI");
+        if (!varData_2565 || !Array.isArray(varData_2565) || varData_2565.length === 0) {
+          if (varData_2522.length === 0) {
+            await handleAction_176();
+          }
+          varData_2565 = varData_2522;
+        }
         handleAction_185(varData_2565);
-        if (varData_2564.data) {
+        if (varData_2564 && varData_2564.data) {
           handleAction_189(2);
         } else {
           handleAction_189(3);

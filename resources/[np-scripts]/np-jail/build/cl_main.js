@@ -18554,7 +18554,7 @@
                   }
                 }
               }
-              _0xf5f4bb.cellData.forEach(function(_0x5905fc, _0x464248) {
+              (_0xf5f4bb?.cellData || []).forEach(function(_0x5905fc, _0x464248) {
                 var _0x18d28b = _0x5905fc.position;
                 var _0x2274c9 = _0x5905fc.isSolitary;
                 var _0x55ee18 = _0x5905fc.craftingPosition;

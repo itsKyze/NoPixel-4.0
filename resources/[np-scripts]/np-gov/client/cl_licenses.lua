@@ -3,9 +3,11 @@ local Licenses = CacheableMap(function (ctx, pCharacterId)
     
     local licenses = {}
     
-    for _, license in ipairs(data) do
-        local id = license.name:gsub(" ", "_"):lower()
-        licenses[id] = true
+    for _, license in ipairs(data or {}) do
+        if license and license.name then
+            local id = license.name:gsub(" ", "_"):lower()
+            licenses[id] = true
+        end
     end
 
     return true, licenses
