@@ -183,47 +183,47 @@ const Yn = async () => {
     return;
   }
   const u = Object.values(Object.assign({
-    "../applications/antivirus/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/appstore/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/binunce/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-dc6786b9.js", "./v-packages.js"], import.meta.url),
-    "../applications/booster/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/boosting/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./underground-icon-c16f7e75.js", "./v-packages.js", "./nui.js", "./toast.js", "./index-8a6e8499.js", "./index-3eb10154.js"], import.meta.url),
-    "../applications/browser/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/business/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js", "./toast.js"], import.meta.url),
-    "../applications/cam-scan/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/contacts/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./index-8a6e8499.js", "./v-packages.js"], import.meta.url),
-    "../applications/cracker/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/crime-hq-tablet/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./context.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./contract.js", "./index-3eb10154.js"], import.meta.url),
-    "../applications/crime-hq/config.tsx": () => R(() => import("./context.js").then(d => d.c), ["./context.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./contract.js", "./index-3eb10154.js"], import.meta.url),
-    "../applications/documents/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./nui.js", "./v-packages.js"], import.meta.url),
-    "../applications/drone/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/explorer-laptop/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/explorer/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/faceless-oc/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/faceless/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/facelessapp/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/gruppe6/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./index-3eb10154.js"], import.meta.url),
-    "../applications/heist-tracker/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./contract.js"], import.meta.url),
+    "../applications/antivirus/config.tsx": () => R(() => import("./config_antivirus.js"), ["./config_antivirus.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/appstore/config.tsx": () => R(() => import("./config_appstore.js"), ["./config_appstore.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/binunce/config.tsx": () => R(() => import("./config_binunce.js"), ["./config_binunce.js", "./vendor.js", "./commonjsHelpers.js", "./index_common.js", "./v-packages.js"], import.meta.url),
+    "../applications/booster/config.tsx": () => R(() => import("./config_booster.js"), ["./config_booster.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/boosting/config.tsx": () => R(() => import("./config_boosting.js"), ["./config_boosting.js", "./vendor.js", "./commonjsHelpers.js", "./underground_icon.js", "./v-packages.js", "./nui.js", "./toast.js", "./index_table.js", "./index_shared.js"], import.meta.url),
+    "../applications/browser/config.tsx": () => R(() => import("./config_common.js"), ["./config_common.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/business/config.tsx": () => R(() => import("./config_browser.js"), ["./config_browser.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js", "./toast.js"], import.meta.url),
+    "../applications/cam-scan/config.tsx": () => R(() => import("./config_base.js"), ["./config_base.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/contacts/config.tsx": () => R(() => import("./config_contacts.js"), ["./config_contacts.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./index_table.js", "./v-packages.js"], import.meta.url),
+    "../applications/cracker/config.tsx": () => R(() => import("./config_cracker.js"), ["./config_cracker.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/crime-hq-tablet/config.tsx": () => R(() => import("./config_crimehqtablet.js"), ["./config_crimehqtablet.js", "./context.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./contract.js", "./index_shared.js"], import.meta.url),
+    "../applications/crime-hq/config.tsx": () => R(() => import("./context.js").then(d => d.c), ["./context.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./contract.js", "./index_shared.js"], import.meta.url),
+    "../applications/documents/config.tsx": () => R(() => import("./config_camscan.js"), ["./config_camscan.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./nui.js", "./v-packages.js"], import.meta.url),
+    "../applications/drone/config.tsx": () => R(() => import("./config_drone.js"), ["./config_drone.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/explorer-laptop/config.tsx": () => R(() => import("./config_explorerlaptop.js"), ["./config_explorerlaptop.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/explorer/config.tsx": () => R(() => import("./config_explorer.js"), ["./config_explorer.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/faceless-oc/config.tsx": () => R(() => import("./config_facelessoc.js"), ["./config_facelessoc.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/faceless/config.tsx": () => R(() => import("./config_faceless.js"), ["./config_faceless.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/facelessapp/config.tsx": () => R(() => import("./config_facelessapp.js"), ["./config_facelessapp.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/gruppe6/config.tsx": () => R(() => import("./config_gruppe6.js"), ["./config_gruppe6.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./index_shared.js"], import.meta.url),
+    "../applications/heist-tracker/config.tsx": () => R(() => import("./config_heisttracker.js"), ["./config_heisttracker.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./contract.js"], import.meta.url),
     "../applications/hideout/config.tsx": () => R(() => Promise.resolve().then(() => Tu), undefined, import.meta.url),
-    "../applications/mdt/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/miner-ext/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/miner/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/mobile-casino/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/nexus/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/noid/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/notepad/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/pd-scan/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/realestate/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/recycle/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/ron-terminal/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/run-network/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/salty/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-dc6786b9.js", "./v-packages.js"], import.meta.url),
-    "../applications/sniff/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./index-dc6786b9.js"], import.meta.url),
-    "../applications/the-board/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./underground-icon-c16f7e75.js", "./v-packages.js"], import.meta.url),
-    "../applications/tower-defense/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/trucking/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./index-3eb10154.js", "./v-packages.js"], import.meta.url),
-    "../applications/wally/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
-    "../applications/yellow-pages/config.tsx": () => R(() => import("./config.js"), ["./config.js", "./vendor.js", "./commonjsHelpers.js", "./nui.js", "./index-3eb10154.js", "./toast.js", "./v-packages.js"], import.meta.url)
+    "../applications/mdt/config.tsx": () => R(() => import("./config_mdt.js"), ["./config_mdt.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/miner-ext/config.tsx": () => R(() => import("./config_minerext.js"), ["./config_minerext.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/miner/config.tsx": () => R(() => import("./config_miner.js"), ["./config_miner.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/mobile-casino/config.tsx": () => R(() => import("./config_mobilecasino.js"), ["./config_mobilecasino.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/nexus/config.tsx": () => R(() => import("./config_nexus.js"), ["./config_nexus.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/noid/config.tsx": () => R(() => import("./config_noid.js"), ["./config_noid.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/notepad/config.tsx": () => R(() => import("./config_notepad.js"), ["./config_notepad.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/pd-scan/config.tsx": () => R(() => import("./config_pdscan.js"), ["./config_pdscan.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/realestate/config.tsx": () => R(() => import("./config_realestate.js"), ["./config_realestate.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/recycle/config.tsx": () => R(() => import("./config_recycle.js"), ["./config_recycle.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/ron-terminal/config.tsx": () => R(() => import("./config_ronterminal.js"), ["./config_ronterminal.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/run-network/config.tsx": () => R(() => import("./config_runnetwork.js"), ["./config_runnetwork.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/salty/config.tsx": () => R(() => import("./config_salty.js"), ["./config_salty.js", "./vendor.js", "./commonjsHelpers.js", "./index_common.js", "./v-packages.js"], import.meta.url),
+    "../applications/sniff/config.tsx": () => R(() => import("./config_business.js"), ["./config_business.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js", "./index_common.js"], import.meta.url),
+    "../applications/the-board/config.tsx": () => R(() => import("./config_theboard.js"), ["./config_theboard.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./underground_icon.js", "./v-packages.js"], import.meta.url),
+    "../applications/tower-defense/config.tsx": () => R(() => import("./config_towerdefense.js"), ["./config_towerdefense.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/trucking/config.tsx": () => R(() => import("./config_trucking.js"), ["./config_trucking.js", "./vendor.js", "./commonjsHelpers.js", "./index_shared.js", "./v-packages.js"], import.meta.url),
+    "../applications/wally/config.tsx": () => R(() => import("./config_wally.js"), ["./config_wally.js", "./vendor.js", "./commonjsHelpers.js", "./v-packages.js"], import.meta.url),
+    "../applications/yellow-pages/config.tsx": () => R(() => import("./config_yellowpages.js"), ["./config_yellowpages.js", "./vendor.js", "./commonjsHelpers.js", "./nui.js", "./index_shared.js", "./toast.js", "./v-packages.js"], import.meta.url)
   })).map(d => d().then(e => e.default));
   try {
     const e = (await Promise.all(u)).filter(t => t.enabled);
@@ -666,7 +666,7 @@ const Ut = () => {
     return e;
   })();
 };
-const gn = "" + new URL("logo-small.svg", import.meta.url).href;
+const gn = "" + new URL("logo-small-eebc87eb.svg", import.meta.url).href;
 const Oi = "_container_f6h5y_1";
 const Ni = "_isLaptop_f6h5y_7";
 const Ii = "_logo_container_f6h5y_11";
@@ -1283,7 +1283,7 @@ const Me = {
   input_container: Zo,
   confirm: Ho
 };
-const qo = "" + new URL("security.png", import.meta.url).href;
+const qo = "" + new URL("security-0e092e66.png", import.meta.url).href;
 const Vo = w("<div><div><div><img alt=\"\"><div class=\"flex flex-col items-start justify-center\"><p>Computer</p><h1>Security</div><div>Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit</div></div><div><div class=\"flex w-full flex-col items-start justify-start gap-[0.5vh]\"><h1>Your Login</h1><div><input type=\"text\" placeholder=\"Username\"></div></div><div class=\"flex w-full flex-col items-start justify-start gap-[0.5vh]\"><h1>Your Password</h1><div><input type=\"password\" placeholder=\"Password\"></div></div><div>Login");
 const Wo = () => (() => {
   const i = Vo();
@@ -1679,7 +1679,7 @@ const ur = () => {
     return u;
   })();
 };
-const dr = "" + new URL("logo.svg", import.meta.url).href;
+const dr = "" + new URL("logo-4dd0c720.svg", import.meta.url).href;
 const _r = "_wrapper_op8pk_1";
 const fr = "_isLaptop_op8pk_12";
 const hr = "_container_op8pk_27";
@@ -1694,7 +1694,7 @@ const Ee = {
   wallpaper_logo: gr,
   wallpaper_custom: mr
 };
-const $r = "" + new URL("wallpaper.png", import.meta.url).href;
+const $r = "" + new URL("wallpaper-ceaac172.png", import.meta.url).href;
 const vt = w("<img alt=\"\">");
 const pr = w("<div><div><img alt=\"\">");
 const Cr = i => {
@@ -1952,7 +1952,7 @@ const Er = i => {
     return d;
   })();
 };
-const Pr = "" + new URL("hideout.png", import.meta.url).href;
+const Pr = "" + new URL("hideout-6796054f.png", import.meta.url).href;
 const Or = "_container_so7e5_1";
 const Nr = "_spin_so7e5_1";
 const Ir = "_divider_so7e5_40";
@@ -2757,7 +2757,7 @@ const Xs = () => {
     return o;
   })();
 };
-const Jt = "" + new URL("contract.png", import.meta.url).href;
+const Jt = "" + new URL("contract-ec4a909c.png", import.meta.url).href;
 const el = "_contract_n404i_1";
 const tl = "_tag_n404i_21";
 const nl = "_option_n404i_37";

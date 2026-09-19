@@ -1,1 +1,0 @@
-import{wt as e}from"./index-BmhOSwHd.js";import"./index-3eb10154-BBp7_HC5.js";import"./contract-e6f4ac60-DOUdg5_t.js";import{A as t,C as n}from"./context-a16c1200-D0fInORi.js";var r={icon:t,enabled:!0,onDock:!1,name:`crime_hq`,label:`HQ`,description:`Manage the HQ and unlock new features`,isEnabled:!0,render:()=>e(n,{isTablet:!0})};export{r as default};
