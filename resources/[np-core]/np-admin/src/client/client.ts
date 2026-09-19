@@ -16147,19 +16147,26 @@
       timeToLive: 60000
     });
     async function handleAction_189(param_1) {
+      if (!varData_2559 || varData_2559.length === 0) {
+        if (varData_2522.length === 0) {
+          await handleAction_176();
+        }
+        varData_2559 = varData_2522;
+      }
       handleAction_125();
       const varData_2583 = [];
       for (const varData_2584 in varData_2559) {
         const varData_2585 = varData_2559[varData_2584];
-        const varData_2586 = varData_2585.adminMenu;
+        const varData_2586 = varData_2585.adminMenu || varData_2585.commandUI?.adminMenu;
+        if (!varData_2586) continue;
         if (varData_2586 && varData_2586.command && (varData_2586.command.child == false || varData_2586.command.child == true)) {
           const varData_2587 = handleAction_137(varData_2586.command.action);
           if (varData_2587 == null || !varData_2587) {
             handleAction_138(varData_2586.command.action, false);
           }
-          varData_2559[varData_2584].adminMenu.command.child = handleAction_137(varData_2586.command.action);
+          varData_2586.command.child = handleAction_137(varData_2586.command.action);
         }
-        varData_2583.push(varData_2585.adminMenu);
+        varData_2583.push(varData_2586);
       }
       const varData_2588 = varData_2579.get();
       const varData_2589 = handleAction_122();
@@ -16220,19 +16227,25 @@
         return;
       }
       if (varData_2559 == null || varData_2559.length <= 0) {
-        const varData_2604 = await RPC.execute("np:admin:getCommandUI");
-        await handleAction_185(varData_2604);
+        if (varData_2522.length === 0) {
+          await handleAction_176();
+        }
+        varData_2559 = varData_2522;
       }
       const varData_2605 = varData_2169.find(param_1_1 => param_1_1.key === param_1);
       if (varData_2605) {
-        const varData_2606 = varData_2559.find(param_1_1 => param_1_1.adminMenu != null && param_1_1.adminMenu.command.title.toLowerCase() === varData_2605.parent.toLowerCase());
+        const varData_2606 = varData_2559.find(param_1_1 => {
+          const m = param_1_1.adminMenu || param_1_1.commandUI?.adminMenu;
+          return m != null && m.command.title.toLowerCase() === varData_2605.parent.toLowerCase();
+        });
         if (varData_2606 == null) {
           return;
         }
+        const m = varData_2606.adminMenu || varData_2606.commandUI?.adminMenu;
         const varData_2607 = {
-          toggle: !handleAction_137(varData_2606.adminMenu.command.action)
+          toggle: !handleAction_137(m.command.action)
         };
-        RPC.execute("np:admin:runCommandFromClient", varData_2606.adminMenu.command.action, varData_2607);
+        RPC.execute("np:admin:runCommandFromClient", m.command.action, varData_2607);
       }
     }
     async function handleAction_193() {

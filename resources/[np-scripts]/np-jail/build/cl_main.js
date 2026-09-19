@@ -13391,7 +13391,42 @@
       return _0x969fa0 === "doc" || _0x969fa0 === "police" || _0x969fa0 === "dib";
     }
     function _0x164dfc() {
-      return _0x5235fe.Sync.config.GetModuleConfig("np-jail:main");
+      var cfg = _0x5235fe.Sync.config.GetModuleConfig("np-jail:main");
+      if (!cfg) {
+        return {
+          cellData: [],
+          interactions: {
+            clean: { clean: [] },
+            kitchen: { package: [], prepare: [] },
+            scrap: { deliver: [] },
+            prisonServices: []
+          },
+          jobBoardCooldown: 30,
+          reputationAdjustmentLimit: [0, 0],
+          sentenceAdjustmentLimit: [0, 0]
+        };
+      }
+      if (!cfg.interactions) {
+        cfg.interactions = {
+          clean: { clean: [] },
+          kitchen: { package: [], prepare: [] },
+          scrap: { deliver: [] },
+          prisonServices: []
+        };
+      }
+      if (!cfg.interactions.scrap) {
+        cfg.interactions.scrap = { deliver: [] };
+      }
+      if (!cfg.interactions.clean) {
+        cfg.interactions.clean = { clean: [] };
+      }
+      if (!cfg.interactions.kitchen) {
+        cfg.interactions.kitchen = { package: [], prepare: [] };
+      }
+      if (!cfg.cellData) {
+        cfg.cellData = [];
+      }
+      return cfg;
     }
     function _0xa78336(_0x3b1564) {
       return _0x3b1564[Math.floor(Math.random() * _0x3b1564.length)];

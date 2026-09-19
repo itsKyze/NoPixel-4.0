@@ -48,8 +48,8 @@ function processResource(webDir) {
   const indexHtml = path.join(webDir, 'index.html');
 
   // Skip standalone audio or precompiled system UI resources
-  if (resName === 'np-fiber') {
-    return { success: true, resName, skipped: true, reason: 'Plain HTML/Audio player' };
+  if (resName === 'np-fiber' || resName === 'np-ui') {
+    return { success: true, resName, skipped: true, reason: 'Plain HTML/Audio player or precompiled system UI' };
   }
   if (!fs.existsSync(path.join(srcDir, 'App.tsx')) && !fs.existsSync(path.join(srcDir, 'App.ts')) && !fs.existsSync(path.join(srcDir, 'App.jsx'))) {
     const fxmanifest = path.join(resDir, 'fxmanifest.lua');
