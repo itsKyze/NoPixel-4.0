@@ -1,1 +1,102 @@
-(function(stringArrayFunction,comparisonValue){const _0x188404=a0_0x4eae,_0x4d7994=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x188404(0x197))/0x1*(-parseInt(_0x188404(0x17b))/0x2)+parseInt(_0x188404(0x1a7))/0x3+parseInt(_0x188404(0x18e))/0x4*(parseInt(_0x188404(0x19f))/0x5)+-parseInt(_0x188404(0x179))/0x6+parseInt(_0x188404(0x18c))/0x7+-parseInt(_0x188404(0x190))/0x8+-parseInt(_0x188404(0x17a))/0x9;if(expression===comparisonValue)break;else _0x4d7994['push'](_0x4d7994['shift']());}catch(_0x46e225){_0x4d7994['push'](_0x4d7994['shift']());}}}(a0_0x1b2f,0xec5fe));;function a0_0x4eae(_0x33562e,_0x4b2c34){_0x33562e=_0x33562e-0x171;const _0x1b2fed=a0_0x1b2f();let _0x4eae91=_0x1b2fed[_0x33562e];if(a0_0x4eae['NyEeIZ']===undefined){var _0x5f1aaa=function(_0x41f976){const _0x2fa1dc='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x1cdf2a='',_0x372e26='';for(let _0x44efaa=0x0,_0x977485,_0x471c5d,_0x25fc0b=0x0;_0x471c5d=_0x41f976['charAt'](_0x25fc0b++);~_0x471c5d&&(_0x977485=_0x44efaa%0x4?_0x977485*0x40+_0x471c5d:_0x471c5d,_0x44efaa++%0x4)?_0x1cdf2a+=String['fromCharCode'](0xff&_0x977485>>(-0x2*_0x44efaa&0x6)):0x0){_0x471c5d=_0x2fa1dc['indexOf'](_0x471c5d);}for(let _0x562380=0x0,_0x1b995e=_0x1cdf2a['length'];_0x562380<_0x1b995e;_0x562380++){_0x372e26+='%'+('00'+_0x1cdf2a['charCodeAt'](_0x562380)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x372e26);};a0_0x4eae['maQQJO']=_0x5f1aaa,a0_0x4eae['AItPCN']={},a0_0x4eae['NyEeIZ']=!![];}const _0x344cb2=_0x1b2fed[0x0];a0_0x4eae['FuQDFo']!==_0x344cb2&&(a0_0x4eae['AItPCN']={},a0_0x4eae['FuQDFo']=_0x344cb2);const _0x1f5db4=a0_0x4eae['AItPCN'][_0x33562e];return _0x1f5db4===undefined?(_0x4eae91=a0_0x4eae['maQQJO'](_0x4eae91),a0_0x4eae['AItPCN'][_0x33562e]=_0x4eae91):_0x4eae91=_0x1f5db4,_0x4eae91;}function a0_0x1b2f(){const _0x48a3fe=['A2PqtLm','mJG0mdCYn3LVrM56sW','y0ndrvK','zMLUyw5JAwfSCZP3AxrOzhjHDW','EeTcDuK','Cez5D2y','uMvTB3zLqMfUAW','qwrKq2fZAa','yvDgsM8','zMLUyw5JAwfSCZPKzxbVC2L0','DwnZq2e','zxHLy3v0zq','z1fPufO','r2v0ugXHEwvY','B3D3vM4','BhzysKW','r2v0qMfUAW','Bwf4','rvDNqxe','BhrKBwK','CNH3Bw8','nde5mtmXohnmsgLSAG','mty0nJy2mdD2AeTAy1O','ndeWBwvUy3rA','zMLUyw5JAwfSCZPHzgrcyw5R','zMLUyw5JAwfSCZPHzgrdyxnO','t1Dutvm','BNaTyMfZzq','yMfUAW','s0vLwMm','y2HHCMfJDgvY','Bg9N','z29Hy3i','rePezwu','zMLUyw5JAwfSCZPYzw1VDMvcyw5R','xsbgAw5HBMnPywXZigXVywrLzc4','r2D5AuC','qwDmy1K','zMLUyw5JAwfSCZPKzxbVC2L0rMfPBgvK','zMLUyw5JAwfSCZPNzxrcywXHBMnL','nJK0mZiWmNnQvNjxqq','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygnHC2HGpuDsrufurvnukdaSygnHC2HGlt8PifDirvjfigbPzga9pW','mtmYzhLcC0Ts','y2fZAa','mtm4mZmYotzTuurUv1e','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygnHC2HGpwbJyxnOycS/ifDirvjfigbPzga9pW','qwrKqMfUAW','tuPQveG','zMLUyw5JAwfSCZP3AxrOzhjHD0zHAwXLza','zMPRC2q','tMLnv1y','nZGWmLPksuXHrG','Au5zCey','uMvTB3zLq2fZAa','zMLUyw5JAwfSCZPJyxnOvxbKyxrLza','DxP6DvO','uunxEM8','u1HHwvq','B3HTExnXBa','mJu1nJu1uennqwHy','sLblwKO','zMLUyw5JAwfSCZPYzw1VDMvdyxnO','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygjHBMTGpuDsrufurvnukdaSygjHBMTGlt8PifDirvjfigbPzga9pW','zMLUyw5JAwfSCZP3AxrOzhjHD1n1y2nLC3m','B2Lly1q','z0jXrfe'];a0_0x1b2f=function(){return _0x48a3fe;};return a0_0x1b2f();}(function(){const _0x1f96b0=a0_0x4eae,_0x4bd40d={'ucsCa':function(_0x2cbeaa,_0x16758c){return _0x2cbeaa==_0x16758c;},'gBqDQ':function(_0x203362,_0x35c56b){return _0x203362+_0x35c56b;},'fjksd':_0x1f96b0(0x19a),'pFywf':_0x1f96b0(0x17f),'KEeZc':function(_0x5a36c0,_0x4c1800,_0x491dda,_0x3bfaad){return _0x5a36c0(_0x4c1800,_0x491dda,_0x3bfaad);},'oiKcT':function(_0x24ce93,_0x198403){return _0x24ce93==_0x198403;},'AgLcY':'UPDATE\x20`characters`\x20SET\x20`bank`=`bank`+?\x20WHERE\x20`id`=?','SXaYT':_0x1f96b0(0x1a2),'EWgAq':function(_0x114a52,_0x3fa022){return _0x114a52-_0x3fa022;},'JPKZJ':function(_0xcadd68,_0x4bbef6){return _0xcadd68==_0x4bbef6;},'NiMWV':'financials:receiveBalance','dCCME':function(_0x1a8954,_0x5c0101){return _0x1a8954<_0x5c0101;},'ltdmi':function(_0x503cdd,_0x2c516c,_0xb327c6){return _0x503cdd(_0x2c516c,_0xb327c6);},'GgyiG':_0x1f96b0(0x194),'DJDee':_0x1f96b0(0x1a3),'MJjTH':function(_0x486982){return _0x486982();},'goacr':function(_0x462d1e,_0x384e5b,_0x13f4fd){return _0x462d1e(_0x384e5b,_0x13f4fd);},'OWTMS':_0x1f96b0(0x1ad),'lvXJL':_0x1f96b0(0x199),'aWFJo':function(_0x4296f6,_0x441284,_0x7004c3){return _0x4296f6(_0x441284,_0x7004c3);},'FUKyN':_0x1f96b0(0x1ac),'gQiPZ':'GetCash','uzzuZ':function(_0x338baa,_0x4d7259,_0x2cda4c){return _0x338baa(_0x4d7259,_0x2cda4c);},'cCCEY':_0x1f96b0(0x174),'iNYpF':function(_0x59d99b,_0x54d72e,_0x50a8ba){return _0x59d99b(_0x54d72e,_0x50a8ba);},'euNtt':_0x1f96b0(0x17c),'kjPNS':_0x1f96b0(0x186),'xKBuI':function(_0x35a6e0,_0x3cf2f6,_0x2d0883){return _0x35a6e0(_0x3cf2f6,_0x2d0883);},'ygCmq':_0x1f96b0(0x1af),'QCWzo':_0x1f96b0(0x1a9),'owwVn':function(_0x2aaf2c,_0x52b5a6,_0x5f0794){return _0x2aaf2c(_0x52b5a6,_0x5f0794);},'rxwmo':'onResourceStart'},resourceName=_0x4bd40d[_0x1f96b0(0x193)](GetCurrentResourceName);_0x4bd40d[_0x1f96b0(0x184)](exports,_0x4bd40d[_0x1f96b0(0x17e)],(_0x2a12be,_0x332725,reason)=>{const _0x4a3b75=_0x1f96b0;var _0x364726,_0x25c65,_0x27d68d;const _0x20e1c7=_0x4bd40d[_0x4a3b75(0x1b0)](_0x364726=exports[_0x4a3b75(0x17f)],null)?void 0x0:_0x364726[_0x4a3b75(0x171)](_0x2a12be);if(!(_0x4bd40d['ucsCa'](_0x25c65=_0x20e1c7==null?void 0x0:_0x20e1c7[_0x4a3b75(0x182)],null)?void 0x0:_0x25c65['id']))return;exports[_0x4a3b75(0x19e)]['execute'](_0x4a3b75(0x191),[_0x332725,_0x20e1c7[_0x4a3b75(0x182)]['id']]),_0x20e1c7[_0x4a3b75(0x182)]&&(_0x20e1c7[_0x4a3b75(0x182)][_0x4a3b75(0x18f)]=_0x4bd40d[_0x4a3b75(0x1a5)](_0x20e1c7[_0x4a3b75(0x182)]['cash']||0x0,_0x332725)),emitNet(_0x4bd40d[_0x4a3b75(0x195)],_0x2a12be,(_0x4bd40d['ucsCa'](_0x27d68d=_0x20e1c7[_0x4a3b75(0x182)],null)?void 0x0:_0x27d68d['cash'])||0x0);}),exports(_0x4bd40d[_0x1f96b0(0x173)],(_0x1e6c65,_0x18c3be,reason)=>{const _0x2b4f81=_0x1f96b0;var _0x1f3754,_0x2a1eaf,_0x7fc72d;const _0x432def=(_0x1f3754=exports[_0x4bd40d[_0x2b4f81(0x1ab)]])==null?void 0x0:_0x1f3754[_0x2b4f81(0x171)](_0x1e6c65);if(!(_0x4bd40d[_0x2b4f81(0x1b0)](_0x2a1eaf=_0x4bd40d[_0x2b4f81(0x1b0)](_0x432def,null)?void 0x0:_0x432def[_0x2b4f81(0x182)],null)?void 0x0:_0x2a1eaf['id']))return;exports[_0x2b4f81(0x19e)][_0x2b4f81(0x1b1)](_0x2b4f81(0x18d),[_0x18c3be,_0x432def['character']['id']]),_0x432def[_0x2b4f81(0x182)]&&(_0x432def[_0x2b4f81(0x182)][_0x2b4f81(0x18f)]=Math[_0x2b4f81(0x175)](0x0,(_0x432def['character'][_0x2b4f81(0x18f)]||0x0)-_0x18c3be)),_0x4bd40d[_0x2b4f81(0x181)](emitNet,_0x4bd40d[_0x2b4f81(0x195)],_0x1e6c65,(_0x4bd40d['ucsCa'](_0x7fc72d=_0x432def['character'],null)?void 0x0:_0x7fc72d[_0x2b4f81(0x18f)])||0x0);}),_0x4bd40d['aWFJo'](exports,_0x1f96b0(0x192),(_0x462802,_0x4b6014)=>{const _0x4f415a=_0x1f96b0;var _0x28b226,_0x1ba08a;const _0x49490c=_0x4bd40d[_0x4f415a(0x1a4)](_0x28b226=exports[_0x4bd40d[_0x4f415a(0x1ab)]],null)?void 0x0:_0x28b226['GetPlayer'](_0x462802);if(!((_0x1ba08a=_0x4bd40d[_0x4f415a(0x1a4)](_0x49490c,null)?void 0x0:_0x49490c['character'])==null?void 0x0:_0x1ba08a['id']))return;exports[_0x4f415a(0x19e)][_0x4f415a(0x1b1)](_0x4bd40d[_0x4f415a(0x189)],[_0x4b6014,_0x49490c[_0x4f415a(0x182)]['id']]),_0x49490c[_0x4f415a(0x182)]&&(_0x49490c['character'][_0x4f415a(0x180)]=_0x4bd40d['gBqDQ'](_0x49490c[_0x4f415a(0x182)][_0x4f415a(0x180)]||0x0,_0x4b6014));}),exports(_0x4bd40d['FUKyN'],(_0x1a6bd5,_0x58f8a6)=>{const _0x5a72cc=_0x1f96b0;var _0xc9dc71,_0x1248e3;const _0x22856e=(_0xc9dc71=exports[_0x5a72cc(0x17f)])==null?void 0x0:_0xc9dc71[_0x5a72cc(0x171)](_0x1a6bd5);if(!(_0x4bd40d[_0x5a72cc(0x1b0)](_0x1248e3=_0x22856e==null?void 0x0:_0x22856e[_0x5a72cc(0x182)],null)?void 0x0:_0x1248e3['id']))return;exports[_0x5a72cc(0x19e)][_0x5a72cc(0x1b1)](_0x4bd40d[_0x5a72cc(0x19d)],[_0x58f8a6,_0x22856e[_0x5a72cc(0x182)]['id']]),_0x22856e[_0x5a72cc(0x182)]&&(_0x22856e[_0x5a72cc(0x182)][_0x5a72cc(0x180)]=Math[_0x5a72cc(0x175)](0x0,_0x4bd40d[_0x5a72cc(0x176)](_0x22856e[_0x5a72cc(0x182)][_0x5a72cc(0x180)]||0x0,_0x58f8a6)));}),exports(_0x4bd40d[_0x1f96b0(0x1b2)],_0x29d7e5=>{const _0x2ba62b=_0x1f96b0;var _0x4d8191,_0x1440b0,_0x80742f;return(_0x4bd40d[_0x2ba62b(0x1b0)](_0x80742f=(_0x1440b0=_0x4bd40d['oiKcT'](_0x4d8191=exports[_0x2ba62b(0x17f)],null)?void 0x0:_0x4d8191[_0x2ba62b(0x171)](_0x29d7e5))==null?void 0x0:_0x1440b0[_0x2ba62b(0x182)],null)?void 0x0:_0x80742f[_0x2ba62b(0x18f)])||0x0;}),_0x4bd40d[_0x1f96b0(0x19b)](exports,_0x4bd40d[_0x1f96b0(0x1a8)],_0x574ae2=>{const _0x1d3a31=_0x1f96b0;var _0x407087,_0xe505f7,_0x23c496;return(_0x4bd40d[_0x1d3a31(0x1a0)](_0x23c496=_0x4bd40d['oiKcT'](_0xe505f7=_0x4bd40d[_0x1d3a31(0x1b0)](_0x407087=exports[_0x1d3a31(0x17f)],null)?void 0x0:_0x407087[_0x1d3a31(0x171)](_0x574ae2),null)?void 0x0:_0xe505f7[_0x1d3a31(0x182)],null)?void 0x0:_0x23c496[_0x1d3a31(0x180)])||0x0;}),on(_0x1f96b0(0x17d),(_0x3abd74,_0x4dc8c5,reason)=>exports[resourceName][_0x1f96b0(0x1ad)](_0x3abd74,_0x4dc8c5,reason)),_0x4bd40d[_0x1f96b0(0x1ae)](on,_0x1f96b0(0x1a1),(_0xa8c536,_0xf956be,reason)=>exports[resourceName]['RemoveCash'](_0xa8c536,_0xf956be,reason)),_0x4bd40d[_0x1f96b0(0x198)](on,_0x4bd40d['euNtt'],(_0x4704f7,_0x3a4a8e)=>exports[resourceName][_0x1f96b0(0x192)](_0x4704f7,_0x3a4a8e)),_0x4bd40d['goacr'](on,_0x4bd40d[_0x1f96b0(0x1a6)],(_0x76f571,_0x7ce129)=>exports[resourceName][_0x1f96b0(0x1ac)](_0x76f571,_0x7ce129)),_0x4bd40d[_0x1f96b0(0x177)](onNet,_0x1f96b0(0x18b),()=>{const _0x1c18b0=_0x1f96b0;var _0x3fbc01;const _0x502d80=_0x4bd40d[_0x1c18b0(0x1a0)](_0x3fbc01=exports[_0x4bd40d[_0x1c18b0(0x1ab)]],null)?void 0x0:_0x3fbc01[_0x1c18b0(0x171)](source);if(!(_0x502d80==null?void 0x0:_0x502d80['character']))return;const _0x21346b={};_0x21346b[_0x1c18b0(0x18f)]=_0x502d80[_0x1c18b0(0x182)][_0x1c18b0(0x18f)]||0x0,_0x21346b[_0x1c18b0(0x180)]=_0x502d80[_0x1c18b0(0x182)][_0x1c18b0(0x180)]||0x0,_0x4bd40d['KEeZc'](emitNet,_0x4bd40d[_0x1c18b0(0x196)],source,_0x21346b);}),_0x4bd40d[_0x1f96b0(0x1aa)](onNet,_0x4bd40d['ygCmq'],_0x137b99=>{const _0xd0db0f=_0x1f96b0;var _0x29b084;const _0x2dc8ec=source,_0xad0a07=_0x4bd40d[_0xd0db0f(0x1a4)](_0x29b084=exports[_0x4bd40d[_0xd0db0f(0x1ab)]],null)?void 0x0:_0x29b084[_0xd0db0f(0x171)](_0x2dc8ec);if(!(_0xad0a07==null?void 0x0:_0xad0a07[_0xd0db0f(0x182)])||_0x4bd40d['dCCME'](_0xad0a07[_0xd0db0f(0x182)][_0xd0db0f(0x18f)],_0x137b99)){_0x4bd40d[_0xd0db0f(0x177)](emitNet,_0xd0db0f(0x18a),_0x2dc8ec);return;}exports[resourceName][_0xd0db0f(0x199)](_0x2dc8ec,_0x137b99),exports[resourceName]['AddBank'](_0x2dc8ec,_0x137b99),_0x4bd40d[_0xd0db0f(0x181)](emitNet,'financials:depositSuccess',_0x2dc8ec,_0x137b99);}),_0x4bd40d[_0x1f96b0(0x177)](onNet,_0x4bd40d[_0x1f96b0(0x19c)],_0x9a8724=>{const _0x32375f=_0x1f96b0;var _0x388993;const _0x63bbbb=source,_0x28dfbc=_0x4bd40d[_0x32375f(0x1a4)](_0x388993=exports[_0x4bd40d[_0x32375f(0x1ab)]],null)?void 0x0:_0x388993['GetPlayer'](_0x63bbbb);if(!(_0x28dfbc==null?void 0x0:_0x28dfbc[_0x32375f(0x182)])||_0x28dfbc[_0x32375f(0x182)][_0x32375f(0x180)]<_0x9a8724){emitNet(_0x4bd40d[_0x32375f(0x188)],_0x63bbbb);return;}exports[resourceName][_0x32375f(0x1ac)](_0x63bbbb,_0x9a8724),exports[resourceName][_0x32375f(0x1ad)](_0x63bbbb,_0x9a8724),emitNet(_0x4bd40d[_0x32375f(0x185)],_0x63bbbb,_0x9a8724);}),_0x4bd40d[_0x1f96b0(0x172)](on,_0x4bd40d[_0x1f96b0(0x178)],_0x3cc30e=>{const _0x17ec5e=_0x1f96b0;_0x3cc30e===resourceName&&console[_0x17ec5e(0x183)]('['+resourceName+_0x17ec5e(0x187));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  exports("AddCash", (src, amount, reason) => {
+    var _a, _b, _c;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `cash`=`cash`+? WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.cash = (p.character.cash || 0) + amount;
+    }
+    emitNet("financials:cashUpdated", src, ((_c = p.character) == null ? void 0 : _c.cash) || 0);
+  });
+  exports("RemoveCash", (src, amount, reason) => {
+    var _a, _b, _c;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `cash`=GREATEST(0,`cash`-?) WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.cash = Math.max(0, (p.character.cash || 0) - amount);
+    }
+    emitNet("financials:cashUpdated", src, ((_c = p.character) == null ? void 0 : _c.cash) || 0);
+  });
+  exports("AddBank", (src, amount) => {
+    var _a, _b;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `bank`=`bank`+? WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.bank = (p.character.bank || 0) + amount;
+    }
+  });
+  exports("RemoveBank", (src, amount) => {
+    var _a, _b;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `bank`=GREATEST(0,`bank`-?) WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.bank = Math.max(0, (p.character.bank || 0) - amount);
+    }
+  });
+  exports("GetCash", (src) => {
+    var _a, _b, _c;
+    return ((_c = (_b = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src)) == null ? void 0 : _b.character) == null ? void 0 : _c.cash) || 0;
+  });
+  exports("GetBank", (src) => {
+    var _a, _b, _c;
+    return ((_c = (_b = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src)) == null ? void 0 : _b.character) == null ? void 0 : _c.bank) || 0;
+  });
+  on("financials:addCash", (src, amount, reason) => exports[resourceName].AddCash(src, amount, reason));
+  on("financials:removeCash", (src, amount, reason) => exports[resourceName].RemoveCash(src, amount, reason));
+  on("financials:addBank", (src, amount) => exports[resourceName].AddBank(src, amount));
+  on("financials:removeBank", (src, amount) => exports[resourceName].RemoveBank(src, amount));
+  onNet("financials:getBalance", () => {
+    var _a;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(source);
+    if (!(p == null ? void 0 : p.character)) {
+      return;
+    }
+    emitNet("financials:receiveBalance", source, {
+      cash: p.character.cash || 0,
+      bank: p.character.bank || 0
+    });
+  });
+  onNet("financials:deposit", (amount) => {
+    var _a;
+    const src = source;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!(p == null ? void 0 : p.character) || p.character.cash < amount) {
+      emitNet("financials:depositFailed", src);
+      return;
+    }
+    exports[resourceName].RemoveCash(src, amount);
+    exports[resourceName].AddBank(src, amount);
+    emitNet("financials:depositSuccess", src, amount);
+  });
+  onNet("financials:withdraw", (amount) => {
+    var _a;
+    const src = source;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!(p == null ? void 0 : p.character) || p.character.bank < amount) {
+      emitNet("financials:withdrawFailed", src);
+      return;
+    }
+    exports[resourceName].RemoveBank(src, amount);
+    exports[resourceName].AddCash(src, amount);
+    emitNet("financials:withdrawSuccess", src, amount);
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Financials loaded.`);
+    }
+  });
+})();

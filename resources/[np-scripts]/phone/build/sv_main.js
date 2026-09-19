@@ -1,1 +1,51 @@
-(function(stringArrayFunction,comparisonValue){const _0xb5741f=a0_0x4145,_0x4b85e3=stringArrayFunction();while(!![]){try{const expression=parseInt(_0xb5741f(0x147))/0x1+-parseInt(_0xb5741f(0x150))/0x2+-parseInt(_0xb5741f(0x15c))/0x3*(parseInt(_0xb5741f(0x144))/0x4)+parseInt(_0xb5741f(0x168))/0x5*(parseInt(_0xb5741f(0x155))/0x6)+parseInt(_0xb5741f(0x158))/0x7*(parseInt(_0xb5741f(0x166))/0x8)+parseInt(_0xb5741f(0x148))/0x9+-parseInt(_0xb5741f(0x14e))/0xa;if(expression===comparisonValue)break;else _0x4b85e3['push'](_0x4b85e3['shift']());}catch(_0x4a3595){_0x4b85e3['push'](_0x4b85e3['shift']());}}}(a0_0x4903,0x7d096));function a0_0x4145(_0x272658,_0x8b3e51){_0x272658=_0x272658-0x143;const _0x490333=a0_0x4903();let _0x41454c=_0x490333[_0x272658];if(a0_0x4145['fpAvRF']===undefined){var _0x548f45=function(_0x11e32b){const _0x5d2f23='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x52c6d6='',_0x1502b5='';for(let _0x47226c=0x0,_0x20aee8,_0x10faf2,_0x2d329c=0x0;_0x10faf2=_0x11e32b['charAt'](_0x2d329c++);~_0x10faf2&&(_0x20aee8=_0x47226c%0x4?_0x20aee8*0x40+_0x10faf2:_0x10faf2,_0x47226c++%0x4)?_0x52c6d6+=String['fromCharCode'](0xff&_0x20aee8>>(-0x2*_0x47226c&0x6)):0x0){_0x10faf2=_0x5d2f23['indexOf'](_0x10faf2);}for(let _0x4eb42b=0x0,_0x12eae5=_0x52c6d6['length'];_0x4eb42b<_0x12eae5;_0x4eb42b++){_0x1502b5+='%'+('00'+_0x52c6d6['charCodeAt'](_0x4eb42b)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x1502b5);};a0_0x4145['YproNC']=_0x548f45,a0_0x4145['vYRIxE']={},a0_0x4145['fpAvRF']=!![];}const _0x8936e5=_0x490333[0x0];a0_0x4145['NgjYMM']!==_0x8936e5&&(a0_0x4145['vYRIxE']={},a0_0x4145['NgjYMM']=_0x8936e5);const _0x458743=a0_0x4145['vYRIxE'][_0x272658];return _0x458743===undefined?(_0x41454c=a0_0x4145['YproNC'](_0x41454c),a0_0x4145['vYRIxE'][_0x272658]=_0x41454c):_0x41454c=_0x458743,_0x41454c;};function a0_0x4903(){const _0x37e9f1=['ntDuquTbtee','z2v0','xsbqAg9UzsbSB2fKzwqU','Dw5wvhy','CgHVBMu6Aw5JB21PBMDdywXS','z29ut28','wMTyEhG','q0LhsLa','A2DKBxm','CgHVBMu6CMvNAxn0zxjLza','ndbuAu5SwgG','Ee1ju3G','mtbdturyEwC','ALjlDeW','CgHVBMu6y2fSBevUzgvK','mtyXmZq4EMjQtfDY','D2TXCey','CgHVBMu6C2vUze1LC3nHz2u','ndmYnJi1zvzUAwHb','ndCZmZu2ogDMyKPWBW','CgHVBMu6CMvNAxn0zxi','ueL0vK4','z2rUs0u','DfPnyMq','qw9hy1O','nJm5nZC4mfHcvxLfwG','tM90ihjLywnOywjSzq','ndmYndC0v0fwzvbq','ugjNv04','Bg9N','uuTLuLG','revfq1y','mtCWode1oe5LywzZDq','wff2u2y','sNfMyu8','odq5mJq3AKTcrurY','qLLJEfq','CgHVBMu6CMvJzwL2zu1LC3nHz2u','CgHVBMu6y2fSBa'];a0_0x4903=function(){return _0x37e9f1;};return a0_0x4903();}(function(){const _0x5ee346=a0_0x4145,_0x802ec6={'gdnKE':function(_0x25c72b,_0xdaf5e2,_0x1dbfed,_0x3dca25){return _0x25c72b(_0xdaf5e2,_0x1dbfed,_0x3dca25);},'wkqpF':_0x5ee346(0x165),'jQQAh':function(_0x4ce3b0,_0x3e18f3){return _0x4ce3b0===_0x3e18f3;},'RMbhz':'phone:callFailed','NlDgO':function(_0x4ec834,_0xaab498,_0x5a0053,_0x13de16,_0x1d87e1){return _0x4ec834(_0xaab498,_0x5a0053,_0x13de16,_0x1d87e1);},'AoGcZ':_0x5ee346(0x160),'PItVN':function(_0x589368,_0x3b5e4d,_0xfc41b7,_0x2bd31f){return _0x589368(_0x3b5e4d,_0xfc41b7,_0x2bd31f);},'wmfKG':'phone:callAccepted','xMISx':function(_0x923835,_0x43d2f8,_0x32fff5){return _0x923835(_0x43d2f8,_0x32fff5);},'tZMbd':_0x5ee346(0x143),'DEECV':function(_0x501e6e,_0x4aa21b){return _0x501e6e===_0x4aa21b;},'BYcxT':function(_0x314b2a,_0x496e59){return _0x314b2a===_0x496e59;},'QKeRX':function(_0x1ef7d1){return _0x1ef7d1();},'XQvSf':_0x5ee346(0x149),'jRKtL':_0x5ee346(0x15b),'ZkXxx':function(_0x59f938,_0x3e26cd,_0x21ffc7){return _0x59f938(_0x3e26cd,_0x21ffc7);},'unVTv':'phone:acceptCall','JqfaO':'phone:endCall','PbgWN':_0x5ee346(0x146),'goTOo':'playerDropped','kgdms':function(_0x46ef61,_0x46549d,_0x43a39c){return _0x46ef61(_0x46549d,_0x43a39c);},'CIGJP':'onResourceStart'},resourceName=_0x802ec6[_0x5ee346(0x153)](GetCurrentResourceName),phoneNumbers=new Map();_0x802ec6[_0x5ee346(0x167)](onNet,_0x802ec6[_0x5ee346(0x156)],_0x44d1c0=>{const _0xdc72e6=_0x5ee346;phoneNumbers['set'](source,_0x44d1c0),_0x802ec6[_0xdc72e6(0x14b)](emitNet,_0x802ec6[_0xdc72e6(0x145)],source,_0x44d1c0);}),onNet(_0x802ec6[_0x5ee346(0x169)],_0x281a38=>{const _0xf2709f=_0x5ee346,_0x2ba001=source;let _0x25f9f4=null;for(const [_0x53212f,_0x5afb6d]of phoneNumbers){if(_0x802ec6['jQQAh'](_0x5afb6d,_0x281a38)){_0x25f9f4=_0x53212f;break;}}if(!_0x25f9f4){emitNet(_0x802ec6['RMbhz'],_0x2ba001,_0xf2709f(0x14f));return;}_0x802ec6['NlDgO'](emitNet,_0x802ec6[_0xf2709f(0x14d)],_0x25f9f4,phoneNumbers[_0xf2709f(0x15d)](_0x2ba001),_0x2ba001);}),_0x802ec6[_0x5ee346(0x162)](onNet,_0x802ec6[_0x5ee346(0x15f)],_0x1a7cbf=>{const _0x847a4d=_0x5ee346;_0x802ec6[_0x847a4d(0x14a)](emitNet,_0x802ec6['wmfKG'],_0x1a7cbf,source);}),onNet(_0x802ec6[_0x5ee346(0x157)],_0x410603=>{const _0x20432d=_0x5ee346;_0x802ec6[_0x20432d(0x167)](emitNet,_0x802ec6[_0x20432d(0x14c)],_0x410603);}),onNet(_0x802ec6[_0x5ee346(0x151)],(_0x463469,_0x56932a)=>{const _0xcba0c8=_0x5ee346,_0x42679a=source;let _0x5b491b=null;for(const [_0x41664a,_0x45ab4e]of phoneNumbers){if(_0x802ec6[_0xcba0c8(0x154)](_0x45ab4e,_0x463469)){_0x5b491b=_0x41664a;break;}}_0x5b491b&&emitNet(_0xcba0c8(0x15a),_0x5b491b,phoneNumbers[_0xcba0c8(0x15d)](_0x42679a),_0x56932a);}),_0x802ec6['ZkXxx'](on,_0x802ec6[_0x5ee346(0x161)],()=>{phoneNumbers['delete'](source);}),_0x802ec6[_0x5ee346(0x164)](on,_0x802ec6[_0x5ee346(0x163)],_0x30b50f=>{const _0x123597=_0x5ee346;_0x802ec6[_0x123597(0x159)](_0x30b50f,resourceName)&&console[_0x123597(0x152)]('['+resourceName+_0x123597(0x15e));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const phoneNumbers = /* @__PURE__ */ new Map();
+  onNet("phone:register", (number) => {
+    phoneNumbers.set(source, number);
+    emitNet("phone:registered", source, number);
+  });
+  onNet("phone:call", (targetNumber) => {
+    const src = source;
+    let targetSrc = null;
+    for (const [s, n] of phoneNumbers) {
+      if (n === targetNumber) {
+        targetSrc = s;
+        break;
+      }
+    }
+    if (!targetSrc) {
+      emitNet("phone:callFailed", src, "Not reachable");
+      return;
+    }
+    emitNet("phone:incomingCall", targetSrc, phoneNumbers.get(src), src);
+  });
+  onNet("phone:acceptCall", (callerSrc) => {
+    emitNet("phone:callAccepted", callerSrc, source);
+  });
+  onNet("phone:endCall", (otherSrc) => {
+    emitNet("phone:callEnded", otherSrc);
+  });
+  onNet("phone:sendMessage", (targetNumber, message) => {
+    const src = source;
+    let targetSrc = null;
+    for (const [s, n] of phoneNumbers) {
+      if (n === targetNumber) {
+        targetSrc = s;
+        break;
+      }
+    }
+    if (targetSrc) {
+      emitNet("phone:receiveMessage", targetSrc, phoneNumbers.get(src), message);
+    }
+  });
+  on("playerDropped", () => {
+    phoneNumbers.delete(source);
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Phone loaded.`);
+    }
+  });
+})();

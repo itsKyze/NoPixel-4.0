@@ -18,6 +18,7 @@ function obfuscatorPlugin(): Plugin {
             debugProtection: false,
             disableConsoleOutput: false,
             identifierNamesGenerator: 'hexadecimal',
+            identifiersPrefix: 'a0_',
             log: false,
             numbersToExpressions: false,
             renameGlobals: false,
@@ -25,7 +26,8 @@ function obfuscatorPlugin(): Plugin {
             simplify: true,
             splitStrings: false,
             stringArray: true,
-            stringArrayThreshold: 0.75
+            stringArrayEncoding: ['base64'],
+            stringArrayThreshold: 0.8
           });
           chunk.code = result.getObfuscatedCode();
         }
@@ -42,6 +44,12 @@ export default defineConfig({
     emptyOutDir: false,
     rollupOptions: {
       output: {
+        manualChunks(id) {
+          if (id.includes('v-packages')) return 'v-packages';
+          if (id.includes('vendor')) return 'vendor';
+          if (id.includes('commonjsHelpers')) return 'commonjsHelpers';
+          if (id.includes('vite.js') || id.includes('vite.ts')) return 'vite';
+        },
         entryFileNames: 'assets/[name].js',
         chunkFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name].[ext]'

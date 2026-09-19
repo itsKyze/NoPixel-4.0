@@ -1,1 +1,51 @@
-function a0_0x5202(_0x296ee4,_0x4d6567){_0x296ee4=_0x296ee4-0x132;const _0x8e5ae9=a0_0x8e5a();let _0x520202=_0x8e5ae9[_0x296ee4];if(a0_0x5202['LeBVfO']===undefined){var _0x2176a1=function(_0x35da63){const _0x2f66d8='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4ff25e='',_0x582c84='';for(let _0xafdd75=0x0,_0x1a517a,_0xb76816,_0x1fa7a2=0x0;_0xb76816=_0x35da63['charAt'](_0x1fa7a2++);~_0xb76816&&(_0x1a517a=_0xafdd75%0x4?_0x1a517a*0x40+_0xb76816:_0xb76816,_0xafdd75++%0x4)?_0x4ff25e+=String['fromCharCode'](0xff&_0x1a517a>>(-0x2*_0xafdd75&0x6)):0x0){_0xb76816=_0x2f66d8['indexOf'](_0xb76816);}for(let _0x18098a=0x0,_0x5e8749=_0x4ff25e['length'];_0x18098a<_0x5e8749;_0x18098a++){_0x582c84+='%'+('00'+_0x4ff25e['charCodeAt'](_0x18098a)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x582c84);};a0_0x5202['NENYMB']=_0x2176a1,a0_0x5202['zRoDbD']={},a0_0x5202['LeBVfO']=!![];}const _0x4ecb2e=_0x8e5ae9[0x0];a0_0x5202['XyYhFh']!==_0x4ecb2e&&(a0_0x5202['zRoDbD']={},a0_0x5202['XyYhFh']=_0x4ecb2e);const _0x239e96=a0_0x5202['zRoDbD'][_0x296ee4];return _0x239e96===undefined?(_0x520202=a0_0x5202['NENYMB'](_0x520202),a0_0x5202['zRoDbD'][_0x296ee4]=_0x520202):_0x520202=_0x239e96,_0x520202;}function a0_0x8e5a(){const _0x2d60b5=['C2v0','s21UAvi','C3rHCNruAw1L','otjvruXsq0C','BgvUz3rO','uM1xsMm','mZHhverxvhC','r2v0vxb0Aw1L','whLqshm','Bg9N','nZeZmeHOtMTmDG','B25szxnVDxjJzvn0B3a','C3rHDhvZ','mtGYmdfly1PWq1K','mZqYmZi0C3rQCMj2','w1nuqvrvu10GugXHEwvYCYbVBMXPBMu6ia','mZu0nZqXoeLVvufSDq','uxPJsu0','xsbdB3jLigLUAxrPywXPEMvKlG','C2L6zq','B3Hot0y','xsbszxn0yxj0zwqGCMvZB3vYy2u6ia','z2v0','uu1Nt0i','CKnmEKG','ndvMz1LUCKK','mta4s3L6CNLf','otGZndbcwNncEfm','tMfezK4','r2v0tw9KDwXL','tMjpy3q','uMvNAxn0zxjnB2r1Bgu','CMvZDgfYDa','sunutgK','mJrqt3bfrvi','zMXVB3i','ogTYyxb5tG','w1nuqvrvu10Gvxb0Aw1LoIa','mJK4oty1n1DcswXzsa','Aw5PDgLHBgL6zwq','BM93','y1rVDg8','A2zzD1i','Bw9KDwXLCW','s2vzsva','mtCYntC2m0jwCKXkBa','ELHlA0m','ywz5Dwy'];a0_0x8e5a=function(){return _0x2d60b5;};return a0_0x8e5a();}(function(stringArrayFunction,comparisonValue){const _0x569e4b=a0_0x5202,_0xa9ab69=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x569e4b(0x157))/0x1*(parseInt(_0x569e4b(0x15b))/0x2)+parseInt(_0x569e4b(0x15e))/0x3*(-parseInt(_0x569e4b(0x154))/0x4)+parseInt(_0x569e4b(0x13a))/0x5*(-parseInt(_0x569e4b(0x15f))/0x6)+parseInt(_0x569e4b(0x161))/0x7*(parseInt(_0x569e4b(0x145))/0x8)+-parseInt(_0x569e4b(0x13b))/0x9*(parseInt(_0x569e4b(0x13c))/0xa)+parseInt(_0x569e4b(0x147))/0xb*(parseInt(_0x569e4b(0x143))/0xc)+parseInt(_0x569e4b(0x14e))/0xd;if(expression===comparisonValue)break;else _0xa9ab69['push'](_0xa9ab69['shift']());}catch(_0x3b0857){_0xa9ab69['push'](_0xa9ab69['shift']());}}}(a0_0x8e5a,0x43872));;(function(){const _0x4b9149=a0_0x5202,_0x5b3232={'afyuf':function(_0x5535e2,_0x5a2bf1){return _0x5535e2!==_0x5a2bf1;},'XyPHs':function(_0x2f55b2,_0xd83003){return _0x2f55b2(_0xd83003);},'QzcIM':function(_0xc5141c,_0x2d6e9a,_0x28eed4){return _0xc5141c(_0x2d6e9a,_0x28eed4);},'oxNOF':function(_0x588fd6){return _0x588fd6();},'CCEge':function(_0xb67f92,_0x3369c9){return _0xb67f92/_0x3369c9;},'cToto':function(_0x578d41,_0x4e25b2){return _0x578d41!==_0x4e25b2;},'bcLvx':function(_0x37a95e,_0x36cc87){return _0x37a95e!==_0x36cc87;},'zXKkC':function(_0x28c1b0,_0x507a5c,_0x48ddb0){return _0x28c1b0(_0x507a5c,_0x48ddb0);},'rCLzH':_0x4b9149(0x140),'KmniR':function(_0x27d402,_0x527cb4,_0xf1a0c0){return _0x27d402(_0x527cb4,_0xf1a0c0);},'NbOct':_0x4b9149(0x13e),'ICTLi':function(_0x49a368,_0xc6cee2,_0x50b9bc){return _0x49a368(_0xc6cee2,_0x50b9bc);},'cDYTv':'IsReady','rvBGd':function(_0x26d1ea,_0x3e7362,_0x165a79){return _0x26d1ea(_0x3e7362,_0x165a79);},'KeYIP':function(_0xe1b14c,_0x5a6e59,_0x2c3f13,_0x1e98c7){return _0xe1b14c(_0x5a6e59,_0x2c3f13,_0x1e98c7);},'QMgOB':_0x4b9149(0x141),'kfYwR':_0x4b9149(0x15d),'NaDfN':'onResourceStart','RmWJc':_0x4b9149(0x15c)},resourceName=GetCurrentResourceName(),_0x1de25a={'initialized':![],'startTime':Date[_0x4b9149(0x149)](),'modules':new Map()};_0x5b3232[_0x4b9149(0x14f)](exports,_0x5b3232[_0x4b9149(0x139)],(_0xec62d6,_0x49f47b)=>{const _0x4d581=_0x4b9149;_0x1de25a['modules'][_0x4d581(0x151)](_0xec62d6,_0x49f47b),console[_0x4d581(0x15a)]('['+resourceName+']\x20Module\x20registered:\x20'+_0xec62d6);}),_0x5b3232[_0x4b9149(0x152)](exports,_0x5b3232[_0x4b9149(0x13f)],_0x262237=>{const _0x1e5a5d=_0x4b9149;return _0x1de25a[_0x1e5a5d(0x14c)][_0x1e5a5d(0x137)](_0x262237)||null;}),_0x5b3232[_0x4b9149(0x142)](exports,_0x5b3232['cDYTv'],()=>_0x1de25a[_0x4b9149(0x148)]),_0x5b3232['rvBGd'](exports,_0x4b9149(0x158),()=>Math[_0x4b9149(0x144)]((Date[_0x4b9149(0x149)]()-_0x1de25a[_0x4b9149(0x153)])/0x3e8)),_0x5b3232[_0x4b9149(0x14d)](RegisterCommand,_0x5b3232[_0x4b9149(0x138)],(_0x2aaac0,_0xdf749a)=>{const _0x510044=_0x4b9149;if(_0x5b3232[_0x510044(0x150)](_0x2aaac0,0x0))return;const resource=_0xdf749a[0x0];resource&&(_0x5b3232[_0x510044(0x159)](StopResource,resource),_0x5b3232['QzcIM'](setTimeout,()=>StartResource(resource),0x1f4),console[_0x510044(0x15a)]('['+resourceName+_0x510044(0x136)+resource));},![]),_0x5b3232[_0x4b9149(0x14d)](RegisterCommand,_0x5b3232[_0x4b9149(0x14b)],(_0x3911c8,_0x45b808)=>{const _0x255d22=_0x4b9149;if(_0x3911c8!==0x0)return;const _0x1d5f4d=_0x5b3232[_0x255d22(0x135)](getPlayers);console[_0x255d22(0x15a)](_0x255d22(0x160)+_0x1d5f4d[_0x255d22(0x155)]),console[_0x255d22(0x15a)](_0x255d22(0x146)+Math['floor'](_0x5b3232['CCEge'](Date[_0x255d22(0x149)]()-_0x1de25a['startTime'],0x3e8))+'s'),console['log']('[STATUS]\x20Modules\x20registered:\x20'+_0x1de25a[_0x255d22(0x14c)][_0x255d22(0x134)]);},![]),on(_0x5b3232[_0x4b9149(0x13d)],_0x609c6e=>{const _0x28f825=_0x4b9149;if(_0x5b3232[_0x28f825(0x14a)](_0x609c6e,resourceName))return;_0x1de25a[_0x28f825(0x148)]=!![],console[_0x28f825(0x15a)]('['+resourceName+_0x28f825(0x133));}),_0x5b3232[_0x4b9149(0x132)](on,_0x5b3232[_0x4b9149(0x156)],_0x174991=>{const _0x3aa3f1=_0x4b9149;if(_0x5b3232['bcLvx'](_0x174991,resourceName))return;_0x1de25a[_0x3aa3f1(0x148)]=![];});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const CoreState = {
+    initialized: false,
+    startTime: Date.now(),
+    modules: /* @__PURE__ */ new Map()
+  };
+  exports("RegisterModule", (name, module) => {
+    CoreState.modules.set(name, module);
+    console.log(`[${resourceName}] Module registered: ${name}`);
+  });
+  exports("GetModule", (name) => {
+    return CoreState.modules.get(name) || null;
+  });
+  exports("IsReady", () => CoreState.initialized);
+  exports("GetUptime", () => Math.floor((Date.now() - CoreState.startTime) / 1e3));
+  RegisterCommand("restart", (src, args) => {
+    if (src !== 0) {
+      return;
+    }
+    const resource = args[0];
+    if (resource) {
+      StopResource(resource);
+      setTimeout(() => StartResource(resource), 500);
+      console.log(`[${resourceName}] Restarted resource: ${resource}`);
+    }
+  }, false);
+  RegisterCommand("status", (src, args) => {
+    if (src !== 0) {
+      return;
+    }
+    const players = getPlayers();
+    console.log(`[STATUS] Players online: ${players.length}`);
+    console.log(`[STATUS] Uptime: ${Math.floor((Date.now() - CoreState.startTime) / 1e3)}s`);
+    console.log(`[STATUS] Modules registered: ${CoreState.modules.size}`);
+  }, false);
+  on("onResourceStart", (res) => {
+    if (res !== resourceName) {
+      return;
+    }
+    CoreState.initialized = true;
+    console.log(`[${resourceName}] Core initialized.`);
+  });
+  on("onResourceStop", (res) => {
+    if (res !== resourceName) {
+      return;
+    }
+    CoreState.initialized = false;
+  });
+})();

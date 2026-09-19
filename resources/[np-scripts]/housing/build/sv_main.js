@@ -1,1 +1,31 @@
-(function(stringArrayFunction,comparisonValue){const _0x53b699=a0_0x4409,_0x6dfc8a=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x53b699(0x18e))/0x1*(-parseInt(_0x53b699(0x1a3))/0x2)+parseInt(_0x53b699(0x195))/0x3+parseInt(_0x53b699(0x1a0))/0x4*(parseInt(_0x53b699(0x185))/0x5)+-parseInt(_0x53b699(0x19d))/0x6+-parseInt(_0x53b699(0x186))/0x7+-parseInt(_0x53b699(0x198))/0x8*(-parseInt(_0x53b699(0x197))/0x9)+-parseInt(_0x53b699(0x194))/0xa;if(expression===comparisonValue)break;else _0x6dfc8a['push'](_0x6dfc8a['shift']());}catch(_0x5b1d69){_0x6dfc8a['push'](_0x6dfc8a['shift']());}}}(a0_0x4201,0x57097));;function a0_0x4201(){const _0x190595=['zgvSzxrL','mJi0otu4nffswvz6Cq','r2v0ugXHEwvY','z3fdDvy','nZqZmZjgsKnIAuy','EKvZExq','B3HTExnXBa','DNPzzLy','BNaTyMfZzq','tLjuzMu','Bg9N','C3rYAw5NAwz5','Ag91C2LUzZPYzwnLAxzLsg91C2vZ','r3DsuNu','nvDcreXLva','mti3mduWmhrAyLLttW','yvvuzwK','r2v0ugXHEwvYsg91C2vZ','t05ju2q','zxHLy3v0zq','Ag91C2LUzZPYzxf1zxn0sg91C2vZ','z2v0','uxvPBwW','nNnNugDZDG','B25szxnVDxjJzvn0yxj0','A2PbC08','vvbeqvrfigbOB3vZzxnGifnfvcbGzNvYBML0DxjLyd0/ifDirvjfigbPzga9pYbbtKqGyg93BMvYx2LKyd0/','C2v0','q2rcCfq','mtiWmte4mtbrAe9kteO','mty3mJeZmxfbzgLOzG','y2HHCMfJDgvY','ntqZndyWnuLfr3HowG','oenSEg1iAa','Cgj5txm','Ag91C2LUzZPZzxrgDxjUAxr1CMu','BNaTyMfZztPJAgfYywn0zxjtzwXLy3rLza','u0vmrunuicOGrLjptsbGAg91C2vZycbxsevsrsbGB3DUzxjFAwrGpt8','mti0ndu4mgT5wuvjBW','Dgvpvfu'];a0_0x4201=function(){return _0x190595;};return a0_0x4201();}function a0_0x4409(_0x5a76d7,_0x1e20cc){_0x5a76d7=_0x5a76d7-0x17d;const _0x42014e=a0_0x4201();let _0x44098d=_0x42014e[_0x5a76d7];if(a0_0x4409['pYPHqQ']===undefined){var _0x52c066=function(_0x1e7e00){const _0x3c0028='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x342e91='',_0x1f4ddc='';for(let _0x2e4507=0x0,_0x46511d,_0x3b5c82,_0x166543=0x0;_0x3b5c82=_0x1e7e00['charAt'](_0x166543++);~_0x3b5c82&&(_0x46511d=_0x2e4507%0x4?_0x46511d*0x40+_0x3b5c82:_0x3b5c82,_0x2e4507++%0x4)?_0x342e91+=String['fromCharCode'](0xff&_0x46511d>>(-0x2*_0x2e4507&0x6)):0x0){_0x3b5c82=_0x3c0028['indexOf'](_0x3b5c82);}for(let _0x4ded7b=0x0,_0x1bce00=_0x342e91['length'];_0x4ded7b<_0x1bce00;_0x4ded7b++){_0x1f4ddc+='%'+('00'+_0x342e91['charCodeAt'](_0x4ded7b)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x1f4ddc);};a0_0x4409['FscMzR']=_0x52c066,a0_0x4409['AiuhAp']={},a0_0x4409['pYPHqQ']=!![];}const _0x52abff=_0x42014e[0x0];a0_0x4409['pIGlJd']!==_0x52abff&&(a0_0x4409['AiuhAp']={},a0_0x4409['pIGlJd']=_0x52abff);const _0x4b8e83=a0_0x4409['AiuhAp'][_0x5a76d7];return _0x4b8e83===undefined?(_0x44098d=a0_0x4409['FscMzR'](_0x44098d),a0_0x4409['AiuhAp'][_0x5a76d7]=_0x44098d):_0x44098d=_0x4b8e83,_0x44098d;}(function(){const _0x2e5c6d=a0_0x4409,_0x54231e={'kjAsO':_0x2e5c6d(0x183),'ONISd':_0x2e5c6d(0x19c),'veCNg':function(_0x1e6fd7,_0x178812,_0x30caa1,_0x412b12){return _0x1e6fd7(_0x178812,_0x30caa1,_0x412b12);},'teOTU':function(_0x45dc2d,_0x4fb1c4){return _0x45dc2d==_0x4fb1c4;},'GwRRu':_0x2e5c6d(0x191),'QkzME':function(_0x1d94a9,_0xfb86d5){return _0x1d94a9===_0xfb86d5;},'CdBpT':function(_0x5d95fc,_0x158e6c,_0x287abb){return _0x5d95fc(_0x158e6c,_0x287abb);},'fHWqi':'playerDropped','zEsyt':function(_0x57825a,_0x1d872c,_0x11174f){return _0x57825a(_0x1d872c,_0x11174f);},'aUTei':_0x2e5c6d(0x18b),'NRTfe':_0x2e5c6d(0x19a),'pbyMs':_0x2e5c6d(0x188),'Quiml':_0x2e5c6d(0x18f)},resourceName=GetCurrentResourceName(),_0x45f384=new Map();_0x54231e[_0x2e5c6d(0x193)](on,_0x2e5c6d(0x19b),(_0x216db5,_0x87a80e)=>{const _0x5ef6f7=_0x2e5c6d,_0x5692af={'vzYfV':function(_0x519d3d,_0x1beca9,_0x3bbe65,_0x372a3a){return _0x519d3d(_0x1beca9,_0x3bbe65,_0x372a3a);},'gqCuV':_0x54231e[_0x5ef6f7(0x190)]};exports[_0x5ef6f7(0x17d)][_0x5ef6f7(0x18a)](_0x54231e[_0x5ef6f7(0x189)],[_0x87a80e['id']],_0x5f1396=>{const _0x55d326=_0x5ef6f7;_0x45f384[_0x55d326(0x192)](_0x216db5,_0x5f1396||[]),_0x5692af[_0x55d326(0x17e)](emitNet,_0x5692af[_0x55d326(0x1a2)],_0x216db5,_0x5f1396||[]);});}),_0x54231e[_0x2e5c6d(0x193)](on,_0x54231e['fHWqi'],()=>{const _0x1d5064=_0x2e5c6d;_0x45f384[_0x1d5064(0x19f)](source);}),_0x54231e[_0x2e5c6d(0x1a4)](onNet,_0x54231e[_0x2e5c6d(0x187)],()=>{const _0x27a146=_0x2e5c6d;_0x54231e['veCNg'](emitNet,_0x27a146(0x183),source,_0x45f384[_0x27a146(0x18c)](source)||[]);}),_0x54231e[_0x2e5c6d(0x1a4)](onNet,_0x54231e[_0x2e5c6d(0x180)],(_0x2d8c5d,_0x7a4b0f)=>{const _0x37a79b=_0x2e5c6d;var _0x3ef538;const _0x2ee020=_0x54231e[_0x37a79b(0x19e)](_0x3ef538=exports[_0x37a79b(0x17f)],null)?void 0x0:_0x3ef538[_0x37a79b(0x1a1)](source);if(!(_0x54231e[_0x37a79b(0x19e)](_0x2ee020,null)?void 0x0:_0x2ee020[_0x37a79b(0x196)]))return;exports[_0x37a79b(0x17d)]['execute'](_0x54231e[_0x37a79b(0x184)],[JSON[_0x37a79b(0x182)](_0x7a4b0f),_0x2d8c5d,_0x2ee020[_0x37a79b(0x196)]['id']]);}),exports(_0x54231e[_0x2e5c6d(0x199)],_0x5bfae6=>_0x45f384[_0x2e5c6d(0x18c)](_0x5bfae6)||[]),_0x54231e[_0x2e5c6d(0x1a4)](on,_0x54231e[_0x2e5c6d(0x18d)],_0x3f3212=>{const _0x4b17ff=_0x2e5c6d;_0x54231e['QkzME'](_0x3f3212,resourceName)&&console[_0x4b17ff(0x181)]('['+resourceName+']\x20Housing\x20loaded.');});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const playerHouses = /* @__PURE__ */ new Map();
+  on("np-base:characterSelected", (src, char) => {
+    exports.oxmysql.execute("SELECT * FROM `houses` WHERE `owner_id`=?", [char.id], (rows) => {
+      playerHouses.set(src, rows || []);
+      emitNet("housing:receiveHouses", src, rows || []);
+    });
+  });
+  on("playerDropped", () => {
+    playerHouses.delete(source);
+  });
+  onNet("housing:requestHouses", () => {
+    emitNet("housing:receiveHouses", source, playerHouses.get(source) || []);
+  });
+  onNet("housing:setFurniture", (houseId, furniture) => {
+    var _a;
+    const player = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(source);
+    if (!(player == null ? void 0 : player.character)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `houses` SET `furniture`=? WHERE `id`=? AND `owner_id`=?", [JSON.stringify(furniture), houseId, player.character.id]);
+  });
+  exports("GetPlayerHouses", (src) => playerHouses.get(src) || []);
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Housing loaded.`);
+    }
+  });
+})();

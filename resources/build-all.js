@@ -98,10 +98,11 @@ if (!onlyNui) {
 // 2. Validate and Build NUI Interfaces
 // ----------------------------------------------------
 if (!onlyScripts) {
-  if (forceBuild || onlyNui) {
+  if (forceBuild || onlyNui || doObfuscate) {
     console.log(`\n[2/2] Running Complete NUI Build Pipeline (Vite + CSS + Assets)...`);
     try {
-      execSync("node build-nui.js", { cwd: base, stdio: "inherit" });
+      const nuiCmd = "node build-nui.js" + (doObfuscate ? " --obfuscate" : "");
+      execSync(nuiCmd, { cwd: base, stdio: "inherit" });
     } catch (err) {
       console.error("NUI build encountered an error:", err.message);
     }

@@ -1,1 +1,41 @@
-function a0_0x3ef0(_0x3f75e0,_0x1aa955){_0x3f75e0=_0x3f75e0-0x1ce;const _0x38e066=a0_0x38e0();let _0x3ef098=_0x38e066[_0x3f75e0];if(a0_0x3ef0['jeFFqn']===undefined){var _0x453538=function(_0x2bc0e2){const _0x474cfd='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x454d3a='',_0x257dc1='';for(let _0x9261c3=0x0,_0x2e3f52,_0x2957f3,_0x4ea7b2=0x0;_0x2957f3=_0x2bc0e2['charAt'](_0x4ea7b2++);~_0x2957f3&&(_0x2e3f52=_0x9261c3%0x4?_0x2e3f52*0x40+_0x2957f3:_0x2957f3,_0x9261c3++%0x4)?_0x454d3a+=String['fromCharCode'](0xff&_0x2e3f52>>(-0x2*_0x9261c3&0x6)):0x0){_0x2957f3=_0x474cfd['indexOf'](_0x2957f3);}for(let _0x43ff5e=0x0,_0x3c1eeb=_0x454d3a['length'];_0x43ff5e<_0x3c1eeb;_0x43ff5e++){_0x257dc1+='%'+('00'+_0x454d3a['charCodeAt'](_0x43ff5e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x257dc1);};a0_0x3ef0['nagMsh']=_0x453538,a0_0x3ef0['JallzS']={},a0_0x3ef0['jeFFqn']=!![];}const _0x446bd3=_0x38e066[0x0];a0_0x3ef0['oUhPel']!==_0x446bd3&&(a0_0x3ef0['JallzS']={},a0_0x3ef0['oUhPel']=_0x446bd3);const _0x230c9a=a0_0x3ef0['JallzS'][_0x3f75e0];return _0x230c9a===undefined?(_0x3ef098=a0_0x3ef0['nagMsh'](_0x3ef098),a0_0x3ef0['JallzS'][_0x3f75e0]=_0x3ef098):_0x3ef098=_0x230c9a,_0x3ef098;}function a0_0x38e0(){const _0x5df72a=['xsbdCMLTzsbSB2fKzwqU','mJm3m2r5Aun2uq','y3jPBwu6AgvPC3rfBMrLza','qwrKq2fSBa','vwzysum','mtuXnKzdqxbqtW','Bw1svKq','igLUihbYB2DYzxnZ','mtuWotzYEKTyyvy','mtm0nJa4ofDpBwrhAq','zwfpAee','AgfZ','ndK3odG5mgHrB3f2Ca','BKTWChC','zgLZCgf0y2G','sxnizwLZDefJDgL2zq','ugjYBeO','Bg9N','C2v0','y3jPBwu6AgvPC3rtDgfYDgvK','AKzyCeu','nJCYodq5EKPTru1L','ntiWnef6uefvBW','rLPqvw8','zgvSzxrL','v2XyBfu','qLvSEKu','tejHrMy','mJC4u09pD3fi','BM93','ALPLEuO','mtfhvuDvCuS','B25szxnVDxjJzvn0yxj0','v1joA2m','mtKZmZm0mw5lwLvbrq','ndGZnwfvt1vVtW'];a0_0x38e0=function(){return _0x5df72a;};return a0_0x38e0();}(function(stringArrayFunction,comparisonValue){const _0x1df4da=a0_0x3ef0,_0x9931ec=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x1df4da(0x1de))/0x1*(-parseInt(_0x1df4da(0x1d8))/0x2)+parseInt(_0x1df4da(0x1e4))/0x3+-parseInt(_0x1df4da(0x1eb))/0x4*(-parseInt(_0x1df4da(0x1e5))/0x5)+-parseInt(_0x1df4da(0x1ef))/0x6+-parseInt(_0x1df4da(0x1e7))/0x7*(parseInt(_0x1df4da(0x1ee))/0x8)+parseInt(_0x1df4da(0x1d7))/0x9+-parseInt(_0x1df4da(0x1ce))/0xa*(parseInt(_0x1df4da(0x1e1))/0xb);if(expression===comparisonValue)break;else _0x9931ec['push'](_0x9931ec['shift']());}catch(_0x3b6c70){_0x9931ec['push'](_0x9931ec['shift']());}}}(a0_0x38e0,0x6d297));;(function(){const _0x47d0e9=a0_0x3ef0,_0xcd6307={'FZPUo':function(_0x4e7620,_0x579c45,_0x4780c0,_0x796c32){return _0x4e7620(_0x579c45,_0x4780c0,_0x796c32);},'UfXIC':'crime:heistActive','LBaFf':_0x47d0e9(0x1d5),'mmRVD':function(_0x54688f,_0x106ff2,_0x427f98,_0x430fc7,_0x229f56){return _0x54688f(_0x106ff2,_0x427f98,_0x430fc7,_0x229f56);},'jpkBb':_0x47d0e9(0x1e8),'zAAVx':function(_0x24923c,_0x4131f2){return _0x24923c==_0x4131f2;},'PbrlJ':function(_0x516356,_0x59025d){return _0x516356+_0x59025d;},'jFXpE':_0x47d0e9(0x1ed),'MmIWe':function(_0x8e13b7,_0x645ecf){return _0x8e13b7===_0x645ecf;},'WRNkc':function(_0x3f5620){return _0x3f5620();},'eaOhA':function(_0x3e6417,_0x558404,_0x1ff0b4){return _0x3e6417(_0x558404,_0x1ff0b4);},'jZeyJ':'crime:endHeist','nKppw':function(_0x2ede71,_0x32674a,_0x5012ed){return _0x2ede71(_0x32674a,_0x5012ed);},'BUlzE':'crime:alertPolice','WlXlU':function(_0x131717,_0x67bd38,_0xd7fb05){return _0x131717(_0x67bd38,_0xd7fb05);},'WVBhT':_0x47d0e9(0x1e2)},resourceName=_0xcd6307[_0x47d0e9(0x1e3)](GetCurrentResourceName),_0x359da9=new Map();_0xcd6307['eaOhA'](onNet,'crime:startHeist',(_0x4feecb,_0x266ee4)=>{const _0x463eeb=_0x47d0e9,_0x1d1725=source;if(_0x359da9[_0x463eeb(0x1f1)](_0x4feecb)){_0xcd6307['FZPUo'](emitNet,_0xcd6307[_0x463eeb(0x1ea)],_0x1d1725,_0x4feecb);return;}_0x359da9[_0x463eeb(0x1d4)](_0x4feecb,{'src':_0x1d1725,'data':_0x266ee4,'startTime':Date[_0x463eeb(0x1df)](),'players':[_0x1d1725]}),_0xcd6307[_0x463eeb(0x1d9)](emitNet,_0xcd6307[_0x463eeb(0x1dd)],_0x1d1725,_0x4feecb),_0xcd6307[_0x463eeb(0x1ec)](emit,_0xcd6307[_0x463eeb(0x1dd)],_0x1d1725,_0x4feecb,_0x266ee4);}),_0xcd6307[_0x47d0e9(0x1f0)](onNet,_0xcd6307[_0x47d0e9(0x1e0)],(_0x18b696,_0x4e9689)=>{const _0x1b6aff=_0x47d0e9;_0x359da9[_0x1b6aff(0x1f1)](_0x18b696)&&(_0x359da9[_0x1b6aff(0x1da)](_0x18b696),emit(_0xcd6307['jpkBb'],_0x18b696,_0x4e9689));}),_0xcd6307[_0x47d0e9(0x1cf)](onNet,_0xcd6307[_0x47d0e9(0x1dc)],(location,_0x163104,_0x1d7352)=>{const _0x46d975=_0x47d0e9;var _0x408f36;_0xcd6307['zAAVx'](_0x408f36=exports[_0x46d975(0x1d0)],null)?void 0x0:_0x408f36[_0x46d975(0x1e9)]({'type':_0x163104,'location':location,'priority':_0x1d7352||0x2,'description':_0xcd6307[_0x46d975(0x1d2)](_0x163104,_0xcd6307[_0x46d975(0x1d6)])});}),exports(_0x47d0e9(0x1d1),_0x3a08b4=>_0x359da9[_0x47d0e9(0x1f1)](_0x3a08b4)),_0xcd6307[_0x47d0e9(0x1db)](on,_0xcd6307['WVBhT'],_0x307943=>{const _0x34dec9=_0x47d0e9;_0xcd6307['MmIWe'](_0x307943,resourceName)&&console[_0x34dec9(0x1d3)]('['+resourceName+_0x34dec9(0x1e6));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const activeCrimes = /* @__PURE__ */ new Map();
+  onNet("crime:startHeist", (heistType, data) => {
+    const src = source;
+    if (activeCrimes.has(heistType)) {
+      emitNet("crime:heistActive", src, heistType);
+      return;
+    }
+    activeCrimes.set(heistType, {
+      src,
+      data,
+      startTime: Date.now(),
+      players: [src]
+    });
+    emitNet("crime:heistStarted", src, heistType);
+    emit("crime:heistStarted", src, heistType, data);
+  });
+  onNet("crime:endHeist", (heistType, success) => {
+    if (activeCrimes.has(heistType)) {
+      activeCrimes.delete(heistType);
+      emit("crime:heistEnded", heistType, success);
+    }
+  });
+  onNet("crime:alertPolice", (location, type, priority) => {
+    var _a;
+    (_a = exports.dispatch) == null ? void 0 : _a.AddCall({
+      type,
+      location,
+      priority: priority || 2,
+      description: type + " in progress"
+    });
+  });
+  exports("IsHeistActive", (type) => activeCrimes.has(type));
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Crime loaded.`);
+    }
+  });
+})();

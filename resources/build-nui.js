@@ -11,6 +11,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const RESOURCES_DIR = path.resolve(__dirname);
+const doObfuscate = process.argv.includes('--obfuscate');
+const obfuscator = doObfuscate ? require('./obfuscate') : null;
 const localVite = path.join(RESOURCES_DIR, 'node_modules', '.bin', 'vite.cmd');
 const rootVite = path.join(path.dirname(RESOURCES_DIR), 'node_modules', '.bin', 'vite.cmd');
 const VITE_BIN = fs.existsSync(localVite) ? localVite : rootVite;
@@ -48,12 +50,6 @@ function processResource(webDir) {
   // Skip standalone audio or precompiled system UI resources
   if (resName === 'np-fiber') {
     return { success: true, resName, skipped: true, reason: 'Plain HTML/Audio player' };
-  }
-  if (resName === 'np-ui') {
-    const hasPrecompiled = fs.existsSync(path.join(resDir, 'build', 'index.html')) && fs.existsSync(path.join(resDir, 'build', 'assets', 'style-f4774cce.css'));
-    if (hasPrecompiled) {
-      return { success: true, resName, hasGeneratedCss: true, skipped: true, reason: 'Complete Precompiled UI with full CSS' };
-    }
   }
   if (!fs.existsSync(path.join(srcDir, 'App.tsx')) && !fs.existsSync(path.join(srcDir, 'App.ts')) && !fs.existsSync(path.join(srcDir, 'App.jsx'))) {
     const fxmanifest = path.join(resDir, 'fxmanifest.lua');
@@ -179,7 +175,7 @@ function processResource(webDir) {
       env: { ...process.env, VITE_CONFIG_NATIVE_IGNORE_WARNING: 'true' }
     });
 
-    // Clean obsolete duplicate index-* files and check CSS
+    // Clean obsolete duplicate index-* files, old hashed files, and ensure unhashed assets
     let hasGeneratedCss = false;
     if (fs.existsSync(targetAssetsDir)) {
       const outIndexHtml = path.join(path.dirname(targetAssetsDir), 'index.html');
@@ -192,9 +188,41 @@ function processResource(webDir) {
 
       const builtAssets = fs.readdirSync(targetAssetsDir);
       for (const f of builtAssets) {
-        if (f.startsWith('index-') && (f.endsWith('.js') || f.endsWith('.css'))) {
+        if (/-[0-9a-f]{8}\./i.test(f)) {
+          try { fs.unlinkSync(path.join(targetAssetsDir, f)); } catch(e) {}
+        } else if (f.startsWith('index-') && (f.endsWith('.js') || f.endsWith('.css'))) {
           if (activeIndexFiles.size > 0 && !activeIndexFiles.has(f)) {
             try { fs.unlinkSync(path.join(targetAssetsDir, f)); } catch(e) {}
+          }
+        }
+      }
+
+      // Ensure v-packages.js exists if present in source
+      const srcVPackages = path.join(srcDir, 'v-packages.js');
+      const targetVPackages = path.join(targetAssetsDir, 'v-packages.js');
+      if (fs.existsSync(srcVPackages) && !fs.existsSync(targetVPackages)) {
+        try {
+          fs.copyFileSync(srcVPackages, targetVPackages);
+        } catch (e) {}
+      }
+
+      // Ensure vendor.js exists for tablet
+      if (resName === 'tablet') {
+        const targetVendor = path.join(targetAssetsDir, 'vendor.js');
+        if (!fs.existsSync(targetVendor)) {
+          try {
+            fs.writeFileSync(targetVendor, "export * from './v-packages.js';\n", 'utf8');
+          } catch(e) {}
+        }
+      }
+
+      // Post-obfuscate all JS assets if requested
+      if (doObfuscate && obfuscator) {
+        for (const f of fs.readdirSync(targetAssetsDir)) {
+          if (f.endsWith('.js') && !f.endsWith('.map')) {
+            try {
+              obfuscator.obfuscateFile(path.join(targetAssetsDir, f));
+            } catch (e) {}
           }
         }
       }
