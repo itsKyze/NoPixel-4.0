@@ -324,7 +324,7 @@ body {
   background-repeat: no-repeat;
 }
 ._death_64xds_1 ._poly_64xds_14 {
-  background-image: url(./poly-5d9e479d.svg);
+  background-image: url(./poly.svg);
   background-position: center 7vh;
   background-repeat: no-repeat;
   display: flex;
@@ -973,7 +973,7 @@ body {
   width: 3.7vh;
   height: 91.48vh;
   flex-shrink: 0;
-  background-image: url(./healthLines-d80e1eb9.svg);
+  background-image: url(./healthLines.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

@@ -163,7 +163,7 @@ body {
 }
 @font-face {
   font-family: Gilroy;
-  src: url(./Gilroy-Regular-29d02f71.ttf);
+  src: url(./Gilroy-Regular.ttf);
 }
 ._App_etcaw_1 {
   position: absolute;
@@ -189,7 +189,7 @@ body {
       rgba(38, 42, 60, 0.4) 90%,
       rgba(34, 37, 48, 0.84) 100%
     ),
-    url(./mainBg-b3ff6685.png);
+    url(./mainBg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -447,7 +447,7 @@ body {
       rgba(0, 0, 0, 0.55) 0%,
       rgba(0, 0, 0, 0.22) 100%
     ),
-    url(./optionBg-230bbccf.svg);
+    url(./optionBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -463,7 +463,7 @@ body {
       rgba(0, 248, 185, 0.55) 0%,
       rgba(0, 248, 185, 0.22) 100%
     ),
-    url(./optionBg_active-9271d8f5.svg);
+    url(./optionBg_active.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -707,7 +707,7 @@ input[type="range"]::-webkit-slider-runnable-track {
       rgba(0, 0, 0, 0.55) 0%,
       rgba(0, 0, 0, 0.22) 100%
     ),
-    url(./optionBg-230bbccf.svg);
+    url(./optionBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -724,7 +724,7 @@ input[type="range"]::-webkit-slider-runnable-track {
       rgba(0, 248, 185, 0.55) 0%,
       rgba(0, 248, 185, 0.22) 100%
     ),
-    url(./optionBg_active-9271d8f5.svg);
+    url(./optionBg_active.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

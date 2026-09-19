@@ -3060,7 +3060,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   width: 100%;
   height: 100%;
   background:
-    url(./background-59760042.svg),
+    url(./background.svg),
     radial-gradient(
       94.99% 94.99% at 50% 5.01%,
       #121212 0%,
@@ -3297,7 +3297,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -webkit-backdrop-filter: blur(calc(0.092592592vh * 10));
   backdrop-filter: blur(calc(0.092592592vh * 10));
   background:
-    url(./background-59760042.svg),
+    url(./background.svg),
     radial-gradient(
       94.99% 94.99% at 50% 5.01%,
       #121212 0%,
@@ -4301,7 +4301,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./main-bg-e3ae0bfb.png);
+  background-image: url(./main-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4849,7 +4849,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 210);
   height: calc(0.092592592vh * 279);
   flex-shrink: 0;
-  background-image: url(./fingerprint-fb2fa6d0.svg);
+  background-image: url(./fingerprint.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -4901,7 +4901,7 @@ input::-webkit-inner-spin-button {
   padding: calc(0.092592592vh * 10);
   outline: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.13);
   background:
-    url(./second-bg-f4c85b9f.svg),
+    url(./second-bg.svg),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -4972,7 +4972,7 @@ input::-webkit-inner-spin-button {
   height: calc(0.092592592vh * 513);
   flex-shrink: 0;
   background:
-    url(./first-bg-6f17015d.svg),
+    url(./first-bg.svg),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5087,7 +5087,7 @@ input::-webkit-inner-spin-button {
 }
 ._container_13gl5_1._turf_13gl5_19 {
   background:
-    url(./turf-afacc0c1.png),
+    url(./turf.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5100,7 +5100,7 @@ input::-webkit-inner-spin-button {
 ._container_13gl5_1._black-market_13gl5_25 {
   height: calc(0.092592592vh * 261);
   background:
-    url(./black-market-94625945.png),
+    url(./black-market.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5113,7 +5113,7 @@ input::-webkit-inner-spin-button {
 ._container_13gl5_1._storage_13gl5_32 {
   height: calc(0.092592592vh * 261);
   background:
-    url(./storage-ce691e0b.png),
+    url(./storage.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5126,7 +5126,7 @@ input::-webkit-inner-spin-button {
 ._container_13gl5_1._members_13gl5_39 {
   height: calc(0.092592592vh * 91);
   background:
-    url(./members-557f11fc.png),
+    url(./members.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5139,7 +5139,7 @@ input::-webkit-inner-spin-button {
 ._container_13gl5_1._contracts_13gl5_46 {
   height: calc(0.092592592vh * 134);
   background:
-    url(./contracts-195b982c.png),
+    url(./contracts.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5152,7 +5152,7 @@ input::-webkit-inner-spin-button {
 ._container_13gl5_1._control-panel_13gl5_53 {
   height: calc(0.092592592vh * 149);
   background:
-    url(./control-panel-41b07b0f.png),
+    url(./control-panel.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5166,7 +5166,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 187);
   height: calc(0.092592592vh * 261);
   background:
-    url(./roadmap-47519801.png),
+    url(./roadmap.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5179,7 +5179,7 @@ input::-webkit-inner-spin-button {
 ._container_13gl5_1._weed-stats_13gl5_68 {
   height: calc(0.092592592vh * 325);
   background:
-    url(./weed-stats-ce2875ce.png),
+    url(./weed-stats.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5193,7 +5193,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 187);
   height: calc(0.092592592vh * 325);
   background:
-    url(./hotruns-0f5ca089.png),
+    url(./hotruns.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -5207,7 +5207,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 187);
   height: calc(0.092592592vh * 216);
   background:
-    url(./contacts-7aa6ed8e.png),
+    url(./contacts.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -6629,7 +6629,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 310);
   height: calc(0.092592592vh * 379);
   flex-shrink: 0;
-  background-image: url(./fingerprint-fb2fa6d0.svg);
+  background-image: url(./fingerprint.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -6826,7 +6826,7 @@ input::-webkit-inner-spin-button {
   flex-shrink: 0;
   border: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.13);
   background:
-    url(./contractBg-d38bcff4.png),
+    url(./contractBg.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -6905,7 +6905,7 @@ input::-webkit-inner-spin-button {
   padding: calc(0.092592592vh * 10);
   border: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.13);
   background:
-    url(./bg-6b12abd4.png),
+    url(./bg.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -6919,7 +6919,7 @@ input::-webkit-inner-spin-button {
 ._container_1qf4x_1._active_1qf4x_18 {
   border: calc(0.092592592vh * 1) solid rgba(0, 248, 185, 0.13);
   background:
-    url(./bg-active-200b5860.png),
+    url(./bg-active.png),
     radial-gradient(
       100% 100% at 50% 0%,
       rgba(0, 248, 185, 0.15) 0%,
@@ -7121,7 +7121,7 @@ input::-webkit-inner-spin-button {
 ._antivirus_gldd4_83 ._shield_gldd4_144 {
   width: calc(0.092592592vh * 111);
   height: calc(0.092592592vh * 111);
-  background: url(./shield-02f6ba5a.png);
+  background: url(./shield.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -7131,7 +7131,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   width: calc(0.092592592vh * 111);
   height: calc(0.092592592vh * 111);
-  background: url(./shield-02f6ba5a.png);
+  background: url(./shield.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -10057,7 +10057,7 @@ input::-webkit-inner-spin-button {
   grid-template-rows: calc(0.092592592vh * 80) 1fr;
   padding: calc(0.092592592vh * 30) calc(0.092592592vh * 50);
   grid-template-columns: calc(0.092592592vh * 130) 1fr;
-  background-image: url(./background-1794767a.svg);
+  background-image: url(./background.svg);
   background-position: center;
   background-size: cover;
   grid-template-areas: "Header Header Header" "Nav Remaining Remaining" "Nav Remaining Remaining";
@@ -10403,7 +10403,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   border-radius: calc(0.092592592vh * 9);
   border: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.07);
-  background: url(./blockBg-521ab9a0.svg), #0a0a14;
+  background: url(./blockBg.svg), #0a0a14;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
@@ -10842,7 +10842,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(./loadingBg-b630ed7f.svg);
+  background-image: url(./loadingBg.svg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -10859,7 +10859,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-image: url(./areaBg-156ba636.svg);
+  background-image: url(./areaBg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0 calc(0.092592592vh * -50);
@@ -10945,7 +10945,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   border-radius: calc(0.092592592vh * 9);
   border: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.07);
-  background: url(./blockBg-521ab9a0.svg), #0a0a14;
+  background: url(./blockBg.svg), #0a0a14;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
@@ -10993,7 +10993,7 @@ input::-webkit-inner-spin-button {
   line-height: normal;
 }
 ._business_9kngg_82._pending_9kngg_139 {
-  background: url(./disabledBg-71de91a9.svg), rgba(22, 22, 22, 0.44);
+  background: url(./disabledBg.svg), rgba(22, 22, 22, 0.44);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
@@ -11008,7 +11008,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 ._business_9kngg_82:not(._pending_9kngg_139):hover {
-  background: url(./blockBg-521ab9a0.svg), #20202d;
+  background: url(./blockBg.svg), #20202d;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
@@ -11020,7 +11020,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./bg-98a42e56.svg);
+  background-image: url(./bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11094,7 +11094,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   border-radius: calc(0.092592592vh * 9);
   border: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.07);
-  background: url(./blockBg-521ab9a0.svg), #0a0a14;
+  background: url(./blockBg.svg), #0a0a14;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
@@ -11217,7 +11217,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 51);
   height: calc(0.092592592vh * 51);
   flex-shrink: 0;
-  background-image: url(./contacts-icon-d58beb8e.png);
+  background-image: url(./contacts-icon.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11256,7 +11256,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: url(./most-rep-bg-7b3f3d2c.svg);
+  background: url(./most-rep-bg.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11335,7 +11335,7 @@ input::-webkit-inner-spin-button {
 .contacts-list-header .icon {
   width: calc(0.092592592vh * 40);
   height: calc(0.092592592vh * 31);
-  background-image: url(./book-59db1ae2.svg);
+  background-image: url(./book.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -11373,7 +11373,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 18);
   height: calc(0.092592592vh * 18);
   flex-shrink: 0;
-  background-image: url(./search-6ac48883.svg);
+  background-image: url(./search.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -11867,7 +11867,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   background:
-    url(./main-bg-hl-de397315.svg),
+    url(./main-bg-hl.svg),
     radial-gradient(100% 100% at 50% 0%, #051f18 0%, #00120d 100%);
   background-repeat: no-repeat;
   background-position: start;
@@ -11878,7 +11878,7 @@ input::-webkit-inner-spin-button {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url(./mainBg-22366c0d.png);
+  background-image: url(./mainBg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12049,7 +12049,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 86);
   height: calc(0.092592592vh * 86);
   flex-shrink: 0;
-  background-image: url(./contacts-09ac583f.png);
+  background-image: url(./contacts.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12068,7 +12068,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 86);
   height: calc(0.092592592vh * 86);
   flex-shrink: 0;
-  background-image: url(./hire_contacts-7ac5d442.png);
+  background-image: url(./hire_contacts.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12087,7 +12087,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 86);
   height: calc(0.092592592vh * 86);
   flex-shrink: 0;
-  background-image: url(./turf-4eece9d6.png);
+  background-image: url(./turf.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12106,7 +12106,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 86);
   height: calc(0.092592592vh * 86);
   flex-shrink: 0;
-  background-image: url(./strain-c25464f2.png);
+  background-image: url(./strain.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -12126,7 +12126,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 120);
   height: calc(0.092592592vh * 120);
   flex-shrink: 0;
-  background-image: url(./members-c3db135a.png);
+  background-image: url(./members.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12141,7 +12141,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 100);
   height: calc(0.092592592vh * 100);
   flex-shrink: 0;
-  background-image: url(./announcements-b0407636.png);
+  background-image: url(./announcements.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12153,7 +12153,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 120);
   height: calc(0.092592592vh * 120);
   flex-shrink: 0;
-  background-image: url(./events-e89efb6a.png);
+  background-image: url(./events.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12203,7 +12203,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 188);
   height: calc(0.092592592vh * 76);
   flex-shrink: 0;
-  background-image: url(./robbery-9800d848.png);
+  background-image: url(./robbery.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -12213,7 +12213,7 @@ input::-webkit-inner-spin-button {
   width: calc(0.092592592vh * 66);
   height: calc(0.092592592vh * 56);
   flex-shrink: 0;
-  background-image: url(./green-element-9c698000.svg);
+  background-image: url(./green-element.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -12388,7 +12388,7 @@ input::-webkit-inner-spin-button {
   justify-content: flex-end;
   align-items: center;
   border: 0.09259vh solid rgba(255, 255, 255, 0.15);
-  background-image: url(./inviteMember-b37f1fa4.png);
+  background-image: url(./inviteMember.png);
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
@@ -12629,7 +12629,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./bgInput-dbb8ab9a.svg);
+  background-image: url(./bgInput.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -12951,7 +12951,7 @@ textarea {
   justify-content: flex-end;
   align-items: center;
   border: 0.09259vh solid rgba(255, 255, 255, 0.15);
-  background-image: url(./inviteMember-b37f1fa4.png);
+  background-image: url(./inviteMember.png);
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
@@ -13019,7 +13019,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   border-radius: calc(0.092592592vh * 2);
-  background: url(./contact-bg-e11f4a8f.svg), rgba(255, 255, 255, 0.05);
+  background: url(./contact-bg.svg), rgba(255, 255, 255, 0.05);
   background-size: 70% 40%;
   background-repeat: no-repeat;
   background-position: top;
@@ -13239,7 +13239,7 @@ textarea {
 ._container_o68yy_1 {
   width: calc(0.092592592vh * 391);
   height: 100%;
-  background: url(./drawer-bg-8adaf926.svg), #041d17;
+  background: url(./drawer-bg.svg), #041d17;
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -13519,7 +13519,7 @@ textarea {
   align-items: center;
   background-image:
     radial-gradient(50% 50% at 50% 50%, #030a10 0%, rgba(3, 10, 16, 0.95) 100%),
-    url(./tablet-bg-321ef0e9.png);
+    url(./tablet-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13608,7 +13608,7 @@ textarea {
   align-items: center;
   background-image:
     radial-gradient(50% 50% at 50% 50%, #030a10 0%, rgba(3, 10, 16, 0.95) 100%),
-    url(./tablet-bg-321ef0e9.png);
+    url(./tablet-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13927,7 +13927,7 @@ textarea {
   height: calc(0.092592592vh * 550);
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 2);
-  background: url(./contact-bg-e11f4a8f.svg), rgba(255, 255, 255, 0.03);
+  background: url(./contact-bg.svg), rgba(255, 255, 255, 0.03);
   background-size: 70% 70%;
   background-repeat: no-repeat;
   background-position: center calc(0.092592592vh * -150);
@@ -14268,7 +14268,7 @@ textarea {
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 2);
   border: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.15);
-  background: url(./event-bg-f5aa7449.svg), rgba(255, 255, 255, 0.05);
+  background: url(./event-bg.svg), rgba(255, 255, 255, 0.05);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14289,7 +14289,7 @@ textarea {
   margin-bottom: calc(0.092592592vh * 28);
 }
 ._container_u71un_1._active_u71un_25 {
-  background: url(./event-bg-active-4307d27c.svg), rgba(0, 248, 185, 0.05);
+  background: url(./event-bg-active.svg), rgba(0, 248, 185, 0.05);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14541,7 +14541,7 @@ textarea {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(./loadingBg-b630ed7f.svg);
+  background-image: url(./loadingBg.svg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -16009,7 +16009,7 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(./ellipse-edd34b82.svg), url(./bg-daaf28c1.png);
+  background-image: url(./ellipse.svg), url(./bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16060,7 +16060,7 @@ textarea {
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 2);
   background:
-    url(./heistBg-57a9f57a.svg),
+    url(./heistBg.svg),
     linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.05) 0%,
@@ -16214,7 +16214,7 @@ textarea {
   width: 100%;
   height: calc(0.092592592vh * 430);
   flex-shrink: 0;
-  background-image: url(./minigame-bg-2523a637.png);
+  background-image: url(./minigame-bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16770,22 +16770,22 @@ textarea {
   height: 60%;
   flex-shrink: 0;
   margin-top: calc(0.092592592vh * -35);
-  background-image: url(./1-9f5934da.png);
+  background-image: url(./1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 ._container_1a7q9_1 ._box_1a7q9_11 ._image_1a7q9_22._image2_1a7q9_32 {
-  background-image: url(./2-b61886c1.png);
+  background-image: url(./2.png);
 }
 ._container_1a7q9_1 ._box_1a7q9_11 ._image_1a7q9_22._image3_1a7q9_35 {
-  background-image: url(./3-e779ba26.png);
+  background-image: url(./3.png);
 }
 ._container_1a7q9_1 ._box_1a7q9_11 ._image_1a7q9_22._image4_1a7q9_38 {
-  background-image: url(./4-b49c0aa6.png);
+  background-image: url(./4.png);
 }
 ._container_1a7q9_1 ._box_1a7q9_11 ._image_1a7q9_22._image5_1a7q9_41 {
-  background-image: url(./5-3a044945.png);
+  background-image: url(./5.png);
 }
 ._container_1a7q9_1 ._box_1a7q9_11 ._tag_1a7q9_44 {
   width: calc(0.092592592vh * 50);
@@ -17147,7 +17147,7 @@ textarea {
   height: calc(0.092592592vh * 150);
   flex-shrink: 0;
   background:
-    url(./noteBg-b5c0c7cd.svg),
+    url(./noteBg.svg),
     radial-gradient(
       93.82% 93.82% at 50% 6.18%,
       rgba(255, 255, 255, 0.07) 0%,
@@ -17198,7 +17198,7 @@ textarea {
 ._container_narwz_1 ._note_narwz_24:hover {
   border: calc(0.092592592vh * 1) solid rgba(0, 248, 186, 0.4941176471);
   background:
-    url(./noteBg-b5c0c7cd.svg),
+    url(./noteBg.svg),
     radial-gradient(
       62.19% 62.19% at 50% 50%,
       rgba(0, 248, 185, 0.25) 0%,
@@ -17354,7 +17354,7 @@ textarea {
 ._container_1g380_1 {
   width: 100%;
   height: 100%;
-  background: url(./bg-0356bf9d.png), #05051f;
+  background: url(./bg.png), #05051f;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18374,7 +18374,7 @@ textarea {
 ._container_dbkes_1 ._main_dbkes_11 {
   width: calc(0.092592592vh * 650);
   height: calc(0.092592592vh * 479);
-  background-image: url(./mainBg-e63b605a.svg);
+  background-image: url(./mainBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -18401,7 +18401,7 @@ textarea {
   width: calc(0.092592592vh * 90);
   height: calc(0.092592592vh * 90);
   flex-shrink: 0;
-  background-image: url(./sniff-icon-dd4e7511.png);
+  background-image: url(./sniff-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -18412,7 +18412,7 @@ textarea {
   position: absolute;
   width: calc(0.092592592vh * 90);
   height: calc(0.092592592vh * 90);
-  background-image: url(./sniff-icon-dd4e7511.png);
+  background-image: url(./sniff-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -18439,7 +18439,7 @@ textarea {
 ._container_1cjej_1 {
   width: 100%;
   height: calc(0.092592592vh * 479);
-  background-image: url(./mainBg-e63b605a.svg);
+  background-image: url(./mainBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -18467,7 +18467,7 @@ textarea {
   width: calc(0.092592592vh * 90);
   height: calc(0.092592592vh * 90);
   flex-shrink: 0;
-  background-image: url(./sniff-icon-dd4e7511.png);
+  background-image: url(./sniff-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -18478,7 +18478,7 @@ textarea {
   position: absolute;
   width: calc(0.092592592vh * 90);
   height: calc(0.092592592vh * 90);
-  background-image: url(./sniff-icon-dd4e7511.png);
+  background-image: url(./sniff-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -18520,7 +18520,7 @@ textarea {
   width: calc(0.092592592vh * 152);
   height: calc(0.092592592vh * 151);
   flex-shrink: 0;
-  background-image: url(./dot-circle-932eab65.svg);
+  background-image: url(./dot-circle.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: cover;
@@ -18640,7 +18640,7 @@ textarea {
 ._container_1z11b_1 {
   width: 100%;
   height: calc(0.092592592vh * 479);
-  background-image: url(./mainBg-e63b605a.svg);
+  background-image: url(./mainBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -18654,7 +18654,7 @@ textarea {
   width: calc(0.092592592vh * 63);
   height: calc(0.092592592vh * 63);
   flex-shrink: 0;
-  background-image: url(./sniff-icon-dd4e7511.png);
+  background-image: url(./sniff-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -18665,7 +18665,7 @@ textarea {
   position: absolute;
   width: calc(0.092592592vh * 63);
   height: calc(0.092592592vh * 63);
-  background-image: url(./sniff-icon-dd4e7511.png);
+  background-image: url(./sniff-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -18731,7 +18731,7 @@ textarea {
   flex-shrink: 0;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
-    url(./minigame-bg-2523a637.png);
+    url(./minigame-bg.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -18833,7 +18833,7 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(./bg-blocked-27e5bf75.png);
+  background-image: url(./bg-blocked.png);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -19020,7 +19020,7 @@ textarea {
   gap: calc(0.092592592vh * 15);
   border-radius: calc(0.092592592vh * 4);
   background:
-    url(./category-bg-ec73ae7c.svg),
+    url(./category-bg.svg),
     radial-gradient(
       654.57% 150.94% at -0.56% -1.89%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -19034,7 +19034,7 @@ textarea {
 ._container_153wj_1 ._category_153wj_9:hover,
 ._container_153wj_1 ._category_153wj_9._active_153wj_27 {
   background:
-    url(./category-bg-ec73ae7c.svg),
+    url(./category-bg.svg),
     radial-gradient(
       654.57% 150.94% at -0.56% -1.89%,
       rgba(0, 248, 185, 0.15) 0%,
@@ -19099,7 +19099,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   border-radius: calc(0.092592592vh * 2);
-  background: url(./contact-bg-e11f4a8f.svg), rgba(255, 255, 255, 0.05);
+  background: url(./contact-bg.svg), rgba(255, 255, 255, 0.05);
   background-size: 70% 40%;
   background-repeat: no-repeat;
   background-position: top;
@@ -19351,7 +19351,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   background:
-    url(./bg-stats-515bb148.svg),
+    url(./bg-stats.svg),
     radial-gradient(
       198.09% 100% at 50.11% 0%,
       rgba(0, 248, 185, 0.2) 0%,
@@ -19417,7 +19417,7 @@ textarea {
   width: 100%;
   height: 100%;
   background:
-    url(./bg-3597611c.svg),
+    url(./bg.svg),
     radial-gradient(100% 100% at 50% 0%, #14604c 0%, #010706 100%);
   background-size: contain;
   background-position: top;
@@ -19430,7 +19430,7 @@ textarea {
 ._container_11s5g_1 ._content_11s5g_13 {
   width: 100%;
   height: 100%;
-  background-image: url(./bg-truck-64dfe948.png);
+  background-image: url(./bg-truck.png);
   background-size: 30% 80%;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -19514,7 +19514,7 @@ textarea {
   width: 100%;
   height: calc(0.092592592vh * 100);
   flex-shrink: 0;
-  background: url(./repBg-3b55e691.svg);
+  background: url(./repBg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;

@@ -1995,43 +1995,43 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 @font-face {
   font-family: retroLand;
-  src: url(./retro-land-mayhem-01405e18.ttf);
+  src: url(./retro-land-mayhem.ttf);
 }
 @font-face {
   font-family: roboto300;
-  src: url(./RobotoCondensed-Light-1ec3d4e4.ttf);
+  src: url(./RobotoCondensed-Light.ttf);
 }
 @font-face {
   font-family: roboto400;
-  src: url(./RobotoCondensed-Regular-04d24249.ttf);
+  src: url(./RobotoCondensed-Regular.ttf);
 }
 @font-face {
   font-family: roboto700;
-  src: url(./RobotoCondensed-Bold-14948aed.ttf);
+  src: url(./RobotoCondensed-Bold.ttf);
 }
 @font-face {
   font-family: gilroy800;
-  src: url(./gilroy-extrabold-f2fa79db.ttf);
+  src: url(./gilroy-extrabold.ttf);
 }
 @font-face {
   font-family: gilroy700;
-  src: url(./gilroy-bold-ed3a99e5.ttf);
+  src: url(./gilroy-bold.ttf);
 }
 @font-face {
   font-family: gilroy600;
-  src: url(./gilroy-semibold-32eb47df.ttf);
+  src: url(./gilroy-semibold.ttf);
 }
 @font-face {
   font-family: gilroy500;
-  src: url(./gilroy-medium-ce8d455b.ttf);
+  src: url(./gilroy-medium.ttf);
 }
 @font-face {
   font-family: gilroy400;
-  src: url(./gilroy-regular-8bbb8f0f.ttf);
+  src: url(./gilroy-regular.ttf);
 }
 @font-face {
   font-family: gilroy300;
-  src: url(./gilroy-thin-0bf559df.ttf);
+  src: url(./gilroy-thin.ttf);
 }
 body {
   margin: 0;

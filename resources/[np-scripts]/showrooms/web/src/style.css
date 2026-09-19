@@ -378,7 +378,7 @@ body {
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 2);
   background:
-    url(./bgVehicle-22652eba.svg),
+    url(./bgVehicle.svg),
     radial-gradient(
       93.82% 93.82% at 50% 6.18%,
       rgba(255, 255, 255, 0.25) 0%,
@@ -450,7 +450,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   flex-shrink: 0;
-  background-image: url(./mock-76febd84.png);
+  background-image: url(./mock.png);
   background-size: calc(0.092592592vh * 250) calc(0.092592592vh * 250);
   background-repeat: no-repeat;
   background-position: center;
@@ -460,7 +460,7 @@ body {
 ._vehicle_19j3g_1:hover,
 ._vehicle_19j3g_1._active_19j3g_80 {
   background:
-    url(./bgVehicle-22652eba.svg),
+    url(./bgVehicle.svg),
     radial-gradient(
       62.19% 62.19% at 50% 50%,
       rgba(0, 248, 185, 0.25) 0%,
@@ -583,7 +583,7 @@ body {
   align-items: center;
   border-radius: calc(0.092592592vh * 4);
   background:
-    url(./bgCategory-6f822f80.svg),
+    url(./bgCategory.svg),
     radial-gradient(
       83.13% 83.13% at 50% 50%,
       rgba(255, 255, 255, 0.15) 0%,
@@ -606,7 +606,7 @@ body {
 ._nav_1jd7y_1 ._category_1jd7y_16._active_1jd7y_38 {
   border: calc(0.092592592vh * 1) solid #00f8b9;
   background:
-    url(./bgCategory-6f822f80.svg),
+    url(./bgCategory.svg),
     radial-gradient(
       62.19% 62.19% at 50% 50%,
       rgba(0, 248, 185, 0.25) 0%,
@@ -976,7 +976,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 2);
   background:
-    url(./categoryBg-f338ce2e.svg),
+    url(./categoryBg.svg),
     radial-gradient(
       93.82% 93.82% at 50% 6.18%,
       rgba(255, 255, 255, 0.07) 0%,
@@ -999,7 +999,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-radius: calc(0.092592592vh * 4);
   border: calc(0.092592592vh * 1) solid #00f8b9;
   background:
-    url(./categoryBg-f338ce2e.svg),
+    url(./categoryBg.svg),
     radial-gradient(
       62.19% 62.19% at 50% 50%,
       rgba(0, 248, 185, 0.25) 0%,
@@ -1101,7 +1101,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: calc(0.092592592vh * 136);
   height: calc(0.092592592vh * 158);
   flex-shrink: 0;
-  background-image: url(./mock-76febd84.png);
+  background-image: url(./mock.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

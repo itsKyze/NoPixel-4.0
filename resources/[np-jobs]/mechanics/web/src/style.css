@@ -194,7 +194,7 @@ p {
   border-radius: calc(0.092592592vh * 6);
   width: calc(0.092592592vh * 1200);
   height: calc(0.092592592vh * 850);
-  background-image: url(./bg-e41f0a11.svg);
+  background-image: url(./bg.svg);
   background-position: center;
   background-size: cover;
 }

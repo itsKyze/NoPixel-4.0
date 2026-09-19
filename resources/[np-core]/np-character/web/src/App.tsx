@@ -1,5 +1,5 @@
 import "./style.css";
-import { N as _0x23c8df } from "./v-packages-6cb79519.js";
+import { N as _0x23c8df } from "./v-packages.js";
 (function () {
   const varData_1 = document.createElement("link").relList;
   if (varData_1 && varData_1.supports && varData_1.supports("modulepreload")) {
@@ -1010,7 +1010,7 @@ function Ue(...[_0x124064, _0x1aef91]) {
 const Le = {
   shownId: null
 };
-const Ie = "" + new URL("logo-1bd73db8.svg", import.meta.url).href;
+const Ie = "" + new URL("logo.svg", import.meta.url).href;
 const Re = "_wrapper_fk586_1";
 const Be = "_container_fk586_9";
 const Fe = "_content_fk586_30";

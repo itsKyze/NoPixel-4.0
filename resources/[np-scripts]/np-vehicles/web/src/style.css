@@ -288,7 +288,7 @@
 }
 @font-face {
   font-family: Retro Land Mayhem;
-  src: url(./retro-land-mayhem-01405e18.ttf);
+  src: url(./retro-land-mayhem.ttf);
 }
 body {
   margin: 0;
@@ -377,7 +377,7 @@ input::-webkit-inner-spin-button {
   background-size: contain;
 }
 ._header_1v15i_1 ._icon_1v15i_35._parked_1v15i_42 {
-  background-image: url(./parked-678742fa.svg);
+  background-image: url(./parked.svg);
 }
 ._header_1v15i_1 ._icon_1v15i_35._totalVehicles_1v15i_45 {
   width: 4.0925vh;
@@ -620,7 +620,7 @@ input::-webkit-inner-spin-button {
   width: 7.59vh;
   height: 3.14vh;
   margin-top: 1vh;
-  background-image: url(./plate-2d4da92b.svg);
+  background-image: url(./plate.svg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -781,7 +781,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   border-radius: 1.94vh;
   background:
-    url(./containerBg-60732f23.svg),
+    url(./containerBg.svg),
     radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -992,7 +992,7 @@ input::-webkit-inner-spin-button {
   background-size: contain;
 }
 ._header_1m8ir_1 ._icon_1m8ir_35._parked_1m8ir_42 {
-  background-image: url(./parked-678742fa.svg);
+  background-image: url(./parked.svg);
 }
 ._header_1m8ir_1 ._icon_1m8ir_35._totalVehicles_1m8ir_45 {
   width: 4.0925vh;
@@ -1057,7 +1057,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   border-radius: 1.94vh;
   background:
-    url(./containerBg-60732f23.svg),
+    url(./containerBg.svg),
     radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -1096,7 +1096,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(./sideBg-3b25254d.png);
+  background-image: url(./sideBg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;

@@ -977,10 +977,10 @@ function G(_0xbf4fc5) {
   })();
 }
 be(["click", "mousedown"]);
-const et = "" + new URL("twitter-d21868bf.svg", import.meta.url).href;
-const tt = "" + new URL("youtube-9ba34c37.svg", import.meta.url).href;
-const nt = "" + new URL("store-d7be97ee.png", import.meta.url).href;
-const he = "" + new URL("logo-187456c5.png", import.meta.url).href;
+const et = "" + new URL("twitter.svg", import.meta.url).href;
+const tt = "" + new URL("youtube.svg", import.meta.url).href;
+const nt = "" + new URL("store.png", import.meta.url).href;
+const he = "" + new URL("logo.png", import.meta.url).href;
 function st(_0x54dd87) {
   for (var _0x1f9886 = _0x54dd87.length, _0x2a4c40, _0x6ac27f; _0x1f9886 !== 0;) {
     _0x6ac27f = Math.floor(Math.random() * _0x1f9886);

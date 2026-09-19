@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0x4eb314 } from "./v-packages-6cb79519.js";
+import { N as _0x4eb314 } from "./v-packages.js";
 (function () {
   const _0x392b3c = document.createElement("link").relList;
   if (_0x392b3c && _0x392b3c.supports && _0x392b3c.supports("modulepreload")) {
@@ -1369,7 +1369,7 @@ const S = {
   copy: Rt,
   text: Kt
 };
-const Ut = "" + new URL("clip-7abd6be2.png", import.meta.url).href;
+const Ut = "" + new URL("clip.png", import.meta.url).href;
 const Gt = F("<img>");
 const Vt = F("<div class=\"absolute ml-[-2vh] mt-[40vh] flex flex-col items-center justify-start gap-[1vh]\"><div><div>COPY PAGE");
 const Xt = F("<div class=\"absolute ml-[-2vh] mt-[30vh] flex flex-col items-center justify-start gap-[1vh]\"><div><div>COPY PAGE</div></div><div><div>NEXT PAGE</div></div><div><div>BACK");

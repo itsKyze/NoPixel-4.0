@@ -549,7 +549,7 @@ p {
   background-size: calc(0.092592592vh * 150);
   background-position: center;
   border-radius: calc(0.092592592vh * 3);
-  background-image: url(./ingredient_bg-f373c6be.svg);
+  background-image: url(./ingredient_bg.svg);
   border: calc(0.092592592vh * 2) solid rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
 }
@@ -578,7 +578,7 @@ p {
   ._item_1whit_50._selected_1whit_80 {
   cursor: pointer;
   border-radius: calc(0.092592592vh * 6);
-  background-image: url(./ingredient_bg2-718dc351.svg);
+  background-image: url(./ingredient_bg2.svg);
   border: calc(0.092592592vh * 2) solid rgb(0, 248, 185);
 }
 ._container_1whit_1

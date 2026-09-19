@@ -1,5 +1,5 @@
 import './style.css';
-import { c as _0xd6ba6d, g as _0x1f535c, N as _0x7432b5 } from "./v-packages-869624de.js";
+import { c as _0xd6ba6d, g as _0x1f535c, N as _0x7432b5 } from "./v-packages.js";
 (function () {
   const _0x5cb73a = document.createElement("link").relList;
   if (_0x5cb73a && _0x5cb73a.supports && _0x5cb73a.supports("modulepreload")) {
@@ -1813,10 +1813,10 @@ const Lt = {
   button: pl,
   black: ml
 };
-const We = "" + new URL("position-b2833e24.svg", import.meta.url).href;
-const Do = "" + new URL("plus-8f0075b8.svg", import.meta.url).href;
-const fi = "" + new URL("info-a5606599.svg", import.meta.url).href;
-const No = "" + new URL("join-5986e4ae.svg", import.meta.url).href;
+const We = "" + new URL("position.svg", import.meta.url).href;
+const Do = "" + new URL("plus.svg", import.meta.url).href;
+const fi = "" + new URL("info.svg", import.meta.url).href;
+const No = "" + new URL("join.svg", import.meta.url).href;
 var Ho = {
   exports: {}
 };
@@ -2810,8 +2810,8 @@ const yt = {
   button: El,
   black: zl
 };
-const Gn = "" + new URL("star-4fcd0d91.svg", import.meta.url).href;
-const Te = "" + new URL("tag-301f7cc6.svg", import.meta.url).href;
+const Gn = "" + new URL("star.svg", import.meta.url).href;
+const Te = "" + new URL("tag.svg", import.meta.url).href;
 const so = V("<div><img>");
 const Dl = V("<div><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"white\" d=\"M9 2a1 1 0 0 0-1 1v17c0 1.11.89 2 2 2h5c1.11 0 2-.89 2-2V9c0-1.11-.89-2-2-2h-5V3a1 1 0 0 0-1-1m1 7h5v4h-5V9Z\">");
 const An = V("<div><div><img>");
@@ -3319,8 +3319,8 @@ const qt = {
   button: eu,
   black: iu
 };
-const nu = "" + new URL("vehicle-c8b903c3.svg", import.meta.url).href;
-const ru = "" + new URL("exit-a42c7d62.svg", import.meta.url).href;
+const nu = "" + new URL("vehicle.svg", import.meta.url).href;
+const ru = "" + new URL("exit.svg", import.meta.url).href;
 const ou = V("<div><div><img></div><div><img></div><div><img>");
 const su = V("<div><div><img>");
 const au = V("<div><div><svg width=\"1.11vh\" height=\"1.38vh\" viewBox=\"0 0 12 15\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.45228 0.00711401C4.86418 0.122155 4.56979 0.225633 4.20445 0.445708C3.54635 0.842159 2.9657 1.52551 2.69181 2.22588C2.41102 2.94389 2.36595 3.86691 2.57466 4.62577C2.90811 5.83834 3.91551 6.84815 5.07266 7.12976C6.36268 7.44375 7.65961 7.02103 8.50701 6.01037C9.00359 5.41815 9.2425 4.88658 9.34693 4.14154C9.51425 2.94811 9.13668 1.81628 8.28942 0.971521C7.83868 0.522128 7.34022 0.237842 6.71769 0.0751408C6.53241 0.0267179 6.37117 0.0105183 6.00063 0.00303475C5.7377 -0.00227709 5.49095 -0.000428217 5.45228 0.00711401ZM2.65432 7.28486C1.95787 7.41469 1.39963 7.77337 0.981337 8.35976C0.373715 9.21156 0.0448209 10.4566 0.00632429 12.0506C-0.00669538 12.5896 -0.00107131 12.762 0.0369472 12.989C0.200185 13.9639 0.83514 14.6688 1.78636 14.9312L2.03568 15H6.00063H9.96558L10.2187 14.933C11.0538 14.712 11.6657 14.109 11.908 13.2685C11.977 13.0291 11.9853 12.9485 11.9975 12.4071C12.028 11.0448 11.7812 9.74072 11.3263 8.86101C10.8518 7.94324 10.2193 7.44266 9.33496 7.28495C8.77137 7.18444 8.69356 7.20633 8.03288 7.65158C7.81216 7.80032 7.53037 7.97132 7.40664 8.0316C6.56031 8.44381 5.78677 8.49106 4.95487 8.1813C4.56478 8.03606 4.48306 7.9921 3.98314 7.65851C3.42085 7.28331 3.32178 7.23767 3.07612 7.24061C2.96786 7.24187 2.77805 7.2618 2.65432 7.28486Z\"></div><div class=\"w-full\"></div><div><div><img>");
@@ -14447,7 +14447,7 @@ const Gt = {
   greenText: Eu,
   action: zu
 };
-const qo = "" + new URL("stash-c8e0dda5.svg", import.meta.url).href;
+const qo = "" + new URL("stash.svg", import.meta.url).href;
 const Du = V("<div>No call selected.");
 const Nu = V("<div class=\"flex w-full justify-between\"><div>Call Info</div><select>");
 const Hu = V("<textarea placeholder=\"Enter notes here...\">");

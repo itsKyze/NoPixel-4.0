@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0x405935 } from "./v-packages-6cb79519.js";
+import { N as _0x405935 } from "./v-packages.js";
 (function () {
   const _0x49539a = document.createElement("link").relList;
   if (_0x49539a && _0x49539a.supports && _0x49539a.supports("modulepreload")) {
@@ -20423,8 +20423,8 @@ const m0 = () => {
     return _0x45b73a;
   })();
 };
-const b0 = "" + new URL("escape-btn-655a7283.svg", import.meta.url).href;
-const _0 = "" + new URL("stat-bg-eeb1bac4.svg", import.meta.url).href;
+const b0 = "" + new URL("escape-btn.svg", import.meta.url).href;
+const _0 = "" + new URL("stat-bg.svg", import.meta.url).href;
 const v0 = "_container_1bc7y_1";
 const w0 = "_inner_1bc7y_11";
 const x0 = "_header_1bc7y_20";

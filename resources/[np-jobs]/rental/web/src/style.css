@@ -371,7 +371,7 @@ body {
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 2);
   background:
-    url(./categoryBg-f338ce2e.svg),
+    url(./categoryBg.svg),
     radial-gradient(
       93.82% 93.82% at 50% 6.18%,
       rgba(255, 255, 255, 0.07) 0%,
@@ -394,7 +394,7 @@ body {
   border-radius: calc(0.092592592vh * 4);
   border: calc(0.092592592vh * 1) solid #00f8b9;
   background:
-    url(./categoryBg-f338ce2e.svg),
+    url(./categoryBg.svg),
     radial-gradient(
       62.19% 62.19% at 50% 50%,
       rgba(0, 248, 185, 0.25) 0%,
@@ -456,7 +456,7 @@ body {
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 4);
   background:
-    url(./bgVehicle-4b776983.svg),
+    url(./bgVehicle.svg),
     radial-gradient(
       93.82% 93.82% at 50% 6.18%,
       rgba(255, 255, 255, 0.07) 0%,
@@ -477,7 +477,7 @@ body {
 ._vehicles_1bx5z_1 ._vehicle_1bx5z_1._active_1bx5z_26 {
   border: calc(0.092592592vh * 1) solid #00f8b9;
   background:
-    url(./bgVehicle-4b776983.svg),
+    url(./bgVehicle.svg),
     radial-gradient(
       62.19% 62.19% at 50% 50%,
       rgba(0, 248, 185, 0.25) 0%,
@@ -505,7 +505,7 @@ body {
   position: absolute;
   width: calc(0.092592592vh * 136);
   height: calc(0.092592592vh * 158);
-  background-image: url(./mock-76febd84.png);
+  background-image: url(./mock.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

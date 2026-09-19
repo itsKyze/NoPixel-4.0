@@ -1,5 +1,5 @@
 import './style.css';
-import { U as _0x37b16f, N as _0x36eb84 } from "./v-packages-c5faae10.js";
+import { U as _0x37b16f, N as _0x36eb84 } from "./v-packages.js";
 (function () {
   const _0x2ad0b2 = document.createElement("link").relList;
   if (_0x2ad0b2 && _0x2ad0b2.supports && _0x2ad0b2.supports("modulepreload")) {
@@ -1936,7 +1936,7 @@ const Gn = _0x1f3be4 => {
   })();
 };
 wt(["click"]);
-const Qn = "" + new URL("fish-cdd1ab3e.png", import.meta.url).href;
+const Qn = "" + new URL("fish.png", import.meta.url).href;
 const Xn = "_masterContainer_pb4js_1";
 const Yn = "_main_pb4js_13";
 const Jn = "_horizontalContainer_pb4js_24";

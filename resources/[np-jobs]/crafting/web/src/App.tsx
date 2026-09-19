@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0x29c78f } from "./v-packages-6cb79519.js";
+import { N as _0x29c78f } from "./v-packages.js";
 (function () {
   const _0x5843f7 = document.createElement("link").relList;
   if (_0x5843f7 && _0x5843f7.supports && _0x5843f7.supports("modulepreload")) {

@@ -3092,7 +3092,7 @@ p {
   max-width: calc(0.092592592vh * 256);
   min-height: calc(0.092592592vh * 59);
   overflow: hidden;
-  background: url(./itembg-4d46e4c7.svg), radial-gradient(83.13% 83.13% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(./itembg.svg), radial-gradient(83.13% 83.13% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -3107,7 +3107,7 @@ p {
 }
 .menuItem:hover {
   border: calc(0.092592592vh * 1) solid #00f8b9;
-  background: url(./itembg-4d46e4c7.svg), radial-gradient(62.19% 62.19% at 50% 50%, rgba(0, 248, 185, 0.25) 0%, rgba(0, 102, 76, 0.25) 100%);
+  background: url(./itembg.svg), radial-gradient(62.19% 62.19% at 50% 50%, rgba(0, 248, 185, 0.25) 0%, rgba(0, 102, 76, 0.25) 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -4067,7 +4067,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(./bgButton-690e268e.svg), radial-gradient(111.14% 111.14% at 49.73% 0%, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(./bgButton.svg), radial-gradient(111.14% 111.14% at 49.73% 0%, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -4125,7 +4125,7 @@ p {
   box-shadow: 0px 0px 1.22vh 0px #ffffff77;
 }
 ._container_1vpli_2 ._bottomContainer_1vpli_89 ._tabs_1vpli_98 ._tab_1vpli_98:hover, ._container_1vpli_2 ._bottomContainer_1vpli_89 ._tabs_1vpli_98 ._tab_1vpli_98._active_1vpli_175 {
-  background: url(./bgButton-690e268e.svg), radial-gradient(94.28% 94.28% at 50% 50%, rgba(0, 248, 185, 0.25) 0%, rgba(0, 248, 185, 0) 100%);
+  background: url(./bgButton.svg), radial-gradient(94.28% 94.28% at 50% 50%, rgba(0, 248, 185, 0.25) 0%, rgba(0, 248, 185, 0) 100%);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -4643,7 +4643,7 @@ p {
   min-width: calc(0.092592592vh * 496);
   padding: calc(0.092592592vh * 30);
   border-radius: calc(0.092592592vh * 10);
-  background: url(./background-9c099055.svg), radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
+  background: url(./background.svg), radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -4980,7 +4980,7 @@ p {
   align-items: center;
   justify-content: flex-end;
 }
-._container_aubr2_1 ._calculator_aubr2_10 ._calculator_display_aubr2_21::before:before {
+._container_aubr2_1 ._calculator_aubr2_10 ._calculator_display_aubr2_21::before {
   content: "=";
   color: #00f8b9;
   font-size: 20px;
@@ -5106,7 +5106,7 @@ p {
   pointer-events: all;
   width: 100%;
   padding: calc(0.092592592vh * 20) calc(0.092592592vh * 20) calc(0.092592592vh * 30);
-  background: url(./modal-bg-da143461.svg), #1f1f2e;
+  background: url(./modal-bg.svg), #1f1f2e;
   background-size: cover;
   border-radius: calc(0.092592592vh * 10);
 }

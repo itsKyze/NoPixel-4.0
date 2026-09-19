@@ -233,7 +233,7 @@ body {
   width: 100%;
   height: 100%;
   background:
-    url(./bgTop-e6da63c1.svg),
+    url(./bgTop.svg),
     radial-gradient(
       30.52% 54.26% at 50% 50%,
       rgba(34, 37, 48, 0.88) 0%,
@@ -246,7 +246,7 @@ body {
 }
 ._hunting_59n7v_1._inspection_59n7v_11 {
   background:
-    url(./bgTop-e6da63c1.svg),
+    url(./bgTop.svg),
     radial-gradient(
       50.18% 89.21% at 50% 15.05%,
       rgba(38, 42, 60, 0) 0%,
@@ -328,7 +328,7 @@ body {
   width: calc(0.092592592vh * 360);
   height: calc(0.092592592vh * 473);
   flex-shrink: 0;
-  background-image: url(./contract-4a09e5da.png);
+  background-image: url(./contract.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

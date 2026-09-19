@@ -184,7 +184,7 @@
   z-index: 10;
 }
 .settings-slider::-webkit-slider-thumb {
-  background-image: url(./slider-handle-545bfec5.svg);
+  background-image: url(./slider-handle.svg);
   aspect-ratio: 1;
   z-index: 20;
   height: 1rem;

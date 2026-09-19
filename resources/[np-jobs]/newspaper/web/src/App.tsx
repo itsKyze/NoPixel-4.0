@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0x31b3c2, g as _0x327a33 } from "./v-packages-32542390.js";
+import { N as _0x31b3c2, g as _0x327a33 } from "./v-packages.js";
 (function () {
   const _0x1a9fed = document.createElement("link").relList;
   if (_0x1a9fed && _0x1a9fed.supports && _0x1a9fed.supports("modulepreload")) {
@@ -1447,9 +1447,9 @@ var bt = _0x51cc2b => {
     }
   });
 };
-const wt = "" + new URL("logo-123eb4a8.svg", import.meta.url).href;
-const xt = "" + new URL("overlay-11c56314.png", import.meta.url).href;
-const me = "" + new URL("background-abf55e8b.png", import.meta.url).href;
+const wt = "" + new URL("logo.svg", import.meta.url).href;
+const xt = "" + new URL("overlay.png", import.meta.url).href;
+const me = "" + new URL("background.png", import.meta.url).href;
 var je = {
   exports: {}
 };

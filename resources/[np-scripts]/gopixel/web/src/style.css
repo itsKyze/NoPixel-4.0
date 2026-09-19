@@ -216,7 +216,7 @@ body {
   border-radius: calc(0.092592592vh * 10);
   justify-content: center;
   background:
-    url(./bg-9e69e265.svg),
+    url(./bg.svg),
     radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
   background-size: cover;
 }

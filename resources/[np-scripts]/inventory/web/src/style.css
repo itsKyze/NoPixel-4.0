@@ -1101,7 +1101,7 @@ body {
 .character {
   width: calc(0.092592592vh * 267.203);
   height: calc(0.092592592vh * 507);
-  background-image: url(./character-769895e5.png);
+  background-image: url(./character.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

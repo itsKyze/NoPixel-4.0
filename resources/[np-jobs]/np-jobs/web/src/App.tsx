@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0x916fe1 } from "./v-packages-6cb79519.js";
+import { N as _0x916fe1 } from "./v-packages.js";
 (function () {
   const _0x596917 = document.createElement("link").relList;
   if (_0x596917 && _0x596917.supports && _0x596917.supports("modulepreload")) {
@@ -3232,9 +3232,9 @@ const Q = {
   barContainer: b9,
   bar: y9
 };
-const p9 = "" + new URL("tree-2a6aca5a.svg", import.meta.url).href;
-const m9 = "" + new URL("growth-c5d2e3ee.svg", import.meta.url).href;
-const _9 = "" + new URL("quality-5221c604.svg", import.meta.url).href;
+const p9 = "" + new URL("tree.svg", import.meta.url).href;
+const m9 = "" + new URL("growth.svg", import.meta.url).href;
+const _9 = "" + new URL("quality.svg", import.meta.url).href;
 const w9 = Z("<div>");
 const $9 = Z("<div><div>");
 const x9 = Z("<div> years");

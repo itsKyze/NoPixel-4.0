@@ -7,7 +7,7 @@
   font-weight: 400;
   src:
     local("Digital Numbers Regular"),
-    url(./DigitalNumbers-Regular-bc6f9c0d.woff) format("woff");
+    url(./DigitalNumbers-Regular.woff) format("woff");
 }
 *,
 :before,
@@ -298,7 +298,7 @@ body {
   height: calc(0.092592592vh * 271);
   flex-shrink: 0;
   background:
-    url(./radarBg-47dd5438.svg),
+    url(./radarBg.svg),
     radial-gradient(61.83% 85.77% at 92.1% 32.12%, #06070a 0%, #0b0b0e 100%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -330,7 +330,7 @@ body {
   width: calc(0.092592592vh * 542);
   height: calc(0.092592592vh * 237);
   flex-shrink: 0;
-  background: url(./screws-12a61bad.png);
+  background: url(./screws.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -459,7 +459,7 @@ body {
 ._plate_nolor_12 {
   width: calc(0.092592592vh * 111);
   height: calc(0.092592592vh * 45);
-  background-image: url(./plate-60ce64cf.png);
+  background-image: url(./plate.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;

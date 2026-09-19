@@ -1,5 +1,5 @@
 import "./style.css";
-import { N as _0x1de49a } from "./v-packages-6cb79519.js";
+import { N as _0x1de49a } from "./v-packages.js";
 (function () {
   const varData_1 = document.createElement("link").relList;
   if (varData_1 && varData_1.supports && varData_1.supports("modulepreload")) {
@@ -2798,7 +2798,7 @@ function Ki(param_1) {
   })();
 }
 ce(["keydown", "focusin", "focusout"]);
-const Zi = "" + new URL("vehicle-19f6d54d.svg", import.meta.url).href;
+const Zi = "" + new URL("vehicle.svg", import.meta.url).href;
 const Xi = E("<div><div><div><svg width=\"0.83vh\" height=\"0.83vh\" viewBox=\"0 0 9 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0H9L4.5 4.5L0 9V0Z\" fill=\"url(#paint0_radial_218_224)\"></path><defs><radialGradient id=\"paint0_radial_218_224\" cx=\"0\" cy=\"0\" r=\"1\" gradientUnits=\"userSpaceOnUse\" gradientTransform=\"translate(4.5 4.5) rotate(45) scale(8.48528)\"><stop stop-color=\"#00F8B9\"></stop><stop offset=\"1\" stop-color=\"#00F8B9\" stop-opacity=\"0\"></svg><div></div></div><img></div><div><div class=\"flex w-full flex-row items-center justify-between pb-[0.5vh] pl-[1.6vh] pr-1\"><div class=\"flex flex-col items-start justify-center\"><div></div><div></div></div><div class=\"flew-row mt-auto flex items-center justify-end pr-[1.6vh]\"><div></div><div></div></div></div><div>");
 const Wi = E("<div><div>");
 const Qi = param_1 => {

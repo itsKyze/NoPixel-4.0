@@ -177,7 +177,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   background:
-    url(./bg-1f306646.svg),
+    url(./bg.svg),
     radial-gradient(
       50% 122.36% at 50% 15.05%,
       rgba(38, 42, 60, 0) 0%,
@@ -815,7 +815,7 @@ body {
       rgba(0, 0, 0, 0.55) 0%,
       rgba(0, 0, 0, 0.22) 100%
     ),
-    url(./optionBg-230bbccf.svg);
+    url(./optionBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -834,7 +834,7 @@ body {
       rgba(0, 248, 185, 0.55) 0%,
       rgba(0, 248, 185, 0.22) 100%
     ),
-    url(./optionBg_active-9271d8f5.svg);
+    url(./optionBg_active.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,8 +1,8 @@
 import "./style.css";
-import "./vite-3cfb730f.js";
-import { c as _0x4b3e2f, a as _0x533ae0, t as _0x29e38d, b as _0x592725, e as _0x24bff7, f as _0x4f0771, g as _0x17a24b, h as _0x29524f, j as _0x16e9a2, k as _0x3360ae, s as _0x4ff949, l as _0x1fc3b4, F as _0x299f9b, m as _0x35b0f2, n as _0x96ee8b, S as _0x319009, V as _0x2934ba, o as _0x26c24e, p as _0x1c26f4, q as _0x40d4b1, D as _0x46cc61, r as _0xd0fa82, w as _0x13321d, x as _0x18d2b5, M as _0x59323e, T as _0x323fc9, y as _0x5be0e7 } from "./vendor-98faf757.js";
-import { N as _0x135585 } from "./v-packages-9af200ff.js";
-import "./commonjsHelpers-725317a4.js";
+import "./vite.js";
+import { c as _0x4b3e2f, a as _0x533ae0, t as _0x29e38d, b as _0x592725, e as _0x24bff7, f as _0x4f0771, g as _0x17a24b, h as _0x29524f, j as _0x16e9a2, k as _0x3360ae, s as _0x4ff949, l as _0x1fc3b4, F as _0x299f9b, m as _0x35b0f2, n as _0x96ee8b, S as _0x319009, V as _0x2934ba, o as _0x26c24e, p as _0x1c26f4, q as _0x40d4b1, D as _0x46cc61, r as _0xd0fa82, w as _0x13321d, x as _0x18d2b5, M as _0x59323e, T as _0x323fc9, y as _0x5be0e7 } from "./vendor.js";
+import { N as _0x135585 } from "./v-packages.js";
+import "./commonjsHelpers.js";
 const lt = "_App_1vafr_1";
 const st = "_clothingMenu_1vafr_13";
 const ot = "_container_1vafr_17";
@@ -730,7 +730,7 @@ function Y(param_1) {
     return varData_54;
   })();
 }
-const jt = "" + new URL("whitelisted_clothing-a32a5c81.png", import.meta.url).href;
+const jt = "" + new URL("whitelisted_clothing.png", import.meta.url).href;
 const Zt = "_title_xw716_1";
 const Gt = "_collapse_xw716_20";
 const Ut = "_arrowBox_xw716_23";

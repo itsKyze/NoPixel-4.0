@@ -95,6 +95,7 @@ function processResource(webDir) {
           if (!fs.statSync(srcFile).isFile()) continue;
 
           const lower = file.toLowerCase();
+          if (/-[0-9a-f]{8}\./i.test(file)) continue;
           // Copy only required vendor packages (exclude index bundles and generated chunks)
           if (lower.endsWith('.js') && !lower.startsWith('index-') && !(lower.includes('-') && lower.split('-').length >= 3 && !lower.startsWith('v-packages'))) {
             fs.copyFileSync(srcFile, path.join(publicAssetsDir, file));

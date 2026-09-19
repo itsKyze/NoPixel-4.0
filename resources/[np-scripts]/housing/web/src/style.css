@@ -2,39 +2,39 @@
 @import "https://assets.nopixel.net/web/fonts/nekst/stylesheet.css";
 @font-face {
   font-family: retroLand;
-  src: url(./retro-land-mayhem-01405e18.ttf);
+  src: url(./retro-land-mayhem.ttf);
 }
 @font-face {
   font-family: roboto300;
-  src: url(./RobotoCondensed-Light-1ec3d4e4.ttf);
+  src: url(./RobotoCondensed-Light.ttf);
 }
 @font-face {
   font-family: roboto400;
-  src: url(./RobotoCondensed-Regular-04d24249.ttf);
+  src: url(./RobotoCondensed-Regular.ttf);
 }
 @font-face {
   font-family: roboto700;
-  src: url(./RobotoCondensed-Bold-14948aed.ttf);
+  src: url(./RobotoCondensed-Bold.ttf);
 }
 @font-face {
   font-family: gilroy600;
-  src: url(./gilroy-semibold-32eb47df.ttf);
+  src: url(./gilroy-semibold.ttf);
 }
 @font-face {
   font-family: gilroy400;
-  src: url(./gilroy-regular-8bbb8f0f.ttf);
+  src: url(./gilroy-regular.ttf);
 }
 @font-face {
   font-family: gilroy500;
-  src: url(./gilroy-medium-ce8d455b.ttf);
+  src: url(./gilroy-medium.ttf);
 }
 @font-face {
   font-family: intervar;
-  src: url(./inter-var-b9a8e5e2.ttf);
+  src: url(./inter-var.ttf);
 }
 @font-face {
   font-family: nekst400;
-  src: url(./nekst-regular-2c9b1eab.otf);
+  src: url(./nekst-regular.otf);
 }
 body {
   margin: 0;
@@ -932,7 +932,7 @@ input {
       rgba(255, 255, 255, 0.07) 0%,
       rgba(255, 255, 255, 0) 100%
     ),
-    url(./setting-bg-4205b951.svg);
+    url(./setting-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

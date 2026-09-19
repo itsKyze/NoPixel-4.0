@@ -1,5 +1,5 @@
 import "./style.css";
-import { S as _0x4ca786, L as _0x266ab0, N as _0x127c76, U as _0x158b52, B as _0x5cfc0d } from "./v-packages-763831b3.js";
+import { S as _0x4ca786, L as _0x266ab0, N as _0x127c76, U as _0x158b52, B as _0x5cfc0d } from "./v-packages.js";
 (function () {
   const varData_1 = document.createElement("link").relList;
   if (varData_1 && varData_1.supports && varData_1.supports("modulepreload")) {
@@ -1472,8 +1472,8 @@ const vo = {
   },
   weapons: {}
 };
-const mo = "" + new URL("polygon-c0cca52e.svg", import.meta.url).href;
-const po = "" + new URL("polygon1-315f41ec.svg", import.meta.url).href;
+const mo = "" + new URL("polygon.svg", import.meta.url).href;
+const po = "" + new URL("polygon1.svg", import.meta.url).href;
 const go = O("<div class=\"text-[0.88rem] leading-[108.5%] text-gray-300\">");
 const ho = O("<div class=\"text-[0.88rem] leading-[108.5%] text-red-600 brightness-95\">");
 const yo = O("<div class=\"flex h-20 w-full\"><div class=\"relative mt-1\"><img class=\"absolute left-4 top-4 h-12 w-12\" alt=\"\"><img class=\"absolute left-4 top-2 h-12 w-12\" alt=\"\"><span class=\"material-symbols-rounded absolute left-[1.75rem] top-[1.75rem] text-[1.5rem] [text-shadow:0px_0px_12px_rgba(0,_248,_185,_0.25)]\"></div><div class=\"flex w-10/12 flex-col place-content-center pl-20 pt-1\"><div class=\"text-xl font-semibold [text-shadow:0px_0px_5px_rgba(0,_248,_185,_0.05)]\"></div></div><div class=\"flex-grow pr-2\">");
@@ -2183,8 +2183,8 @@ class Po extends Ve {
     this.didAction;
   }
 }
-const li = "" + new URL("actionbar-bg-a1ab2705.svg", import.meta.url).href;
-const bn = "" + new URL("item_default-7a809163.png", import.meta.url).href;
+const li = "" + new URL("actionbar-bg.svg", import.meta.url).href;
+const bn = "" + new URL("item_default.png", import.meta.url).href;
 const Do = O("<div class=\"notifications\"><div class=\"notifications-list\"><div class=\"items-list\">");
 const Mo = O("<li><div class=\"info-container\"><div class=\"item-icon\"><img></div><div class=\"texts\"><p class=\"label\"></p><div class=\"flex flex-row items-center justify-start\"><p class=\"info\"></p><p>x");
 const [ci, ui] = z([]);

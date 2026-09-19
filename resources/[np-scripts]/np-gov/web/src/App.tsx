@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0xc46d40 } from "./v-packages-6cb79519.js";
+import { N as _0xc46d40 } from "./v-packages.js";
 (function () {
   const _0x1404c6 = document.createElement("link").relList;
   if (_0x1404c6 && _0x1404c6.supports && _0x1404c6.supports("modulepreload")) {
@@ -3723,7 +3723,7 @@ var co = {
   icon: [512, 512, ["bank", "institution", "museum", "university"], "f19c", "M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
 };
 var uo = co;
-const fo = "" + new URL("construction-hero-b39eeb9f.png", import.meta.url).href;
+const fo = "" + new URL("construction-hero.png", import.meta.url).href;
 const vo = "_wrapper_dxzsu_1";
 const go = "_container_dxzsu_9";
 const ho = "_soon_container_dxzsu_31";
@@ -5702,8 +5702,8 @@ const G = {
   note: ua,
   note_description: da
 };
-const fa = "" + new URL("badge_inner_effect-6944e67e.png", import.meta.url).href;
-const va = "" + new URL("koil-badge-5ba2292b.png", import.meta.url).href;
+const fa = "" + new URL("badge_inner_effect.png", import.meta.url).href;
+const va = "" + new URL("koil-badge.png", import.meta.url).href;
 const ga = E("<div class=\"flex h-full w-full flex-col items-end justify-center p-[3vh]\"><img class=\"h-[25rem]\">");
 const ha = E("<div class=\"flex h-full w-full flex-col items-end justify-center p-[3vh]\"><div><div><div><img alt=\"badge\"><div class=\"flex flex-col items-end justify-end\"><div></div><div>To protect and to serve</div></div></div><div class=\"flex h-full w-full flex-row items-start justify-between p-[2vh]\"><div><img><img class=\"h-full w-full object-cover\" alt=\"profile-image\"></div><div class=\"flex flex-col items-start justify-start gap-[0.6vh]\"><div class=\"flex flex-col items-start justify-start\"><div>First name</div><div></div></div><div class=\"flex flex-col items-start justify-start\"><div>Last name</div><div></div></div><div class=\"flex flex-col items-start justify-start\"><div>Document ID</div><div>#</div></div></div></div><div>Note</div><div>To Protect and Serve with Honor and Integrity");
 function _a(_0x3c1e08) {

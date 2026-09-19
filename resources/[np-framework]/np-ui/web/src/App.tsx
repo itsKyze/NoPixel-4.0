@@ -1,8 +1,8 @@
-import { R as _0x414a39, j as _0x468b2c, z as _0x5287ec, C as _0x4b18ff, D as _0x17c390, aO as _0xd7bd1 } from "./vendor-69ed8822.js";
-import { e as _0x28c514, I as _0x9ee125 } from "./index-dcb6474f.js";
-import { F as _0x2eff30 } from "./input-67b043ed.js";
-import { T as _0x3e9ae8 } from "./text-2b84715a.js";
-import { m as _0x424bfe, b as _0x98b138 } from "./styles-c7d7714e.js";
+import { R as _0x414a39, j as _0x468b2c, z as _0x5287ec, C as _0x4b18ff, D as _0x17c390, aO as _0xd7bd1 } from "./vendor.jsx";
+import { e as _0x28c514, I as _0x9ee125 } from "./ui_core.js";
+import { F as _0x2eff30 } from "./input.jsx";
+import { T as _0x3e9ae8 } from "./text.jsx";
+import { m as _0x424bfe, b as _0x98b138 } from "./styles.js";
 const useStyles = _0x424bfe({
   wrapper: _0x2cae93 => ({
     position: "relative",
@@ -114,3 +114,4 @@ const AppContainer = _0x3f3e8a => {
       }}><_0x3e9ae8 variant="h6">{_0x3f3e8a.emptyMessageText}</_0x3e9ae8></div>}{_0x3f3e8a.children}</div></div>;
 };
 export { AppContainer as A };
+export default AppContainer;

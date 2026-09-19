@@ -652,7 +652,7 @@ body {
 }
 @font-face {
   font-family: ArameMono;
-  src: url(./ArameMono-c2063e97.ttf);
+  src: url(./ArameMono.ttf);
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -704,7 +704,7 @@ p {
   justify-content: space-between;
   align-items: center;
   border-radius: calc(0.092592592vh * 3.879);
-  background: url(./taskbar-bg-e459d261.svg), #181818;
+  background: url(./taskbar-bg.svg), #181818;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -973,7 +973,7 @@ p {
   padding: 0.5rem;
   grid-template-columns: repeat(7, minmax(0px, 1fr));
   grid-template-rows: repeat(7, minmax(0px, 1fr));
-  background-image: url(./bg-62373e8a.png);
+  background-image: url(./bg.png);
   background-size: cover;
 }
 ._grid_container_1ps57_1 img {
@@ -985,7 +985,7 @@ p {
   flex-direction: column;
   justify-content: center;
   height: calc(0.092592592vh * 400);
-  background-image: url(./bg-62373e8a.png);
+  background-image: url(./bg.png);
   background-size: cover;
 }
 ._loading_container_1ps57_14 ._description_1ps57_23 {

@@ -250,7 +250,7 @@
 }
 @font-face {
   font-family: Retro Land Mayhem;
-  src: url(./retro-land-mayhem-01405e18.ttf);
+  src: url(./retro-land-mayhem.ttf);
 }
 body {
   overflow: hidden;
@@ -365,7 +365,7 @@ body {
   align-items: center;
   border-radius: calc(0.092592592vh * 21);
   background:
-    url(./bg-b10cd5d7.svg),
+    url(./bg.svg),
     radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -384,7 +384,7 @@ body {
   border-radius: calc(0.092592592vh * 4);
   border: calc(0.092592592vh * 1) solid rgba(255, 255, 255, 0.2);
   background:
-    url(./info-71447332.png),
+    url(./info.png),
     radial-gradient(
       133.13% 133.13% at 50% 0%,
       rgba(255, 255, 255, 0.25) 0%,
@@ -619,7 +619,7 @@ body {
   padding: calc(0.092592592vh * 30);
   border-radius: calc(0.092592592vh * 21);
   background:
-    url(./bgTraffic-2b057667.svg),
+    url(./bgTraffic.svg),
     radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -656,7 +656,7 @@ body {
   height: auto;
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 5);
-  background: url(./aircraftBg-7a9e7aa1.svg), rgba(248, 105, 105, 0.05);
+  background: url(./aircraftBg.svg), rgba(248, 105, 105, 0.05);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;

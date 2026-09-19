@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0xabdea3, c as _0x52741d } from "./v-packages-6a57687b.js";
+import { N as _0xabdea3, c as _0x52741d } from "./v-packages.js";
 (function () {
   const _0xae770c = document.createElement("link").relList;
   if (_0xae770c && _0xae770c.supports && _0xae770c.supports("modulepreload")) {
@@ -1472,13 +1472,13 @@ const Tt = {
   icon: ca,
   info: da
 };
-const qo = "" + new URL("frequency-b168ed0c.svg", import.meta.url).href;
-const _a = "" + new URL("callsign-58200a45.svg", import.meta.url).href;
-const pa = "" + new URL("destination-e6ae1b39.svg", import.meta.url).href;
-const ma = "" + new URL("flight-db9f5948.svg", import.meta.url).href;
-const ga = "" + new URL("numbers-2451619f.svg", import.meta.url).href;
-const va = "" + new URL("people-2cef4617.svg", import.meta.url).href;
-const ya = "" + new URL("pilot-76c1f6f1.svg", import.meta.url).href;
+const qo = "" + new URL("frequency.svg", import.meta.url).href;
+const _a = "" + new URL("callsign.svg", import.meta.url).href;
+const pa = "" + new URL("destination.svg", import.meta.url).href;
+const ma = "" + new URL("flight.svg", import.meta.url).href;
+const ga = "" + new URL("numbers.svg", import.meta.url).href;
+const va = "" + new URL("people.svg", import.meta.url).href;
+const ya = "" + new URL("pilot.svg", import.meta.url).href;
 const li = [{
   id: "callsign",
   label: "Call sign",

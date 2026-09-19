@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0x57738c } from "./v-packages-6cb79519.js";
+import { N as _0x57738c } from "./v-packages.js";
 (function () {
   const _0x4e7903 = document.createElement("link").relList;
   if (_0x4e7903 && _0x4e7903.supports && _0x4e7903.supports("modulepreload")) {
@@ -2779,7 +2779,7 @@ class Ci {
     });
   }
 }
-const en = "" + new URL("cart_empty-9673a9b7.svg", import.meta.url).href;
+const en = "" + new URL("cart_empty.svg", import.meta.url).href;
 const Ai = "_container_1n444_1";
 const Ti = "_text_1n444_14";
 const Oi = "_button_1n444_17";

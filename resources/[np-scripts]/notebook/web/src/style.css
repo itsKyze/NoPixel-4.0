@@ -222,7 +222,7 @@ body {
   font-family: Akrobat;
   font-style: normal;
   font-weight: 800;
-  src: url(./akrobat-extrabold-webfont-cc7ec783.ttf);
+  src: url(./akrobat-extrabold-webfont.ttf);
 }
 @font-face {
   font-family: Akrobat;
@@ -252,7 +252,7 @@ body {
   width: calc(0.092592592vh * 621);
   height: calc(0.092592592vh * 712);
   flex-shrink: 0;
-  background-image: url(./notebook-bb40e780.png);
+  background-image: url(./notebook.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: calc(0.092592592vh * -32);
@@ -317,7 +317,7 @@ body {
   width: calc(0.092592592vh * 612);
   height: calc(0.092592592vh * 712);
   flex-shrink: 0;
-  background-image: url(./notebook-inside-59e32722.png);
+  background-image: url(./notebook-inside.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -337,7 +337,7 @@ body {
   height: calc(0.092592592vh * 652);
   flex-shrink: 0;
   padding: calc(0.092592592vh * 35);
-  background-image: url(./paper-e1f1720d.png);
+  background-image: url(./paper.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;

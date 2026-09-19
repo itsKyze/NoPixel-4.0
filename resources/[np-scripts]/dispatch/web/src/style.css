@@ -479,7 +479,7 @@
 }
 @font-face {
   font-family: Retro Land Mayhem;
-  src: url(./retro-land-mayhem-01405e18.ttf);
+  src: url(./retro-land-mayhem.ttf);
 }
 body {
   overflow: hidden;
@@ -602,16 +602,16 @@ body {
   cursor: pointer;
 }
 ._nav_gx7ab_1 ._navItem_gx7ab_9._overview_gx7ab_32 {
-  background-image: url(./overview-09d5672a.svg);
+  background-image: url(./overview.svg);
 }
 ._nav_gx7ab_1 ._navItem_gx7ab_9._active_gx7ab_35 {
-  background-image: url(./active-fde59f2f.svg);
+  background-image: url(./active.svg);
 }
 ._nav_gx7ab_1 ._navItem_gx7ab_9._calls_gx7ab_38 {
-  background-image: url(./calls-6c79fce7.svg);
+  background-image: url(./calls.svg);
 }
 ._nav_gx7ab_1 ._navItem_gx7ab_9._units_gx7ab_41 {
-  background-image: url(./units-f7d97495.svg);
+  background-image: url(./units.svg);
 }
 ._nav_gx7ab_1 ._navItem_gx7ab_9._selected_gx7ab_44,
 ._nav_gx7ab_1 ._navItem_gx7ab_9:hover {
@@ -626,7 +626,7 @@ body {
   align-items: center;
   border-radius: calc(0.092592592vh * 21);
   background:
-    url(./dispatchBg-ee4dcbf6.svg),
+    url(./dispatchBg.svg),
     radial-gradient(61.83% 85.77% at 92.1% 32.12%, #1a1d29 0%, #222530 100%);
   background-size: 100% 100%;
   background-position: center;

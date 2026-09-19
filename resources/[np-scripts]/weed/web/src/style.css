@@ -243,14 +243,14 @@
 }
 @font-face {
   font-family: Agency FB;
-  src: url(./AGENCYB-4fde694c.TTF);
+  src: url(./AGENCYB.TTF);
   font-weight: 700;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: Agency FB;
-  src: url(./AGENCYR-d672eb87.TTF);
+  src: url(./AGENCYR.TTF);
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -1108,7 +1108,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: calc(0.092592592vh * 13);
   flex-shrink: 0;
   border: 0;
-  background-image: url(./thumb-7591cf07.svg);
+  background-image: url(./thumb.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

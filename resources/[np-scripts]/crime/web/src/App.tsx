@@ -1,5 +1,5 @@
 import './style.css';
-import { N as _0x5a273a } from "./v-packages-6cb79519.js";
+import { N as _0x5a273a } from "./v-packages.js";
 (function () {
   const _0x1106bc = document.createElement("link").relList;
   if (_0x1106bc && _0x1106bc.supports && _0x1106bc.supports("modulepreload")) {
@@ -1112,7 +1112,7 @@ const [Qe, Xe] = Je(() => {
   };
 });
 const Ye = () => Xe();
-const Ze = "" + new URL("fib_logo-2d31a485.webp", import.meta.url).href;
+const Ze = "" + new URL("fib_logo.webp", import.meta.url).href;
 const ze = "_container_1r2t1_4";
 const et = "_document_1r2t1_12";
 const tt = "_header_1r2t1_36";

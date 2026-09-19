@@ -642,7 +642,7 @@ body {
   flex-shrink: 0;
   border-radius: calc(0.092592592vh * 2);
   background-image:
-    url(./gridItemBg-a1ab9012.svg),
+    url(./gridItemBg.svg),
     radial-gradient(
       123.64% 123.64% at 50% 6.18%,
       rgba(255, 255, 255, 0.25) 0%,
@@ -709,7 +709,7 @@ body {
 ._grid_1t5q6_1 ._gridItem_1t5q6_15._active_1t5q6_77 {
   border: calc(0.092592592vh * 1) solid #00f8b9;
   background:
-    url(./gridItemBg-a1ab9012.svg),
+    url(./gridItemBg.svg),
     radial-gradient(
       62.19% 62.19% at 50% 50%,
       rgba(0, 248, 185, 0.25) 0%,

@@ -1,5 +1,5 @@
 import "./style.css";
-import { N as _0x4ca1ca } from "./v-packages-6cb79519.js";
+import { N as _0x4ca1ca } from "./v-packages.js";
 (function () {
   const varData_1 = document.createElement("link").relList;
   if (varData_1 && varData_1.supports && varData_1.supports("modulepreload")) {
@@ -1737,7 +1737,7 @@ const y1 = (param_1, param_2) => ({
   fill: "rgba(255, 103, 103, " + param_1 / param_2 * 0.52 + ")",
   "box-shadow": "0px 0px 2.29vhvh 0px #FF6767 inset"
 });
-const _e = "" + new URL("character-a154022f.png", import.meta.url).href;
+const _e = "" + new URL("character.png", import.meta.url).href;
 const Pt = "_container_g94ip_1";
 const Ot = "_characterIndicator_g94ip_14";
 const Mt = "_character_g94ip_14";
@@ -2117,12 +2117,12 @@ const z = {
   data: a2,
   status: d2
 };
-const c2 = "" + new URL("head-1b575668.svg", import.meta.url).href;
-const u2 = "" + new URL("body-5fe0b312.svg", import.meta.url).href;
-const f2 = "" + new URL("leftArm-9588b5e7.svg", import.meta.url).href;
-const v2 = "" + new URL("rightArm-2c5baf2a.svg", import.meta.url).href;
-const C2 = "" + new URL("leftLeg-b3f27648.svg", import.meta.url).href;
-const _2 = "" + new URL("rightLeg-eaa5f45a.svg", import.meta.url).href;
+const c2 = "" + new URL("head.svg", import.meta.url).href;
+const u2 = "" + new URL("body.svg", import.meta.url).href;
+const f2 = "" + new URL("leftArm.svg", import.meta.url).href;
+const v2 = "" + new URL("rightArm.svg", import.meta.url).href;
+const C2 = "" + new URL("leftLeg.svg", import.meta.url).href;
+const _2 = "" + new URL("rightLeg.svg", import.meta.url).href;
 const g2 = A("<div><div><div>General status of Health</div><div>You can see the status of each body part below.</div></div><div>");
 const h2 = A("<div><div><div></div></div><div><div><div></div></div><div>%");
 const $2 = [{
@@ -2330,7 +2330,7 @@ const W = {
   data: E2,
   amount: I2
 };
-const he = "" + new URL("injury-d5c6c07d.svg", import.meta.url).href;
+const he = "" + new URL("injury.svg", import.meta.url).href;
 const T2 = A("<div><div><div>Combined Injury List</div><div>List of all injuries on the patient.</div></div><div>");
 const B2 = A("<div><div><div></div></div><div><div><div></div></div><div>");
 function N2() {

@@ -7,6 +7,8 @@
 
 		<title>NoPixel UI</title>
 
+		
+
 		<!-- NoPixel Assets -->
 		<link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://assets.nopixel.net/web/fonts/gilroy/stylesheet.css" />
 		<link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://assets.nopixel.net/web/fonts/nekst/stylesheet.css" />
@@ -31,17 +33,18 @@
 			crossorigin="anonymous"
 		/>
 
-		<script
-			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-			crossorigin=""
-		></script>
-		<script type="module" crossorigin src="./assets/index-dcb6474f.js"></script>
-		<link rel="modulepreload" crossorigin href="./assets/vite-a4975f27.js">
-		<link rel="modulepreload" crossorigin href="./assets/commonjsHelpers-c5dac66b.js">
-		<link rel="modulepreload" crossorigin href="./assets/vendor-69ed8822.js">
-		<link rel="modulepreload" crossorigin href="./assets/bundle-4fbe11f0.js">
+		
+		
+		<link rel="modulepreload" crossorigin href="./assets/vite.js">
+		<link rel="modulepreload" crossorigin href="./assets/commonjsHelpers.js">
+		<link rel="modulepreload" crossorigin href="./assets/vendor.jsx">
+		<link rel="modulepreload" crossorigin href="./assets/bundle.js">
 		<link rel="stylesheet" href="./assets/style-f4774cce.css">
+		<script type="module" crossorigin src="./assets/index.js"></script>
+		<link rel="modulepreload" crossorigin href="./assets/vendor.js">
+		<link rel="modulepreload" crossorigin href="./assets/ui_core.js">
+		<link rel="modulepreload" crossorigin href="./assets/jsx-runtime.js">
+		<link rel="stylesheet" crossorigin href="./assets/index.css">
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
@@ -385,5 +388,6 @@
 				},
 			]);
 		</script>
-	</body>
+	    <div id="root"></div>
+  </body>
 </html>
