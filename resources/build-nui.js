@@ -65,9 +65,8 @@ function processResource(webDir) {
     }
   }
 
-  // 1. Ensure public directories exist
+  // 1. Ensure public assets directory exists
   if (!fs.existsSync(publicAssetsDir)) fs.mkdirSync(publicAssetsDir, { recursive: true });
-  if (!fs.existsSync(publicImagesDir)) fs.mkdirSync(publicImagesDir, { recursive: true });
 
   // 2. Discover potential existing asset sources (nui/dist/assets or build/assets)
   const assetSources = [
@@ -96,17 +95,9 @@ function processResource(webDir) {
 
           const lower = file.toLowerCase();
           if (/-[0-9a-f]{8}\./i.test(file)) continue;
-          // Copy only required vendor packages (exclude index bundles and generated chunks)
-          if (lower.endsWith('.js') && !lower.startsWith('index-') && !(lower.includes('-') && lower.split('-').length >= 3 && !lower.startsWith('v-packages'))) {
-            fs.copyFileSync(srcFile, path.join(publicAssetsDir, file));
-            if (fs.existsSync(srcDir)) {
-              fs.copyFileSync(srcFile, path.join(srcDir, file));
-            }
-          }
           // Images
           if (lower.endsWith('.png') || lower.endsWith('.svg') || lower.endsWith('.jpg') || lower.endsWith('.jpeg') || lower.endsWith('.webp') || lower.endsWith('.ico') || lower.endsWith('.gif')) {
             fs.copyFileSync(srcFile, path.join(publicAssetsDir, file));
-            fs.copyFileSync(srcFile, path.join(publicImagesDir, file));
           }
           // Fonts
           if (lower.endsWith('.ttf') || lower.endsWith('.woff') || lower.endsWith('.woff2') || lower.endsWith('.eot')) {
