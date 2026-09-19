@@ -19398,8 +19398,21 @@ const CharacterList = () => {
     const varData_2136 = Object.entries(_0x1db577()).map(([_0x3e5fa5, _0x35e420]) => ({
       id: _0x3e5fa5,
       order: _0x35e420
-    })).sort((param_1, param_2) => parseInt(param_1.order) - parseInt(param_2.order)).map(param_1 => state$5.chars.find(param_1_1 => param_1_1.id.toString() === param_1.id)).filter(param_1 => param_1);
-    return varData_2136.concat(state$5.chars.filter(param_1 => !varData_2136.includes(param_1)));
+    })).sort((param_1, param_2) => parseInt(param_1.order) - parseInt(param_2.order)).map(param_1 => state$5.chars.find(param_1_1 => param_1_1 && param_1_1.id && param_1_1.id.toString() === param_1.id)).filter(param_1 => param_1);
+    const combined = varData_2136.concat(state$5.chars.filter(param_1 => !varData_2136.includes(param_1)));
+    const seenIds = new Set();
+    const seenNames = new Set();
+    const unique = [];
+    for (const c of combined) {
+      if (!c) continue;
+      const nameKey = `${(c.first_name || c.firstname || '').trim().toLowerCase()}_${(c.last_name || c.lastname || '').trim().toLowerCase()}`;
+      if (!seenIds.has(c.id) && !seenNames.has(nameKey) && unique.length < (state$5.charLimit || 5)) {
+        seenIds.add(c.id);
+        seenNames.add(nameKey);
+        unique.push(c);
+      }
+    }
+    return unique;
   });
   return (() => {
     const varData_2137 = _tmpl$5$1();
@@ -21791,6 +21804,11 @@ const CharacterCreateForm = () => {
       gender: _0x5e381d[0].inputValue,
       type: "normal"
     };
+    if (window.__isCreatingCharSubmitted) return;
+    window.__isCreatingCharSubmitted = true;
+    setTimeout(() => {
+      window.__isCreatingCharSubmitted = false;
+    }, 4000);
     nuiAction("nuiCallback", {
       action: "newCharacter",
       actionData: varData_2475
@@ -33194,9 +33212,23 @@ function App() {
       });
     }
     if (varData_3906.chars) {
+      const seenIds = new Set();
+      const seenNames = new Set();
+      const uniqueChars = [];
+      for (const c of (varData_3906.chars || [])) {
+        if (!c) continue;
+        const nameKey = `${(c.first_name || c.firstname || '').trim().toLowerCase()}_${(c.last_name || c.lastname || '').trim().toLowerCase()}`;
+        if (!seenIds.has(c.id) && !seenNames.has(nameKey) && uniqueChars.length < 5) {
+          seenIds.add(c.id);
+          seenNames.add(nameKey);
+          uniqueChars.push(c);
+        }
+      }
+      varData_3906.chars = uniqueChars;
       NUI.execute("np-spawn:characterCameraChange", 0);
       setState({
         ...state,
+        chars: uniqueChars,
         currentSelect: {
           position: 0,
           charId: -1

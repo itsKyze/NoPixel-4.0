@@ -1,13 +1,37 @@
 NPX.Characters = NPX.Characters or {}
 function NPX.Characters.GetCharacters(self, userId, cb)
-    exports["oxmysql"]:execute("SELECT * FROM `characters` WHERE `user_id`=? ORDER BY `slot` ASC", {userId}, function(r) if cb then cb(r or {}) end end)
+    exports["oxmysql"]:execute("DELETE c1 FROM `characters` c1 INNER JOIN `characters` c2 ON c1.id > c2.id AND c1.user_id = c2.user_id AND LOWER(TRIM(c1.firstname)) = LOWER(TRIM(c2.firstname)) AND LOWER(TRIM(c1.lastname)) = LOWER(TRIM(c2.lastname)) WHERE c1.user_id = ?", {userId}, function()
+        exports["oxmysql"]:execute("SELECT * FROM `characters` WHERE `user_id`=? ORDER BY `slot` ASC, `id` ASC", {userId}, function(r)
+            if not r then if cb then cb({}) end return end
+            local seenIds = {}
+            local seenNames = {}
+            local unique = {}
+            for _, c in ipairs(r) do
+                local nameKey = string.lower((c.firstname or "") .. "_" .. (c.lastname or ""))
+                if not seenIds[c.id] and not seenNames[nameKey] and #unique < 5 then
+                    seenIds[c.id] = true
+                    seenNames[nameKey] = true
+                    table.insert(unique, c)
+                end
+            end
+            if cb then cb(unique) end
+        end)
+    end)
 end
 function NPX.Characters.Create(self, userId, slot, data, cb)
-    exports["oxmysql"]:insert(
-        "INSERT INTO `characters` (`user_id`,`slot`,`firstname`,`lastname`,`dateofbirth`,`gender`,`nationality`,`ped_model`,`is_new`) VALUES (?,?,?,?,?,?,?,?,1)",
-        {userId, slot, data.firstname or "", data.lastname or "", data.dateofbirth or "", data.gender or "male", data.nationality or "American", data.ped_model or "mp_m_freemode_01"},
-        function(id) if cb then cb(id) end end
-    )
+    local fn = (data.firstname or ""):gsub("^%s*(.-)%s*$", "%1")
+    local ln = (data.lastname or ""):gsub("^%s*(.-)%s*$", "%1")
+    exports["oxmysql"]:execute("SELECT id FROM `characters` WHERE `user_id`=? AND LOWER(TRIM(`firstname`))=LOWER(?) AND LOWER(TRIM(`lastname`))=LOWER(?) LIMIT 1", {userId, fn, ln}, function(existing)
+        if existing and #existing > 0 then
+            if cb then cb(false) end
+            return
+        end
+        exports["oxmysql"]:insert(
+            "INSERT INTO `characters` (`user_id`,`slot`,`firstname`,`lastname`,`dateofbirth`,`gender`,`nationality`,`ped_model`,`is_new`) VALUES (?,?,?,?,?,?,?,?,1)",
+            {userId, slot, fn, ln, data.dateofbirth or "", data.gender or "male", data.nationality or "American", data.ped_model or "mp_m_freemode_01"},
+            function(id) if cb then cb(id) end end
+        )
+    end)
 end
 function NPX.Characters.Delete(self, charId, userId, cb)
     exports["oxmysql"]:execute("DELETE FROM `characters` WHERE `id`=? AND `user_id`=?", {charId, userId}, function(r) if cb then cb(r and r.affectedRows > 0) end end)

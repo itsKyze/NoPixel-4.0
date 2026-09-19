@@ -13393,38 +13393,60 @@
     function _0x164dfc() {
       var cfg = _0x5235fe.Sync.config.GetModuleConfig("np-jail:main");
       if (!cfg) {
-        return {
-          cellData: [],
-          interactions: {
-            clean: { clean: [] },
-            kitchen: { package: [], prepare: [] },
-            scrap: { deliver: [] },
-            prisonServices: []
-          },
-          jobBoardCooldown: 30,
-          reputationAdjustmentLimit: [0, 0],
-          sentenceAdjustmentLimit: [0, 0]
-        };
-      }
-      if (!cfg.interactions) {
-        cfg.interactions = {
-          clean: { clean: [] },
-          kitchen: { package: [], prepare: [] },
-          scrap: { deliver: [] },
-          prisonServices: []
-        };
-      }
-      if (!cfg.interactions.scrap) {
-        cfg.interactions.scrap = { deliver: [] };
-      }
-      if (!cfg.interactions.clean) {
-        cfg.interactions.clean = { clean: [] };
-      }
-      if (!cfg.interactions.kitchen) {
-        cfg.interactions.kitchen = { package: [], prepare: [] };
+        cfg = {};
       }
       if (!cfg.cellData) {
         cfg.cellData = [];
+      }
+      if (!cfg.jobBoardCooldown) {
+        cfg.jobBoardCooldown = 30;
+      }
+      if (!cfg.reputationAdjustmentLimit) {
+        cfg.reputationAdjustmentLimit = [0, 0];
+      }
+      if (!cfg.sentenceAdjustmentLimit) {
+        cfg.sentenceAdjustmentLimit = [0, 0];
+      }
+      if (!cfg.interactions) {
+        cfg.interactions = {};
+      }
+      if (!cfg.interactions.clean) {
+        cfg.interactions.clean = {};
+      }
+      cfg.interactions.clean.clean = cfg.interactions.clean.clean || [];
+      cfg.interactions.clean.sweep = cfg.interactions.clean.sweep || [];
+      cfg.interactions.clean.garden = cfg.interactions.clean.garden || [];
+      if (!cfg.interactions.kitchen) {
+        cfg.interactions.kitchen = {};
+      }
+      cfg.interactions.kitchen.package = cfg.interactions.kitchen.package || [];
+      cfg.interactions.kitchen.prepare = cfg.interactions.kitchen.prepare || [];
+      cfg.interactions.kitchen.sink = cfg.interactions.kitchen.sink || [];
+      cfg.interactions.kitchen.trash = cfg.interactions.kitchen.trash || [];
+      cfg.interactions.kitchen.stove = cfg.interactions.kitchen.stove || [];
+      cfg.interactions.kitchen.shelf = cfg.interactions.kitchen.shelf || [];
+      cfg.interactions.kitchen.serve = cfg.interactions.kitchen.serve || [];
+      if (!cfg.interactions.scrap) {
+        cfg.interactions.scrap = {};
+      }
+      cfg.interactions.scrap.deliver = cfg.interactions.scrap.deliver || [];
+      var propsToDefault = [
+        "prisonServices",
+        "lockers",
+        "armouries",
+        "inmateListOnly",
+        "guardActions",
+        "prisonLockdown",
+        "prisonJobs",
+        "kitchenFood",
+        "kitchenDrink",
+        "kitchenSlushy",
+        "tokenMachine",
+        "rentBicycle",
+        "safe"
+      ];
+      for (var prop of propsToDefault) {
+        if (!cfg.interactions[prop]) cfg.interactions[prop] = [];
       }
       return cfg;
     }
@@ -14693,7 +14715,10 @@
         var _0x444064;
         return _0x2d0227(this, function(_0x4539df) {
           _0x5d3dbf = _0x164dfc();
-          _0x476363 = _0x5d3dbf.interactions.clean;
+          _0x476363 = _0x5d3dbf && _0x5d3dbf.interactions && _0x5d3dbf.interactions.clean ? _0x5d3dbf.interactions.clean : {};
+          if (!_0x476363.clean) _0x476363.clean = [];
+          if (!_0x476363.sweep) _0x476363.sweep = [];
+          if (!_0x476363.garden) _0x476363.garden = [];
           _0x12cbeb = true;
           _0x411260 = false;
           _0x3b6502 = void 0;
@@ -15513,7 +15538,12 @@
         var _0x4d0226;
         return _0x17be24(this, function(_0x4ca55e) {
           _0x5dab09 = _0x164dfc();
-          _0x7021aa = _0x5dab09.interactions.kitchen;
+          _0x7021aa = _0x5dab09 && _0x5dab09.interactions && _0x5dab09.interactions.kitchen ? _0x5dab09.interactions.kitchen : {};
+          if (!_0x7021aa.sink) _0x7021aa.sink = [];
+          if (!_0x7021aa.trash) _0x7021aa.trash = [];
+          if (!_0x7021aa.stove) _0x7021aa.stove = [];
+          if (!_0x7021aa.shelf) _0x7021aa.shelf = [];
+          if (!_0x7021aa.serve) _0x7021aa.serve = [];
           _0x4c01bd = true;
           _0x2bf860 = false;
           _0x23cab1 = void 0;
@@ -16166,7 +16196,8 @@
         var _0x8e11ba;
         return _0x18f67c(this, function(_0x53faee) {
           _0x576c71 = _0x164dfc();
-          _0x454814 = _0x576c71.interactions.scrap;
+          _0x454814 = _0x576c71 && _0x576c71.interactions && _0x576c71.interactions.scrap ? _0x576c71.interactions.scrap : {};
+          if (!_0x454814.deliver) _0x454814.deliver = [];
           var _0x46369c = {
             distance: {
               draw: 10,

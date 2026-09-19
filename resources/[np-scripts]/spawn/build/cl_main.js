@@ -14768,10 +14768,14 @@ on("__cfx_nui:nuiLog", function(data, cb) {
         _ordering = {};
       }
       var _seenCharIds = /* @__PURE__ */ new Set();
+      var _seenCharNames = /* @__PURE__ */ new Set();
       var _uniqueChars = [];
       for (var _c of _chars || []) {
-        if (_c && !_seenCharIds.has(_c.id) && _uniqueChars.length < 5) {
+        if (!_c) continue;
+        var _nKey = ((_c.first_name || _c.firstname || "") + "_" + (_c.last_name || _c.lastname || "")).toLowerCase().trim();
+        if (!_seenCharIds.has(_c.id) && !_seenCharNames.has(_nKey) && _uniqueChars.length < 5) {
           _seenCharIds.add(_c.id);
+          _seenCharNames.add(_nKey);
           _uniqueChars.push(_c);
         }
       }

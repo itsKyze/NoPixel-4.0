@@ -201,13 +201,23 @@
           user = await Library.insertQuery("INSERT INTO users (license) VALUES (?)", [license]);
         }
         const userId = user || 1;
+        try {
+          await Library.executeQuery(
+            "DELETE c1 FROM characters c1 INNER JOIN characters c2 ON c1.id > c2.id AND c1.user_id = c2.user_id AND LOWER(TRIM(c1.firstname)) = LOWER(TRIM(c2.firstname)) AND LOWER(TRIM(c1.lastname)) = LOWER(TRIM(c2.lastname)) WHERE c1.user_id = ?",
+            [userId]
+          );
+        } catch (cleanErr) {
+        }
         const rows = await Library.executeQuery("SELECT * FROM characters WHERE user_id = ? OR license = ? ORDER BY slot ASC, id ASC", [userId, license]);
         if (!rows || rows.length === 0) return [];
         const seenIds = /* @__PURE__ */ new Set();
+        const seenNames = /* @__PURE__ */ new Set();
         const uniqueRows = [];
         for (const r of rows) {
-          if (!seenIds.has(r.id) && uniqueRows.length < 5) {
+          const nameKey = `${(r.firstname || "").trim().toLowerCase()}_${(r.lastname || "").trim().toLowerCase()}`;
+          if (!seenIds.has(r.id) && !seenNames.has(nameKey) && uniqueRows.length < 5) {
             seenIds.add(r.id);
+            seenNames.add(nameKey);
             uniqueRows.push(r);
           }
         }
@@ -240,6 +250,18 @@
           user = await Library.insertQuery("INSERT INTO users (license) VALUES (?)", [license]);
         }
         const userId = user || 1;
+        const firstName = (data && (data.firstname || data.first_name) || "John").trim();
+        const lastName = (data && (data.lastname || data.last_name) || "Doe").trim();
+        const duplicate = await Library.scalarQuery(
+          "SELECT id FROM characters WHERE user_id = ? AND LOWER(TRIM(firstname)) = LOWER(?) AND LOWER(TRIM(lastname)) = LOWER(?) LIMIT 1",
+          [userId, firstName, lastName]
+        );
+        if (duplicate) {
+          return {
+            success: false,
+            message: "A character with this name already exists!"
+          };
+        }
         const existing = await Library.executeQuery("SELECT id, slot FROM characters WHERE user_id = ?", [userId]);
         if (existing && existing.length >= 5) {
           return {
@@ -255,8 +277,6 @@
             break;
           }
         }
-        const firstName = data && (data.firstname || data.first_name) || "John";
-        const lastName = data && (data.lastname || data.last_name) || "Doe";
         const dob = data && data.dob || "2000-01-01";
         const gender = data && (data.gender == 1 || data.gender === "female") ? "female" : "male";
         const charType = data && data.type || "citizen";
