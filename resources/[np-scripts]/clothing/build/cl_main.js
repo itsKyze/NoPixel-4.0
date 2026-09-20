@@ -16476,16 +16476,16 @@
           switch (param_1.label) {
             case 0:
               varData_2463 = varData_1649.GetResourceConfig("models") || {
-                male: "mp_m_freemode_01",
-                female: "mp_f_freemode_01"
+                male: ["mp_m_freemode_01"],
+                female: ["mp_f_freemode_01"]
               };
               return [4, varData_2455.get()];
             case 1:
               varData_2464 = param_1.sent();
               var varData_2465 = {
-                male: varData_2463.male || "mp_m_freemode_01",
-                female: varData_2463.female || "mp_f_freemode_01",
-                whitelist: varData_2464 ?? []
+                male: Array.isArray(varData_2463.male) ? varData_2463.male : varData_2463.male ? [varData_2463.male] : ["mp_m_freemode_01"],
+                female: Array.isArray(varData_2463.female) ? varData_2463.female : varData_2463.female ? [varData_2463.female] : ["mp_f_freemode_01"],
+                whitelist: Array.isArray(varData_2464) ? varData_2464 : []
               };
               return [2, varData_2465];
           }
@@ -16950,8 +16950,13 @@
       varData_2773(param_1, false);
     });
     on("np-clothing:openClothing", function(param_1, param_2, param_3, param_4) {
-      isDisabled_1 = !!(param_2 || param_4 === "spawn");
+      isDisabled_1 = !!(param_2 || param_4 === "spawn" || globalThis._newCharClothingActive);
       varData_2773(param_1, param_3 ?? false);
+    });
+    on("np-clothing:close", function() {
+      if (globalThis._newCharClothingActive || isDisabled_1) {
+        emit("np-spawn:finishedClothing", "Finished");
+      }
     });
     onNet("np-clothing:openBarber", function(param_1) {
       varData_2780(param_1);

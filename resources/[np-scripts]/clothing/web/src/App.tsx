@@ -1259,13 +1259,13 @@ function Ln() {
     changeDrawable: _0x251032,
     drawablesData: _0x15d42b
   } = O();
-  const varData_119 = _0x17a24b(() => _0x203da9?.pedEntries.male?.map(param_1 => ({
+  const varData_119 = _0x17a24b(() => (Array.isArray(_0x203da9?.pedEntries?.male) ? _0x203da9.pedEntries.male : (_0x203da9?.pedEntries?.male ? [_0x203da9.pedEntries.male] : [])).map(param_1 => ({
     id: param_1,
     icon: "clothes/peds/" + param_1 + ".webp",
     active: _0x203da9?.modelName === param_1,
     category: "male"
   })));
-  const varData_120 = _0x17a24b(() => _0x203da9?.pedEntries.female?.map(param_1 => ({
+  const varData_120 = _0x17a24b(() => (Array.isArray(_0x203da9?.pedEntries?.female) ? _0x203da9.pedEntries.female : (_0x203da9?.pedEntries?.female ? [_0x203da9.pedEntries.female] : [])).map(param_1 => ({
     id: param_1,
     icon: "clothes/peds/" + param_1 + ".webp",
     active: _0x203da9?.modelName === param_1,
@@ -1339,7 +1339,8 @@ function Ln() {
             id: "CustomPed",
             value: _0x203da9.modelName,
             onChange: async (param_1, param_2) => {
-              if (!_0x203da9.pedEntries.whitelist.map(param_1_1 => param_1_1.toLocaleLowerCase().trim()).includes(param_2.toLocaleLowerCase().trim())) {
+              const wl = Array.isArray(_0x203da9?.pedEntries?.whitelist) ? _0x203da9.pedEntries.whitelist : [];
+              if (!wl.map(param_1_1 => param_1_1.toLocaleLowerCase().trim()).includes(param_2.toLocaleLowerCase().trim())) {
                 return;
               }
               _0x31ad4c("modelName", param_2);

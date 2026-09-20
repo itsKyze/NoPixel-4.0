@@ -288,7 +288,7 @@
   border-radius: 0.25rem;
 }
 .cscroll-green::-webkit-scrollbar-thumb {
-  background: rgba(0, 248, 185, 0.75) !important;
+  background: rgba(0, 248, 185, 0.749) !important;
 }
 .cinput {
   -webkit-appearance: none;
