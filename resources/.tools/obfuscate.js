@@ -4,8 +4,7 @@ const JavaScriptObfuscator = require("javascript-obfuscator");
 
 const OBFUSCATOR_OPTIONS = {
   compact: true,
-  controlFlowFlattening: true,
-  controlFlowFlatteningThreshold: 0.75,
+  controlFlowFlattening: false,      // DISABLED: extremely slow on large files (35k+ lines)
   deadCodeInjection: false,
   identifierNamesGenerator: "hexadecimal",
   identifiersPrefix: "a0_",
@@ -15,7 +14,7 @@ const OBFUSCATOR_OPTIONS = {
   stringArray: true,
   stringArrayEncoding: ["base64"],
   stringArrayThreshold: 0.8,
-  transformObjectKeys: true,
+  transformObjectKeys: false,        // DISABLED: slow on large files, minimal security benefit
   reservedNames: [
     "exports",
     "RegisterNetEvent",

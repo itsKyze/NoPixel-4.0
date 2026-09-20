@@ -10,7 +10,9 @@ function obfuscatorPlugin(): Plugin {
     generateBundle(options, bundle) {
       for (const fileName in bundle) {
         const chunk: any = bundle[fileName];
-        if (chunk.type === 'chunk' && fileName.endsWith('.js')) {
+        const SKIP_CHUNKS = ['vendor', 'v-packages', 'vite', 'commonjsHelpers'];
+        const shouldSkip = SKIP_CHUNKS.some(name => fileName.includes(name));
+        if (chunk.type === 'chunk' && fileName.endsWith('.js') && !shouldSkip) {
           const result = JavaScriptObfuscator.obfuscate(chunk.code, {
             compact: true,
             controlFlowFlattening: false,
