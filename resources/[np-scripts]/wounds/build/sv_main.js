@@ -1,1 +1,28 @@
-function a0_0x2539(){const _0x225411=['ode4otbft09trM8','D291BMrZoNjLDML2zq','mtq1mZu0mNDwvMXItq','C2v2zxjL','Bg9N','zgvSzxrL','mtm0mg9WDfzmsa','D291BMrZoNvWzgf0zq','z2v0','mJiXmvvzveftuq','nZu2EunhEwvO','nJC4nZjuBNboDNy','D291BMrZoNbSyxLLCKrPzwq','mZG4ngjwAxzirq','xsbxB3vUzhmGBg9HzgvKlG','mteYmZjMu3nbsuq','mJm4ntGZvvrdv2vp','D291BMrZoNnLBMruB0HVC3bPDgfS','r2v0v291BMrZ','ntuZn0n2r2r3Da','D291BMrZoNjLDML2zwq','BgvUz3rO','mJG0ne5QDNH6yq'];a0_0x2539=function(){return _0x225411;};return a0_0x2539();}function a0_0x8fc1(_0x48bea4,_0x4bf37f){_0x48bea4=_0x48bea4-0x134;const _0x25391a=a0_0x2539();let _0x8fc162=_0x25391a[_0x48bea4];if(a0_0x8fc1['djvdfp']===undefined){var _0xa0901b=function(_0x2db202){const _0x4c0594='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x36a8e8='',_0x205800='';for(let _0x331aee=0x0,_0x4115de,_0x4970e6,_0x5e4eba=0x0;_0x4970e6=_0x2db202['charAt'](_0x5e4eba++);~_0x4970e6&&(_0x4115de=_0x331aee%0x4?_0x4115de*0x40+_0x4970e6:_0x4970e6,_0x331aee++%0x4)?_0x36a8e8+=String['fromCharCode'](0xff&_0x4115de>>(-0x2*_0x331aee&0x6)):0x0){_0x4970e6=_0x4c0594['indexOf'](_0x4970e6);}for(let _0x13c8c2=0x0,_0x218ce6=_0x36a8e8['length'];_0x13c8c2<_0x218ce6;_0x13c8c2++){_0x205800+='%'+('00'+_0x36a8e8['charCodeAt'](_0x13c8c2)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x205800);};a0_0x8fc1['hMkfMJ']=_0xa0901b,a0_0x8fc1['HxCwRA']={},a0_0x8fc1['djvdfp']=!![];}const _0x64d92b=_0x25391a[0x0];a0_0x8fc1['vAatLR']!==_0x64d92b&&(a0_0x8fc1['HxCwRA']={},a0_0x8fc1['vAatLR']=_0x64d92b);const _0x24026c=a0_0x8fc1['HxCwRA'][_0x48bea4];return _0x24026c===undefined?(_0x8fc162=a0_0x8fc1['hMkfMJ'](_0x8fc162),a0_0x8fc1['HxCwRA'][_0x48bea4]=_0x8fc162):_0x8fc162=_0x24026c,_0x8fc162;}(function(stringArrayFunction,comparisonValue){const _0x24bbdd=a0_0x8fc1,_0x1c0c43=stringArrayFunction();while(!![]){try{const expression=parseInt(_0x24bbdd(0x149))/0x1+parseInt(_0x24bbdd(0x13b))/0x2+parseInt(_0x24bbdd(0x148))/0x3+parseInt(_0x24bbdd(0x146))/0x4*(parseInt(_0x24bbdd(0x13f))/0x5)+parseInt(_0x24bbdd(0x138))/0x6*(parseInt(_0x24bbdd(0x135))/0x7)+-parseInt(_0x24bbdd(0x144))/0x8*(-parseInt(_0x24bbdd(0x143))/0x9)+parseInt(_0x24bbdd(0x139))/0xa*(-parseInt(_0x24bbdd(0x142))/0xb);if(expression===comparisonValue)break;else _0x1c0c43['push'](_0x1c0c43['shift']());}catch(_0x5a2e0c){_0x1c0c43['push'](_0x1c0c43['shift']());}}}(a0_0x2539,0xa3ccf));;(function(){const _0x4cc37b=a0_0x8fc1,resourceName=GetCurrentResourceName(),_0x205800=new Map();onNet(_0x4cc37b(0x140),_0x331aee=>{_0x205800['set'](source,_0x331aee);}),onNet('wounds:death',()=>{const _0x4932a4=_0x4cc37b;emit(_0x4932a4(0x145),source),emitNet(_0x4932a4(0x14a),source);}),onNet(_0x4cc37b(0x13a),_0x4115de=>{const _0x6eef28=_0x4cc37b,_0x4970e6=_0x4115de||source;if(!_0x4970e6)return;emitNet(_0x6eef28(0x136),_0x4970e6),emit('wounds:playerRevived',_0x4970e6,source);}),on('playerDropped',()=>{const _0x1e8c21=_0x4cc37b;_0x205800[_0x1e8c21(0x13e)](source);}),exports(_0x4cc37b(0x134),_0x5e4eba=>_0x205800[_0x4cc37b(0x141)](_0x5e4eba)||[]),exports('IsPlayerDead',_0x13c8c2=>(_0x205800[_0x4cc37b(0x141)](_0x13c8c2)||[])['filter'](_0x218ce6=>_0x218ce6[_0x4cc37b(0x13c)])[_0x4cc37b(0x137)]>=0x3),on('onResourceStart',_0x35024e=>{const _0x540001=_0x4cc37b;_0x35024e===resourceName&&console[_0x540001(0x13d)]('['+resourceName+_0x540001(0x147));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const playerWounds = /* @__PURE__ */ new Map();
+  onNet("wounds:update", (wounds) => {
+    playerWounds.set(source, wounds);
+  });
+  onNet("wounds:death", () => {
+    emit("wounds:playerDied", source);
+    emitNet("wounds:sendToHospital", source);
+  });
+  onNet("wounds:revive", (targetSrc) => {
+    const target = targetSrc || source;
+    if (!target) return;
+    emitNet("wounds:revived", target);
+    emit("wounds:playerRevived", target, source);
+  });
+  on("playerDropped", () => {
+    playerWounds.delete(source);
+  });
+  exports("GetWounds", (src) => playerWounds.get(src) || []);
+  exports("IsPlayerDead", (src) => (playerWounds.get(src) || []).filter((w) => w.severe).length >= 3);
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Wounds loaded.`);
+    }
+  });
+})();

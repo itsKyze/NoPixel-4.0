@@ -3,39 +3,7 @@ import react from '@vitejs/plugin-react';
 import JavaScriptObfuscator from 'javascript-obfuscator';
 
 function obfuscatorPlugin(): Plugin {
-  return {
-    name: 'rollup-plugin-javascript-obfuscator',
-    apply: 'build',
-    enforce: 'post',
-    generateBundle(options, bundle) {
-      for (const fileName in bundle) {
-        const chunk: any = bundle[fileName];
-        const SKIP_CHUNKS = ['vendor', 'v-packages', 'vite', 'commonjsHelpers'];
-        const shouldSkip = SKIP_CHUNKS.some(name => fileName.includes(name));
-        if (chunk.type === 'chunk' && fileName.endsWith('.js') && !shouldSkip) {
-          const result = JavaScriptObfuscator.obfuscate(chunk.code, {
-            compact: true,
-            controlFlowFlattening: false,
-            deadCodeInjection: false,
-            debugProtection: false,
-            disableConsoleOutput: false,
-            identifierNamesGenerator: 'hexadecimal',
-            identifiersPrefix: 'a0_',
-            log: false,
-            numbersToExpressions: false,
-            renameGlobals: false,
-            selfDefending: false,
-            simplify: true,
-            splitStrings: false,
-            stringArray: true,
-            stringArrayEncoding: ['base64'],
-            stringArrayThreshold: 0.8
-          });
-          chunk.code = result.getObfuscatedCode();
-        }
-      }
-    }
-  };
+  return { name: 'rollup-plugin-javascript-obfuscator' };
 }
 
 export default defineConfig({

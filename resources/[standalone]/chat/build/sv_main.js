@@ -1,1 +1,44 @@
-(function(stringArrayFunction,comparisonValue){const _0x30399d=a0_0x3647,_0x487a71=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x30399d(0x1bc))/0x1*(-parseInt(_0x30399d(0x1cb))/0x2)+parseInt(_0x30399d(0x1bf))/0x3+parseInt(_0x30399d(0x1c1))/0x4*(parseInt(_0x30399d(0x1c2))/0x5)+-parseInt(_0x30399d(0x1ca))/0x6*(-parseInt(_0x30399d(0x1c5))/0x7)+parseInt(_0x30399d(0x1c7))/0x8*(-parseInt(_0x30399d(0x1cf))/0x9)+-parseInt(_0x30399d(0x1c4))/0xa*(parseInt(_0x30399d(0x1c0))/0xb)+parseInt(_0x30399d(0x1cd))/0xc;if(expression===comparisonValue)break;else _0x487a71['push'](_0x487a71['shift']());}catch(_0x3af30f){_0x487a71['push'](_0x487a71['shift']());}}}(a0_0x343a,0x85033));function a0_0x3647(_0x45fa46,_0x433b43){_0x45fa46=_0x45fa46-0x1bc;const _0x343ab7=a0_0x343a();let _0x364722=_0x343ab7[_0x45fa46];if(a0_0x3647['liGXJv']===undefined){var _0x108dbd=function(_0x400a69){const _0x20420f='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0xeb7882='',_0x2f8d51='';for(let _0x428587=0x0,_0x2295e4,_0x14f850,_0x2274d8=0x0;_0x14f850=_0x400a69['charAt'](_0x2274d8++);~_0x14f850&&(_0x2295e4=_0x428587%0x4?_0x2295e4*0x40+_0x14f850:_0x14f850,_0x428587++%0x4)?_0xeb7882+=String['fromCharCode'](0xff&_0x2295e4>>(-0x2*_0x428587&0x6)):0x0){_0x14f850=_0x20420f['indexOf'](_0x14f850);}for(let _0x1115e5=0x0,_0x4edcfc=_0xeb7882['length'];_0x1115e5<_0x4edcfc;_0x1115e5++){_0x2f8d51+='%'+('00'+_0xeb7882['charCodeAt'](_0x1115e5)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2f8d51);};a0_0x3647['jAzKJn']=_0x108dbd,a0_0x3647['dmDBJk']={},a0_0x3647['liGXJv']=!![];}const _0x35ad11=_0x343ab7[0x0];a0_0x3647['nLqtpE']!==_0x35ad11&&(a0_0x3647['dmDBJk']={},a0_0x3647['nLqtpE']=_0x35ad11);const _0x817872=a0_0x3647['dmDBJk'][_0x45fa46];return _0x817872===undefined?(_0x364722=a0_0x3647['jAzKJn'](_0x364722),a0_0x3647['dmDBJk'][_0x45fa46]=_0x364722):_0x364722=_0x817872,_0x364722;}function a0_0x343a(){const _0x1d92c6=['mtu4otK4Bg1rEgjU','ywrKtwvZC2fNzq','nZaZoda4nfzUy0nnrq','y2HHDdPYzxf1zxn0sgLZDg9YEq','mJDIz1nOvgi','y2HHDe1LC3nHz2u','ChvZAa','w2nOyxrDienOyxqGC2vYDMvYigXVywrLzc4','muPjvKvnBG','C2HPzNq','Bg9N','mJm5odeYmLbRr3vnCq','mZGXmZm1oxrJqLfIsa','mJG5nJC2q1Dfq0PL','nxL2rLvQuW','BgvUz3rO','mtb4DNzAv1K','nte4u0PfCu1u','BM93','mtC5nJmXmNzKvvPlEq','C2XPy2u','w2nOyxrDia','mJiXnef6u3PjsG'];a0_0x343a=function(){return _0x1d92c6;};return a0_0x343a();};(function(){const _0x22f692=a0_0x3647,_0x2f8d51=[],_0x428587=0x64;onNet('chat:addSuggestion',(_0x2295e4,_0x14f850,_0x2274d8)=>{}),onNet(_0x22f692(0x1d0),(_0x1115e5,_0x4edcfc,_0x3f2007)=>{const _0x190d46=_0x22f692,_0x36ceed=source,_0x7a8134=GetPlayerName(_0x36ceed),_0x5dbfce={'author':_0x7a8134,'message':_0x3f2007,'color':_0x4edcfc,'time':Date[_0x190d46(0x1c6)]()};_0x2f8d51[_0x190d46(0x1d1)](_0x5dbfce),_0x2f8d51[_0x190d46(0x1c3)]>_0x428587&&_0x2f8d51[_0x190d46(0x1bd)](),emitNet(_0x190d46(0x1d0),-0x1,_0x7a8134,_0x4edcfc||[0xff,0xff,0xff],_0x3f2007),console[_0x190d46(0x1be)](_0x190d46(0x1c9)+_0x7a8134+':\x20'+_0x3f2007);}),onNet(_0x22f692(0x1ce),()=>{const _0x55127f=_0x22f692;emitNet('chat:receiveHistory',source,_0x2f8d51[_0x55127f(0x1c8)](-0x32));}),exports(_0x22f692(0x1cc),(_0x2af357,_0x2b58ba,_0x4232a1)=>{const _0x215bd9=_0x22f692,_0x4ae4ae={'author':_0x2af357,'message':_0x4232a1,'color':_0x2b58ba,'time':Date['now']()};_0x2f8d51[_0x215bd9(0x1d1)](_0x4ae4ae),_0x2f8d51[_0x215bd9(0x1c3)]>_0x428587&&_0x2f8d51[_0x215bd9(0x1bd)](),emitNet(_0x215bd9(0x1d0),-0x1,_0x2af357,_0x2b58ba||[0xff,0xff,0xff],_0x4232a1);}),on('onResourceStart',_0x472e1b=>{const _0x3ec98e=_0x22f692;_0x472e1b===GetCurrentResourceName()&&console[_0x3ec98e(0x1be)](_0x3ec98e(0x1d2));});}());
+;
+(function() {
+  const chatHistory = [];
+  const MAX_HISTORY = 100;
+  onNet("chat:addSuggestion", (name, help, params) => {
+  });
+  onNet("chatMessage", (authorName, color, message) => {
+    const src = source;
+    const playerName = GetPlayerName(src);
+    const entry = {
+      author: playerName,
+      message,
+      color,
+      time: Date.now()
+    };
+    chatHistory.push(entry);
+    if (chatHistory.length > MAX_HISTORY) {
+      chatHistory.shift();
+    }
+    emitNet("chatMessage", -1, playerName, color || [255, 255, 255], message);
+    console.log("[chat] " + playerName + ": " + message);
+  });
+  onNet("chat:requestHistory", () => {
+    emitNet("chat:receiveHistory", source, chatHistory.slice(-50));
+  });
+  exports("addMessage", (author, color, message) => {
+    const entry = {
+      author,
+      message,
+      color,
+      time: Date.now()
+    };
+    chatHistory.push(entry);
+    if (chatHistory.length > MAX_HISTORY) {
+      chatHistory.shift();
+    }
+    emitNet("chatMessage", -1, author, color || [255, 255, 255], message);
+  });
+  on("onResourceStart", (res) => {
+    if (res === GetCurrentResourceName()) {
+      console.log("[chat] Chat server loaded.");
+    }
+  });
+})();

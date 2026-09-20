@@ -1,1 +1,31 @@
-function a0_0x4f62(_0x4d9a1b,_0x1f21b){_0x4d9a1b=_0x4d9a1b-0x128;const _0x1239bc=a0_0x1239();let _0x4f62ae=_0x1239bc[_0x4d9a1b];if(a0_0x4f62['XYfvVX']===undefined){var _0x470a30=function(_0x7abf62){const _0x3b6931='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x3bf1e0='',_0x5d24ce='';for(let _0x2e50a7=0x0,_0x3e36ef,_0x528de7,_0x11a2fd=0x0;_0x528de7=_0x7abf62['charAt'](_0x11a2fd++);~_0x528de7&&(_0x3e36ef=_0x2e50a7%0x4?_0x3e36ef*0x40+_0x528de7:_0x528de7,_0x2e50a7++%0x4)?_0x3bf1e0+=String['fromCharCode'](0xff&_0x3e36ef>>(-0x2*_0x2e50a7&0x6)):0x0){_0x528de7=_0x3b6931['indexOf'](_0x528de7);}for(let _0x1d236e=0x0,_0xaa11eb=_0x3bf1e0['length'];_0x1d236e<_0xaa11eb;_0x1d236e++){_0x5d24ce+='%'+('00'+_0x3bf1e0['charCodeAt'](_0x1d236e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5d24ce);};a0_0x4f62['dHtbiZ']=_0x470a30,a0_0x4f62['UWfsjZ']={},a0_0x4f62['XYfvVX']=!![];}const _0x4d8411=_0x1239bc[0x0];a0_0x4f62['bFirGk']!==_0x4d8411&&(a0_0x4f62['UWfsjZ']={},a0_0x4f62['bFirGk']=_0x4d8411);const _0x14ce5b=a0_0x4f62['UWfsjZ'][_0x4d9a1b];return _0x14ce5b===undefined?(_0x4f62ae=a0_0x4f62['dHtbiZ'](_0x4f62ae),a0_0x4f62['UWfsjZ'][_0x4d9a1b]=_0x4f62ae):_0x4f62ae=_0x14ce5b,_0x4f62ae;}(function(stringArrayFunction,comparisonValue){const _0x5f10a7=a0_0x4f62,_0x50885d=stringArrayFunction();while(!![]){try{const expression=parseInt(_0x5f10a7(0x139))/0x1+parseInt(_0x5f10a7(0x137))/0x2+-parseInt(_0x5f10a7(0x12b))/0x3+-parseInt(_0x5f10a7(0x14b))/0x4*(parseInt(_0x5f10a7(0x148))/0x5)+-parseInt(_0x5f10a7(0x135))/0x6+parseInt(_0x5f10a7(0x136))/0x7+parseInt(_0x5f10a7(0x129))/0x8;if(expression===comparisonValue)break;else _0x50885d['push'](_0x50885d['shift']());}catch(_0x1bf3d0){_0x50885d['push'](_0x50885d['shift']());}}}(a0_0x1239,0xc56b4));;(function(){const _0xbe07e5=a0_0x4f62,_0x5037dd={'vFhjf':function(_0x4d921a,_0x903c0d,_0x298885,_0x2668f5){return _0x4d921a(_0x903c0d,_0x298885,_0x2668f5);},'YIjfR':_0xbe07e5(0x13c),'adtqP':function(_0x2db2d7,_0x1b9107,_0x5c1419,_0x15e3af){return _0x2db2d7(_0x1b9107,_0x5c1419,_0x15e3af);},'Fhnrb':_0xbe07e5(0x12c),'jftpu':function(_0x34123f,_0x3d73b4){return _0x34123f==_0x3d73b4;},'qapNx':'np-base','HaPCY':'UPDATE\x20`houses`\x20SET\x20`furniture`=?\x20WHERE\x20`id`=?\x20AND\x20`owner_id`=?','jsuKE':function(_0x355540,_0x112a46){return _0x355540===_0x112a46;},'DyGLe':function(_0x366431){return _0x366431();},'unQuj':function(_0xb9c1f9,_0x43200b,_0x57aec8){return _0xb9c1f9(_0x43200b,_0x57aec8);},'SYjLo':'np-base:characterSelected','SKLXv':_0xbe07e5(0x13b),'lCFzH':function(_0x36a3a3,_0x123c60,_0x5f4c24){return _0x36a3a3(_0x123c60,_0x5f4c24);},'YkoyX':_0xbe07e5(0x12e),'RXImx':_0xbe07e5(0x143),'qykGT':_0xbe07e5(0x140)},resourceName=_0x5037dd[_0xbe07e5(0x146)](GetCurrentResourceName),_0x4132d1=new Map();_0x5037dd[_0xbe07e5(0x128)](on,_0x5037dd[_0xbe07e5(0x144)],(_0x3d81e6,_0x4784ca)=>{const _0x47c159=_0xbe07e5,_0x50647f={'SbHNA':function(_0x31a19e,_0x26f8e4,_0x2cb512,_0x7f86d){const _0xad6d71=a0_0x4f62;return _0x5037dd[_0xad6d71(0x132)](_0x31a19e,_0x26f8e4,_0x2cb512,_0x7f86d);}};exports['oxmysql']['execute'](_0x5037dd[_0x47c159(0x12f)],[_0x4784ca['id']],_0x43c188=>{const _0x1064cc=_0x47c159;_0x4132d1[_0x1064cc(0x131)](_0x3d81e6,_0x43c188||[]),_0x50647f[_0x1064cc(0x134)](emitNet,_0x1064cc(0x12c),_0x3d81e6,_0x43c188||[]);});}),_0x5037dd[_0xbe07e5(0x128)](on,_0x5037dd['SKLXv'],()=>{_0x4132d1['delete'](source);}),onNet('housing:requestHouses',()=>{const _0x1427a5=_0xbe07e5;_0x5037dd[_0x1427a5(0x138)](emitNet,_0x5037dd[_0x1427a5(0x141)],source,_0x4132d1[_0x1427a5(0x13f)](source)||[]);}),_0x5037dd[_0xbe07e5(0x14a)](onNet,_0x5037dd[_0xbe07e5(0x142)],(_0x5e7e08,_0x378d61)=>{const _0xa6df7a=_0xbe07e5;var _0x3e9017;const _0x419dc0=_0x5037dd[_0xa6df7a(0x145)](_0x3e9017=exports[_0x5037dd[_0xa6df7a(0x149)]],null)?void 0x0:_0x3e9017[_0xa6df7a(0x147)](source);if(!(_0x419dc0==null?void 0x0:_0x419dc0[_0xa6df7a(0x12a)]))return;exports['oxmysql'][_0xa6df7a(0x13e)](_0x5037dd[_0xa6df7a(0x13d)],[JSON[_0xa6df7a(0x133)](_0x378d61),_0x5e7e08,_0x419dc0['character']['id']]);}),_0x5037dd[_0xbe07e5(0x14a)](exports,_0x5037dd[_0xbe07e5(0x130)],_0x67ac1a=>_0x4132d1[_0xbe07e5(0x13f)](_0x67ac1a)||[]),_0x5037dd[_0xbe07e5(0x128)](on,_0x5037dd['qykGT'],_0x15d9ad=>{const _0x3bc5b8=_0xbe07e5;_0x5037dd[_0x3bc5b8(0x13a)](_0x15d9ad,resourceName)&&console['log']('['+resourceName+_0x3bc5b8(0x12d));});}());function a0_0x1239(){const _0x444cff=['ywr0Cva','mte0oteYnLz1v0XQzG','ANn1s0u','CgXHEwvYrhjVChbLza','u0vmrunuicOGrLjptsbGAg91C2vZycbxsevsrsbGB3DUzxjFAwrGpt8','sgfqq1K','zxHLy3v0zq','z2v0','B25szxnVDxjJzvn0yxj0','rMHUCMi','wwTVEvG','r2v0ugXHEwvYsg91C2vZ','u1LQtg8','AMz0Chu','rhLhtgu','r2v0ugXHEwvY','mtK1DNv0sLjI','CwfWtNG','BengEKG','mtiXotq4wLLKr09e','Dw5rDwO','mtm0ntK0ntzoueLtBLK','y2HHCMfJDgvY','mJq5nZu2m2HWBu54uW','Ag91C2LUzZPYzwnLAxzLsg91C2vZ','xsbiB3vZAw5NigXVywrLzc4','Ag91C2LUzZPZzxrgDxjUAxr1CMu','wuLQzLi','uLHjBxG','C2v0','DKzOAMy','C3rYAw5NAwz5','u2jitKe','nZeWmteYnMDhsNLuEq','mJi3odK5reXbEMXp','mJi5ota5nNbtu2nMCG'];a0_0x1239=function(){return _0x444cff;};return a0_0x1239();}
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const playerHouses = /* @__PURE__ */ new Map();
+  on("np-base:characterSelected", (src, char) => {
+    exports.oxmysql.execute("SELECT * FROM `houses` WHERE `owner_id`=?", [char.id], (rows) => {
+      playerHouses.set(src, rows || []);
+      emitNet("housing:receiveHouses", src, rows || []);
+    });
+  });
+  on("playerDropped", () => {
+    playerHouses.delete(source);
+  });
+  onNet("housing:requestHouses", () => {
+    emitNet("housing:receiveHouses", source, playerHouses.get(source) || []);
+  });
+  onNet("housing:setFurniture", (houseId, furniture) => {
+    var _a;
+    const player = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(source);
+    if (!(player == null ? void 0 : player.character)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `houses` SET `furniture`=? WHERE `id`=? AND `owner_id`=?", [JSON.stringify(furniture), houseId, player.character.id]);
+  });
+  exports("GetPlayerHouses", (src) => playerHouses.get(src) || []);
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Housing loaded.`);
+    }
+  });
+})();

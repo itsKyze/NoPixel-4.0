@@ -1,1 +1,51 @@
-(function(stringArrayFunction,comparisonValue){const _0x2e094b=a0_0x2238,_0x1e7a2f=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x2e094b(0x136))/0x1+parseInt(_0x2e094b(0x13e))/0x2*(-parseInt(_0x2e094b(0x12c))/0x3)+-parseInt(_0x2e094b(0x138))/0x4*(-parseInt(_0x2e094b(0x13f))/0x5)+parseInt(_0x2e094b(0x11d))/0x6*(-parseInt(_0x2e094b(0x121))/0x7)+-parseInt(_0x2e094b(0x126))/0x8+parseInt(_0x2e094b(0x11a))/0x9*(parseInt(_0x2e094b(0x130))/0xa)+parseInt(_0x2e094b(0x13a))/0xb;if(expression===comparisonValue)break;else _0x1e7a2f['push'](_0x1e7a2f['shift']());}catch(_0x55d4de){_0x1e7a2f['push'](_0x1e7a2f['shift']());}}}(a0_0xcb50,0x76073));function a0_0x2238(_0x429770,_0x50e134){_0x429770=_0x429770-0x118;const _0xcb5096=a0_0xcb50();let _0x2238fc=_0xcb5096[_0x429770];if(a0_0x2238['fKlmXy']===undefined){var _0x2617c5=function(_0x19ca35){const _0x359195='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4af244='',_0xfd535f='';for(let _0x104e86=0x0,_0x49983b,_0x1a4e31,_0x58c1ca=0x0;_0x1a4e31=_0x19ca35['charAt'](_0x58c1ca++);~_0x1a4e31&&(_0x49983b=_0x104e86%0x4?_0x49983b*0x40+_0x1a4e31:_0x1a4e31,_0x104e86++%0x4)?_0x4af244+=String['fromCharCode'](0xff&_0x49983b>>(-0x2*_0x104e86&0x6)):0x0){_0x1a4e31=_0x359195['indexOf'](_0x1a4e31);}for(let _0x27314e=0x0,_0x5cb390=_0x4af244['length'];_0x27314e<_0x5cb390;_0x27314e++){_0xfd535f+='%'+('00'+_0x4af244['charCodeAt'](_0x27314e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0xfd535f);};a0_0x2238['KQFkdN']=_0x2617c5,a0_0x2238['fyZosY']={},a0_0x2238['fKlmXy']=!![];}const _0x2f2e59=_0xcb5096[0x0];a0_0x2238['CcCpta']!==_0x2f2e59&&(a0_0x2238['fyZosY']={},a0_0x2238['CcCpta']=_0x2f2e59);const _0x194c38=a0_0x2238['fyZosY'][_0x429770];return _0x194c38===undefined?(_0x2238fc=a0_0x2238['KQFkdN'](_0x2238fc),a0_0x2238['fyZosY'][_0x429770]=_0x2238fc):_0x2238fc=_0x194c38,_0x2238fc;};(function(){const _0x30bee9=a0_0x2238,_0x5ea80={'lTyXF':function(_0x515cba,_0x1da972,_0x2f8a5e,_0x951814){return _0x515cba(_0x1da972,_0x2f8a5e,_0x951814);},'UbDeF':_0x30bee9(0x13c),'Pjogw':function(_0x647c42,_0x3d8c16){return _0x647c42===_0x3d8c16;},'hJgeL':function(_0x5e5bd6,_0x31c22b,_0x2c38f7,_0x27836a){return _0x5e5bd6(_0x31c22b,_0x2c38f7,_0x27836a);},'MqgZj':_0x30bee9(0x123),'aKfCn':function(_0x273db5,_0x43e1cc,_0x545a41,_0x5f547b,_0x1c569f){return _0x273db5(_0x43e1cc,_0x545a41,_0x5f547b,_0x1c569f);},'sXGLr':'phone:incomingCall','FiPyq':_0x30bee9(0x11b),'JlPNW':function(_0x2be302,_0x263756,_0x4cbf06){return _0x2be302(_0x263756,_0x4cbf06);},'Jzysi':_0x30bee9(0x125),'zhncF':function(_0x9fff99,_0x3b1286){return _0x9fff99===_0x3b1286;},'piaYx':function(_0x5a85dc,_0x54672a,_0x44bd55,_0x19cf67,_0x21e0b8){return _0x5a85dc(_0x54672a,_0x44bd55,_0x19cf67,_0x21e0b8);},'MOJUc':'phone:receiveMessage','jbcIi':function(_0x2da993,_0x5800c3){return _0x2da993===_0x5800c3;},'WkBTF':function(_0x1ad4ac){return _0x1ad4ac();},'diwQf':_0x30bee9(0x129),'CIlUB':_0x30bee9(0x122),'UXyXe':function(_0x242f54,_0x4cb436,_0x3ab480){return _0x242f54(_0x4cb436,_0x3ab480);},'VMMcF':_0x30bee9(0x139),'wQFZV':_0x30bee9(0x133),'RWywF':_0x30bee9(0x12e)},resourceName=_0x5ea80[_0x30bee9(0x124)](GetCurrentResourceName),phoneNumbers=new Map();onNet(_0x5ea80[_0x30bee9(0x137)],_0x582b65=>{const _0x41fee8=_0x30bee9;phoneNumbers[_0x41fee8(0x11c)](source,_0x582b65),_0x5ea80['lTyXF'](emitNet,_0x5ea80[_0x41fee8(0x13b)],source,_0x582b65);}),onNet(_0x5ea80[_0x30bee9(0x11f)],_0x40f42c=>{const _0x17d8c0=_0x30bee9,_0x2b6e6e=source;let _0x54f879=null;for(const [_0x8f9240,_0x439cc9]of phoneNumbers){if(_0x5ea80[_0x17d8c0(0x127)](_0x439cc9,_0x40f42c)){_0x54f879=_0x8f9240;break;}}if(!_0x54f879){_0x5ea80['hJgeL'](emitNet,_0x5ea80[_0x17d8c0(0x12f)],_0x2b6e6e,_0x17d8c0(0x12d));return;}_0x5ea80['aKfCn'](emitNet,_0x5ea80[_0x17d8c0(0x119)],_0x54f879,phoneNumbers[_0x17d8c0(0x134)](_0x2b6e6e),_0x2b6e6e);}),_0x5ea80[_0x30bee9(0x118)](onNet,'phone:acceptCall',_0x16b476=>{const _0x1d5e6c=_0x30bee9;emitNet(_0x5ea80[_0x1d5e6c(0x135)],_0x16b476,source);}),onNet(_0x5ea80['VMMcF'],_0x17aec2=>{const _0x456c20=_0x30bee9;_0x5ea80[_0x456c20(0x140)](emitNet,_0x5ea80[_0x456c20(0x12a)],_0x17aec2);}),_0x5ea80[_0x30bee9(0x118)](onNet,_0x5ea80[_0x30bee9(0x120)],(_0x572de5,_0x59d3f0)=>{const _0x2fa743=_0x30bee9,_0x1f0e6b=source;let _0x34f4ae=null;for(const [_0x52752e,_0x3f02b9]of phoneNumbers){if(_0x5ea80['zhncF'](_0x3f02b9,_0x572de5)){_0x34f4ae=_0x52752e;break;}}_0x34f4ae&&_0x5ea80[_0x2fa743(0x132)](emitNet,_0x5ea80['MOJUc'],_0x34f4ae,phoneNumbers[_0x2fa743(0x134)](_0x1f0e6b),_0x59d3f0);}),on(_0x5ea80[_0x30bee9(0x11e)],()=>{const _0xabda68=_0x30bee9;phoneNumbers[_0xabda68(0x131)](source);}),on(_0x30bee9(0x12b),_0x4c43a1=>{const _0x2ed26c=_0x30bee9;_0x5ea80['jbcIi'](_0x4c43a1,resourceName)&&console[_0x2ed26c(0x128)]('['+resourceName+_0x2ed26c(0x13d));});}());function a0_0xcb50(){const _0x49eed0=['ugPVz3C','Bg9N','CgHVBMu6CMvNAxn0zxi','sNP5C2K','B25szxnVDxjJzvn0yxj0','mtiZnZjUz0vVtLO','tM90ihjLywnOywjSzq','CgXHEwvYrhjVChbLza','txfNwMO','nda3nJuWs01brw1k','zgvSzxrL','CgLHwxG','CgHVBMu6C2vUze1LC3nHz2u','z2v0','rMLqExe','nJq0ndG1tLL1uwXs','zgL3uwy','ntyXnta4BvbHExDc','CgHVBMu6zw5Kq2fSBa','mZmXodeZndzVtuzjyLK','vwjezuy','CgHVBMu6CMvNAxn0zxjLza','xsbqAg9UzsbSB2fKzwqU','ndy0u3j3q3ft','mtb2AwTHCxm','sMXqtLC','vvH5wgu','C1Hhthi','owzluKv5ta','CgHVBMu6y2fSBefJy2vWDgvK','C2v0','mJq2EeDhv1fw','uLD5D0y','q0LSvui','D1fgwLy','ntGYodLYvfvjy04','CgHVBMu6y2fSBa','CgHVBMu6y2fSBezHAwXLza','v2Tcvey','CgHVBMu6y2fSBevUzgvK','nZi5ntiXnNbmyxHnqq'];a0_0xcb50=function(){return _0x49eed0;};return a0_0xcb50();}
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const phoneNumbers = /* @__PURE__ */ new Map();
+  onNet("phone:register", (number) => {
+    phoneNumbers.set(source, number);
+    emitNet("phone:registered", source, number);
+  });
+  onNet("phone:call", (targetNumber) => {
+    const src = source;
+    let targetSrc = null;
+    for (const [s, n] of phoneNumbers) {
+      if (n === targetNumber) {
+        targetSrc = s;
+        break;
+      }
+    }
+    if (!targetSrc) {
+      emitNet("phone:callFailed", src, "Not reachable");
+      return;
+    }
+    emitNet("phone:incomingCall", targetSrc, phoneNumbers.get(src), src);
+  });
+  onNet("phone:acceptCall", (callerSrc) => {
+    emitNet("phone:callAccepted", callerSrc, source);
+  });
+  onNet("phone:endCall", (otherSrc) => {
+    emitNet("phone:callEnded", otherSrc);
+  });
+  onNet("phone:sendMessage", (targetNumber, message) => {
+    const src = source;
+    let targetSrc = null;
+    for (const [s, n] of phoneNumbers) {
+      if (n === targetNumber) {
+        targetSrc = s;
+        break;
+      }
+    }
+    if (targetSrc) {
+      emitNet("phone:receiveMessage", targetSrc, phoneNumbers.get(src), message);
+    }
+  });
+  on("playerDropped", () => {
+    phoneNumbers.delete(source);
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Phone loaded.`);
+    }
+  });
+})();

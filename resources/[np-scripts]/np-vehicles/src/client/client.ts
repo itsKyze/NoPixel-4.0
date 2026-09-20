@@ -21324,7 +21324,7 @@
             case 1:
               varData_2781 = param_1_1.sent();
               varData_2782 = varData_1444.Sync.config.GetModuleConfig("mayor-budget:main");
-              varData_2783 = varData_2782.multipliers["mechanic-damage"] || 0.5;
+              varData_2783 = (varData_2782 && varData_2782.multipliers && varData_2782.multipliers["mechanic-damage"]) || 0.5;
               varData_2784 = param_2 * (1 - varData_2781 * varData_2783);
               varData_2785 = true;
               varData_2786 = false;
