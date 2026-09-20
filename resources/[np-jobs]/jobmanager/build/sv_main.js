@@ -1,1 +1,54 @@
-(function(stringArrayFunction,comparisonValue){const _0x4363b8=a0_0x53ff,_0x4de844=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x4363b8(0x1dd))/0x1*(-parseInt(_0x4363b8(0x1d6))/0x2)+-parseInt(_0x4363b8(0x1ea))/0x3+-parseInt(_0x4363b8(0x1c3))/0x4*(-parseInt(_0x4363b8(0x1e8))/0x5)+parseInt(_0x4363b8(0x1c1))/0x6+parseInt(_0x4363b8(0x1d1))/0x7*(parseInt(_0x4363b8(0x1e3))/0x8)+-parseInt(_0x4363b8(0x1e2))/0x9*(parseInt(_0x4363b8(0x1ba))/0xa)+-parseInt(_0x4363b8(0x1ce))/0xb;if(expression===comparisonValue)break;else _0x4de844['push'](_0x4de844['shift']());}catch(_0x3c223e){_0x4de844['push'](_0x4de844['shift']());}}}(a0_0x20a2,0x77a6a));;function a0_0x20a2(){const _0xdd8806=['zNjVBq','r2v0sM9I','uMvNAxn0zxjkB2i','mtK5mtbvuu1vBuC','AM9IBwfUywDLCJPQB2jvCgrHDgvK','z3jHzgu','BNaTyMfZzq','qLvOu2K','mty1nLPXBLjoDG','ndbMs1vfqKm','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygPVyMa9pYXGAM9Ix2DYywrLyd0/ifDirvjfigbPzga9pW','A2jXy1C','DgLyz3u','C2v0','mZbesfbzB2y','AM9Ix2DYywrL','mJKXnJa3ogXHBLflua','y2HHCMfJDgvY','r2v0qwXSsM9ICW','tMDprhG','Awn0uMe','AM9I','ndq2mtbvvgDwrxa','yuHlyLK','AM9IBwfUywDLCJPYzwnLAxzLsM9ItgLZDa','v3rVqKe','z2v0','DuDRAeq','uerRwMC','ntC1odmWoenMt1bgwG','y1niwhi','mZC2mZCYwxnAv05q','rw1OwNO','uLzKwxu','vK53Eee','xsbkB2iGtwfUywDLCIbSB2fKzwqU','vwPRu2G','B25szxnVDxjJzvn0yxj0','AM9IBwfUywDLCJPYzxf1zxn0txLkB2i','werbt2G','Bg9N','zxHLy3v0zq','mZK3mJfizvPKz3m','u2v0ugXHEwvYsM9I','DMfSDwvZ','ntKZmZi3AhH5qNHy','B3HTExnXBa','q3bty08','AM9IBwfUywDLCJPYzwnLAxzLtxLkB2i','AM9IBwfUywDLCJPNzxrkB2jmAxn0','mZrOqKDQzNq','DMrUwhm','suDkwgS','r2v0ugXHEwvY'];a0_0x20a2=function(){return _0xdd8806;};return a0_0x20a2();}function a0_0x53ff(_0x5b8584,_0x145118){_0x5b8584=_0x5b8584-0x1b7;const _0x20a2f4=a0_0x20a2();let _0x53ff91=_0x20a2f4[_0x5b8584];if(a0_0x53ff['KcAugQ']===undefined){var _0x5e9009=function(_0x183969){const _0x5c8b24='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2b03c3='',_0x3f6352='';for(let _0x10bf56=0x0,_0x5e380b,_0x317d99,_0x579ce7=0x0;_0x317d99=_0x183969['charAt'](_0x579ce7++);~_0x317d99&&(_0x5e380b=_0x10bf56%0x4?_0x5e380b*0x40+_0x317d99:_0x317d99,_0x10bf56++%0x4)?_0x2b03c3+=String['fromCharCode'](0xff&_0x5e380b>>(-0x2*_0x10bf56&0x6)):0x0){_0x317d99=_0x5c8b24['indexOf'](_0x317d99);}for(let _0x4a7038=0x0,_0x1a6b62=_0x2b03c3['length'];_0x4a7038<_0x1a6b62;_0x4a7038++){_0x3f6352+='%'+('00'+_0x2b03c3['charCodeAt'](_0x4a7038)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3f6352);};a0_0x53ff['EnkXez']=_0x5e9009,a0_0x53ff['ZuLkQo']={},a0_0x53ff['KcAugQ']=!![];}const _0x5cf072=_0x20a2f4[0x0];a0_0x53ff['kilXMc']!==_0x5cf072&&(a0_0x53ff['ZuLkQo']={},a0_0x53ff['kilXMc']=_0x5cf072);const _0x22ada4=a0_0x53ff['ZuLkQo'][_0x5b8584];return _0x22ada4===undefined?(_0x53ff91=a0_0x53ff['EnkXez'](_0x53ff91),a0_0x53ff['ZuLkQo'][_0x5b8584]=_0x53ff91):_0x53ff91=_0x22ada4,_0x53ff91;}(function(){const _0x27dbd0=a0_0x53ff,_0x26229d={'tiXgu':function(_0x23de4b,_0x49fec0){return _0x23de4b==_0x49fec0;},'WtoBA':_0x27dbd0(0x1e0),'iACNW':_0x27dbd0(0x1e4),'BUhSi':function(_0x3f7da5,_0x3fba5d){return _0x3f7da5||_0x3fba5d;},'PDkZg':function(_0x4be1c0,_0x4d3f6d,_0x9a57d5,_0x24cbd5,_0x210be5){return _0x4be1c0(_0x4d3f6d,_0x9a57d5,_0x24cbd5,_0x210be5);},'NgODx':_0x27dbd0(0x1de),'XDAOh':function(_0x10575c,_0x1f5081){return _0x10575c==_0x1f5081;},'kbqcW':function(_0x358442,_0x29eb5d,_0x355a1a,_0xc0881b){return _0x358442(_0x29eb5d,_0x355a1a,_0xc0881b);},'tjTWc':_0x27dbd0(0x1bc),'yFFtp':function(_0x45ec4a,_0x2392d9){return _0x45ec4a==_0x2392d9;},'vdnXs':function(_0x3aad23){return _0x3aad23();},'UjkSh':function(_0x3df856,_0x2b2c66,_0x21bb4f){return _0x3df856(_0x2b2c66,_0x21bb4f);},'cSHXr':_0x27dbd0(0x1db),'RVdYu':_0x27dbd0(0x1ec),'CpScO':_0x27dbd0(0x1cf),'aHKbY':function(_0x3ef136,_0x2cdfb2,_0x11b1b7){return _0x3ef136(_0x2cdfb2,_0x11b1b7);},'EmhZz':'GetPlayerJob','uGkhD':function(_0x2cdcec,_0x4adf31,_0x1230e2){return _0x2cdcec(_0x4adf31,_0x1230e2);},'VNwxA':_0x27dbd0(0x1d5),'IGJXk':_0x27dbd0(0x1ca),'OrTee':function(_0x46ac1c,_0x8dc657,_0x32e519){return _0x46ac1c(_0x8dc657,_0x32e519);},'ictRa':_0x27dbd0(0x1c9)},resourceName=_0x26229d[_0x27dbd0(0x1d7)](GetCurrentResourceName),jobDefinitions=new Map();_0x26229d[_0x27dbd0(0x1c8)](exports,_0x27dbd0(0x1dc),(_0x4df34d,_0x2efe59)=>{const _0x571fc8=_0x27dbd0;jobDefinitions[_0x571fc8(0x1e7)](_0x4df34d,_0x2efe59);}),exports(_0x26229d[_0x27dbd0(0x1c2)],_0x15002b=>jobDefinitions[_0x27dbd0(0x1be)](_0x15002b)),exports(_0x26229d[_0x27dbd0(0x1c5)],()=>Array[_0x27dbd0(0x1da)](jobDefinitions[_0x27dbd0(0x1d0)]())),exports(_0x26229d[_0x27dbd0(0x1d3)],(_0x40eed3,_0x1c07fe,_0x4cc951)=>{const _0x27c26e=_0x27dbd0;var _0x1ddaf1,_0x1a74d4;const _0x3f0529=_0x26229d[_0x27c26e(0x1e6)](_0x1ddaf1=exports[_0x26229d[_0x27c26e(0x1bd)]],null)?void 0x0:_0x1ddaf1[_0x27c26e(0x1d9)](_0x40eed3);if(!(_0x26229d[_0x27c26e(0x1e6)](_0x1a74d4=_0x26229d[_0x27c26e(0x1e6)](_0x3f0529,null)?void 0x0:_0x3f0529[_0x27c26e(0x1eb)],null)?void 0x0:_0x1a74d4['id']))return;exports[_0x27c26e(0x1d2)][_0x27c26e(0x1cd)](_0x26229d['iACNW'],[_0x1c07fe,_0x4cc951||0x0,_0x3f0529['character']['id']]),_0x3f0529[_0x27c26e(0x1eb)]&&(_0x3f0529[_0x27c26e(0x1eb)][_0x27c26e(0x1b9)]=_0x1c07fe,_0x3f0529['character'][_0x27c26e(0x1e9)]=_0x26229d[_0x27c26e(0x1e1)](_0x4cc951,0x0)),_0x26229d[_0x27c26e(0x1c0)](emitNet,_0x26229d[_0x27c26e(0x1b7)],_0x40eed3,_0x1c07fe,_0x4cc951);}),_0x26229d[_0x27dbd0(0x1bb)](exports,_0x26229d[_0x27dbd0(0x1c4)],_0x522cf8=>{const _0x4ffc4b=_0x27dbd0;var _0x21641f;const _0x55e93f=(_0x21641f=exports[_0x26229d[_0x4ffc4b(0x1bd)]])==null?void 0x0:_0x21641f[_0x4ffc4b(0x1d9)](_0x522cf8);if(_0x26229d['XDAOh'](_0x55e93f,null)?void 0x0:_0x55e93f[_0x4ffc4b(0x1eb)]){const _0x42e467={};return _0x42e467[_0x4ffc4b(0x1b9)]=_0x55e93f[_0x4ffc4b(0x1eb)][_0x4ffc4b(0x1b9)],_0x42e467[_0x4ffc4b(0x1df)]=_0x55e93f[_0x4ffc4b(0x1eb)][_0x4ffc4b(0x1e9)],_0x42e467;}else return null;}),_0x26229d[_0x27dbd0(0x1bf)](onNet,_0x26229d[_0x27dbd0(0x1c6)],()=>{const _0x83b7b3=_0x27dbd0;_0x26229d[_0x83b7b3(0x1e5)](emitNet,_0x26229d['tjTWc'],source,Array[_0x83b7b3(0x1da)](jobDefinitions[_0x83b7b3(0x1d0)]()));}),onNet(_0x26229d[_0x27dbd0(0x1d8)],()=>{const _0x4401fb=_0x27dbd0;var _0x2d6c8e;const _0x4d9e88=_0x26229d['yFFtp'](_0x2d6c8e=exports[_0x26229d['WtoBA']],null)?void 0x0:_0x2d6c8e[_0x4401fb(0x1d9)](source);if(!(_0x26229d[_0x4401fb(0x1cb)](_0x4d9e88,null)?void 0x0:_0x4d9e88['character']))return;const _0x49e159={};_0x49e159['job']=_0x4d9e88['character']['job'],_0x49e159[_0x4401fb(0x1df)]=_0x4d9e88['character'][_0x4401fb(0x1e9)],_0x26229d[_0x4401fb(0x1e5)](emitNet,_0x4401fb(0x1d4),source,_0x49e159);}),_0x26229d['OrTee'](on,_0x26229d[_0x27dbd0(0x1b8)],_0x2a5cb8=>{const _0x441c53=_0x27dbd0;_0x2a5cb8===resourceName&&console[_0x441c53(0x1cc)]('['+resourceName+_0x441c53(0x1c7));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const jobDefinitions = /* @__PURE__ */ new Map();
+  exports("RegisterJob", (jobName, jobData) => {
+    jobDefinitions.set(jobName, jobData);
+  });
+  exports("GetJob", (jobName) => jobDefinitions.get(jobName));
+  exports("GetAllJobs", () => Array.from(jobDefinitions.values()));
+  exports("SetPlayerJob", (src, jobName, grade) => {
+    var _a, _b;
+    const player = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = player == null ? void 0 : player.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `job`=?,`job_grade`=? WHERE `id`=?", [jobName, grade || 0, player.character.id]);
+    if (player.character) {
+      player.character.job = jobName;
+      player.character.job_grade = grade || 0;
+    }
+    emitNet("jobmanager:jobUpdated", src, jobName, grade);
+  });
+  exports("GetPlayerJob", (src) => {
+    var _a;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (p == null ? void 0 : p.character) {
+      return {
+        job: p.character.job,
+        grade: p.character.job_grade
+      };
+    } else {
+      return null;
+    }
+  });
+  onNet("jobmanager:getJobList", () => {
+    emitNet("jobmanager:receiveJobList", source, Array.from(jobDefinitions.values()));
+  });
+  onNet("jobmanager:requestMyJob", () => {
+    var _a;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(source);
+    if (!(p == null ? void 0 : p.character)) {
+      return;
+    }
+    emitNet("jobmanager:receiveMyJob", source, {
+      job: p.character.job,
+      grade: p.character.job_grade
+    });
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Job Manager loaded.`);
+    }
+  });
+})();

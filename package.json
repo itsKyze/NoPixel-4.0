@@ -1,0 +1,15 @@
+{
+  "name": "nopixel-server-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NoPixel 4.0 Root Server Runner",
+  "packageManager": "pnpm@12.4.1",
+  "scripts": {
+    "build": "pnpm --dir resources run build",
+    "build:all": "pnpm --dir resources run build:all",
+    "build:clean": "pnpm --dir resources run build:clean",
+    "build:scripts": "pnpm --dir resources run build:scripts",
+    "build:nui": "pnpm --dir resources run build:nui",
+    "watch": "pnpm --dir resources run watch"
+  }
+}

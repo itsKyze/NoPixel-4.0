@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "NoPixel 4.0 Monorepo Workspace",
+  "packageManager": "pnpm@12.4.1",
   "scripts": {
-    "build": "node build-all.js",
-    "watch": "node build-all.js --watch",
-    "turbo:build": "turbo run build",
-    "turbo:dev": "turbo run watch"
+    "build": "node tools/build-all.js",
+    "build:all": "node tools/build-all.js --obfuscate",
+    "build:clean": "node tools/build-all.js --force",
+    "build:scripts": "node tools/build-all.js --scripts",
+    "build:nui": "node tools/build-all.js --nui",
+    "watch": "node tools/build-all.js --watch"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.1.1",
