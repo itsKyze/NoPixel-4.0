@@ -9,32 +9,31 @@
         return;
       }
       const char = rows[0];
-      let spawnData = {
-        x: -3972.28,
-        y: 2017.22,
-        z: 500.92,
-        heading: 0
-      };
+
+      // Jailed → teleport directly to jail
       if (char.is_jailed) {
-        spawnData = {
-          x: 1649.95,
-          y: 2594.5,
-          z: 45.56,
-          heading: 90
-        };
-      } else if (char.is_dead) {
-        spawnData = {
-          x: 340,
-          y: -1391,
-          z: 35,
-          heading: 100
-        };
-      } else if (char.position) {
+        const jailData = { x: 1649.95, y: 2594.5, z: 45.56, heading: 90 };
+        emitNet("spawn:doSpawn", src, jailData, char);
+        return;
+      }
+
+      // Dead → teleport directly to hospital
+      if (char.is_dead) {
+        const deadData = { x: 340, y: -1391, z: 35, heading: 100 };
+        emitNet("spawn:doSpawn", src, deadData, char);
+        return;
+      }
+
+      // Alive returning player → parse last position and send to client
+      // so the spawn selector UI can be shown with "Last Location" option
+      let lastPosition: { x: number; y: number; z: number; heading?: number } | null = null;
+      if (char.position) {
         try {
-          spawnData = JSON.parse(char.position);
+          lastPosition = JSON.parse(char.position);
         } catch (e) {}
       }
-      emitNet("spawn:doSpawn", src, spawnData, char);
+      // Emit spawn:showSelector so client shows the spawn UI with Last Location
+      emitNet("spawn:showSelector", src, lastPosition);
     });
   });
   onNet("spawn:savePosition", pos => {

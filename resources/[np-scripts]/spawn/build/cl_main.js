@@ -14099,7 +14099,7 @@ on("__cfx_nui:nuiLog", function(data, cb) {
         return v_4537(this, function(v_4577) {
           switch (v_4577.label) {
             case 0:
-              v_4566 = v_3023.Sync.config.GetMiscConfig("spawn.apartments.only") ?? true;
+              v_4566 = v_3023.Sync.config.GetMiscConfig("spawn.apartments.only") ?? false;
               v_4567 = v_4566 ? [] : v_4556.map(function(v_4578, v_4579) {
                 var v_4580 = {
                   info: v_4578.info,
@@ -14130,6 +14130,10 @@ on("__cfx_nui:nuiLog", function(data, cb) {
                 y: -1108.59,
                 z: 14.7
               };
+              if (globalThis._spawnLastPosition && typeof globalThis._spawnLastPosition.x === "number") {
+                v_4570 = globalThis._spawnLastPosition;
+                globalThis._spawnLastPosition = null;
+              }
               v_4571 = v_4559.filter(function(v_4581) {
                 return v_4581.tier === v_4569?.tier;
               }).map(function(v_4582) {
@@ -14683,7 +14687,9 @@ on("__cfx_nui:nuiLog", function(data, cb) {
         setTimeout(function() {
           emit("np-clothing:openClothing", true, false);
         }, 1e3);
+        globalThis._newCharClothingActive = true;
         var finishedHandler = function() {
+          globalThis._newCharClothingActive = false;
           removeEventListener("np-spawn:finishedClothing", finishedHandler);
           removeEventListener("np-clothing:close", finishedHandler);
           setTimeout(function() {
@@ -15130,6 +15136,9 @@ on("__cfx_nui:nuiLog", function(data, cb) {
         return v_4702(this, function(v_4732) {
           switch (v_4732.label) {
             case 0:
+              if (globalThis._newCharClothingActive) {
+                return [2];
+              }
               SetEntityVisible(PlayerPedId(), false, false);
               if (v_4731 !== "Finished") {
                 return [3, 6];
@@ -15164,6 +15173,10 @@ on("__cfx_nui:nuiLog", function(data, cb) {
         return v_4730.apply(this, arguments);
       };
     })());
+    onNet("spawn:showSelector", function(lastPos) {
+      globalThis._spawnLastPosition = lastPos;
+      v_4665();
+    });
     ;
     function v_4735(v_4736, v_4737, v_4738, v_4739, v_4740, v_4741, v_4742) {
       try {

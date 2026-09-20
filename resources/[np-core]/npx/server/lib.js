@@ -131,43 +131,36 @@
     "phone:player:getIdentifiers": (src) => getPlayerIdentifiers(src) || [],
     "doors:getDoors": () => [],
     "spawn:getCharacterSlotsOverride": () => 4,
-    "spawn:getSpawns": (src) => [[{
-      info: "Airport",
-      pos: {
-        x: -1037,
-        y: -2737,
-        z: 20
-      },
-      type: "normal"
-    }, {
-      info: "Legion Square",
-      pos: {
-        x: 195,
-        y: -934,
-        z: 30.6
-      },
-      type: "normal"
-    }, {
-      info: "Sandy Shores",
-      pos: {
-        x: 1850,
-        y: 3685,
-        z: 34
-      },
-      type: "normal"
-    }, {
-      info: "Paleto Bay",
-      pos: {
-        x: -120,
-        y: 6460,
-        z: 31
-      },
-      type: "normal"
-    }], null, {
-      x: 195,
-      y: -934,
-      z: 30.6
-    }],
+    "spawn:getSpawns": async (src, charId) => {
+      let lastPosition = { x: 195, y: -934, z: 30.6 };
+      try {
+        const rows = await Library.executeQuery("SELECT `position` FROM `characters` WHERE `id`=? LIMIT 1", [charId]);
+        if (rows && rows.length && rows[0].position) {
+          const parsed = JSON.parse(rows[0].position);
+          if (parsed && typeof parsed.x === "number") {
+            lastPosition = { x: parsed.x, y: parsed.y, z: parsed.z };
+          }
+        }
+      } catch (e) {
+      }
+      return [[{
+        info: "Airport",
+        pos: { x: -1037, y: -2737, z: 20 },
+        type: "normal"
+      }, {
+        info: "Legion Square",
+        pos: { x: 195, y: -934, z: 30.6 },
+        type: "normal"
+      }, {
+        info: "Sandy Shores",
+        pos: { x: 1850, y: 3685, z: 34 },
+        type: "normal"
+      }, {
+        info: "Paleto Bay",
+        pos: { x: -120, y: 6460, z: 31 },
+        type: "normal"
+      }], { tier: 1 }, lastPosition];
+    },
     "spawn:getCharacterOrder": async (src) => ({}),
     "spawn:getPlayerQueueType": async (src) => "default",
     "spawn:getCharacterSlotsOverride": async (src) => 5,
