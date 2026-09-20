@@ -15,6 +15,7 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+const zlib = require("zlib");
 const { execSync, spawn } = require("child_process");
 
 // Resources root is parent of tools/
@@ -192,23 +193,28 @@ if (isWatch) {
           execSync("node esbuild.config.js", { cwd: task.dir, stdio: "pipe" });
           const newLogs = [];
 
-          // Inspect emitted files
-          const foundOutputs = [
-            path.join(task.dir, "build", "cl_main.js"),
-            path.join(task.dir, "build", "sv_main.js"),
-            path.join(task.dir, "client", "client.js"),
-            path.join(task.dir, "server", "server.js"),
-            path.join(task.dir, "build", "sh_main.js")
-          ].filter((f) => fs.existsSync(f));
+          // Group by target: server, client, shared
+          const targets = [
+            { label: "server:", files: [path.join(task.dir, "build", "sv_main.js"), path.join(task.dir, "server", "server.js")] },
+            { label: "client:", files: [path.join(task.dir, "build", "cl_main.js"), path.join(task.dir, "client", "client.js")] },
+            { label: "shared:", files: [path.join(task.dir, "build", "sh_main.js")] }
+          ];
 
-          for (const f of foundOutputs) {
-            const stat = fs.statSync(f);
-            const sizeKiB = Math.round(stat.size / 1024);
-            const fileName = path.basename(f);
-            const isBig = sizeKiB > 500 ? " [big]" : "";
-            const logLine = `asset ${fileName} ${sizeKiB} KiB [emitted]${isBig} (name: main)`;
-            newLogs.push(logLine);
-            console.log(`${taskPrefix}   ${logLine}`);
+          for (const tgt of targets) {
+            const existing = tgt.files.filter((f) => fs.existsSync(f));
+            if (existing.length > 0) {
+              console.log(`${taskPrefix} ${tgt.label}`);
+              newLogs.push(tgt.label);
+              for (const f of existing) {
+                const stat = fs.statSync(f);
+                const sizeKiB = Math.round(stat.size / 1024);
+                const fileName = path.basename(f);
+                const isBig = sizeKiB > 500 ? ` ${yellow("[big]")}` : "";
+                const logLine = `  asset ${fileName} ${sizeKiB} KiB [emitted]${isBig} (name: main)`;
+                newLogs.push(logLine);
+                console.log(`${taskPrefix} ${logLine}`);
+              }
+            }
           }
 
           cache[task.name] = { hash: currentHash, logs: newLogs, time: Date.now() };
@@ -242,23 +248,44 @@ if (isWatch) {
           }
         }
 
+        const nuiStart = Date.now();
         try {
           execSync("npx vite build", { cwd: task.webDir, stdio: "pipe" });
+          const nuiDuration = ((Date.now() - nuiStart) / 1000).toFixed(2);
           const newLogs = [];
           const checkDist = fs.existsSync(distDir) ? distDir : fs.existsSync(altDistDir) ? altDistDir : fs.existsSync(path.join(task.dir, "build")) ? path.join(task.dir, "build") : null;
 
           if (checkDist) {
-            // Read emitted chunks
+            let hasBigChunk = false;
             const assetsDir = path.join(checkDist, "assets");
+
             if (fs.existsSync(assetsDir)) {
               for (const assetFile of fs.readdirSync(assetsDir)) {
-                const stat = fs.statSync(path.join(assetsDir, assetFile));
+                const fPath = path.join(assetsDir, assetFile);
+                const stat = fs.statSync(fPath);
                 const sizeKb = (stat.size / 1024).toFixed(2);
-                const line = `dist/assets/${assetFile} ${sizeKb} kB`;
+                let line;
+
+                // Compute gzip for code assets (.js, .css)
+                if (assetFile.endsWith(".js") || assetFile.endsWith(".css")) {
+                  try {
+                    const content = fs.readFileSync(fPath);
+                    const gzipKb = (zlib.gzipSync(content).length / 1024).toFixed(2);
+                    const isBig = parseFloat(sizeKb) > 500;
+                    if (isBig) hasBigChunk = true;
+                    line = `dist/assets/${assetFile} ${isBig ? yellow(sizeKb + " kB") : sizeKb + " kB"} | gzip: ${gzipKb} kB`;
+                  } catch (_) {
+                    line = `dist/assets/${assetFile} ${sizeKb} kB`;
+                  }
+                } else {
+                  line = `dist/assets/${assetFile} ${sizeKb} kB`;
+                }
+
                 newLogs.push(line);
                 console.log(`${taskPrefix} ${line}`);
               }
             }
+
             const indexPath = path.join(checkDist, "index.html");
             if (fs.existsSync(indexPath)) {
               const stat = fs.statSync(indexPath);
@@ -266,6 +293,10 @@ if (isWatch) {
               newLogs.push(line);
               console.log(`${taskPrefix} ${line}`);
             }
+
+            const builtMsg = green(`✓ built in ${nuiDuration}s`);
+            newLogs.push(builtMsg);
+            console.log(`${taskPrefix} ${builtMsg}`);
           }
 
           cache[task.name] = { hash: currentHash, logs: newLogs, time: Date.now() };
