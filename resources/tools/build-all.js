@@ -233,11 +233,19 @@ if (isWatch) {
           console.log(`${taskPrefix} ${logLine}`);
         }
       } else {
-        // NUI Build
+        // NUI Build: Clean old dist assets first to ensure only fresh build files remain
+        const targetClean = fs.existsSync(distDir) ? distDir : fs.existsSync(altDistDir) ? altDistDir : null;
+        if (targetClean) {
+          const oldAssets = path.join(targetClean, "assets");
+          if (fs.existsSync(oldAssets)) {
+            try { fs.rmSync(oldAssets, { recursive: true, force: true }); } catch (_) {}
+          }
+        }
+
         try {
           execSync("npx vite build", { cwd: task.webDir, stdio: "pipe" });
           const newLogs = [];
-          const checkDist = fs.existsSync(distDir) ? distDir : fs.existsSync(altDistDir) ? altDistDir : null;
+          const checkDist = fs.existsSync(distDir) ? distDir : fs.existsSync(altDistDir) ? altDistDir : fs.existsSync(path.join(task.dir, "build")) ? path.join(task.dir, "build") : null;
 
           if (checkDist) {
             // Read emitted chunks

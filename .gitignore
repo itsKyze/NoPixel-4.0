@@ -42,3 +42,6 @@ Thumbs.db
 /server/
 /txData/
 .replxx_history
+
+.turbo/
+**/.turbo/
