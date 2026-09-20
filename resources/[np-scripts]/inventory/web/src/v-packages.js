@@ -10542,17 +10542,53 @@ var br;
 var Hi;
 var Lo;
 const localContainers = new Map();
+const cdnItemNameMap = {
+  mobilephone: "phone",
+  idcard: "np_idcard",
+  id_card: "np_idcard",
+  cash: "np_cash",
+  money: "np_cash",
+  bandage: "np_bandage",
+  repairkit: "np_toolbox",
+  toolbox: "np_toolbox",
+  backpack: "bag",
+  wallet: "np_wallet",
+  radio: "np_radio",
+  weapon_pistol: "np_pistol",
+  pistol: "np_pistol",
+  weed_og: "np_weedbag",
+  weed: "np_weedbag",
+  joint: "np_joint",
+  coke: "np_coke",
+  beer: "np_beer",
+  coffee: "coffee",
+  donut: "donut",
+  water: "water",
+  sandwich: "sandwich",
+  wrench: "wrench",
+  hammer: "hammer",
+  crowbar: "crowbar",
+  drill: "drill",
+  vpn: "vpn",
+  knife: "knife"
+};
+
+function getCdnIcon(id) {
+  const name = cdnItemNameMap[id] || id;
+  return `https://assets.nopixel.net/dev/images/inventory/icons/${name}.png`;
+}
+
 const localItems = {
-  mobilephone: { id: "mobilephone", name: "Mobile Phone", label: "Mobile Phone", weight: 0.5, maxStack: 1, stackable: false, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "phone" }] },
-  idcard: { id: "idcard", name: "ID Card", label: "ID Card", weight: 0.1, maxStack: 1, stackable: false, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Inspect", icon: "badge" }] },
-  cash: { id: "cash", name: "Cash", label: "Cash", weight: 0.01, maxStack: 500000, stackable: true, usable: false, image: "assets/item_default.png" },
-  bandage: { id: "bandage", name: "Bandage", label: "Bandage", weight: 0.2, maxStack: 10, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "healing" }] },
-  lockpick: { id: "lockpick", name: "Lockpick", label: "Lockpick", weight: 0.5, maxStack: 5, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "lock_open" }] },
-  repairkit: { id: "repairkit", name: "Repair Kit", label: "Repair Kit", weight: 5.0, maxStack: 2, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "build" }] },
-  sandwich: { id: "sandwich", name: "Sandwich", label: "Sandwich", weight: 0.5, maxStack: 10, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Eat", icon: "fastfood" }] },
-  water: { id: "water", name: "Water Bottle", label: "Water Bottle", weight: 0.5, maxStack: 10, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Drink", icon: "local_drink" }] },
-  backpack: { id: "backpack", name: "Backpack", label: "Backpack", weight: 1.0, maxStack: 1, stackable: false, usable: false, image: "assets/item_default.png" },
-  armor: { id: "armor", name: "Body Armor", label: "Body Armor", weight: 5.0, maxStack: 1, stackable: false, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Wear", icon: "shield" }] }
+  mobilephone: { id: "mobilephone", name: "Mobile Phone", label: "Mobile Phone", weight: 0.5, maxStack: 1, stackable: false, usable: true, image: getCdnIcon("mobilephone"), context: [{ id: "useItem", label: "Use", icon: "phone" }] },
+  idcard: { id: "idcard", name: "ID Card", label: "ID Card", weight: 0.1, maxStack: 1, stackable: false, usable: true, image: getCdnIcon("idcard"), context: [{ id: "useItem", label: "Inspect", icon: "badge" }] },
+  cash: { id: "cash", name: "Cash", label: "Cash", weight: 0.01, maxStack: 500000, stackable: true, usable: false, image: getCdnIcon("cash") },
+  bandage: { id: "bandage", name: "Bandage", label: "Bandage", weight: 0.2, maxStack: 10, stackable: true, usable: true, image: getCdnIcon("bandage"), context: [{ id: "useItem", label: "Use", icon: "healing" }] },
+  lockpick: { id: "lockpick", name: "Lockpick", label: "Lockpick", weight: 0.5, maxStack: 5, stackable: true, usable: true, image: getCdnIcon("lockpick"), context: [{ id: "useItem", label: "Use", icon: "lock_open" }] },
+  repairkit: { id: "repairkit", name: "Repair Kit", label: "Repair Kit", weight: 5.0, maxStack: 2, stackable: true, usable: true, image: getCdnIcon("repairkit"), context: [{ id: "useItem", label: "Use", icon: "build" }] },
+  sandwich: { id: "sandwich", name: "Sandwich", label: "Sandwich", weight: 0.5, maxStack: 10, stackable: true, usable: true, image: getCdnIcon("sandwich"), context: [{ id: "useItem", label: "Eat", icon: "fastfood" }] },
+  water: { id: "water", name: "Water Bottle", label: "Water Bottle", weight: 0.5, maxStack: 10, stackable: true, usable: true, image: getCdnIcon("water"), context: [{ id: "useItem", label: "Drink", icon: "local_drink" }] },
+  backpack: { id: "backpack", name: "Backpack", label: "Backpack", weight: 1.0, maxStack: 1, stackable: false, usable: false, image: getCdnIcon("backpack") },
+  armor: { id: "armor", name: "Body Armor", label: "Body Armor", weight: 5.0, maxStack: 1, stackable: false, usable: true, image: getCdnIcon("armor"), context: [{ id: "useItem", label: "Wear", icon: "shield" }] }
 };
 
 const localItemProxy = new Proxy(localItems, {
@@ -10567,7 +10603,7 @@ const localItemProxy = new Proxy(localItems, {
         maxStack: 50,
         stackable: true,
         usable: true,
-        image: "assets/item_default.png",
+        image: getCdnIcon(prop),
         context: [{ id: "useItem", label: "Use", icon: "touch_app" }],
         variants: {}
       };

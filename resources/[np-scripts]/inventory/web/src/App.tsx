@@ -6024,7 +6024,33 @@ const Ni = param_1 => {
       const varData_864 = param_1.stack.publicMetadata.componentId;
       return "https://assets.nopixel.net/dev/images/clothing/" + varData_862 + "/" + varData_863 + "/" + varData_864 + ".webp";
     }
-    return varData_850()?.image;
+    const img = varData_850()?.image;
+    if (img && img !== "assets/item_default.png") {
+      return img;
+    }
+    const itemId = param_1.stack.itemId;
+    const cdnMap: Record<string, string> = {
+      mobilephone: "phone",
+      idcard: "np_idcard",
+      id_card: "np_idcard",
+      cash: "np_cash",
+      money: "np_cash",
+      bandage: "np_bandage",
+      repairkit: "np_toolbox",
+      toolbox: "np_toolbox",
+      backpack: "bag",
+      wallet: "np_wallet",
+      radio: "np_radio",
+      weapon_pistol: "np_pistol",
+      pistol: "np_pistol",
+      weed_og: "np_weedbag",
+      weed: "np_weedbag",
+      joint: "np_joint",
+      coke: "np_coke",
+      beer: "np_beer"
+    };
+    const cdnName = (itemId && cdnMap[itemId]) ? cdnMap[itemId] : itemId;
+    return "https://assets.nopixel.net/dev/images/inventory/icons/" + cdnName + ".png";
   });
   return w(P, {
     get when() {
