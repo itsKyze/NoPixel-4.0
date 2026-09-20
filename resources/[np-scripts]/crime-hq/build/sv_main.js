@@ -1,1 +1,48 @@
-(function(stringArrayFunction,comparisonValue){const _0x104819=a0_0x36a6,_0x45958a=stringArrayFunction();while(!![]){try{const expression=parseInt(_0x104819(0x78))/0x1+-parseInt(_0x104819(0x95))/0x2*(-parseInt(_0x104819(0x79))/0x3)+parseInt(_0x104819(0x8b))/0x4*(parseInt(_0x104819(0x71))/0x5)+parseInt(_0x104819(0x83))/0x6+-parseInt(_0x104819(0x87))/0x7+-parseInt(_0x104819(0x8c))/0x8*(-parseInt(_0x104819(0x7c))/0x9)+-parseInt(_0x104819(0x91))/0xa;if(expression===comparisonValue)break;else _0x45958a['push'](_0x45958a['shift']());}catch(_0x58be3b){_0x45958a['push'](_0x45958a['shift']());}}}(a0_0x55e6,0xcfc8f));;function a0_0x55e6(){const _0x2a6fda=['qwrKq2fSBa','mZm3otG1owjetwj5Eq','q3jPBwuGsfeGuMfPza','Bg9N','y3jPBwuTAhe6z2v0u3rHDgu','mZu5nKTPqvv5CG','otmZmdu2DLnxzKjr','y3jPBwuTAhe6B25dB29Szg93BG','qw9IwMe','C0jSsfK','tMDtBMO','mZaWnti2mdbvqwD4D2i','BefbqMy','twTNzuS','AxnsywLKzwq','mJqZmJGXofDlAML2zq','y3jPBwuTAhe6C3rHCNrsywLK','z1jYseK','mZa1nxHpAgLJAa','BKzMq00','rgDKC0G','zgLZCgf0y2G','CMfPzenVB2XKB3DU','q3jPBwuGsfeGyMvPBMCGCMfPzgvK','BgfZDfjHAwq','mtuYmty4n1D6wuHtAW','m2TNDfDVBa','y3jPBwuTAhe6CMfPzfn0yxj0zwq','xsbdCMLTzsbiusbSB2fKzwqU','nJnzwhrKAhC','y3jPBwuTAhe6CMfPzevUzgvK','DeDJwfi','BM93','zMXVB3i','wML6tei','EeryD1a','mtqXmJi1mgPsBMXluW','vwPuyvK','quXktM8'];a0_0x55e6=function(){return _0x2a6fda;};return a0_0x55e6();}function a0_0x36a6(_0x565c2f,_0x3f35f9){_0x565c2f=_0x565c2f-0x71;const _0x55e638=a0_0x55e6();let _0x36a63d=_0x55e638[_0x565c2f];if(a0_0x36a6['OGbjiC']===undefined){var _0x196d27=function(_0x552b58){const _0x53631d='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5422d3='',_0x4b2c5e='';for(let _0x2708d6=0x0,_0x4beeb9,_0x5942a8,_0x4f8c5f=0x0;_0x5942a8=_0x552b58['charAt'](_0x4f8c5f++);~_0x5942a8&&(_0x4beeb9=_0x2708d6%0x4?_0x4beeb9*0x40+_0x5942a8:_0x5942a8,_0x2708d6++%0x4)?_0x5422d3+=String['fromCharCode'](0xff&_0x4beeb9>>(-0x2*_0x2708d6&0x6)):0x0){_0x5942a8=_0x53631d['indexOf'](_0x5942a8);}for(let _0x518795=0x0,_0x3bf4bf=_0x5422d3['length'];_0x518795<_0x3bf4bf;_0x518795++){_0x4b2c5e+='%'+('00'+_0x5422d3['charCodeAt'](_0x518795)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4b2c5e);};a0_0x36a6['dwIgrU']=_0x196d27,a0_0x36a6['tyAqbj']={},a0_0x36a6['OGbjiC']=!![];}const _0x249c47=_0x55e638[0x0];a0_0x36a6['pHMCtF']!==_0x249c47&&(a0_0x36a6['tyAqbj']={},a0_0x36a6['pHMCtF']=_0x249c47);const _0x59e188=a0_0x36a6['tyAqbj'][_0x565c2f];return _0x59e188===undefined?(_0x36a63d=a0_0x36a6['dwIgrU'](_0x36a63d),a0_0x36a6['tyAqbj'][_0x565c2f]=_0x36a63d):_0x36a63d=_0x59e188,_0x36a63d;}(function(){const _0x28dba9=a0_0x36a6,_0x17a391={'nFfCM':function(_0x309138,_0x23faef,_0x237cbf){return _0x309138(_0x23faef,_0x237cbf);},'sBlHY':'crime-hq:alreadyRaided','tDMAN':function(_0x331921,_0x327bbf){return _0x331921<_0x327bbf;},'IZlJK':function(_0x3b2f12,_0x57ba51){return _0x3b2f12-_0x57ba51;},'AobZa':_0x28dba9(0x8d),'tGcXR':function(_0x6f4e37,_0x30b822){return _0x6f4e37-_0x30b822;},'ZizLB':function(_0xb045fb,_0x231452,_0x3d32cd){return _0xb045fb(_0x231452,_0x3d32cd);},'MkgeK':_0x28dba9(0x7a),'gRrHI':function(_0x419776,_0x15144d){return _0x419776==_0x15144d;},'lAABf':_0x28dba9(0x88),'DgdsH':function(_0x331e06,_0x4f7199,_0x328321){return _0x331e06(_0x4f7199,_0x328321);},'NYhXw':function(_0x3f56b0,_0xf4686b,_0x2b74ae,_0x46d518){return _0x3f56b0(_0xf4686b,_0x2b74ae,_0x46d518);},'NgSnj':function(_0x44ec36,_0x4a1a1c){return _0x44ec36===_0x4a1a1c;},'UjTaY':function(_0x3f5cf6){return _0x3f5cf6();},'mPHUU':_0x28dba9(0x96),'ALJNo':function(_0x11f242,_0x5be0c8,_0x3c841e){return _0x11f242(_0x5be0c8,_0x3c841e);},'xDXwP':_0x28dba9(0x8a),'YrCLk':'onResourceStart'},resourceName=_0x17a391[_0x28dba9(0x84)](GetCurrentResourceName),_0x5b9104={};_0x5b9104['isRaided']=![],_0x5b9104[_0x28dba9(0x77)]=null,_0x5b9104[_0x28dba9(0x75)]=0x36ee80;const _0xc942bb=_0x5b9104;onNet(_0x17a391['mPHUU'],()=>{const _0x22e4cc=_0x28dba9;var _0x4c8bbe;const _0x74e248=source,_0x4678c5=Date[_0x22e4cc(0x7f)]();if(_0xc942bb[_0x22e4cc(0x94)]){_0x17a391[_0x22e4cc(0x72)](emitNet,_0x17a391[_0x22e4cc(0x8f)],_0x74e248);return;}if(_0xc942bb['lastRaid']&&_0x17a391['tDMAN'](_0x17a391['IZlJK'](_0x4678c5,_0xc942bb[_0x22e4cc(0x77)]),_0xc942bb['raidCooldown'])){emitNet(_0x17a391[_0x22e4cc(0x8e)],_0x74e248,Math[_0x22e4cc(0x80)](_0x17a391[_0x22e4cc(0x7e)](_0xc942bb[_0x22e4cc(0x75)],_0x4678c5-_0xc942bb['lastRaid'])/0x3e8));return;}_0xc942bb[_0x22e4cc(0x94)]=!![],_0xc942bb[_0x22e4cc(0x77)]=_0x4678c5,_0x17a391[_0x22e4cc(0x81)](emitNet,_0x17a391[_0x22e4cc(0x93)],-0x1);const _0x15428a={};_0x15428a['x']=0x0,_0x15428a['y']=0x0,_0x15428a['z']=0x0,_0x17a391[_0x22e4cc(0x97)](_0x4c8bbe=exports[_0x22e4cc(0x74)],null)?void 0x0:_0x4c8bbe[_0x22e4cc(0x86)]({'type':_0x17a391[_0x22e4cc(0x92)],'location':_0x15428a,'priority':0x1,'description':_0x22e4cc(0x76)}),_0x17a391[_0x22e4cc(0x73)](setTimeout,()=>{const _0x5d6127=_0x22e4cc;_0xc942bb[_0x5d6127(0x94)]=![],_0x17a391['nFfCM'](emitNet,_0x5d6127(0x7d),-0x1);},0x124f80);}),_0x17a391[_0x28dba9(0x85)](onNet,_0x17a391[_0x28dba9(0x82)],()=>{_0x17a391['NYhXw'](emitNet,'crime-hq:receiveState',source,_0xc942bb);}),on(_0x17a391['YrCLk'],_0x3a0012=>{const _0x1d1683=_0x28dba9;_0x17a391[_0x1d1683(0x90)](_0x3a0012,resourceName)&&console[_0x1d1683(0x89)]('['+resourceName+_0x1d1683(0x7b));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const hqState = {
+    isRaided: false,
+    lastRaid: null,
+    raidCooldown: 36e5
+    // 1 hour
+  };
+  onNet("crime-hq:startRaid", () => {
+    var _a;
+    const src = source;
+    const now = Date.now();
+    if (hqState.isRaided) {
+      emitNet("crime-hq:alreadyRaided", src);
+      return;
+    }
+    if (hqState.lastRaid && now - hqState.lastRaid < hqState.raidCooldown) {
+      emitNet("crime-hq:onCooldown", src, Math.floor((hqState.raidCooldown - (now - hqState.lastRaid)) / 1e3));
+      return;
+    }
+    hqState.isRaided = true;
+    hqState.lastRaid = now;
+    emitNet("crime-hq:raidStarted", -1);
+    (_a = exports.dispatch) == null ? void 0 : _a.AddCall({
+      type: "Crime HQ Raid",
+      location: {
+        x: 0,
+        y: 0,
+        z: 0
+      },
+      priority: 1,
+      description: "Crime HQ being raided"
+    });
+    setTimeout(() => {
+      hqState.isRaided = false;
+      emitNet("crime-hq:raidEnded", -1);
+    }, 12e5);
+  });
+  onNet("crime-hq:getState", () => {
+    emitNet("crime-hq:receiveState", source, hqState);
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Crime HQ loaded.`);
+    }
+  });
+})();

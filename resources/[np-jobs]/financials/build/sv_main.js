@@ -1,1 +1,102 @@
-(function(stringArrayFunction,comparisonValue){const _0x358e31=a0_0x1955,_0x39e83f=stringArrayFunction();while(!![]){try{const expression=parseInt(_0x358e31(0x14a))/0x1*(-parseInt(_0x358e31(0x178))/0x2)+-parseInt(_0x358e31(0x15a))/0x3+-parseInt(_0x358e31(0x16d))/0x4+parseInt(_0x358e31(0x16c))/0x5+parseInt(_0x358e31(0x179))/0x6*(parseInt(_0x358e31(0x170))/0x7)+-parseInt(_0x358e31(0x15f))/0x8*(parseInt(_0x358e31(0x172))/0x9)+-parseInt(_0x358e31(0x13a))/0xa*(-parseInt(_0x358e31(0x13e))/0xb);if(expression===comparisonValue)break;else _0x39e83f['push'](_0x39e83f['shift']());}catch(_0x2ecea5){_0x39e83f['push'](_0x39e83f['shift']());}}}(a0_0x4f7e,0x67325));function a0_0x1955(_0x4f45cf,_0x5b11dd){_0x4f45cf=_0x4f45cf-0x134;const _0x4f7e5b=a0_0x4f7e();let _0x19559a=_0x4f7e5b[_0x4f45cf];if(a0_0x1955['oiLABJ']===undefined){var _0x1c44a1=function(_0x320555){const _0x30d7ce='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0xeff1d3='',_0x41029a='';for(let _0x449430=0x0,_0x48efd,_0x421909,_0x52f917=0x0;_0x421909=_0x320555['charAt'](_0x52f917++);~_0x421909&&(_0x48efd=_0x449430%0x4?_0x48efd*0x40+_0x421909:_0x421909,_0x449430++%0x4)?_0xeff1d3+=String['fromCharCode'](0xff&_0x48efd>>(-0x2*_0x449430&0x6)):0x0){_0x421909=_0x30d7ce['indexOf'](_0x421909);}for(let _0xe86625=0x0,_0x2397a3=_0xeff1d3['length'];_0xe86625<_0x2397a3;_0xe86625++){_0x41029a+='%'+('00'+_0xeff1d3['charCodeAt'](_0xe86625)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x41029a);};a0_0x1955['zQltxC']=_0x1c44a1,a0_0x1955['IxtfYK']={},a0_0x1955['oiLABJ']=!![];}const _0xff54e2=_0x4f7e5b[0x0];a0_0x1955['XvnxvI']!==_0xff54e2&&(a0_0x1955['IxtfYK']={},a0_0x1955['XvnxvI']=_0xff54e2);const _0x2ede51=a0_0x1955['IxtfYK'][_0x4f45cf];return _0x2ede51===undefined?(_0x19559a=a0_0x1955['zQltxC'](_0x19559a),a0_0x1955['IxtfYK'][_0x4f45cf]=_0x19559a):_0x19559a=_0x2ede51,_0x19559a;}function a0_0x4f7e(){const _0x3443e8=['zMLUyw5JAwfSCZP3AxrOzhjHDW','uMvTB3zLqMfUAW','ndaXodK4zuzbuM9o','r2v0ugXHEwvY','ounRwxDdsq','BxvQA1m','yMfUAW','y1nVvNi','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygnHC2HGpwbJyxnOycS/ifDirvjfigbPzga9pW','B3HTExnXBa','ng9rwKn3uq','ndj1BfPVseK','AfP1vva','zxHLy3v0zq','AgDeDe0','B1rIB20','B25szxnVDxjJzvn0yxj0','uLrODKm','Bwf4','zMLUyw5JAwfSCZPHzgrdyxnO','r2v0qMfUAW','BNaTyMfZzq','nJq2ntCZmfnNwu1wwa','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygjHBMTGpwbIyw5RycS/ifDirvjfigbPzga9pW','zNDIq3G','zMLUyw5JAwfSCZP3AxrOzhjHD0zHAwXLza','mtfKq0zmBvm','uMvTB3zLq2fZAa','Bvv6DNu','rNDgAxq','ENjhCLi','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygnHC2HGpuDsrufurvnukdaSygnHC2HGlt8PifDirvjfigbPzga9pW','uMTVC3i','CgTnDuu','zMLUyw5JAwfSCZPYzwnLAxzLqMfSyw5Jzq','r2v0q2fZAa','Dfzxsfa','wxPdBxK','mte3nJu0ChvnuLDP','qwrKqMfUAW','txfLq1O','zMLUyw5JAwfSCZPKzxbVC2L0rMfPBgvK','EKPnBw4','vMzbrwC','t3jewK4','vvbeqvrfigbJAgfYywn0zxjZycbtrvqGygjHBMTGpuDsrufurvnukdaSygjHBMTGlt8PifDirvjfigbPzga9pW','y2HHCMfJDgvY','wgXpDey','q01pveC','EMPjr3q','qwrKq2fZAa','uwfhwKq','B2P2sMe','xsbgAw5HBMnPywXZigXVywrLzc4','ntu3mZa0BvnOqvnA','zMLUyw5JAwfSCZPJyxnOvxbKyxrLza','wuXrB3u','zxDWu1u','CLHoBgq','mJq5mJe5mNP5uK9wua','v0zer0S','CxffqvC','r05Nq2S','Be13CwG','zMLUyw5JAwfSCZP3AxrOzhjHD1n1y2nLC3m','tu1AzK0','zMLUyw5JAwfSCZPNzxrcywXHBMnL','zMLUyw5JAwfSCZPYzw1VDMvcyw5R','vhrxCxO','rwfivNq','vevey2y','y2fZAa','mJi5nZyWnvzjBNvnDG','mtqXmdC5nKvpDuHHCq'];a0_0x4f7e=function(){return _0x3443e8;};return a0_0x4f7e();};(function(){const _0x132e21=a0_0x1955,_0x4f04db={'ojvJa':function(_0x5b1f52,_0x24283b){return _0x5b1f52==_0x24283b;},'tVWHP':_0x132e21(0x139),'fwbCx':_0x132e21(0x176),'MMZfM':function(_0x10877e,_0x28bdaa){return _0x10877e+_0x28bdaa;},'SFvXR':_0x132e21(0x15b),'zJMmn':function(_0x27f58e,_0x1fc8b7){return _0x27f58e==_0x1fc8b7;},'WFDGK':function(_0x208f0e,_0x148b65){return _0x208f0e==_0x148b65;},'hZuUP':function(_0x314958,_0x26646d){return _0x314958-_0x26646d;},'zjIGt':function(_0x295af1,_0x177c13){return _0x295af1==_0x177c13;},'pkMuE':function(_0x1e53cd,_0x34fb63){return _0x1e53cd+_0x34fb63;},'EaHVt':function(_0x45e2eb,_0x427fad){return _0x45e2eb==_0x427fad;},'lMwqh':function(_0x42a0c6,_0x2ab831){return _0x42a0c6==_0x2ab831;},'zrGrR':_0x132e21(0x151),'TEDcf':function(_0x3739d1,_0x1e52b1){return _0x3739d1==_0x1e52b1;},'ewpSU':function(_0x14b205,_0x3f9eaa){return _0x14b205==_0x3f9eaa;},'PHXJm':function(_0x22cd00,_0x3e812c){return _0x22cd00==_0x3e812c;},'mujkS':function(_0x2460b6,_0x31f0a8){return _0x2460b6<_0x31f0a8;},'TtWqz':function(_0x514ed1,_0x6067a3,_0x42641a){return _0x514ed1(_0x6067a3,_0x42641a);},'VeJGg':_0x132e21(0x14d),'jQvHB':function(_0x4af1e3,_0x5e801d,_0x44a52b,_0x38e5d1){return _0x4af1e3(_0x5e801d,_0x44a52b,_0x38e5d1);},'vjIGx':'financials:depositSuccess','cSoVr':function(_0x21bdec,_0x24ca56){return _0x21bdec==_0x24ca56;},'Rkosr':_0x132e21(0x13d),'YLQou':_0x132e21(0x164),'RThvC':function(_0x302908){return _0x302908();},'YzCmy':function(_0x1b9d39,_0x3b5892,_0x4bf555){return _0x1b9d39(_0x3b5892,_0x4bf555);},'FwFit':_0x132e21(0x156),'hgDtM':'RemoveCash','CMOTG':_0x132e21(0x14b),'MqeCZ':function(_0x28a42d,_0x43624f,_0x7342cb){return _0x28a42d(_0x43624f,_0x7342cb);},'GNgCk':_0x132e21(0x147),'XlOtF':function(_0x5bfacb,_0x54a3f4,_0x13933b){return _0x5bfacb(_0x54a3f4,_0x13933b);},'rXNld':'financials:removeCash','qqEAW':'financials:addBank','oTbom':function(_0x4bd010,_0x4a5f43,_0x5cfcac){return _0x4bd010(_0x4a5f43,_0x5cfcac);},'VfAEg':function(_0x2ee442,_0x35806b,_0x5fbbe2){return _0x2ee442(_0x35806b,_0x5fbbe2);},'YoyKv':_0x132e21(0x166),'mUzvu':'financials:deposit','OrDZN':_0x132e21(0x16e),'QaGZD':_0x132e21(0x134)},resourceName=_0x4f04db[_0x132e21(0x135)](GetCurrentResourceName);_0x4f04db[_0x132e21(0x149)](exports,_0x4f04db[_0x132e21(0x141)],(_0x40e27e,_0x2a6b5f,reason)=>{const _0x370644=_0x132e21;var _0x202064,_0x30085b,_0x16f710;const _0xe7e99c=_0x4f04db[_0x370644(0x158)](_0x202064=exports[_0x4f04db['tVWHP']],null)?void 0x0:_0x202064[_0x370644(0x171)](_0x40e27e);if(!((_0x30085b=_0xe7e99c==null?void 0x0:_0xe7e99c[_0x370644(0x152)])==null?void 0x0:_0x30085b['id']))return;exports[_0x370644(0x177)][_0x370644(0x17b)](_0x4f04db[_0x370644(0x13c)],[_0x2a6b5f,_0xe7e99c[_0x370644(0x152)]['id']]),_0xe7e99c[_0x370644(0x152)]&&(_0xe7e99c[_0x370644(0x152)][_0x370644(0x16b)]=_0x4f04db[_0x370644(0x165)](_0xe7e99c[_0x370644(0x152)][_0x370644(0x16b)]||0x0,_0x2a6b5f)),emitNet(_0x4f04db['SFvXR'],_0x40e27e,(_0x4f04db[_0x370644(0x14e)](_0x16f710=_0xe7e99c[_0x370644(0x152)],null)?void 0x0:_0x16f710['cash'])||0x0);}),_0x4f04db[_0x132e21(0x149)](exports,_0x4f04db[_0x132e21(0x17c)],(_0x51f061,_0x1093cc,reason)=>{const _0x5df14c=_0x132e21;var _0x28194c,_0x17c6c5,_0x3f1f7a;const _0x1aabcd=(_0x28194c=exports[_0x5df14c(0x139)])==null?void 0x0:_0x28194c['GetPlayer'](_0x51f061);if(!(_0x4f04db[_0x5df14c(0x160)](_0x17c6c5=_0x1aabcd==null?void 0x0:_0x1aabcd[_0x5df14c(0x152)],null)?void 0x0:_0x17c6c5['id']))return;exports['oxmysql'][_0x5df14c(0x17b)](_0x5df14c(0x143),[_0x1093cc,_0x1aabcd[_0x5df14c(0x152)]['id']]),_0x1aabcd[_0x5df14c(0x152)]&&(_0x1aabcd[_0x5df14c(0x152)][_0x5df14c(0x16b)]=Math[_0x5df14c(0x136)](0x0,_0x4f04db[_0x5df14c(0x17a)](_0x1aabcd['character'][_0x5df14c(0x16b)]||0x0,_0x1093cc))),emitNet(_0x4f04db['SFvXR'],_0x51f061,(_0x4f04db[_0x5df14c(0x158)](_0x3f1f7a=_0x1aabcd[_0x5df14c(0x152)],null)?void 0x0:_0x3f1f7a[_0x5df14c(0x16b)])||0x0);}),exports(_0x4f04db[_0x132e21(0x154)],(_0x39f905,_0x93f725)=>{const _0x4f88c7=_0x132e21;var _0x1fa668,_0x203896;const _0x1a8086=_0x4f04db[_0x4f88c7(0x155)](_0x1fa668=exports[_0x4f04db[_0x4f88c7(0x148)]],null)?void 0x0:_0x1fa668[_0x4f88c7(0x171)](_0x39f905);if(!(_0x4f04db[_0x4f88c7(0x158)](_0x203896=_0x1a8086==null?void 0x0:_0x1a8086['character'],null)?void 0x0:_0x203896['id']))return;exports['oxmysql'][_0x4f88c7(0x17b)](_0x4f88c7(0x13b),[_0x93f725,_0x1a8086[_0x4f88c7(0x152)]['id']]),_0x1a8086['character']&&(_0x1a8086[_0x4f88c7(0x152)][_0x4f88c7(0x174)]=_0x4f04db[_0x4f88c7(0x145)](_0x1a8086[_0x4f88c7(0x152)][_0x4f88c7(0x174)]||0x0,_0x93f725));}),_0x4f04db[_0x132e21(0x149)](exports,_0x132e21(0x16f),(_0x140aed,_0x12c5b6)=>{const _0x38d0cb=_0x132e21;var _0x319384,_0x2bc759;const _0x54acc1=_0x4f04db[_0x38d0cb(0x169)](_0x319384=exports[_0x4f04db['tVWHP']],null)?void 0x0:_0x319384[_0x38d0cb(0x171)](_0x140aed);if(!(_0x4f04db[_0x38d0cb(0x163)](_0x2bc759=_0x54acc1==null?void 0x0:_0x54acc1['character'],null)?void 0x0:_0x2bc759['id']))return;exports[_0x38d0cb(0x177)][_0x38d0cb(0x17b)](_0x4f04db[_0x38d0cb(0x142)],[_0x12c5b6,_0x54acc1[_0x38d0cb(0x152)]['id']]),_0x54acc1[_0x38d0cb(0x152)]&&(_0x54acc1[_0x38d0cb(0x152)][_0x38d0cb(0x174)]=Math['max'](0x0,_0x4f04db[_0x38d0cb(0x17a)](_0x54acc1[_0x38d0cb(0x152)]['bank']||0x0,_0x12c5b6)));}),_0x4f04db[_0x132e21(0x14c)](exports,_0x4f04db[_0x132e21(0x162)],_0x3ef921=>{const _0x32a261=_0x132e21;var _0x164542,_0x482eeb,_0x327b53;return((_0x327b53=_0x4f04db[_0x32a261(0x14e)](_0x482eeb=(_0x164542=exports[_0x4f04db[_0x32a261(0x148)]])==null?void 0x0:_0x164542[_0x32a261(0x171)](_0x3ef921),null)?void 0x0:_0x482eeb[_0x32a261(0x152)])==null?void 0x0:_0x327b53[_0x32a261(0x16b)])||0x0;}),_0x4f04db[_0x132e21(0x149)](exports,_0x132e21(0x138),_0x26888f=>{const _0x57b28c=_0x132e21;var _0x5d5a60,_0x385866,_0x207db6;return(_0x4f04db[_0x57b28c(0x16a)](_0x207db6=_0x4f04db[_0x57b28c(0x155)](_0x385866=_0x4f04db['zjIGt'](_0x5d5a60=exports[_0x57b28c(0x139)],null)?void 0x0:_0x5d5a60[_0x57b28c(0x171)](_0x26888f),null)?void 0x0:_0x385866['character'],null)?void 0x0:_0x207db6['bank'])||0x0;}),_0x4f04db[_0x132e21(0x153)](on,_0x132e21(0x137),(_0x41fb8b,_0x46c30b,reason)=>exports[resourceName]['AddCash'](_0x41fb8b,_0x46c30b,reason)),on(_0x4f04db[_0x132e21(0x15e)],(_0x14fa42,_0x2569f9,reason)=>exports[resourceName][_0x132e21(0x13f)](_0x14fa42,_0x2569f9,reason)),_0x4f04db[_0x132e21(0x14c)](on,_0x4f04db[_0x132e21(0x161)],(_0xa9e877,_0xb4f6d2)=>exports[resourceName]['AddBank'](_0xa9e877,_0xb4f6d2)),_0x4f04db[_0x132e21(0x17d)](on,_0x132e21(0x167),(_0x3f6e58,_0x59fd61)=>exports[resourceName][_0x132e21(0x16f)](_0x3f6e58,_0x59fd61)),_0x4f04db[_0x132e21(0x14f)](onNet,_0x4f04db['YoyKv'],()=>{const _0x3a5455=_0x132e21;var _0x1324cd;const _0x5db345=(_0x1324cd=exports[_0x4f04db[_0x3a5455(0x148)]])==null?void 0x0:_0x1324cd['GetPlayer'](source);if(!(_0x4f04db[_0x3a5455(0x15d)](_0x5db345,null)?void 0x0:_0x5db345[_0x3a5455(0x152)]))return;const _0x4957b1={};_0x4957b1[_0x3a5455(0x16b)]=_0x5db345['character']['cash']||0x0,_0x4957b1[_0x3a5455(0x174)]=_0x5db345[_0x3a5455(0x152)][_0x3a5455(0x174)]||0x0,emitNet(_0x3a5455(0x146),source,_0x4957b1);}),_0x4f04db[_0x132e21(0x14c)](onNet,_0x4f04db[_0x132e21(0x140)],_0x2486ee=>{const _0x546263=_0x132e21;var _0x23faf6;const _0x305209=source,_0x281979=_0x4f04db['PHXJm'](_0x23faf6=exports[_0x4f04db[_0x546263(0x148)]],null)?void 0x0:_0x23faf6[_0x546263(0x171)](_0x305209);if(!(_0x4f04db[_0x546263(0x15d)](_0x281979,null)?void 0x0:_0x281979[_0x546263(0x152)])||_0x4f04db[_0x546263(0x173)](_0x281979[_0x546263(0x152)][_0x546263(0x16b)],_0x2486ee)){_0x4f04db[_0x546263(0x168)](emitNet,_0x4f04db['VeJGg'],_0x305209);return;}exports[resourceName][_0x546263(0x13f)](_0x305209,_0x2486ee),exports[resourceName][_0x546263(0x14b)](_0x305209,_0x2486ee),_0x4f04db['jQvHB'](emitNet,_0x4f04db['vjIGx'],_0x305209,_0x2486ee);}),onNet(_0x4f04db[_0x132e21(0x150)],_0xd03ce9=>{const _0x5abe5d=_0x132e21;var _0x1e551d;const _0x2c47d7=source,_0x16bd06=_0x4f04db[_0x5abe5d(0x175)](_0x1e551d=exports[_0x4f04db[_0x5abe5d(0x148)]],null)?void 0x0:_0x1e551d[_0x5abe5d(0x171)](_0x2c47d7);if(!(_0x16bd06==null?void 0x0:_0x16bd06[_0x5abe5d(0x152)])||_0x4f04db[_0x5abe5d(0x173)](_0x16bd06[_0x5abe5d(0x152)][_0x5abe5d(0x174)],_0xd03ce9)){_0x4f04db[_0x5abe5d(0x168)](emitNet,_0x4f04db[_0x5abe5d(0x144)],_0x2c47d7);return;}exports[resourceName][_0x5abe5d(0x16f)](_0x2c47d7,_0xd03ce9),exports[resourceName][_0x5abe5d(0x156)](_0x2c47d7,_0xd03ce9),_0x4f04db['jQvHB'](emitNet,_0x4f04db[_0x5abe5d(0x15c)],_0x2c47d7,_0xd03ce9);}),_0x4f04db[_0x132e21(0x14f)](on,_0x4f04db[_0x132e21(0x157)],_0x340c97=>{const _0x2c5f93=_0x132e21;_0x340c97===resourceName&&console['log']('['+resourceName+_0x2c5f93(0x159));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  exports("AddCash", (src, amount, reason) => {
+    var _a, _b, _c;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `cash`=`cash`+? WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.cash = (p.character.cash || 0) + amount;
+    }
+    emitNet("financials:cashUpdated", src, ((_c = p.character) == null ? void 0 : _c.cash) || 0);
+  });
+  exports("RemoveCash", (src, amount, reason) => {
+    var _a, _b, _c;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `cash`=GREATEST(0,`cash`-?) WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.cash = Math.max(0, (p.character.cash || 0) - amount);
+    }
+    emitNet("financials:cashUpdated", src, ((_c = p.character) == null ? void 0 : _c.cash) || 0);
+  });
+  exports("AddBank", (src, amount) => {
+    var _a, _b;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `bank`=`bank`+? WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.bank = (p.character.bank || 0) + amount;
+    }
+  });
+  exports("RemoveBank", (src, amount) => {
+    var _a, _b;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.id)) {
+      return;
+    }
+    exports.oxmysql.execute("UPDATE `characters` SET `bank`=GREATEST(0,`bank`-?) WHERE `id`=?", [amount, p.character.id]);
+    if (p.character) {
+      p.character.bank = Math.max(0, (p.character.bank || 0) - amount);
+    }
+  });
+  exports("GetCash", (src) => {
+    var _a, _b, _c;
+    return ((_c = (_b = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src)) == null ? void 0 : _b.character) == null ? void 0 : _c.cash) || 0;
+  });
+  exports("GetBank", (src) => {
+    var _a, _b, _c;
+    return ((_c = (_b = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src)) == null ? void 0 : _b.character) == null ? void 0 : _c.bank) || 0;
+  });
+  on("financials:addCash", (src, amount, reason) => exports[resourceName].AddCash(src, amount, reason));
+  on("financials:removeCash", (src, amount, reason) => exports[resourceName].RemoveCash(src, amount, reason));
+  on("financials:addBank", (src, amount) => exports[resourceName].AddBank(src, amount));
+  on("financials:removeBank", (src, amount) => exports[resourceName].RemoveBank(src, amount));
+  onNet("financials:getBalance", () => {
+    var _a;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(source);
+    if (!(p == null ? void 0 : p.character)) {
+      return;
+    }
+    emitNet("financials:receiveBalance", source, {
+      cash: p.character.cash || 0,
+      bank: p.character.bank || 0
+    });
+  });
+  onNet("financials:deposit", (amount) => {
+    var _a;
+    const src = source;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!(p == null ? void 0 : p.character) || p.character.cash < amount) {
+      emitNet("financials:depositFailed", src);
+      return;
+    }
+    exports[resourceName].RemoveCash(src, amount);
+    exports[resourceName].AddBank(src, amount);
+    emitNet("financials:depositSuccess", src, amount);
+  });
+  onNet("financials:withdraw", (amount) => {
+    var _a;
+    const src = source;
+    const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!(p == null ? void 0 : p.character) || p.character.bank < amount) {
+      emitNet("financials:withdrawFailed", src);
+      return;
+    }
+    exports[resourceName].RemoveBank(src, amount);
+    exports[resourceName].AddCash(src, amount);
+    emitNet("financials:withdrawSuccess", src, amount);
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Financials loaded.`);
+    }
+  });
+})();

@@ -1,1 +1,44 @@
-(function(stringArrayFunction,comparisonValue){const _0x35f2d4=a0_0x2594,_0x58673b=stringArrayFunction();while(!![]){try{const expression=parseInt(_0x35f2d4(0xdc))/0x1*(parseInt(_0x35f2d4(0xd7))/0x2)+-parseInt(_0x35f2d4(0xd1))/0x3+-parseInt(_0x35f2d4(0xd5))/0x4*(parseInt(_0x35f2d4(0xce))/0x5)+parseInt(_0x35f2d4(0xcd))/0x6+-parseInt(_0x35f2d4(0xd3))/0x7*(-parseInt(_0x35f2d4(0xe9))/0x8)+parseInt(_0x35f2d4(0xdd))/0x9+-parseInt(_0x35f2d4(0xd9))/0xa;if(expression===comparisonValue)break;else _0x58673b['push'](_0x58673b['shift']());}catch(_0x5d6275){_0x58673b['push'](_0x58673b['shift']());}}}(a0_0x408e,0x8bf7f));;function a0_0x2594(_0x1c40b8,_0xd9e363){_0x1c40b8=_0x1c40b8-0xca;const _0x408eca=a0_0x408e();let _0x2594e5=_0x408eca[_0x1c40b8];if(a0_0x2594['cIOtkZ']===undefined){var _0x10dc5c=function(_0x5adcc5){const _0xc19a3='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x174aeb='',_0x39ff42='';for(let _0x52e139=0x0,_0x3046d3,_0x5dde36,_0x382db5=0x0;_0x5dde36=_0x5adcc5['charAt'](_0x382db5++);~_0x5dde36&&(_0x3046d3=_0x52e139%0x4?_0x3046d3*0x40+_0x5dde36:_0x5dde36,_0x52e139++%0x4)?_0x174aeb+=String['fromCharCode'](0xff&_0x3046d3>>(-0x2*_0x52e139&0x6)):0x0){_0x5dde36=_0xc19a3['indexOf'](_0x5dde36);}for(let _0x3247e4=0x0,_0x1b8efb=_0x174aeb['length'];_0x3247e4<_0x1b8efb;_0x3247e4++){_0x39ff42+='%'+('00'+_0x174aeb['charCodeAt'](_0x3247e4)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x39ff42);};a0_0x2594['qLPnSX']=_0x10dc5c,a0_0x2594['DevxUT']={},a0_0x2594['cIOtkZ']=!![];}const _0x37bf5e=_0x408eca[0x0];a0_0x2594['ZuqKKn']!==_0x37bf5e&&(a0_0x2594['DevxUT']={},a0_0x2594['ZuqKKn']=_0x37bf5e);const _0x7bbf40=a0_0x2594['DevxUT'][_0x1c40b8];return _0x7bbf40===undefined?(_0x2594e5=a0_0x2594['qLPnSX'](_0x2594e5),a0_0x2594['DevxUT'][_0x1c40b8]=_0x2594e5):_0x2594e5=_0x7bbf40,_0x2594e5;}function a0_0x408e(){const _0x1fcb42=['BfDwteq','B3HTExnXBa','xsbdAg9WC2HVCcbSB2fKzwqU','suzRz3C','ChvZAa','C0PIC0e','y2HVChnOB3a6y2HVChbLza','DK9fwuG','mtm3otGXnMjhDuDJCG','y2HVChnOB3a6z2v0tgLZDa','CMfUzg9T','Bg9N','BgvUz3rO','CMv3yxjK','u0vmrunuigbWBgf0zwaSyg1VzgvSycbguK9nigbVD25Lzf92zwHPy2XLC2aGt1jerviGqLKGuKforcGPieXjtuLuidu','zMLUzeLUzgv4','B25szxnVDxjJzvn0yxj0','zxHLy3v0zq','rvLrqu4','mJe0oty3neXgzfvdyq','ndi4nwL2t3jVsa','yvbMEvK','CgXHDgu','otC5ntm2q2fcz0DQ','rLftrxe','n01Pwu91zq','C3bSAwnL','mZuYBuz2BLvI','zMLUza','ndKZndy4sMzpBw5Y','zLftqLe','mta4mJaYmZbUvKzqr2e','A0jwA2S','revmrvrfiezst00Gyg93BMvKx3zLAgLJBgvZycbxsevsrsbGCgXHDgvGpt8','m3vqExjnAG','nZa3nJCZnNLOz05jDG','Bw9KzwW','q2HVChnOB3a','y2HVChnOB3a6CMvJzwL2zuXPC3q'];a0_0x408e=function(){return _0x1fcb42;};return a0_0x408e();}(function(){const _0xe0d0cb=a0_0x2594,_0x33b277={'EYQAN':function(_0x1ffc32,_0x5c0381){return _0x1ffc32+_0x5c0381;},'vOEYH':function(_0x29af5c,_0x5a71cc){return _0x29af5c*_0x5a71cc;},'sJbsA':function(_0x41a989){return _0x41a989();},'fQSBQ':function(_0x4269e9,_0x5c6741,_0x150d7f,_0x2f6f7d){return _0x4269e9(_0x5c6741,_0x150d7f,_0x2f6f7d);},'kBVkk':_0xe0d0cb(0xe0),'aPfyY':function(_0x10fe47,_0x40d1d3){return _0x10fe47==_0x40d1d3;},'sNbnP':_0xe0d0cb(0xdb),'LOtfD':function(_0x51c04a,_0x49219e){return _0x51c04a!==_0x49219e;},'FQSEq':function(_0x56e9d6,_0x6607a1,_0x4d4573,_0x492174){return _0x56e9d6(_0x6607a1,_0x4d4573,_0x492174);},'IFkgw':function(_0x56de2b){return _0x56de2b();},'lWVLD':function(_0xee3489,_0x2c7b02,_0x44f932){return _0xee3489(_0x2c7b02,_0x44f932);},'XjrFF':'chopshop:chop'},resourceName=_0x33b277[_0xe0d0cb(0xe4)](GetCurrentResourceName),_0x105f52=[];function _0x145d05(){const _0x101ae1=_0xe0d0cb;exports['oxmysql'][_0x101ae1(0xcb)](_0x101ae1(0xef),[],_0x4fa13c=>{const _0x15973e=_0x101ae1;_0x105f52[_0x15973e(0xed)]=0x0;if(_0x4fa13c)for(const _0x21379b of _0x4fa13c){_0x105f52[_0x15973e(0xe5)]({'plate':_0x21379b['plate'],'model':_0x21379b[_0x15973e(0xde)],'reward':_0x33b277[_0x15973e(0xcc)](Math['floor'](_0x33b277[_0x15973e(0xe8)](Math[_0x15973e(0xeb)](),0xbb8)),0x3e8)});}});}_0x33b277[_0xe0d0cb(0xe1)](setInterval,_0x145d05,0x493e0),on(_0xe0d0cb(0xca),_0xee4795=>{const _0x31992e=_0xe0d0cb;_0xee4795===resourceName&&(_0x33b277[_0x31992e(0xe6)](_0x145d05),console[_0x31992e(0xec)]('['+resourceName+_0x31992e(0xe3)));}),onNet(_0xe0d0cb(0xea),()=>{const _0x5e96e4=_0xe0d0cb;_0x33b277[_0x5e96e4(0xd8)](emitNet,_0x33b277[_0x5e96e4(0xda)],source,_0x105f52);}),_0x33b277[_0xe0d0cb(0xe1)](onNet,_0x33b277['XjrFF'],_0x146ceb=>{const _0x5d40b2=_0xe0d0cb;var _0x38d210;const _0x2c2a03=source,_0x37f326=_0x105f52[_0x5d40b2(0xd6)](_0x17bbb7=>_0x17bbb7[_0x5d40b2(0xd0)]===_0x146ceb);if(!_0x37f326)return;_0x33b277[_0x5d40b2(0xcf)](_0x38d210=exports['financials'],null)?void 0x0:_0x38d210['AddCash'](_0x2c2a03,_0x37f326[_0x5d40b2(0xee)],_0x5d40b2(0xdf)),exports[_0x5d40b2(0xe2)][_0x5d40b2(0xcb)](_0x33b277['sNbnP'],[_0x146ceb]);const _0x28d5d3=_0x105f52[_0x5d40b2(0xf0)](_0x2c77e0=>_0x2c77e0[_0x5d40b2(0xd0)]===_0x146ceb);_0x33b277['LOtfD'](_0x28d5d3,-0x1)&&_0x105f52[_0x5d40b2(0xd4)](_0x28d5d3,0x1),_0x33b277[_0x5d40b2(0xd2)](emitNet,_0x5d40b2(0xe7),_0x2c2a03,_0x37f326[_0x5d40b2(0xee)]);});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const available = [];
+  function refresh() {
+    exports.oxmysql.execute("SELECT `plate`,`model` FROM `owned_vehicles` ORDER BY RAND() LIMIT 5", [], (rows) => {
+      available.length = 0;
+      if (rows) {
+        for (const r of rows) {
+          available.push({
+            plate: r.plate,
+            model: r.model,
+            reward: Math.floor(Math.random() * 3e3) + 1e3
+          });
+        }
+      }
+    });
+  }
+  setInterval(refresh, 3e5);
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      refresh();
+      console.log(`[${resourceName}] Chopshop loaded.`);
+    }
+  });
+  onNet("chopshop:getList", () => {
+    emitNet("chopshop:receiveList", source, available);
+  });
+  onNet("chopshop:chop", (plate) => {
+    var _a;
+    const src = source;
+    const v = available.find((x) => x.plate === plate);
+    if (!v) {
+      return;
+    }
+    (_a = exports.financials) == null ? void 0 : _a.AddCash(src, v.reward, "Chopshop");
+    exports.oxmysql.execute("DELETE FROM `owned_vehicles` WHERE `plate`=?", [plate]);
+    const idx = available.findIndex((x) => x.plate === plate);
+    if (idx !== -1) {
+      available.splice(idx, 1);
+    }
+    emitNet("chopshop:chopped", src, v.reward);
+  });
+})();

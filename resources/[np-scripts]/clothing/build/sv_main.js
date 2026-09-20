@@ -1,1 +1,34 @@
-function a0_0x45a6(_0x5e4369,_0x18786f){_0x5e4369=_0x5e4369-0xf1;const _0x17d024=a0_0x17d0();let _0x45a693=_0x17d024[_0x5e4369];if(a0_0x45a6['fCSUvK']===undefined){var _0x588c60=function(_0x5ce677){const _0x53bb95='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x456034='',_0x4f2632='';for(let _0x5b86ed=0x0,_0x224168,_0x5b7242,_0x299508=0x0;_0x5b7242=_0x5ce677['charAt'](_0x299508++);~_0x5b7242&&(_0x224168=_0x5b86ed%0x4?_0x224168*0x40+_0x5b7242:_0x5b7242,_0x5b86ed++%0x4)?_0x456034+=String['fromCharCode'](0xff&_0x224168>>(-0x2*_0x5b86ed&0x6)):0x0){_0x5b7242=_0x53bb95['indexOf'](_0x5b7242);}for(let _0x2ea9f3=0x0,_0x2e34e7=_0x456034['length'];_0x2ea9f3<_0x2e34e7;_0x2ea9f3++){_0x4f2632+='%'+('00'+_0x456034['charCodeAt'](_0x2ea9f3)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x4f2632);};a0_0x45a6['SPsJRf']=_0x588c60,a0_0x45a6['xtDtpM']={},a0_0x45a6['fCSUvK']=!![];}const _0x1576cc=_0x17d024[0x0];a0_0x45a6['yPEyjn']!==_0x1576cc&&(a0_0x45a6['xtDtpM']={},a0_0x45a6['yPEyjn']=_0x1576cc);const _0x2089eb=a0_0x45a6['xtDtpM'][_0x5e4369];return _0x2089eb===undefined?(_0x45a693=a0_0x45a6['SPsJRf'](_0x45a693),a0_0x45a6['xtDtpM'][_0x5e4369]=_0x45a693):_0x45a693=_0x2089eb,_0x45a693;}(function(stringArrayFunction,comparisonValue){const _0x4e8ac1=a0_0x45a6,_0x44a14c=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x4e8ac1(0xfb))/0x1*(parseInt(_0x4e8ac1(0xf9))/0x2)+-parseInt(_0x4e8ac1(0x113))/0x3+-parseInt(_0x4e8ac1(0x10e))/0x4*(parseInt(_0x4e8ac1(0x104))/0x5)+-parseInt(_0x4e8ac1(0x101))/0x6*(parseInt(_0x4e8ac1(0xf3))/0x7)+parseInt(_0x4e8ac1(0x10f))/0x8*(-parseInt(_0x4e8ac1(0x108))/0x9)+-parseInt(_0x4e8ac1(0xfe))/0xa+parseInt(_0x4e8ac1(0x10d))/0xb*(parseInt(_0x4e8ac1(0x110))/0xc);if(expression===comparisonValue)break;else _0x44a14c['push'](_0x44a14c['shift']());}catch(_0x56faeb){_0x44a14c['push'](_0x44a14c['shift']());}}}(a0_0x17d0,0x94003));;function a0_0x17d0(){const _0x3f73ee=['u0vmrunuicOGrLjptsbGy2HHCMfJDgvYx291DgzPDhnGifDirvjfigbJAgfYywn0zxjFAwrGpt8','oti3mZC4mhzbsLfyEG','Dw5HDMfPBgfIBgvjDgvTCW','su5trvjuieLove8GygnOyxjHy3rLCL9VDxrMAxrZycaOygnOyxjHy3rLCL9PzgaSyg5HBwvGlgbKyxrHycKGvKfmvuvticG/ld8SpYKGt04GrfvqteLdqvrfieTfwsbvuerbveuGygrHDgfGpt8','ndK0odq5nhLxy1vNAG','y2XVDgHPBMC6C2f2zu91DgzPDa','uunpAhG','odvTvMPmqvK','yxzHAwXHyMXLsxrLBxm','y2XVDgHPBMC6z2v0t3v0zML0CW','BNaTyMfZzq','mtaWmZK1mtHqD0v2Bwe','CMvNAxn0zxi','ugzorem','rMf2vNm','CNj4vfC','mJu4mJm2tNzuuujd','mJe3odm2EfzLDMjw','ofH0v1D2DG','mJC5nNH3sgXlua','ww5nEMi','z21nuuu','mtq0mdG0mg9ervbdCW','tM9RDKu','z0rOugq','xsbdBg90AgLUzYbSB2fKzwqU','zujpB0m','vvbJsg0','y2XVDgHPBMC6CMvJzwL2zu91DgzPDhm','C3rYAw5NAwz5','n3rdB1DVrq','B25szxnVDxjJzvn0yxj0','r2v0ugXHEwvY','BNaTy2XVDgHPBMC6zMv0y2HcBg9JA2vKq2XVDgHPBMDgB3jdAgfYywn0zxi','y2HHCMfJDgvY','Dw5KzwzPBMvK','mteWB3DQCuLU','Axf4BhC','mta3mJDhDxftEfm','zxHLy3v0zq'];a0_0x17d0=function(){return _0x3f73ee;};return a0_0x17d0();}(function(){const _0x34bca1=a0_0x45a6,_0x42add8={'NokvE':_0x34bca1(0x107),'gDhPd':function(_0x188ba5,_0x5ab8b2){return _0x188ba5==_0x5ab8b2;},'iqxlw':_0x34bca1(0x100),'YnMzb':function(_0x3c073a,_0x35ed9f,_0x193721,_0x52e24b){return _0x3c073a(_0x35ed9f,_0x193721,_0x52e24b);},'eBOoC':function(_0x3e12c6,_0x5c7b09){return _0x3e12c6==_0x5c7b09;},'PfNDC':_0x34bca1(0xfd),'rrxTW':function(_0x3fc3b3,_0x29414c){return _0x3fc3b3===_0x29414c;},'QCOhx':function(_0x6bca02){return _0x6bca02();},'UPcHm':function(_0x4bef9f,_0x3bbfad,_0x30d16c){return _0x4bef9f(_0x3bbfad,_0x30d16c);},'eFeuy':_0x34bca1(0x102),'gmMQE':_0x34bca1(0xf4)},resourceName=_0x42add8[_0x34bca1(0x103)](GetCurrentResourceName);_0x42add8[_0x34bca1(0x118)](onNet,_0x42add8['eFeuy'],(_0x552e7d,_0x43926e)=>{const _0x5c28ae=_0x34bca1;var _0x59d500;const _0x5ad5c8=source,_0x2cd2aa=(_0x59d500=exports[_0x42add8[_0x5c28ae(0x114)]])==null?void 0x0:_0x59d500['GetPlayer'](_0x5ad5c8);if(!(_0x42add8[_0x5c28ae(0x115)](_0x2cd2aa,null)?void 0x0:_0x2cd2aa['character']))return;exports['oxmysql'][_0x5c28ae(0xfc)](_0x42add8[_0x5c28ae(0xfa)],[_0x2cd2aa['character']['id'],_0x43926e,JSON[_0x5c28ae(0xf2)](_0x552e7d),JSON[_0x5c28ae(0xf2)](_0x552e7d)]);}),_0x42add8['UPcHm'](onNet,_0x34bca1(0x106),()=>{const _0x4fd73e=_0x34bca1,_0x35ca09={'FavVs':function(_0x535df0,_0x491a61,_0xa80e25,_0x3756aa){const _0x4482c5=a0_0x45a6;return _0x42add8[_0x4482c5(0x111)](_0x535df0,_0x491a61,_0xa80e25,_0x3756aa);},'ZjsSP':_0x4fd73e(0xf1)};var _0x631923;const _0xc873c0=source,_0x33f6ce=(_0x631923=exports[_0x42add8[_0x4fd73e(0x114)]])==null?void 0x0:_0x631923[_0x4fd73e(0xf5)](_0xc873c0);if(!(_0x42add8[_0x4fd73e(0x117)](_0x33f6ce,null)?void 0x0:_0x33f6ce[_0x4fd73e(0xf7)]))return;exports['oxmysql']['execute'](_0x42add8[_0x4fd73e(0x10a)],[_0x33f6ce['character']['id']],_0x5470dc=>{const _0x381bd5=_0x4fd73e;_0x35ca09[_0x381bd5(0x10b)](emitNet,_0x35ca09['ZjsSP'],_0xc873c0,_0x5470dc||[]);});}),on(_0x42add8[_0x34bca1(0x112)],_0x18c4c0=>{const _0x215169=_0x34bca1;_0x42add8[_0x215169(0x10c)](_0x18c4c0,resourceName)&&(console['log']('['+resourceName+_0x215169(0x116)),typeof RPC!==_0x215169(0xf8)&&RPC[_0x215169(0x109)]&&RPC[_0x215169(0x109)](_0x215169(0xf6),()=>{const _0x4892d1=_0x215169,_0x5a7110={};return _0x5a7110[_0x4892d1(0x105)]=[],_0x5a7110[_0x4892d1(0xff)]=[],_0x5a7110;}));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  onNet("clothing:saveOutfit", (outfitData, outfitName) => {
+    var _a;
+    const src = source;
+    const player = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!(player == null ? void 0 : player.character)) {
+      return;
+    }
+    exports.oxmysql.execute("INSERT INTO `character_outfits` (`character_id`,`name`,`data`) VALUES (?,?,?) ON DUPLICATE KEY UPDATE `data`=?", [player.character.id, outfitName, JSON.stringify(outfitData), JSON.stringify(outfitData)]);
+  });
+  onNet("clothing:getOutfits", () => {
+    var _a;
+    const src = source;
+    const player = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(src);
+    if (!(player == null ? void 0 : player.character)) {
+      return;
+    }
+    exports.oxmysql.execute("SELECT * FROM `character_outfits` WHERE `character_id`=?", [player.character.id], (rows) => {
+      emitNet("clothing:receiveOutfits", src, rows || []);
+    });
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Clothing loaded.`);
+      if (typeof RPC !== "undefined" && RPC.register) {
+        RPC.register("np-clothing:fetchBlockedClothingForCharacter", () => {
+          return { availableItems: [], unavailableItems: [] };
+        });
+      }
+    }
+  });
+})();

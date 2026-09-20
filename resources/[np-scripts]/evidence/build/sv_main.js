@@ -1,1 +1,38 @@
-(function(stringArrayFunction,comparisonValue){const _0x4e8190=a0_0x2309,_0x13815e=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0x4e8190(0x1f9))/0x1+parseInt(_0x4e8190(0x20a))/0x2*(-parseInt(_0x4e8190(0x201))/0x3)+-parseInt(_0x4e8190(0x20d))/0x4*(parseInt(_0x4e8190(0x1f1))/0x5)+parseInt(_0x4e8190(0x204))/0x6*(parseInt(_0x4e8190(0x214))/0x7)+-parseInt(_0x4e8190(0x1f4))/0x8*(parseInt(_0x4e8190(0x1fe))/0x9)+parseInt(_0x4e8190(0x20f))/0xa*(-parseInt(_0x4e8190(0x215))/0xb)+parseInt(_0x4e8190(0x1fb))/0xc*(parseInt(_0x4e8190(0x1fc))/0xd);if(expression===comparisonValue)break;else _0x13815e['push'](_0x13815e['shift']());}catch(_0x2fc71e){_0x13815e['push'](_0x13815e['shift']());}}}(a0_0xd625,0xc928c));function a0_0x2309(_0x290745,_0x441969){_0x290745=_0x290745-0x1f0;const _0xd62552=a0_0xd625();let _0x2309f6=_0xd62552[_0x290745];if(a0_0x2309['NERrHJ']===undefined){var _0x3ddf14=function(_0x2b6ef6){const _0x5f16df='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x307b64='',_0x491d46='';for(let _0x56628a=0x0,_0x33d73d,_0x48eb61,_0x4659a6=0x0;_0x48eb61=_0x2b6ef6['charAt'](_0x4659a6++);~_0x48eb61&&(_0x33d73d=_0x56628a%0x4?_0x33d73d*0x40+_0x48eb61:_0x48eb61,_0x56628a++%0x4)?_0x307b64+=String['fromCharCode'](0xff&_0x33d73d>>(-0x2*_0x56628a&0x6)):0x0){_0x48eb61=_0x5f16df['indexOf'](_0x48eb61);}for(let _0x416bab=0x0,_0x53aca4=_0x307b64['length'];_0x416bab<_0x53aca4;_0x416bab++){_0x491d46+='%'+('00'+_0x307b64['charCodeAt'](_0x416bab)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x491d46);};a0_0x2309['PKFIxm']=_0x3ddf14,a0_0x2309['jadJSy']={},a0_0x2309['NERrHJ']=!![];}const _0x2b9abe=_0xd62552[0x0];a0_0x2309['PVuxAu']!==_0x2b9abe&&(a0_0x2309['jadJSy']={},a0_0x2309['PVuxAu']=_0x2b9abe);const _0x3cd368=a0_0x2309['jadJSy'][_0x290745];return _0x3cd368===undefined?(_0x2309f6=a0_0x2309['PKFIxm'](_0x2309f6),a0_0x2309['jadJSy'][_0x290745]=_0x2309f6):_0x2309f6=_0x3cd368,_0x2309f6;};function a0_0xd625(){const _0x1860c6=['BM93','ndu0nJrfsMv0whe','C3bSAwnL','zMLUzeLUzgv4','C09yrKW','qwrKsxrLBq','mtuZnZa5oxzzqNH2wq','r2v0ugXHEwvY','mtjtrvv6u3y','nJy4mty1mdnhCercBMS','B25szxnVDxjJzvn0yxj0','otGXA0fjq3jz','zxzPzgvUy2vFyMfN','yvHoAfu','ntK2nZaZuxnquend','B1nku08','D21Qr0C','nJy3otjHqwDJuey','DuTqy0C','qwHNsu8','xsbfDMLKzw5JzsbSB2fKzwqU','zxzPzgvUy2vjza','Cg9SAwnL','mtrqtuj6Buu','zxzPzgvUy2u6BMv3rxzPzgvUy2u','CvjvuK8','mZi5mKzTrgLLsq','BgvUz3rO','mtu1odKWmJbJsKPUrK4','zxzPzgvUy2u6CgXHBNq','ChvZAa','BNaTyMfZzq','DNrZvKC','nJe2svndAgfm','mtfZrvrQwMC','y2HHCMfJDgvY','B1PpA2W','mte0mhrgqMjZDq','z3byu0y'];a0_0xd625=function(){return _0x1860c6;};return a0_0xd625();}(function(){const _0x10d3eb=a0_0x2309,_0x46ef93={'wmjGG':function(_0x4ed51f,_0x298bd4){return _0x4ed51f+_0x298bd4;},'gpXSF':function(_0x25be28){return _0x25be28();},'aXNhU':function(_0x2636c4,_0x804932){return _0x2636c4==_0x804932;},'vyCxV':function(_0x1e522b,_0x1cd379){return _0x1e522b===_0x1cd379;},'vtsVG':_0x10d3eb(0x209),'AhgIO':function(_0x510823,_0x546266){return _0x510823(_0x546266);},'gaaWI':function(_0x5b9da4,_0x5af6a3){return _0x5b9da4==_0x5af6a3;},'uKPcG':function(_0x218332,_0x195840){return _0x218332===_0x195840;},'sOXFL':function(_0x178ebf,_0x1811a8,_0x161916){return _0x178ebf(_0x1811a8,_0x161916);},'yBnXM':_0x10d3eb(0x210),'qRURO':function(_0x62612b,_0x5104a2,_0x34a720){return _0x62612b(_0x5104a2,_0x34a720);},'oZOkl':function(_0x1b3057,_0xb112df,_0x24b1a5){return _0x1b3057(_0xb112df,_0x24b1a5);},'oSJSO':_0x10d3eb(0x1fd)},resourceName=GetCurrentResourceName(),_0x54ef6d=[];_0x46ef93[_0x10d3eb(0x1f7)](onNet,_0x46ef93['yBnXM'],(location,_0x294d86,_0x10c877)=>{const _0x34f755=_0x10d3eb;var _0x135d29,_0x46f87c;const _0x2f2fad={'id':_0x46ef93[_0x34f755(0x203)](_0x54ef6d[_0x34f755(0x20e)],0x1),'src':source,'location':location,'type':_0x294d86,'data':_0x10c877,'time':Date[_0x34f755(0x1f3)]()};_0x54ef6d[_0x34f755(0x211)](_0x2f2fad);for(const _0x21cd20 of _0x46ef93[_0x34f755(0x1f2)](getPlayers)){const _0x1244f6=_0x46ef93[_0x34f755(0x200)](_0x135d29=exports[_0x34f755(0x212)],null)?void 0x0:_0x135d29[_0x34f755(0x1fa)](parseInt(_0x21cd20));_0x46ef93['vyCxV'](_0x46ef93[_0x34f755(0x200)](_0x46f87c=_0x1244f6==null?void 0x0:_0x1244f6[_0x34f755(0x216)],null)?void 0x0:_0x46f87c['job'],_0x46ef93[_0x34f755(0x213)])&&emitNet(_0x34f755(0x20b),_0x46ef93[_0x34f755(0x206)](parseInt,_0x21cd20),_0x2f2fad);}}),_0x46ef93[_0x10d3eb(0x20c)](onNet,'evidence:collect',_0x420563=>{const _0x2a543f=_0x10d3eb;var _0x4e4280;const _0x598be7=_0x54ef6d[_0x2a543f(0x1f6)](_0x1db2f1=>_0x1db2f1['id']===_0x420563);_0x598be7!==-0x1&&_0x54ef6d[_0x2a543f(0x1f5)](_0x598be7,0x1);const _0x18ff9d={};_0x18ff9d[_0x2a543f(0x208)]=_0x420563,_0x46ef93['gaaWI'](_0x4e4280=exports['inventory'],null)?void 0x0:_0x4e4280[_0x2a543f(0x1f8)](source,_0x2a543f(0x1ff),0x1,_0x18ff9d);}),_0x46ef93[_0x10d3eb(0x1f0)](on,_0x46ef93[_0x10d3eb(0x202)],_0x1179a6=>{const _0x3e7fe4=_0x10d3eb;_0x46ef93[_0x3e7fe4(0x205)](_0x1179a6,resourceName)&&console['log']('['+resourceName+_0x3e7fe4(0x207));});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  const evidenceItems = [];
+  onNet("evidence:plant", (location, type, data) => {
+    var _a, _b;
+    const item = {
+      id: evidenceItems.length + 1,
+      src: source,
+      location,
+      type,
+      data,
+      time: Date.now()
+    };
+    evidenceItems.push(item);
+    for (const pid of getPlayers()) {
+      const p = (_a = exports["np-base"]) == null ? void 0 : _a.GetPlayer(parseInt(pid));
+      if (((_b = p == null ? void 0 : p.character) == null ? void 0 : _b.job) === "police") {
+        emitNet("evidence:newEvidence", parseInt(pid), item);
+      }
+    }
+  });
+  onNet("evidence:collect", (evidenceId) => {
+    var _a;
+    const idx = evidenceItems.findIndex((e) => e.id === evidenceId);
+    if (idx !== -1) {
+      evidenceItems.splice(idx, 1);
+    }
+    (_a = exports.inventory) == null ? void 0 : _a.AddItem(source, "evidence_bag", 1, {
+      evidenceId
+    });
+  });
+  on("onResourceStart", (res) => {
+    if (res === resourceName) {
+      console.log(`[${resourceName}] Evidence loaded.`);
+    }
+  });
+})();

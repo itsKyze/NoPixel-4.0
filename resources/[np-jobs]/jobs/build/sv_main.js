@@ -1,1 +1,127 @@
-(function(stringArrayFunction,comparisonValue){const _0xff1544=a0_0xb4bd,_0x2d8865=stringArrayFunction();while(!![]){try{const expression=-parseInt(_0xff1544(0x1f7))/0x1*(-parseInt(_0xff1544(0x216))/0x2)+parseInt(_0xff1544(0x21c))/0x3*(-parseInt(_0xff1544(0x1fb))/0x4)+parseInt(_0xff1544(0x23b))/0x5*(-parseInt(_0xff1544(0x1ff))/0x6)+-parseInt(_0xff1544(0x1e2))/0x7*(parseInt(_0xff1544(0x1fd))/0x8)+-parseInt(_0xff1544(0x1ee))/0x9*(-parseInt(_0xff1544(0x236))/0xa)+parseInt(_0xff1544(0x1e3))/0xb*(-parseInt(_0xff1544(0x22a))/0xc)+parseInt(_0xff1544(0x1eb))/0xd;if(expression===comparisonValue)break;else _0x2d8865['push'](_0x2d8865['shift']());}catch(_0x563e31){_0x2d8865['push'](_0x2d8865['shift']());}}}(a0_0x51e5,0xb2f8b));;function a0_0x51e5(){const _0x24d99f=['ALnAq0y','BMfTzq','q2HPzwy','EvfMze8','AMTiA3u','ugfYyw1LzgLJ','B2jIAxa','twvJAgfUAwm','r1H4wuG','A2DhzKu','AwjhzvO','mK5xsK94Ba','Dg93Aw5N','Ahf2r2i','v2vHEMvSie5LD3m','q2L2AwXPyw4','CLfnvxa','mte0odyXuNHkExbx','u2vYz2vHBNq','DeHzsMK','zw1Z','z3jHzgvZ','ugHfAwu','ve5eDei','rMLZAgvYBwfU','qMXLAeS','vgf4Aq','rKndCuO','rg9JDg9Y','twLUzxi','vgL3DKS','mtuZndHcCwjHt0e','vxz3rMS','u2vUAw9Y','C0DQA1e','D0ndqKq','q2fWDgfPBG','tgjPq3a','Dw5LBxbSB3LLza','tfnqra','EezMExG','C2fSyxj5','BwLUzxi','ntbTruT0zwq','D1Lws1e','Bg9N','vw5LBxbSB3LLza','D2fYBG','ntq3ote1A0X5CM9L','uMvNAxn0zxjkB2i','CLLoDNG','mJa0nJHzwKXdBxO','nZy3oe1wDundrW','w2PVyNnDigPVyM1HBMfNzxiGBM90igzVDw5K','r3j1ChbLidy','Cg9SAwnL','uMH2svK','rMf1Bfi','A2Txv2q','tgLLDxrLBMfUDa','mZi4mZyYntHbuefmBNK','D1rftMm','rhjPDMvY','mJe1nte0ouj5zxrnsa','zMfYBwvY','uMvWB3j0zxi','uLPcz2m','BuTHqM4','r3vHCMq','qxbWCMvUDgLJzq','z3j1ChbLnG','rMLZAgvY','mtqWotqXuMDVDNnq','BgfIzwW','tMLlru0','ufPuywy','mta4shPmDKvj','Dhj1y2TLCG','mJy5nMLXCNjnDW','BeLbyLG','mtjYDfr2D0K','ueX4Exa','q2fKzxq','CfvzBhK','t2zMAwnLCG','vuD6tLi','B25szxnVDxjJzvn0yxj0','BMv3CW','ru1t','zMLZAgvYBwfU','Dgf4Aq','rMfYBwvY'];a0_0x51e5=function(){return _0x24d99f;};return a0_0x51e5();}function a0_0xb4bd(_0xe27f3e,_0x562ef5){_0xe27f3e=_0xe27f3e-0x1e1;const _0x51e52e=a0_0x51e5();let _0xb4bd4c=_0x51e52e[_0xe27f3e];if(a0_0xb4bd['HBzYEA']===undefined){var _0x49b3be=function(_0x13313c){const _0x4634c8='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5ae2b0='',_0x45d293='';for(let _0x4aabfe=0x0,_0x45d8d6,_0x2575af,_0x20d234=0x0;_0x2575af=_0x13313c['charAt'](_0x20d234++);~_0x2575af&&(_0x45d8d6=_0x4aabfe%0x4?_0x45d8d6*0x40+_0x2575af:_0x2575af,_0x4aabfe++%0x4)?_0x5ae2b0+=String['fromCharCode'](0xff&_0x45d8d6>>(-0x2*_0x4aabfe&0x6)):0x0){_0x2575af=_0x4634c8['indexOf'](_0x2575af);}for(let _0x362131=0x0,_0x3b17e7=_0x5ae2b0['length'];_0x362131<_0x3b17e7;_0x362131++){_0x45d293+='%'+('00'+_0x5ae2b0['charCodeAt'](_0x362131)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x45d293);};a0_0xb4bd['AyRxbo']=_0x49b3be,a0_0xb4bd['WyhPiJ']={},a0_0xb4bd['HBzYEA']=!![];}const _0x3dc851=_0x51e52e[0x0];a0_0xb4bd['wyxTuT']!==_0x3dc851&&(a0_0xb4bd['WyhPiJ']={},a0_0xb4bd['wyxTuT']=_0x3dc851);const _0x78fed9=a0_0xb4bd['WyhPiJ'][_0xe27f3e];return _0x78fed9===undefined?(_0xb4bd4c=a0_0xb4bd['AyRxbo'](_0xb4bd4c),a0_0xb4bd['WyhPiJ'][_0xe27f3e]=_0xb4bd4c):_0xb4bd4c=_0x78fed9,_0xb4bd4c;}(function(){const _0x4eb834=a0_0xb4bd,_0x432fbb={'wCCBD':_0x4eb834(0x1e4),'TiwvK':_0x4eb834(0x239),'jSZCF':_0x4eb834(0x21a),'rQMUp':_0x4eb834(0x1e6),'EcxMj':_0x4eb834(0x232),'PLxyp':_0x4eb834(0x201),'FCCqJ':_0x4eb834(0x203),'PZTaf':_0x4eb834(0x21d),'pUYly':_0x4eb834(0x1ea),'ibGeZ':_0x4eb834(0x21f),'aHUaa':_0x4eb834(0x207),'tHYJi':_0x4eb834(0x210),'GXxYH':_0x4eb834(0x227),'wTENc':'mechanic','kgGfE':_0x4eb834(0x212),'TNDtB':_0x4eb834(0x1f4),'jkHku':_0x4eb834(0x22c),'rYNvx':_0x4eb834(0x209),'obbip':_0x4eb834(0x225),'kkWWd':_0x4eb834(0x1ed),'UGzNR':_0x4eb834(0x1fc),'mKaBn':'Trucker','xzVmQ':_0x4eb834(0x208),'yQfdO':_0x4eb834(0x223),'PhEie':_0x4eb834(0x1f6),'NiKEM':_0x4eb834(0x235),'hqvGb':_0x4eb834(0x228),'UvwFk':_0x4eb834(0x1ef),'lIAbX':_0x4eb834(0x20a),'LbiCp':_0x4eb834(0x206),'RhvIY':_0x4eb834(0x219),'sGjkQ':_0x4eb834(0x1f0),'RZBgc':_0x4eb834(0x217),'wYVKQ':'Towing','BlehK':_0x4eb834(0x1e5),'xFfyx':_0x4eb834(0x1f3),'FaulR':function(_0x33065d,_0x57bfa6,_0x5954b1){return _0x33065d(_0x57bfa6,_0x5954b1);},'NuLhA':_0x4eb834(0x205)},resourceName=GetCurrentResourceName();_0x432fbb[_0x4eb834(0x1e8)](on,_0x432fbb['NuLhA'],_0x50708a=>{const _0x2b86b0=_0x4eb834;if(_0x50708a!==resourceName)return;const _0xa4c2a9=exports['jobmanager'];if(!_0xa4c2a9){console[_0x2b86b0(0x23a)](_0x432fbb[_0x2b86b0(0x22e)]);return;}const _0x10b50d={};_0x10b50d[_0x2b86b0(0x20c)]=_0x2b86b0(0x231),_0x10b50d[_0x2b86b0(0x1f8)]=_0x432fbb[_0x2b86b0(0x229)],_0x10b50d[_0x2b86b0(0x220)]=[{'label':_0x432fbb[_0x2b86b0(0x20b)],'salary':0x0}];const _0x2e803b={};_0x2e803b[_0x2b86b0(0x1f8)]=_0x2b86b0(0x22f),_0x2e803b[_0x2b86b0(0x234)]=0x3e8;const _0x2aa924={};_0x2aa924[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x21b)],_0x2aa924[_0x2b86b0(0x1f8)]=_0x432fbb['EcxMj'],_0x2aa924['grades']=[{'label':_0x432fbb[_0x2b86b0(0x200)],'salary':0xc8},{'label':_0x432fbb[_0x2b86b0(0x226)],'salary':0x15e},{'label':_0x432fbb[_0x2b86b0(0x1fa)],'salary':0x1f4},{'label':_0x432fbb[_0x2b86b0(0x202)],'salary':0x2bc},_0x2e803b];const _0x11010e={};_0x11010e['label']=_0x2b86b0(0x20d),_0x11010e[_0x2b86b0(0x234)]=0x1f4;const _0x40b523={};_0x40b523[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x215)],_0x40b523[_0x2b86b0(0x1f8)]=_0x432fbb['aHUaa'],_0x40b523[_0x2b86b0(0x220)]=[{'label':_0x432fbb[_0x2b86b0(0x21e)],'salary':0xc8},{'label':_0x432fbb[_0x2b86b0(0x213)],'salary':0x15e},_0x11010e];const _0x4573f4={};_0x4573f4[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x1ec)],_0x4573f4['label']=_0x432fbb['kgGfE'],_0x4573f4[_0x2b86b0(0x220)]=[{'label':_0x432fbb[_0x2b86b0(0x222)],'salary':0x96},{'label':_0x432fbb[_0x2b86b0(0x214)],'salary':0xfa},{'label':_0x432fbb[_0x2b86b0(0x20f)],'salary':0x190}];const _0x597815={};_0x597815[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x1e1)],_0x597815[_0x2b86b0(0x1f8)]=_0x432fbb[_0x2b86b0(0x211)],_0x597815['grades']=[{'label':_0x432fbb[_0x2b86b0(0x1e9)],'salary':0x32}];const _0x10a0c1={};_0x10a0c1[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x204)],_0x10a0c1[_0x2b86b0(0x1f8)]=_0x432fbb[_0x2b86b0(0x1f2)],_0x10a0c1['grades']=[{'label':_0x432fbb[_0x2b86b0(0x1e9)],'salary':0x64}];const _0x28f6c4={};_0x28f6c4[_0x2b86b0(0x20c)]=_0x432fbb['xzVmQ'],_0x28f6c4[_0x2b86b0(0x1f8)]=_0x432fbb[_0x2b86b0(0x20e)],_0x28f6c4['grades']=[{'label':_0x432fbb[_0x2b86b0(0x221)],'salary':0x4b}];const _0x5ecb0f={};_0x5ecb0f['name']=_0x432fbb[_0x2b86b0(0x1f9)],_0x5ecb0f[_0x2b86b0(0x1f8)]=_0x432fbb['hqvGb'],_0x5ecb0f[_0x2b86b0(0x220)]=[{'label':_0x432fbb[_0x2b86b0(0x218)],'salary':0x64}];const _0x15a77c={};_0x15a77c[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x22b)],_0x15a77c[_0x2b86b0(0x1f8)]=_0x432fbb['lIAbX'],_0x15a77c['grades']=[{'label':_0x432fbb[_0x2b86b0(0x1fe)],'salary':0x50}];const _0x27ec05={};_0x27ec05[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x230)],_0x27ec05[_0x2b86b0(0x1f8)]=_0x432fbb[_0x2b86b0(0x1e7)],_0x27ec05[_0x2b86b0(0x220)]=[{'label':_0x432fbb[_0x2b86b0(0x22d)],'salary':0xc8}];const _0x462302={};_0x462302[_0x2b86b0(0x20c)]=_0x432fbb[_0x2b86b0(0x1f1)],_0x462302[_0x2b86b0(0x1f8)]=_0x432fbb[_0x2b86b0(0x237)],_0x462302[_0x2b86b0(0x220)]=[{'label':_0x432fbb[_0x2b86b0(0x1e9)],'salary':0x50}];const _0x42b45e={};_0x42b45e[_0x2b86b0(0x20c)]=_0x2b86b0(0x1f5),_0x42b45e['label']=_0x432fbb[_0x2b86b0(0x224)],_0x42b45e[_0x2b86b0(0x220)]=[{'label':_0x432fbb[_0x2b86b0(0x233)],'salary':0xfa}];const _0x32271f=[_0x10b50d,_0x2aa924,_0x40b523,_0x4573f4,_0x597815,_0x10a0c1,_0x28f6c4,_0x5ecb0f,_0x15a77c,_0x27ec05,_0x462302,_0x42b45e];for(const _0x31ed4d of _0x32271f){_0xa4c2a9[_0x2b86b0(0x23c)](_0x31ed4d[_0x2b86b0(0x20c)],_0x31ed4d);}console[_0x2b86b0(0x238)]('['+resourceName+']\x20Jobs\x20registered.');});}());
+;
+(function() {
+  const resourceName = GetCurrentResourceName();
+  on("onResourceStart", (res) => {
+    if (res !== resourceName) {
+      return;
+    }
+    const jm = exports.jobmanager;
+    if (!jm) {
+      console.warn("[jobs] jobmanager not found");
+      return;
+    }
+    const jobList = [{
+      name: "unemployed",
+      label: "Unemployed",
+      grades: [{
+        label: "Civilian",
+        salary: 0
+      }]
+    }, {
+      name: "police",
+      label: "LSPD",
+      grades: [{
+        label: "Cadet",
+        salary: 200
+      }, {
+        label: "Officer",
+        salary: 350
+      }, {
+        label: "Sergeant",
+        salary: 500
+      }, {
+        label: "Lieutenant",
+        salary: 700
+      }, {
+        label: "Captain",
+        salary: 1e3
+      }]
+    }, {
+      name: "ems",
+      label: "EMS",
+      grades: [{
+        label: "Paramedic",
+        salary: 200
+      }, {
+        label: "Doctor",
+        salary: 350
+      }, {
+        label: "Chief",
+        salary: 500
+      }]
+    }, {
+      name: "mechanic",
+      label: "Mechanic",
+      grades: [{
+        label: "Apprentice",
+        salary: 150
+      }, {
+        label: "Mechanic",
+        salary: 250
+      }, {
+        label: "Senior",
+        salary: 400
+      }]
+    }, {
+      name: "taxi",
+      label: "Taxi",
+      grades: [{
+        label: "Driver",
+        salary: 50
+      }]
+    }, {
+      name: "trucker",
+      label: "Trucker",
+      grades: [{
+        label: "Driver",
+        salary: 100
+      }]
+    }, {
+      name: "fisherman",
+      label: "Fisherman",
+      grades: [{
+        label: "Fisher",
+        salary: 75
+      }]
+    }, {
+      name: "miner",
+      label: "Miner",
+      grades: [{
+        label: "Miner",
+        salary: 100
+      }]
+    }, {
+      name: "farmer",
+      label: "Farmer",
+      grades: [{
+        label: "Farmer",
+        salary: 80
+      }]
+    }, {
+      name: "news",
+      label: "Weazel News",
+      grades: [{
+        label: "Reporter",
+        salary: 200
+      }]
+    }, {
+      name: "towing",
+      label: "Towing",
+      grades: [{
+        label: "Driver",
+        salary: 80
+      }]
+    }, {
+      name: "gruppe6",
+      label: "Gruppe 6",
+      grades: [{
+        label: "Guard",
+        salary: 250
+      }]
+    }];
+    for (const job of jobList) {
+      jm.RegisterJob(job.name, job);
+    }
+    console.log(`[${resourceName}] Jobs registered.`);
+  });
+})();
