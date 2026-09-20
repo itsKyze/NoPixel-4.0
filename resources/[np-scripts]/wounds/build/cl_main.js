@@ -14300,7 +14300,7 @@
             case 10:
               varData_2136 = param_1_1.sent();
               varData_2137 = varData_1584.Sync.config.GetModuleConfig("mayor-budget:main");
-              varData_2138 = varData_2137.multipliers["ems-efficiency"] || 0.5;
+              varData_2138 = (varData_2137 && varData_2137.multipliers && varData_2137.multipliers["ems-efficiency"]) || 0.5;
               varData_2139 = Math.round(varData_2132.health * (1 + varData_2136 * varData_2138));
               handleAction_310(varData_2139, false, param_1, param_2);
               return [3, 11];

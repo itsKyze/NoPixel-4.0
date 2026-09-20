@@ -33073,7 +33073,7 @@
             return [4, globalThis.exports["mayor-budget"].getBudgetValue(varData_4321, "hunting-spawn-multiplier", 0)];
           case 2:
             varData_4322 = param_1.sent();
-            varData_4323 = varData_4320.multipliers["hunting-spawn-multiplier"] || 0.5;
+            varData_4323 = (varData_4320 && varData_4320.multipliers && varData_4320.multipliers["hunting-spawn-multiplier"]) || 0.5;
             varData_4324 = Math.round((varData_4319[varData_4314.type] || 1) * (1 + varData_4322 * varData_4323));
             return [4, varData_4251(varData_4318.toArray(), varData_4324)];
           case 3:
