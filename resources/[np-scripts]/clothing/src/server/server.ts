@@ -23,6 +23,11 @@
   on("onResourceStart", res => {
     if (res === resourceName) {
       console.log(`[${resourceName}] Clothing loaded.`);
+      if (typeof RPC !== "undefined" && RPC.register) {
+        RPC.register("np-clothing:fetchBlockedClothingForCharacter", () => {
+          return { availableItems: [], unavailableItems: [] };
+        });
+      }
     }
   });
 })();

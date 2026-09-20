@@ -16,6 +16,8 @@ version "0.1.0"
 
 server_script "@np-lib/server/sv_asyncExports.js"
 
-shared_scripts { "doors.js" }
+shared_scripts {
+    "doors.js"
+}
 server_scripts { "build/sv_*.js" }
 client_scripts { "build/cl_*.js" }

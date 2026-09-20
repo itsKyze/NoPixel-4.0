@@ -280,10 +280,12 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         if IsControlPressed(1, keybindControls[keyBind]) and GetLastInputMethod(2) and showMenu then
+            -- Close menu: use elseif below so open logic is skipped this tick
             showMenu = false
             SetNuiFocus(false, false)
-        end
-        if IsControlPressed(1, keybindControls[keyBind]) and GetLastInputMethod(2) and not locked then
+            SendNUIMessage({ state = 'destroy' })
+            Citizen.Wait(200)
+        elseif IsControlPressed(1, keybindControls[keyBind]) and GetLastInputMethod(2) and not locked then
             local locked = exports['config']:GetMiscConfig('spawn.apartments.only')
             local isCuffed = exports["isPed"]:isPed("handcuffed")
             local recentlyCuffed = exports["isPed"]:isPed("recentcuff")
@@ -297,8 +299,11 @@ Citizen.CreateThread(function()
                 local success, entries = pcall(function()
                     return GetMenuEntries(entity, context)
                 end)
-                if not success then
-                    print(entries)
+                if not success or type(entries) ~= "table" then
+                    if not success then
+                        print("[np-menu] GetMenuEntries error: " .. tostring(entries))
+                    end
+                    entries = {}
                 end
 
                 SendNUIMessage({
@@ -318,7 +323,18 @@ Citizen.CreateThread(function()
                 PlaySoundFrontend(-1, "NAV", "HUD_AMMO_SHOP_SOUNDSET", 1)
 
             end
-            while showMenu == true do Citizen.Wait(100) end
+            -- Wait for NUI to close menu, but with 30s safety timeout to prevent permanent focus lock
+            local waitStart = GetGameTimer()
+            while showMenu == true do
+                Citizen.Wait(100)
+                if GetGameTimer() - waitStart > 30000 then
+                    -- NUI failed to respond — force-release focus to prevent mouse stuck
+                    showMenu = false
+                    SetNuiFocus(false, false)
+                    SendNUIMessage({ state = 'destroy' })
+                    break
+                end
+            end
             Citizen.Wait(100)
             while IsControlPressed(1, keybindControls[keyBind]) and GetLastInputMethod(2) do Citizen.Wait(100) end
         end

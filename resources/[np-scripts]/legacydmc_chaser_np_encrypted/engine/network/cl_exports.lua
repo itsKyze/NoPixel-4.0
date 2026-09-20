@@ -1,6 +1,15 @@
 -- Registers a legacy export by hooking into the CFX export event pattern
 function RegisterExport(exportName, exportFunc)
+    if exportFunc == nil then return end
+    pcall(function() exports(exportName, exportFunc) end)
+    local curRes = GetCurrentResourceName()
+    AddEventHandler("__cfx_export_" .. curRes .. "_" .. exportName, function(callback)
+        callback(exportFunc)
+    end)
     AddEventHandler("__cfx_export_legacydmc_chaser_np_" .. exportName, function(callback)
+        callback(exportFunc)
+    end)
+    AddEventHandler("__cfx_export_legacydmc_chaser_np_encrypted_" .. exportName, function(callback)
         callback(exportFunc)
     end)
 end

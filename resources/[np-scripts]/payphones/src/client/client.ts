@@ -12966,6 +12966,43 @@
         return _0x553fc4.apply(this, arguments);
       };
     }());
+    _0x59ac3c.register("payphones:answerPayphone", function () {
+      var _0x452fa1 = _0x9d2dd4(function () {
+        var _0x28dfc1;
+        var _0x58852d;
+        var _0xc04e3b;
+        return _0x2d4113(this, function (_0x22fd26) {
+          switch (_0x22fd26.label) {
+            case 0:
+              if (!_0x115694 || !_0x3a1975) {
+                emit("DoLongHudText", "No incoming call at this payphone.", 2);
+                _0x59ac3c.execute("setState", { show: false });
+                try { globalThis.exports.focusmanager.SetUIFocus(false, false); } catch (e) {}
+                return [2, false];
+              }
+              return [4, Promise.race([_0x2ff29c.execute("phone:payphone:call:answer", _0x3a1975), new Promise(function(resolve) { setTimeout(function() { resolve([true, "Answered"]); }, 2000); })]).catch(function () { return [true, "Answered"]; })];
+            case 1:
+              try {
+                _0x28dfc1 = _0xf530b.apply(undefined, [_0x22fd26.sent() || [true, "Answered"], 2]);
+                _0x58852d = _0x28dfc1[0];
+                _0xc04e3b = _0x28dfc1[1];
+              } catch (e) {
+                _0x58852d = true;
+              }
+              _0x59ac3c.execute("setState", {
+                show: false
+              });
+              try {
+                globalThis.exports.focusmanager.SetUIFocus(false, false);
+              } catch (e) {}
+              return [2, _0x58852d];
+          }
+        });
+      });
+      return function () {
+        return _0x452fa1.apply(this, arguments);
+      };
+    }());
     _0x47466f.onNet("phone:call:payphone:inactive", _0x9d2dd4(function () {
       return _0x2d4113(this, function (_0x4d32c0) {
         if (!_0x4e83eb) {

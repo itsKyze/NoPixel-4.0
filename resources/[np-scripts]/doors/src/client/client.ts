@@ -15744,17 +15744,22 @@
       });
     }));
     function getActiveDoor(doorId) {
-      var activeDoors = DoorSystemGetActive();
-      var varData_2278 = activeDoors.find(function (param_1) {
-        return param_1[0] === GetHashKey(doorId) >>> 0;
-      });
-      if (!varData_2278) {
+      try {
+        var activeDoors = DoorSystemGetActive();
+        if (!Array.isArray(activeDoors)) return false;
+        var varData_2278 = activeDoors.find(function (param_1) {
+          return param_1 && param_1[0] === GetHashKey(doorId) >>> 0;
+        });
+        if (!varData_2278) {
+          return false;
+        }
+        var varData_2279 = handleAction_219(varData_2278, 2);
+        var varData_2280 = varData_2279[0];
+        var varData_2281 = varData_2279[1];
+        return varData_2281;
+      } catch (err) {
         return false;
       }
-      var varData_2279 = handleAction_219(varData_2278, 2);
-      var varData_2280 = varData_2279[0];
-      var varData_2281 = varData_2279[1];
-      return varData_2281;
     }
     varData_1432.Sync("getDoorFromId", getActiveDoor);
     function getActiveDoor_1(doorId) {

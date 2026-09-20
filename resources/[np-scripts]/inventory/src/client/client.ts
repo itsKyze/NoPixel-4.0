@@ -14886,9 +14886,9 @@
                   if (IsPedShooting(varData_2202)) {
                     isDisabled_3 = true;
                     isDisabled_1 = true;
-                    varData_2231 = varData_2201.id;
-                    varData_2232 = varData_2201.inventoryId;
-                    varData_2233 = varData_2201.item.flags.weapon;
+                    varData_2231 = varData_2201?.id;
+                    varData_2232 = varData_2201?.inventoryId;
+                    varData_2233 = varData_2201?.item?.flags?.weapon;
                     clearTick(varData_2213);
                     if (varData_2210) {
                       SetEntityVisible(varData_2210, false, false);
@@ -20569,7 +20569,7 @@
     varData_1482.on("inventory:weaponEquipped", function () {
       var varData_2867 = handleAction_321(function (param_1, param_2, param_3) {
         return handleAction_331(this, function (param_1_1) {
-          if (param_1.weapon !== "weapon_compactlauncher" || param_2.itemId !== "np_grapplelauncher") {
+          if (!param_1 || param_1.weapon !== "weapon_compactlauncher" || !param_2 || param_2.itemId !== "np_grapplelauncher") {
             return [2];
           }
           if (numericVal_106) {
@@ -21404,6 +21404,9 @@
       varData_1583.execute("setState", {
         show: false
       }).catch(function () {});
+      // Directly release NUI focus to prevent mouse getting stuck
+      SetNuiFocus(false, false);
+      SetNuiFocusKeepInput(false);
     }
     varData_1432.Sync("CloseInventory", handleAction_366);
     function handleAction_367() {
@@ -21646,6 +21649,8 @@
       return handleAction_362(this, function (param_1) {
         varData_1490.debug("Closing Inventory");
         varData_1432.Sync.focusmanager.SetUIFocus(false, false);
+        SetNuiFocus(false, false);
+        SetNuiFocusKeepInput(false);
         varData_1482.emit("inventory:onClose");
         return [2];
       });
@@ -21887,6 +21892,14 @@
         }
         varData_3023 = varData_1432.Sync.phone.isPhoneOpeningBlocked();
         return [2, varData_3023];
+      });
+    }));
+    varData_1583.register("inventory:useItem", handleAction_348(function (param_1) {
+      return handleAction_362(this, function (param_1_1) {
+        if (param_1 && param_1.inventoryId && param_1.slot !== undefined) {
+          emitNet("inventory:sv:useItem", param_1.inventoryId, param_1.slot);
+        }
+        return [2, { ok: true }];
       });
     }));
     varData_2958();

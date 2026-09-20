@@ -11031,7 +11031,7 @@
     };
     _0x5008dd = new WeakSet();
     _0x3bafbc = function (_0x12143e) {
-      for (const [_0x218b84, _0x27e212] of Object.entries(_0x12143e)) {
+      for (const [_0x218b84, _0x27e212] of Object.entries(_0x12143e ?? {})) {
         _0x5efa88(this, _0x3cab84).set(_0x218b84, _0x27e212);
         _0x3bbdae(this, _0x34ce77, _0x4fb47f).call(this, "onDataUpdate", _0x218b84, _0x27e212);
       }

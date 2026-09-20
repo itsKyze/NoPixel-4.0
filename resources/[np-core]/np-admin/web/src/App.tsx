@@ -4046,21 +4046,21 @@ function x1() {
         varData_520.addEventListener("mouseenter", () => _0x282960(true));
         S(varData_520, N(ie, {
           get when() {
-            return param_1.options.bindKey !== null;
+            return !!(param_1?.options?.bindKey && Array.isArray(param_1.options.bindKey.options));
           },
           get children() {
             return N(an, {
               class: "custom",
               get options() {
-                return param_1.options.bindKey.options.map(param_1_1 => param_1_1.text);
+                return (param_1?.options?.bindKey?.options || []).map(param_1_1 => param_1_1?.text ?? param_1_1);
               },
               placeholder: "Bound To:",
               get initialValue() {
-                return param_1.options.bindKey.value;
+                return param_1?.options?.bindKey?.value ?? null;
               },
               format: (param_1_1, param_2) => param_2 === "option" ? "Bound To: " + param_1_1 : "Bound To: " + param_1_1,
               onChange: param_1_1 => {
-                if (param_1_1 === param_1.options.bindKey.value) {
+                if (!param_1?.options?.bindKey || param_1_1 === param_1.options.bindKey.value) {
                   return;
                 }
                 _0x9aceae({
@@ -4068,9 +4068,9 @@ function x1() {
                   menuData: _0x4f1f66.menuData.map(param_1_2 => param_1_2?.command?.title === param_1.command.title ? {
                     ...param_1_2,
                     options: {
-                      ...param_1_2.options,
+                      ...param_1_2?.options,
                       bindKey: {
-                        ...param_1_2.options.bindKey,
+                        ...param_1_2?.options?.bindKey,
                         value: param_1_1
                       }
                     }
@@ -4817,7 +4817,7 @@ function j1() {
     };
     S(varData_576, N(me, {
       get each() {
-        return _0x3f8cf5?.playerData?.filter(param_1 => _0x4ab58c() !== "" ? param_1.serverID.toString().includes(_0x4ab58c()) : _0x200027() !== "" ? param_1.SteamID.toString().includes(_0x200027()) : _0x213bcb() !== "" ? param_1.charID.toString().includes(_0x213bcb()) : _0x359a08() !== "" ? param_1.charName.toString().includes(_0x359a08()) : true);
+        return _0x3f8cf5?.playerData?.filter(param_1 => param_1 ? (_0x4ab58c() !== "" ? (param_1.serverID?.toString() || "").includes(_0x4ab58c()) : _0x200027() !== "" ? (param_1.SteamID?.toString() || "").includes(_0x200027()) : _0x213bcb() !== "" ? (param_1.charID?.toString() || "").includes(_0x213bcb()) : _0x359a08() !== "" ? (param_1.charName?.toString() || "").includes(_0x359a08()) : true) : false);
       },
       children: param_1 => (() => {
         const varData_577 = F1();

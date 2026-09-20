@@ -59469,7 +59469,7 @@ should equal
           }, false);
           globalThis.exports["np-keybinds"].registerKeyMapping("", "Gov", "Hammer", "+policeHammer", "-policeHammer", "E");
           _0xf48953.on("inventory:weaponEquipped", function(_0x3b2849) {
-            if (_0x3b2849.weapon !== "weapon_pdsledge") {
+            if (!_0x3b2849 || _0x3b2849.weapon !== "weapon_pdsledge") {
               return;
             }
             _0x26a9f1();

@@ -15311,7 +15311,7 @@
                         _0x515fe3 = _0x26faf4({}, _0x515fe3, _0x515fe3.variant[_0x28ef6d.variant]);
                       }
                       _0xfd9708 = _0x941e83.get(_0x515fe3.group);
-                      if (_0xfd9708 && _0xfd9708.info.group === _0x515fe3.group && _0xfd9708.info.priority >= _0x515fe3.priority && (_0xfd9708.info.onUse || _0x4921a8.find(function (_0x2e7579) {
+                      if (_0xfd9708 && _0xfd9708.info && _0xfd9708.info.group === _0x515fe3.group && _0xfd9708.info.priority >= _0x515fe3.priority && (_0xfd9708.info.onUse || _0x4921a8.find(function (_0x2e7579) {
                         return _0x2e7579.id === _0xfd9708.itemInfo?.id;
                       }))) {
                         return [2, "continue"];
@@ -15388,7 +15388,7 @@
                 return [2];
               }
               _0x37d057 = _0x941e83.get(_0x345ffb.group);
-              if (!_0x37d057 || !_0x37d057.info.onUse) {
+              if (!_0x37d057 || !_0x37d057.info || !_0x37d057.info.onUse) {
                 return [3, 2];
               }
               return [4, _0x4d343f(_0x37d057.info.group)];
@@ -15494,10 +15494,10 @@
         switch (_0x1fe8c6.label) {
           case 0:
             _0x426aa4 = new Set(_0x484c1f(_0x941e83.values()).filter(function (_0x11ad5b) {
-              return _0x11ad5b.info.onUse;
+              return _0x11ad5b && _0x11ad5b.info && _0x11ad5b.info.onUse;
             }).map(function (_0x4c8b59) {
-              return _0x4c8b59.info.group;
-            }));
+              return _0x4c8b59 && _0x4c8b59.info ? _0x4c8b59.info.group : null;
+            }).filter(Boolean));
             _0x161cf7 = true;
             _0x4ee71c = false;
             _0x102ba3 = undefined;

@@ -53,7 +53,13 @@ function obfuscateFile(filePath) {
   return true;
 }
 
+const SKIP_RESOURCES = ["editor"];
+
 function obfuscateResource(resDir) {
+  const baseName = path.basename(resDir);
+  if (SKIP_RESOURCES.includes(baseName)) {
+    return;
+  }
   const buildDir = path.join(resDir, "build");
   if (fs.existsSync(buildDir)) {
     const entries = fs.readdirSync(buildDir);

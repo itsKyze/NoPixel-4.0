@@ -16865,6 +16865,7 @@
     }
     var _0x44dcf0;
     _0x26ac5c.on("inventory:weaponEquipped", function (_0x2e9330) {
+      if (!_0x2e9330) return;
       _0x44dcf0 = _0x2e9330;
       _0x448823.debug(`Equipped weapon ${_0x2e9330.weapon}`);
       var _0x4f1368 = PlayerPedId();

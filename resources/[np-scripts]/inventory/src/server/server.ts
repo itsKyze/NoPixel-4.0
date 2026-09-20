@@ -93,6 +93,15 @@
       return 0;
     }
   });
+  onNet("inventory:sv:useItem", (inventoryId, slot) => {
+    const src = source;
+    const inv = playerInventories.get(src);
+    if (!inv) return;
+    const item = inv.items.find(i => i.slot === slot);
+    if (!item) return;
+    emit("inventory:itemUsed", src, item.item_name, slot, inventoryId);
+    emitNet("inventory:cl:itemUsed", src, item.item_name, slot);
+  });
   exports("GetInventory", src => playerInventories.get(src) || null);
   on("onResourceStart", res => {
     if (res === resourceName) {

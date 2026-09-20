@@ -16984,6 +16984,11 @@
       isDisabled_1 = param_2;
       varData_2773(param_1, false);
     });
+    // Fix: spawn uses local emit() which doesn't trigger onNet — add local handler
+    on("np-clothing:openClothing", function (param_1, param_2, param_3, param_4) {
+      isDisabled_1 = !!(param_2 || param_4 === "spawn");
+      varData_2773(param_1, param_3 ?? false);
+    });
     onNet("np-clothing:openBarber", function (param_1) {
       varData_2780(param_1);
     });
@@ -19286,7 +19291,7 @@
               varData_2758 = param_1_1.sent();
               param_1_1.label = 9;
             case 9:
-              if (varData_2758) {
+              if (varData_2758 || param_1.type === "spawn" || isDisabled_1) {
                 return [3, 11];
               }
               return [4, varData_2760(varData_2746)];
@@ -19294,7 +19299,7 @@
               param_1_1.sent();
               param_1_1.label = 11;
             case 11:
-              if (param_1.type === "spawn") {
+              if (param_1.type === "spawn" || isDisabled_1) {
                 handleAction_345(false);
                 emit("np-spawn:finishedClothing", "Finished");
               }
@@ -20698,8 +20703,8 @@
                 });
               });
               var varData_3009 = {
-                unavailableItems: varData_3006,
-                availableItems: varData_3007
+                unavailableItems: varData_3006 || [],
+                availableItems: varData_3007 || []
               };
               return [2, [true, varData_3009]];
           }
@@ -20756,11 +20761,15 @@
               if (!varData_3014) {
                 return [2, [false, []]];
               }
-              varData_3015 = varData_3014.availableItems.sort(function (param_1_2, param_2_1) {
-                return param_1_2.lockHashes.length - param_2_1.lockHashes.length;
+              varData_3015 = ((varData_3014 && varData_3014.availableItems) ? varData_3014.availableItems : []).sort(function (param_1_2, param_2_1) {
+                var len1 = (param_1_2 && param_1_2.lockHashes) ? param_1_2.lockHashes.length : 0;
+                var len2 = (param_2_1 && param_2_1.lockHashes) ? param_2_1.lockHashes.length : 0;
+                return len1 - len2;
               });
-              varData_3016 = varData_3014.unavailableItems.sort(function (param_1_2, param_2_1) {
-                return param_1_2.lockHashes.length - param_2_1.lockHashes.length;
+              varData_3016 = ((varData_3014 && varData_3014.unavailableItems) ? varData_3014.unavailableItems : []).sort(function (param_1_2, param_2_1) {
+                var len1 = (param_1_2 && param_1_2.lockHashes) ? param_1_2.lockHashes.length : 0;
+                var len2 = (param_2_1 && param_2_1.lockHashes) ? param_2_1.lockHashes.length : 0;
+                return len1 - len2;
               });
               varData_3017 = [];
               varData_3018 = [];

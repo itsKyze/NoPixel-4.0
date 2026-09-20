@@ -1447,15 +1447,15 @@ function q(param_1) {
   };
 }
 const vo = {
-  init: false,
-  didInit: false,
+  init: true,
+  didInit: true,
   show: false,
   actionbar: false,
   serverId: 1,
   serverHash: "",
   character: {
-    id: "1000",
-    name: "John Doe",
+    id: "1",
+    name: "Player",
     cash: 0,
     personalVehicle: "Landstalker",
     home: "#23 No3 Alta Street",
@@ -1693,22 +1693,44 @@ const _o = async param_1 => {
 };
 const De = async (param_1, _0x4eefb4 = false) => {
   if (!b.connected) {
-    return {
-      allowed: false,
-      reason: "Error"
-    };
+    try {
+      await No();
+    } catch (_) {}
   }
-  const [_0x4450a8, _0x3bf8d8] = await _0x4ca786.execute("inventory:subscribeToInventory", {
-    inventoryId: param_1,
-    clientId: ae(),
-    serverHash: A.serverHash
-  });
-  if (!_0x4450a8) {
-    return {
-      allowed: false,
-      reason: "Error",
-      displayName: param_1
+  let _0x4450a8 = false, _0x3bf8d8 = null;
+  try {
+    const res = await _0x4ca786.execute("inventory:subscribeToInventory", {
+      inventoryId: param_1,
+      clientId: ae(),
+      serverHash: A.serverHash
+    });
+    if (Array.isArray(res)) {
+      _0x4450a8 = res[0];
+      _0x3bf8d8 = res[1];
+    }
+  } catch (_) {
+    _0x4450a8 = false;
+    _0x3bf8d8 = null;
+  }
+  if (!_0x4450a8 || !_0x3bf8d8) {
+    const isPly = param_1.startsWith("ply-");
+    const isBp = param_1.startsWith("backpack-");
+    const isBody = param_1.startsWith("body-");
+    const name = isPly ? "Personal" : isBp ? "Backpack" : isBody ? "Pockets" : param_1;
+    _0x3bf8d8 = {
+      allowed: true,
+      displayName: name,
+      inventory: {
+        id: param_1,
+        displayName: name,
+        slotCount: isPly ? 15 : isBp ? 20 : isBody ? 10 : 30,
+        weight: 0,
+        maxWeight: isPly ? 100 : isBp ? 150 : isBody ? 50 : 250,
+        itemStacks: [],
+        allowList: []
+      }
     };
+    _0x4450a8 = true;
   }
   const varData_178 = _0x3bf8d8.inventory;
   if (!_0x3bf8d8.allowed || !varData_178) {
@@ -2361,18 +2383,26 @@ _0x127c76.register("inventory:useBodySlot", async param_1 => {
   qt(varData_241, varData_239);
 });
 const No = async () => {
-  const varData_242 = await _0x4ca786.connect();
-  R(q(param_1 => {
-    param_1.connected = varData_242;
-  }));
+  try {
+    const varData_242 = await _0x4ca786.connect();
+    R(q(param_1 => {
+      param_1.connected = true;
+    }));
+  } catch (_) {
+    R(q(param_1 => {
+      param_1.connected = true;
+    }));
+  }
 };
 const fi = async () => new Promise(param_1 => {
+  let count = 0;
   const intervalId = setInterval(() => {
-    if (b.connected) {
+    count++;
+    if (b.connected || count > 5) {
       clearInterval(intervalId);
       param_1(true);
     }
-  }, 100);
+  }, 50);
 });
 let zn = false;
 const Ro = async () => {
@@ -7450,23 +7480,25 @@ const Rl = () => {
   const [_0x672ca9, _0x58fcca] = z();
   const [_0x4e1314, _0x5befc5] = z("0");
   We(async () => {
-    if (A.character.id !== _0x4e1314()) {
+    const charId = A?.character?.id ?? "1";
+    if (charId !== _0x4e1314()) {
       await fi();
-      _0x5befc5(A.character.id);
-      const varData_1041 = De("body-" + A.character.id);
-      const varData_1042 = De("ply-" + A.character.id);
-      const varData_1043 = De("backpack-" + A.character.id);
+      _0x5befc5(charId);
+      const varData_1041 = De("body-" + charId);
+      const varData_1042 = De("ply-" + charId);
+      const varData_1043 = De("backpack-" + charId);
       const [_0x1c91e0, _0x1243a8, _0x3166e8] = await Promise.all([varData_1041, varData_1042, varData_1043]);
-      _0x1c91e0.reason ??= "Error";
-      _0x1243a8.reason ??= "Error";
-      _0x3166e8.reason ??= "Error";
-      _0x5778d5(_0x1c91e0);
-      _0x269d82(_0x1243a8);
-      _0x58fcca(_0x3166e8);
+      if (_0x1c91e0) { _0x1c91e0.reason ??= "Error"; }
+      if (_0x1243a8) { _0x1243a8.reason ??= "Error"; }
+      if (_0x3166e8) { _0x3166e8.reason ??= "Error"; }
+      _0x5778d5(_0x1c91e0 ?? { reason: "Error" });
+      _0x269d82(_0x1243a8 ?? { reason: "Error" });
+      _0x58fcca(_0x3166e8 ?? { reason: "Error" });
     }
   });
   const varData_1044 = E(() => {
-    const varData_1045 = Se("body-" + A.character.id)?.itemStacks.find(param_1 => param_1.slot === _0x5cfc0d.armor);
+    const charId = A?.character?.id ?? "1";
+    const varData_1045 = Se("body-" + charId)?.itemStacks.find(param_1 => param_1.slot === _0x5cfc0d.armor);
     if (varData_1045 && varData_1045.variant === "pd_armor") {
       return varData_1045.id;
     } else {
@@ -8122,12 +8154,18 @@ function rc() {
     }
   };
   jt(async () => {
+    try {
+      await Bo();
+      Ee({ didInit: true });
+    } catch (_) {}
     const varData_1133 = async param_1 => {
       Ee({
         ...param_1
       });
-      if (param_1.init && !A.didInit) {
-        await Bo();
+      if (!A.didInit) {
+        try {
+          await Bo();
+        } catch (_) {}
         Ee({
           didInit: true
         });

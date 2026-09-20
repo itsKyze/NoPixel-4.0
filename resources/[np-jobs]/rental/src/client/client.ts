@@ -12974,11 +12974,13 @@
             return [4, varData_1673.Async.showrooms.GetVehicles()];
           case 1:
             varData_2198 = param_1.sent();
-            varData_2199 = varData_2198.filter(function (param_1_1) {
-              return varData_2197.vehicleModels.includes(param_1_1.model);
+            varData_2199 = (Array.isArray(varData_2198) ? varData_2198 : []).filter(function (param_1_1) {
+              var vModels = (varData_2197 && Array.isArray(varData_2197.vehicleModels)) ? varData_2197.vehicleModels : [];
+              return param_1_1 && param_1_1.model && (vModels.length === 0 || vModels.includes(param_1_1.model));
             }).map(function (param_1_1) {
+              var pMod = (varData_2197 && typeof varData_2197.priceModifier === "number") ? varData_2197.priceModifier : 1;
               return handleAction_136(handleAction_134({}, param_1_1), {
-                price: param_1_1.price * varData_2197.priceModifier
+                price: ((param_1_1 && param_1_1.price) ? param_1_1.price : 0) * pMod
               });
             });
             return [2, varData_2199];

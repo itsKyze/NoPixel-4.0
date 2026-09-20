@@ -61,6 +61,9 @@
     "np-jobs:npc:getNPCs": () => [],
     "setState": () => ({ success: true, ok: true }),
     "getState": () => ({}),
+    "payphones:answerPayphone": () => true,
+    "phone:payphone:call:answer": () => [true, "Answered"],
+    "phone:payphone:call:dial": () => [true, "Dialed"],
     "config:getClientConfig": (src) => {
       let configs = [];
       try {
@@ -360,6 +363,11 @@
           bank: 5e3,
           type: r.type || "citizen"
         };
+        try {
+          Player(src).state.cid = r.id;
+          Player(src).state.character = chardata;
+        } catch (e) {
+        }
         emit("np-base:characterSelected", src, chardata);
         emitNet("np-base:characterSelected", src, chardata);
         try {
@@ -496,16 +504,113 @@
     "time-sync:test": () => true,
     "time-sync:kick": () => true,
     "apartments:getMyApartmentDetails": async (src) => [
-      { x: -268, y: -957, z: 31.2 },
-      205,
+      { x: -660.92, y: -1097.02, z: 14.62 },
+      245,
       null,
       1,
-      "Alta Street Apartments"
+      "Little Seoul Apartments",
+      0
     ],
+    "np-apartment:HasPermissionToUnlock": async (src, doorId) => true,
+    "apartments:openMailbox": async (src) => [true, "Mailbox"],
     "np-jail:fetchTime": () => 0,
     "np-jail:crafting:open": () => [],
     "np-jail:crafting:getPlayerInventory": () => [],
-    "np-jail:getPlayerJailContactReputation": () => 0
+    "np-jail:getPlayerJailContactReputation": () => 0,
+    "np-clothing:savePedData": async (src, model, drawables, props, headOverlay, eyeColor) => {
+      var _a;
+      try {
+        const charId = ((_a = Player(src).state) == null ? void 0 : _a.cid) || 1;
+        const appearanceObj = {
+          model,
+          drawables,
+          props,
+          headOverlay,
+          eyeColor
+        };
+        const rows = await Library.executeQuery("SELECT ped_appearance FROM characters WHERE id = ?", [charId]);
+        let existing = {};
+        if (rows && rows[0] && rows[0].ped_appearance) {
+          try {
+            existing = JSON.parse(rows[0].ped_appearance);
+          } catch (e) {
+          }
+        }
+        const merged = { ...existing, ...appearanceObj };
+        await Library.executeQuery(
+          "UPDATE characters SET ped_model = ?, ped_appearance = ? WHERE id = ?",
+          [model || "mp_m_freemode_01", JSON.stringify(merged), charId]
+        );
+        console.log(`[np-clothing:savePedData] Saved ped data for cid ${charId}`);
+        return true;
+      } catch (err) {
+        console.error("[np-clothing:savePedData] Error:", err.message);
+        return true;
+      }
+    },
+    "np-clothing:saveCurrentClothing": async (src, drawables, props, hairColors, fade, ...rest) => {
+      var _a;
+      try {
+        const charId = ((_a = Player(src).state) == null ? void 0 : _a.cid) || 1;
+        const rows = await Library.executeQuery("SELECT ped_appearance, ped_model FROM characters WHERE id = ?", [charId]);
+        let existing = {};
+        if (rows && rows[0] && rows[0].ped_appearance) {
+          try {
+            existing = JSON.parse(rows[0].ped_appearance);
+          } catch (e) {
+          }
+        }
+        existing.clothing = {
+          drawables,
+          props,
+          hairColors,
+          fade
+        };
+        await Library.executeQuery(
+          "UPDATE characters SET ped_appearance = ? WHERE id = ?",
+          [JSON.stringify(existing), charId]
+        );
+        console.log(`[np-clothing:saveCurrentClothing] Saved clothing for cid ${charId}`);
+        return true;
+      } catch (err) {
+        console.error("[np-clothing:saveCurrentClothing] Error:", err.message);
+        return true;
+      }
+    },
+    "np-clothing:getPedData": async (src, model) => {
+      var _a;
+      try {
+        const charId = ((_a = Player(src).state) == null ? void 0 : _a.cid) || 1;
+        const rows = await Library.executeQuery("SELECT ped_appearance, ped_model FROM characters WHERE id = ?", [charId]);
+        if (rows && rows[0] && rows[0].ped_appearance) {
+          const data = JSON.parse(rows[0].ped_appearance);
+          return data;
+        }
+      } catch (err) {
+      }
+      return {};
+    },
+    "np-clothing:getCurrentClothing": async (src) => {
+      var _a;
+      try {
+        const charId = ((_a = Player(src).state) == null ? void 0 : _a.cid) || 1;
+        const rows = await Library.executeQuery("SELECT ped_appearance FROM characters WHERE id = ?", [charId]);
+        if (rows && rows[0] && rows[0].ped_appearance) {
+          const data = JSON.parse(rows[0].ped_appearance);
+          if (data && data.clothing) return data.clothing;
+        }
+      } catch (err) {
+      }
+      return {};
+    },
+    "np-clothing:saveFade": async () => true,
+    "np-clothing:saveTattoos": async () => true,
+    "np-clothing:getFade": async () => ({}),
+    "np-clothing:getTattoos": async () => [],
+    "np-clothing:purchaseClothing": async () => true,
+    "np-clothing:saveOutfit": async () => true,
+    "np-clothing:getOutfits": async () => [],
+    "np-clothing:getAllowedPeds": async () => []
   };
   function parseHeader(header) {
     if (!header) {

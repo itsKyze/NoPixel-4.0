@@ -22,25 +22,37 @@
         if (playerId) {
           const name = GetPlayerName(playerId as any) || "Player " + playerId;
           const ping = GetPlayerPing(playerId as any) || 0;
+          const player = (globalThis as any).exports["np-base"]?.GetPlayer(playerId);
+          const char = player?.character;
           players.push({
             serverID: playerId,
             name: name,
             ping: ping,
-            steam: GetPlayerIdentifier(playerId as any, 0) || "",
-            charId: 1
+            SteamID: GetPlayerIdentifier(playerId as any, 0) || "steam:0",
+            charName: char ? (char.first_name + " " + char.last_name) : name,
+            charID: char ? char.id : 1,
+            queueType: "Standard"
           });
         }
       }
       if (players.length === 0 && src) {
+        const name = GetPlayerName(src) || "Admin";
+        const player = (globalThis as any).exports["np-base"]?.GetPlayer(src);
+        const char = player?.character;
         players.push({
           serverID: src,
-          name: GetPlayerName(src) || "Admin",
+          name: name,
           ping: 0,
-          steam: "",
-          charId: 1
+          SteamID: GetPlayerIdentifier(src as any, 0) || "steam:0",
+          charName: char ? (char.first_name + " " + char.last_name) : name,
+          charID: char ? char.id : 1,
+          queueType: "Standard"
         });
       }
-      return players;
+      return {
+        CurrentPlayers: players,
+        Disconnected: []
+      };
     });
 
     RPC_OBJ.register("np:admin:getBannedPlayers", (src: any) => {

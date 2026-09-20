@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://assets.nopixel.net/web/fonts/fontawesome/stylesheet.css" />
     <title>NoPixel Boilerplate</title>
     
+    <script>
+      window.addEventListener('error', function (e) {
+        if (e.message && (e.message.includes('ResizeObserver') || e.message.includes('ResizeObserver loop limit exceeded'))) {
+          e.stopImmediatePropagation();
+        }
+      });
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

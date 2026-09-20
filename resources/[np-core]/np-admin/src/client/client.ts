@@ -16159,6 +16159,13 @@
         const varData_2585 = varData_2559[varData_2584];
         const varData_2586 = varData_2585.adminMenu || varData_2585.commandUI?.adminMenu;
         if (!varData_2586) continue;
+        if (!varData_2586.options) {
+          varData_2586.options = { bindKey: null };
+        }
+        if (!varData_2586.command) continue;
+        if (!varData_2586.command.action) {
+          varData_2586.command.action = varData_2585.name || "";
+        }
         if (varData_2586 && varData_2586.command && (varData_2586.command.child == false || varData_2586.command.child == true)) {
           const varData_2587 = handleAction_137(varData_2586.command.action);
           if (varData_2587 == null || !varData_2587) {
@@ -16183,7 +16190,7 @@
       const varData_2600 = await handleAction_202();
       const varData_2601 = await Promise.all([varData_2588, varData_2589, varData_2590, varData_2591, varData_2593, varData_2594, varData_2595, varData_2596, varData_2597, varData_2592, varData_2598, varData_2599, varData_2600]);
       const varData_2602 = {
-        playerData: varData_2601[0] ? handleAction_191(varData_2601[0].CurrentPlayers) : [],
+        playerData: varData_2601[0] ? handleAction_191(varData_2601[0].CurrentPlayers || (Array.isArray(varData_2601[0]) ? varData_2601[0] : [])) : [],
         options: varData_2601[1],
         menuData: varData_2583,
         playerLogs: null,

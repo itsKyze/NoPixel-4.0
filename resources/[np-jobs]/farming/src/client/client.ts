@@ -23806,7 +23806,7 @@
       return Math.abs(param_2 - varData_3541) < 20;
     }
     varData_1724.on("inventory:weaponEquipped", function (param_1, param_2, param_3) {
-      if (param_1.weapon !== "weapon_digiscanner" || param_2.itemId !== "np_bioscanner") {
+      if (!param_1 || param_1.weapon !== "weapon_digiscanner" || !param_2 || param_2.itemId !== "np_bioscanner") {
         return;
       }
       varData_3509();

@@ -14,9 +14,6 @@ shared_scripts { "build/sh_*.js" }
 client_scripts { "build/cl_*.js" }
 
 files {
-    "nui/dist/index.html",
-    "nui/dist/assets/*.js",
-    "nui/dist/assets/*.css",
-    "nui/dist/assets/*.png",
-    "nui/dist/assets/*.svg",
+    "nui/dist/**/*",
 }
+

@@ -1,4 +1,13 @@
--- Handles synchronizing state bags across network clients for NPC / remote vehicles
+-- ============================================================================
+-- CHASER Server Engine & State Synchronization
+-- ============================================================================
+
+local function trim(s)
+    if not s then return "" end
+    return string.match(s, "^%s*(.-)%s*$") or s
+end
+
+-- Synchronizes state bags across network clients for NPC / remote vehicles
 RegisterNetEvent("chaser:sync", function(netId, data, syncType)
     local src = source
     if not netId then return end
@@ -16,6 +25,7 @@ RegisterNetEvent("chaser:sync", function(netId, data, syncType)
     elseif syncType == 2 then
         -- Engine audio swap sync: { engineName, model/audioHash, netId }
         state:set("currentengine", data, true)
+        SetChaserVehicleMetadata(netId, "currentengine", data)
     elseif syncType == 3 then
         -- Braking state sync: boolean
         state:set("isbraking", data, true)
@@ -59,7 +69,10 @@ end)
 -- Request debug menu
 RegisterNetEvent("chaser:rq:menu", function()
     local src = source
-    TriggerClientEvent("chaser:menu", src)
+    local cfg = DebugConfig or {}
+    if cfg.allowClientMenu ~= false then
+        TriggerClientEvent("chaser:menu", src)
+    end
 end)
 
 -- Send debug config to client
@@ -88,12 +101,62 @@ RegisterNetEvent("chaser:ac:fg", function()
     )
 end)
 
--- Cleanup when entity is deleted
+-- Automatically apply cached plate metadata when vehicle spawns/is created
+AddEventHandler("entityCreated", function(entity)
+    if DoesEntityExist(entity) and GetEntityType(entity) == 2 then
+        Citizen.SetTimeout(500, function()
+            if DoesEntityExist(entity) then
+                local plate = trim(GetVehicleNumberPlateText(entity))
+                if plate ~= "" and plateMetadata[plate] then
+                    local netId = NetworkGetNetworkIdFromEntity(entity)
+                    if netId and netId > 0 then
+                        vehicleMetadata[netId] = plateMetadata[plate]
+                        for k, v in pairs(plateMetadata[plate]) do
+                            Entity(entity).state:set("chaser_" .. k, v, true)
+                            if k == "currentengine" then
+                                Entity(entity).state:set("currentengine", v, true)
+                            end
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+-- Cleanup netId metadata when entity is removed
 AddEventHandler("entityRemoved", function(entity)
     if GetEntityType(entity) == 2 then
         local netId = NetworkGetNetworkIdFromEntity(entity)
         if netId and vehicleMetadata[netId] then
+            local plate = trim(GetVehicleNumberPlateText(entity))
+            if plate ~= "" then
+                plateMetadata[plate] = vehicleMetadata[netId]
+            end
             vehicleMetadata[netId] = nil
         end
+    end
+end)
+
+-- Optional admin command to open chaser menu
+RegisterCommand("chasermenu", function(source, args)
+    if source > 0 then
+        TriggerClientEvent("chaser:menu", source)
+    end
+end, false)
+
+-- Register RPC callbacks if RPC library is available
+Citizen.CreateThread(function()
+    if RPC and RPC.register then
+        pcall(function()
+            RPC.register("chaser:getMetadata", function(src, netId, key)
+                return GetChaserVehicleMetadata(netId, key)
+            end)
+            RPC.register("chaser:getEngine", function(src, netId)
+                local meta = GetChaserVehicleMetadata(netId, "currentengine")
+                if meta then return meta[1] end
+                return nil
+            end)
+        end)
     end
 end)

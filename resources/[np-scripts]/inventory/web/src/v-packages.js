@@ -10541,6 +10541,223 @@ var $t;
 var br;
 var Hi;
 var Lo;
+const localContainers = new Map();
+const localItems = {
+  mobilephone: { id: "mobilephone", name: "Mobile Phone", label: "Mobile Phone", weight: 0.5, maxStack: 1, stackable: false, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "phone" }] },
+  idcard: { id: "idcard", name: "ID Card", label: "ID Card", weight: 0.1, maxStack: 1, stackable: false, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Inspect", icon: "badge" }] },
+  cash: { id: "cash", name: "Cash", label: "Cash", weight: 0.01, maxStack: 500000, stackable: true, usable: false, image: "assets/item_default.png" },
+  bandage: { id: "bandage", name: "Bandage", label: "Bandage", weight: 0.2, maxStack: 10, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "healing" }] },
+  lockpick: { id: "lockpick", name: "Lockpick", label: "Lockpick", weight: 0.5, maxStack: 5, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "lock_open" }] },
+  repairkit: { id: "repairkit", name: "Repair Kit", label: "Repair Kit", weight: 5.0, maxStack: 2, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Use", icon: "build" }] },
+  sandwich: { id: "sandwich", name: "Sandwich", label: "Sandwich", weight: 0.5, maxStack: 10, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Eat", icon: "fastfood" }] },
+  water: { id: "water", name: "Water Bottle", label: "Water Bottle", weight: 0.5, maxStack: 10, stackable: true, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Drink", icon: "local_drink" }] },
+  backpack: { id: "backpack", name: "Backpack", label: "Backpack", weight: 1.0, maxStack: 1, stackable: false, usable: false, image: "assets/item_default.png" },
+  armor: { id: "armor", name: "Body Armor", label: "Body Armor", weight: 5.0, maxStack: 1, stackable: false, usable: true, image: "assets/item_default.png", context: [{ id: "useItem", label: "Wear", icon: "shield" }] }
+};
+
+const localItemProxy = new Proxy(localItems, {
+  get(target, prop) {
+    if (typeof prop === "string" && !(prop in target) && prop !== "then" && prop !== "toJSON") {
+      const formatted = prop.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      target[prop] = {
+        id: prop,
+        name: formatted,
+        label: formatted,
+        weight: 0.5,
+        maxStack: 50,
+        stackable: true,
+        usable: true,
+        image: "assets/item_default.png",
+        context: [{ id: "useItem", label: "Use", icon: "touch_app" }],
+        variants: {}
+      };
+    }
+    return target[prop];
+  }
+});
+
+function getLocalInventorySubscription(invId) {
+  if (!invId) {
+    return {
+      allowed: true,
+      displayName: "Inventory",
+      inventory: {
+        id: "default",
+        displayName: "Inventory",
+        slotCount: 15,
+        weight: 0,
+        maxWeight: 100,
+        itemStacks: [],
+        allowList: []
+      }
+    };
+  }
+
+  if (localContainers.has(invId)) {
+    const inv = localContainers.get(invId);
+    return {
+      allowed: true,
+      displayName: inv.displayName,
+      inventory: inv
+    };
+  }
+
+  let displayName = invId;
+  let slotCount = 15;
+  let maxWeight = 100;
+
+  if (invId.startsWith("ply-")) {
+    displayName = "Personal";
+    slotCount = 15;
+    maxWeight = 100;
+  } else if (invId.startsWith("backpack-")) {
+    displayName = "Backpack";
+    slotCount = 20;
+    maxWeight = 150;
+  } else if (invId.startsWith("body-")) {
+    displayName = "Pockets";
+    slotCount = 10;
+    maxWeight = 50;
+  } else if (invId.startsWith("glovebox-")) {
+    displayName = "Glovebox";
+    slotCount = 10;
+    maxWeight = 50;
+  } else if (invId.startsWith("trunk-")) {
+    displayName = "Trunk";
+    slotCount = 35;
+    maxWeight = 350;
+  } else if (invId.startsWith("drop-")) {
+    displayName = "Drop";
+    slotCount = 20;
+    maxWeight = 200;
+  } else {
+    slotCount = 30;
+    maxWeight = 250;
+  }
+
+  const initialStacks = [];
+  if (invId.startsWith("ply-")) {
+    initialStacks.push(
+      { id: "item-1", itemId: "idcard", inventoryId: invId, slot: 0, quantity: 1, hash: "idcard_1" },
+      { id: "item-2", itemId: "mobilephone", inventoryId: invId, slot: 1, quantity: 1, hash: "mobilephone_1" },
+      { id: "item-3", itemId: "cash", inventoryId: invId, slot: 2, quantity: 500, hash: "cash_500" },
+      { id: "item-4", itemId: "bandage", inventoryId: invId, slot: 3, quantity: 5, hash: "bandage_5" },
+      { id: "item-5", itemId: "sandwich", inventoryId: invId, slot: 4, quantity: 2, hash: "sandwich_2" }
+    );
+  }
+
+  const newInv = {
+    id: invId,
+    displayName: displayName,
+    slotCount: slotCount,
+    weight: initialStacks.reduce((acc, it) => acc + (localItems[it.itemId]?.weight || 0.5) * it.quantity, 0),
+    maxWeight: maxWeight,
+    itemStacks: initialStacks,
+    allowList: []
+  };
+  localContainers.set(invId, newInv);
+
+  return {
+    allowed: true,
+    displayName: displayName,
+    inventory: newInv
+  };
+}
+
+function handleLocalMoveItem(data) {
+  if (!data) return;
+  const { fromInventoryId, fromSlot, toInventoryId, toSlot, amount } = data;
+  const fromInv = localContainers.get(fromInventoryId);
+  const toInv = localContainers.get(toInventoryId);
+  if (!fromInv || !toInv) return;
+
+  const fromIdx = fromInv.itemStacks.findIndex(it => it.slot === fromSlot);
+  if (fromIdx === -1) return;
+  const fromItem = fromInv.itemStacks[fromIdx];
+  const toIdx = toInv.itemStacks.findIndex(it => it.slot === toSlot);
+  const toItem = toIdx !== -1 ? toInv.itemStacks[toIdx] : null;
+
+  if (toItem) {
+    if (toItem.itemId === fromItem.itemId && localItems[toItem.itemId]?.stackable) {
+      const moveAmt = amount || fromItem.quantity;
+      toItem.quantity += moveAmt;
+      fromItem.quantity -= moveAmt;
+      if (fromItem.quantity <= 0) {
+        fromInv.itemStacks.splice(fromIdx, 1);
+      }
+    } else {
+      toItem.slot = fromSlot;
+      toItem.inventoryId = fromInventoryId;
+      fromItem.slot = toSlot;
+      fromItem.inventoryId = toInventoryId;
+      if (fromInventoryId !== toInventoryId) {
+        toInv.itemStacks.splice(toIdx, 1);
+        fromInv.itemStacks.splice(fromIdx, 1);
+        toInv.itemStacks.push(fromItem);
+        fromInv.itemStacks.push(toItem);
+      }
+    }
+  } else {
+    const moveAmt = amount || fromItem.quantity;
+    if (moveAmt < fromItem.quantity) {
+      fromItem.quantity -= moveAmt;
+      const newItem = {
+        ...fromItem,
+        id: "item-" + Date.now() + "-" + Math.random().toString(36).substr(2, 5),
+        slot: toSlot,
+        inventoryId: toInventoryId,
+        quantity: moveAmt
+      };
+      toInv.itemStacks.push(newItem);
+    } else {
+      fromItem.slot = toSlot;
+      fromItem.inventoryId = toInventoryId;
+      if (fromInventoryId !== toInventoryId) {
+        fromInv.itemStacks.splice(fromIdx, 1);
+        toInv.itemStacks.push(fromItem);
+      }
+    }
+  }
+}
+
+async function handleLocalSocketExecute(event, data) {
+  if (event === "inventory:getItemList") {
+    return [true, localItemProxy];
+  }
+  if (event === "inventory:getPairItemUseEntries") {
+    return [true, { pairItemUseEntries: [] }];
+  }
+  if (event === "inventory:subscribeToInventory") {
+    const invId = data?.inventoryId;
+    return [true, getLocalInventorySubscription(invId)];
+  }
+  if (event === "inventory:unsubscribeToInventory") {
+    return [true, {}];
+  }
+  if (event === "inventory:moveItem") {
+    handleLocalMoveItem(data);
+    return [true, {}];
+  }
+  if (event === "inventory:itemDragStart" || event === "inventory:itemDragCancel") {
+    return [true, {}];
+  }
+  if (event === "inventory:pairItemUse") {
+    return [true, {}];
+  }
+  if (event === "inventory:contextMenuAction") {
+    if (data?.contextId === "useItem") {
+      try {
+        if (typeof GetParentResourceName === "function") {
+          // Fire-and-forget: don't await, catch immediately to avoid RPC timeout error
+          _n.execute("inventory:useItem", { inventoryId: data.inventoryId, slot: data.slot }).catch(() => {});
+        }
+      } catch (_) {}
+    }
+    return [true, {}];
+  }
+  return [true, {}];
+}
+
 var lf = class {
   constructor() {
     V(this, mr);
@@ -10566,16 +10783,47 @@ var lf = class {
     ee(this, Jt, false);
     ee(this, Zt, new Map());
     ee(this, at, new sf());
+    this._localMode = false;
   }
   async connect() {
-    if (typeof GetParentResourceName != "function") {
-      return Q(this, mr, yn).call(this, "ws://localhost:5000", "dev");
-    }
-    const _0x5e3474 = await _n.execute("__npx_sdk:sockets:init");
-    if (!_0x5e3474?.API_URL || !_0x5e3474?.API_KEY) {
-      return false;
-    } else {
-      return Q(this, mr, yn).call(this, _0x5e3474.API_URL, _0x5e3474.API_KEY);
+    try {
+      if (typeof GetParentResourceName != "function") {
+        const res = await Promise.race([
+          Q(this, mr, yn).call(this, "ws://localhost:5000", "dev"),
+          new Promise(r => setTimeout(() => r(false), 800))
+        ]);
+        if (!res) {
+          this._localMode = true;
+          ee(this, Jt, true);
+        }
+        return true;
+      }
+      let apiUrl = "ws://localhost:5000";
+      let apiKey = "dev";
+      try {
+        const _0x5e3474 = await Promise.race([
+          _n.execute("__npx_sdk:sockets:init"),
+          new Promise(r => setTimeout(() => r(null), 800))
+        ]);
+        if (_0x5e3474?.API_URL && _0x5e3474?.API_KEY) {
+          apiUrl = _0x5e3474.API_URL;
+          apiKey = _0x5e3474.API_KEY;
+        }
+      } catch (_) {}
+      
+      const wsRes = await Promise.race([
+        Q(this, mr, yn).call(this, apiUrl, apiKey),
+        new Promise(r => setTimeout(() => r(false), 1000))
+      ]);
+      if (!wsRes) {
+        this._localMode = true;
+        ee(this, Jt, true);
+      }
+      return true;
+    } catch (_) {
+      this._localMode = true;
+      ee(this, Jt, true);
+      return true;
     }
   }
   on(_0x2c5b4b, _0x223d58) {
@@ -10604,17 +10852,24 @@ var lf = class {
       data: _0x55c57a
     });
     if ((_0x2daabb = U(this, He)) != null) {
-      _0x2daabb.send(_0x374035);
+      try {
+        _0x2daabb.send(_0x374035);
+      } catch (_) {}
     }
   }
   execute(_0x5f556f, _0x1bab9f) {
     var _0x4eb852;
+    if (this._localMode || !this.isOnline || !U(this, He) || U(this, He).readyState !== WebSocket.OPEN) {
+      return handleLocalSocketExecute(_0x5f556f, _0x1bab9f);
+    }
     const _0x57bbfe = {
       id: ++ri(this, hr)._,
       data: _0x1bab9f
     };
     const _0xb95c0b = new Promise(_0x5eda99 => {
-      const _0x17f4cd = +setTimeout(() => _0x5eda99([false, "Request timed out | " + _0x5f556f]), 60000);
+      const _0x17f4cd = +setTimeout(() => {
+        handleLocalSocketExecute(_0x5f556f, _0x1bab9f).then(_0x5eda99);
+      }, 1500);
       U(this, Zt).set(_0x57bbfe.id, {
         resolve: _0x5eda99,
         timeout: _0x17f4cd
@@ -10626,7 +10881,13 @@ var lf = class {
       data: _0x57bbfe
     });
     if ((_0x4eb852 = U(this, He)) != null) {
-      _0x4eb852.send(_0x463629);
+      try {
+        _0x4eb852.send(_0x463629);
+      } catch (_) {
+        return handleLocalSocketExecute(_0x5f556f, _0x1bab9f);
+      }
+    } else {
+      return handleLocalSocketExecute(_0x5f556f, _0x1bab9f);
     }
     return _0xb95c0b;
   }
@@ -10677,16 +10938,20 @@ yn = async function (_0x29ccd0, _0x189216) {
   ee(this, Jt, false);
   ee(this, Rr, _0x29ccd0);
   ee(this, Dr, _0x189216);
-  ee(this, He, new WebSocket(_0x29ccd0 + "?authorization=bearer%20" + _0x189216));
-  U(this, He).onopen = Q(this, zi, To).bind(this);
-  U(this, He).onerror = Q(this, Ii, Uo).bind(this);
-  U(this, He).onclose = Q(this, Ti, Ro).bind(this);
-  U(this, He).onmessage = Q(this, Ui, Do).bind(this);
+  try {
+    ee(this, He, new WebSocket(_0x29ccd0 + "?authorization=bearer%20" + _0x189216));
+    U(this, He).onopen = Q(this, zi, To).bind(this);
+    U(this, He).onerror = Q(this, Ii, Uo).bind(this);
+    U(this, He).onclose = Q(this, Ti, Ro).bind(this);
+    U(this, He).onmessage = Q(this, Ui, Do).bind(this);
+  } catch (_) {
+    return false;
+  }
   return new Promise(_0x4b238c => {
     let _0x458338 = 0;
     clearInterval(U(this, Pt));
     ee(this, Pt, +setInterval(() => {
-      if (++_0x458338 > 100) {
+      if (++_0x458338 > 10) {
         clearInterval(U(this, Pt));
         _0x4b238c(false);
         return;

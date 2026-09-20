@@ -17761,7 +17761,7 @@
         return handleAction_247(this, function (param_1_1) {
           switch (param_1_1.label) {
             case 0:
-              if (param_1.weapon !== "weapon_digiscanner" || param_2.itemId !== "np_signalscanner") {
+              if (!param_1 || param_1.weapon !== "weapon_digiscanner" || !param_2 || param_2.itemId !== "np_signalscanner") {
                 return [2];
               }
               return [4, varData_1764.execute("news:canUseSignalScanner")];

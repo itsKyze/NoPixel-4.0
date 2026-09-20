@@ -13382,7 +13382,7 @@
       });
     }));
     _0xf6df43.on("inventory:weaponEquipped", function (_0x3d6d8d) {
-      _0x4daf5f = _0x3d6d8d.weapon;
+      _0x4daf5f = _0x3d6d8d ? _0x3d6d8d.weapon : null;
     });
     _0xf6df43.on("inventory:weaponUnequipped", function () {
       _0x4daf5f = null;

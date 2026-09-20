@@ -38,20 +38,27 @@ function prepareTorqueCurve(curve)
 end
 
 function calcTorque(curve, divisor, targetRpm)
-  local prev = curve[1]
+  divisor = (divisor and divisor ~= 0) and divisor or 1.0
+  if not targetRpm then targetRpm = 1000.0 end
+  if not curve or type(curve) ~= "table" or #curve == 0 then
+    return 1.0
+  end
+  local prev = curve[1] or { rpm = 0, torque = divisor }
   for _, entry in ipairs(curve) do
-    if targetRpm <= entry.rpm then
+    if entry.rpm and targetRpm <= entry.rpm then
       if prev.rpm == entry.rpm then
-        return entry.torque / divisor
+        return (entry.torque or divisor) / divisor
       else
-        local t = (targetRpm - prev.rpm) / (entry.rpm - prev.rpm)
-        local torqueVal = prev.torque + t * (entry.torque - prev.torque)
+        local rpmDiff = entry.rpm - prev.rpm
+        if rpmDiff == 0 then rpmDiff = 1 end
+        local t = (targetRpm - prev.rpm) / rpmDiff
+        local torqueVal = prev.torque + t * ((entry.torque or prev.torque) - prev.torque)
         return torqueVal / divisor
       end
     end
     prev = entry
   end
-  return prev.torque / divisor
+  return ((prev and prev.torque) or divisor) / divisor
 end
 
 function DrawTextOnScreen(text, x, y)
@@ -1421,10 +1428,11 @@ function chaser_setEngineAndWeight(engineName, newWeight, forceUseAudio, warnIfM
   }
 
   local function applySwap(engBayFits)
-    local curve, maxTorque, maxRpm, minRpm = prepareTorqueCurve(torqueCurve)
+    local curve, calculatedMaxTorque, maxRpm, minRpm = prepareTorqueCurve(torqueCurve)
     minRPM = minRpm
     maxRPM = maxRpm
-    maxTorque = maxTorque
+    maxTorque = calculatedMaxTorque or 250.0
+    _G.maxTorque = maxTorque
     torqueCurve = curve
 
     local ratio = avgacc / engineefficiency
@@ -3635,10 +3643,11 @@ function chaser_start(vehEntity)
             SetVehicleHandlingFloat(vehicle, "CHandlingData", "fInitialDragCoeff", GetDragCoeffGs(cartopspeed, dragcoeff))
             SetVehicleHandlingFloat(vehicle, "CHandlingData", "fInitialDriveMaxFlatVel", 140.0)
 
-            local curve, maxTorque, maxRpm, minRpm = prepareTorqueCurve(torqueCurve)
+            local curve, calculatedMaxTorque, maxRpm, minRpm = prepareTorqueCurve(torqueCurve)
             minRPM = minRpm
             maxRPM = maxRpm
-            maxTorque = maxTorque
+            maxTorque = calculatedMaxTorque or 250.0
+            _G.maxTorque = maxTorque
             torqueCurve = curve
 
             local startTime = GetGameTimer()
@@ -3683,10 +3692,11 @@ function chaser_start(vehEntity)
       end
     end
 
-    local curve, maxTorque, maxRpm, minRpm = prepareTorqueCurve(torqueCurve)
+    local curve, calculatedMaxTorque, maxRpm, minRpm = prepareTorqueCurve(torqueCurve)
     minRPM = minRpm
     maxRPM = maxRpm
-    maxTorque = maxTorque
+    maxTorque = calculatedMaxTorque or 250.0
+    _G.maxTorque = maxTorque
     torqueCurve = curve
 
     if iselectric then showevhud = true end

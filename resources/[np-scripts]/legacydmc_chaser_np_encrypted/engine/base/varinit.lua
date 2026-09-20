@@ -79,12 +79,20 @@ speedkmh = 0
 throttle = 0
 clutch = 0
 normalizedrpm = 0
-realrpm = 0
+realrpm = 1000
+minRPM = 800
+maxRPM = 7000
+maxTorque = 250.0
 enginetorque = 0
 enginepowerhp = 0
-weight = 0
-torqueCurve = {}
-dragcoeff = 0
+weight = 1590
+torqueCurve = {
+    {rpm = 1000, torque = 185.7},
+    {rpm = 2500, torque = 250.0},
+    {rpm = 4500, torque = 244.0},
+    {rpm = 6800, torque = 155.7}
+}
+dragcoeff = 0.24
 launchcontrolrpm = 0
 enginebrakingactive = false
 iselectric = false

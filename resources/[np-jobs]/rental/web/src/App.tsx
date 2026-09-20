@@ -2876,25 +2876,27 @@ const _i = _0x1b02b6 => {
     const _0x495954 = _0x1a5c5f.nextSibling;
     const _0x3a0cb4 = _0x4cd5c8.nextSibling;
     _0x1716a9.$$click = () => {
-      _0x1dbfd5(_0x1b02b6.item.model);
-      _0x22a89b(_0x1b02b6.item.price);
+      if (_0x1b02b6?.item) {
+        _0x1dbfd5(_0x1b02b6.item.model || "");
+        _0x22a89b(_0x1b02b6.item.price || 0);
+      }
     };
-    N(_0xc391e0, () => _0x1b02b6.item.name);
-    N(_0x3751e4, () => G[_0x4c45d6()].name);
-    N(_0x1a5c5f, () => (G[_0x4c45d6()].id * _0x1b02b6.item.price).toLocaleString(), null);
+    N(_0xc391e0, () => _0x1b02b6?.item?.name || "");
+    N(_0x3751e4, () => G[_0x4c45d6()]?.name || "");
+    N(_0x1a5c5f, () => (G[_0x4c45d6()]?.id * (_0x1b02b6?.item?.price || 0)).toLocaleString(), null);
     L(_0x233d00 => {
       const _0x7abacb = {
-        ..._0x1b02b6.style,
+        ..._0x1b02b6?.style,
         width: "11.85vh",
         gap: "1vh"
       };
       const _0x525c96 = F.vehicle;
       const _0x1c34b2 = {
-        [F.active]: _0x1b02b6.item.model === _0x53556a()
+        [F.active]: _0x1b02b6?.item?.model === _0x53556a()
       };
       const _0xd0c04f = F.header;
       const _0x3ffcb3 = F.icon;
-      const _0x5995b7 = "url(" + Pi + "/showroom/" + _0x1b02b6.item.model + ".webp)";
+      const _0x5995b7 = _0x1b02b6?.item?.model ? "url(" + Pi + "/showroom/" + _0x1b02b6.item.model + ".webp)" : "";
       const _0x298011 = F.description;
       const _0x43c816 = F.price;
       const _0x4ca069 = F.under_price;
@@ -3085,11 +3087,15 @@ function pi() {
   _0x36641c.register("rental:show", async _0x1aee8a => {
     if (_0x1aee8a) {
       const _0x355f93 = await _0x36641c.execute("rental:getVehicles");
-      if (_0x355f93) {
+      if (_0x355f93 && Array.isArray(_0x355f93) && _0x355f93.length > 0) {
         _0x18decb(_0x355f93);
+        _0xcf1878(_0x355f93[0]?.model || "");
+        _0x46efbf(_0x355f93[0]?.price || 0);
+      } else {
+        _0x18decb([]);
+        _0xcf1878("");
+        _0x46efbf(0);
       }
-      _0xcf1878(_0x355f93[0].model);
-      _0x46efbf(_0x355f93[0].price);
     } else {
       _0x18decb([]);
     }

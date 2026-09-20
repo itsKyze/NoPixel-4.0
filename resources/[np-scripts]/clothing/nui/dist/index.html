@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://assets.nopixel.net/web/fonts/fontawesome/stylesheet.css" />
     <title>NoPixel Boilerplate</title>
     
+    <script>
+      window.addEventListener('error', function (e) {
+        if (e.message && (e.message.includes('ResizeObserver') || e.message.includes('ResizeObserver loop limit exceeded'))) {
+          e.stopImmediatePropagation();
+        }
+      });
+    </script>
     <script type="module" crossorigin src="./assets/index.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/vite.js">
     <link rel="modulepreload" crossorigin href="./assets/commonjsHelpers.js">

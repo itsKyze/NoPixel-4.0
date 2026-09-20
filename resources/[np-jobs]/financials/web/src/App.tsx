@@ -2233,12 +2233,18 @@ const nuiAction = async (_0x5d41d0, _0x5da515 = {}) => {
   }
 };
 const getTransactions = async _0x52b30f => {
+  if (!_0x52b30f) {
+    return {
+      hasAccess: false,
+      transactions: []
+    };
+  }
   const {
-    access: _0x1f0f77,
+    access: _0x1f0f77 = [],
     id: _0x58df82,
     type: _0x36995d
   } = _0x52b30f;
-  if (_0x1f0f77 && !_0x1f0f77.includes("transactions")) {
+  if (_0x1f0f77 && Array.isArray(_0x1f0f77) && !_0x1f0f77.includes("transactions")) {
     return {
       hasAccess: false,
       transactions: []
@@ -2247,53 +2253,64 @@ const getTransactions = async _0x52b30f => {
   const _0x189020 = Math.round(new Date().getTime() / 1000);
   const _0x3dcf46 = _0x189020 - DAY_IN_SECONDS * 30;
   const _0x241997 = _0x189020 + DAY_IN_SECONDS * 2;
-  const {
-    data: _0x54e2e5
-  } = await nuiAction("np-ui:getAccountTransactions", {
+  const _0x234 = await nuiAction("np-ui:getAccountTransactions", {
     account_id: _0x58df82,
     date_start: _0x3dcf46,
     date_end: _0x241997
   });
   return {
     hasAccess: true,
-    transactions: _0x54e2e5
+    transactions: _0x234?.data || []
   };
 };
 const getAccounts = async _0x4b173f => {
   const _0x2df4f6 = await nuiAction("np-ui:getAccounts", {});
-  const _0x43e2d5 = _0x2df4f6.data.accounts;
-  const _0x784b94 = _0x43e2d5.findIndex(_0x549c48 => _0x549c48.id === state$e.character.bank_account_id);
-  const _0x505d21 = _0x43e2d5[_0x784b94];
-  _0x43e2d5.splice(_0x784b94, 1);
+  const _0x43e2d5 = Array.isArray(_0x2df4f6?.data?.accounts) ? [..._0x2df4f6.data.accounts] : [];
+  const charBankId = state$e?.character?.bank_account_id;
+  const _0x784b94 = charBankId ? _0x43e2d5.findIndex(_0x549c48 => _0x549c48 && _0x549c48.id === charBankId) : -1;
+  let _0x505d21 = null;
+  if (_0x784b94 !== -1) {
+    _0x505d21 = _0x43e2d5[_0x784b94];
+    _0x43e2d5.splice(_0x784b94, 1);
+  }
   _0x43e2d5.sort((_0xff9da0, _0x5b1374) => {
-    if (_0xff9da0.name.toLowerCase() < _0x5b1374.name.toLowerCase()) {
+    const n1 = (_0xff9da0?.name || "").toLowerCase();
+    const n2 = (_0x5b1374?.name || "").toLowerCase();
+    if (n1 < n2) {
       return -1;
-    } else if (_0xff9da0.name.toLowerCase() > _0x5b1374.name.toLowerCase()) {
+    } else if (n1 > n2) {
       return 1;
     }
     return 0;
   });
-  const _0x1c0081 = await getTransactions(_0x505d21);
-  _0x505d21.transactions = _0x1c0081.transactions;
+  if (_0x505d21) {
+    const _0x1c0081 = await getTransactions(_0x505d21);
+    _0x505d21.transactions = _0x1c0081?.transactions || [];
+  }
   _0x43e2d5.forEach(async _0x1ab252 => {
-    _0x1ab252.transactions = {};
+    if (_0x1ab252) _0x1ab252.transactions = {};
   });
   return {
-    accounts: [_0x505d21, ..._0x43e2d5]
+    accounts: _0x505d21 ? [_0x505d21, ..._0x43e2d5] : _0x43e2d5
   };
 };
 data$1.getAccounts();
 data$1.getTransactions();
 const fetchData = async () => {
-  const [_0x594615, _0x113ab0] = await Promise.all([getAccounts(state$e.character), getTransactions({
-    id: state$e.character.bank_account_id,
-    access: ["transactions"],
-    type_id: 1
-  })]);
+  const charBankId = state$e?.character?.bank_account_id;
+  const [_0x594615, _0x113ab0] = await Promise.all([
+    getAccounts(state$e?.character),
+    (charBankId ? getTransactions({
+      id: charBankId,
+      access: ["transactions"],
+      type_id: 1
+    }) : Promise.resolve({ hasAccess: false, transactions: [] }))
+  ]);
+  const accs = _0x594615?.accounts || [];
   setState$e({
     ...state$e,
-    accounts: _0x594615.accounts,
-    selectedAccount: _0x594615?.accounts?.[0],
+    accounts: accs,
+    selectedAccount: accs[0] || null,
     loading: false
   });
   return {

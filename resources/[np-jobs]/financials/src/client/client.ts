@@ -15001,8 +15001,8 @@
                   if (!varData_2475) {
                     return false;
                   }
-                  var varData_2476 = GlobalState.financial_atms;
-                  if (!varData_2476[varData_2475]) {
+                  var varData_2476 = GlobalState.financial_atms || {};
+                  if (!varData_2476 || !varData_2476[varData_2475]) {
                     return false;
                   }
                   var varData_2477 = varData_1674.Sync.isPed.isPed("cid");
@@ -15034,12 +15034,12 @@
                   if (!varData_2480) {
                     return false;
                   }
-                  var varData_2481 = GlobalState.financial_atms;
+                  var varData_2481 = GlobalState.financial_atms || {};
                   var varData_2482 = varData_1674.Sync["np-jobs"].GetPlayerJob() === "gruppe6";
                   var varData_2483 = varData_1674.Sync.isPed.isPed("cid");
                   var varData_2484 = varData_1674.Sync.progression.GetProgression("CONTACT_gruppe6") ?? 0;
-                  var varData_2485 = Object.values(varData_2481).filter(function (param_1_2) {
-                    return param_1_2.character_id === varData_2483;
+                  var varData_2485 = Object.values(varData_2481 || {}).filter(function (param_1_2) {
+                    return param_1_2 && param_1_2.character_id === varData_2483;
                   });
                   if (varData_2485.length >= handleAction_175(varData_2484)) {
                     return false;

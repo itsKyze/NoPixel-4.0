@@ -14615,7 +14615,7 @@
       };
     }();
     varData_1724.on("inventory:weaponEquipped", function (param_1, param_2, param_3) {
-      if (param_1.weapon !== "weapon_digiscanner" || param_2.itemId !== "np_kfr") {
+      if (!param_1 || param_1.weapon !== "weapon_digiscanner" || !param_2 || param_2.itemId !== "np_kfr") {
         return;
       }
       varData_2421();

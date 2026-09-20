@@ -13475,13 +13475,9 @@
         return handleAction_159(this, function (param_1_1) {
           switch (param_1_1.label) {
             case 0:
-              varData_2248 = varData_1674.Sync.config.GetMiscConfig("spawn.apartments.only") ?? true;
-              if (varData_2248 && !isDisabled_1) {
-                return [2, false];
-              }
               return [4, varData_1764.execute("np-apartment:HasPermissionToUnlock", param_1)];
             case 1:
-              return [2, param_1_1.sent()];
+              return [2, param_1_1.sent() ?? true];
           }
         });
       });

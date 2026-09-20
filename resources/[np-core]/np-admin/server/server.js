@@ -10,6 +10,7 @@
       return [];
     });
     RPC_OBJ.register("np:admin:getPlayerList", (src) => {
+      var _a, _b;
       const players = [];
       const numPlayers = typeof GetNumPlayerIndices === "function" ? GetNumPlayerIndices() : 0;
       for (let i = 0; i < numPlayers; i++) {
@@ -17,25 +18,37 @@
         if (playerId) {
           const name = GetPlayerName(playerId) || "Player " + playerId;
           const ping = GetPlayerPing(playerId) || 0;
+          const player = (_a = globalThis.exports["np-base"]) == null ? void 0 : _a.GetPlayer(playerId);
+          const char = player == null ? void 0 : player.character;
           players.push({
             serverID: playerId,
             name,
             ping,
-            steam: GetPlayerIdentifier(playerId, 0) || "",
-            charId: 1
+            SteamID: GetPlayerIdentifier(playerId, 0) || "steam:0",
+            charName: char ? char.first_name + " " + char.last_name : name,
+            charID: char ? char.id : 1,
+            queueType: "Standard"
           });
         }
       }
       if (players.length === 0 && src) {
+        const name = GetPlayerName(src) || "Admin";
+        const player = (_b = globalThis.exports["np-base"]) == null ? void 0 : _b.GetPlayer(src);
+        const char = player == null ? void 0 : player.character;
         players.push({
           serverID: src,
-          name: GetPlayerName(src) || "Admin",
+          name,
           ping: 0,
-          steam: "",
-          charId: 1
+          SteamID: GetPlayerIdentifier(src, 0) || "steam:0",
+          charName: char ? char.first_name + " " + char.last_name : name,
+          charID: char ? char.id : 1,
+          queueType: "Standard"
         });
       }
-      return players;
+      return {
+        CurrentPlayers: players,
+        Disconnected: []
+      };
     });
     RPC_OBJ.register("np:admin:getBannedPlayers", (src) => {
       return [];
