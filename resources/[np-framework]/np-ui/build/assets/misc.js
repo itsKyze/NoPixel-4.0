@@ -1,1 +1,0 @@
-function n(o){try{var e=document.createElement("input");e.setAttribute("value",o),document.body.appendChild(e),e.select();var c=document.execCommand("copy");return document.body.removeChild(e),c}catch(t){console.error("could not copy to clipboard: ",t)}}export{n as c};

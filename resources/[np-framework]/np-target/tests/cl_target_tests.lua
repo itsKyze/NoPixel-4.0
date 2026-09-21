@@ -1,1 +1,0 @@
--- np-target tests

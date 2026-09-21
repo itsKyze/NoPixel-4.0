@@ -1,1 +1,0 @@
-const e={key:"phone.apps.documents",initialState:{document:{id:-1,content:"",title:""},documentTypes:[],fromShare:!1,list:[],page:"home",notesTypeId:-1,selectedDocumentType:{},signatures:[],signaturesToRender:[],unlocked:!1,selectedDocumentViewType:null}};export{e as default};

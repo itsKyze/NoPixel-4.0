@@ -1,1 +1,0 @@
--- np-gov server lua

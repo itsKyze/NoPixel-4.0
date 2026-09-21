@@ -1,1 +1,0 @@
-import{j as r,ao as t}from"./index.js";import"./vendor.js";import"./vite.js";import"./commonjsHelpers.js";const e={background:"#009688",color:"white",name:"phone"},m=o=>({...o,hidden:()=>!0,icon:e,label:"Top Bar",name:"top-bar",render:()=>r.jsx(t,{})});export{m as default,e as icon};

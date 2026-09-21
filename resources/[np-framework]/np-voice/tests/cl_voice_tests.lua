@@ -1,1 +1,0 @@
--- np-voice cl tests

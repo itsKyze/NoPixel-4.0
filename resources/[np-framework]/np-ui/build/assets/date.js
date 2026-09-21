@@ -1,1 +1,0 @@
-import{a5 as a,a6 as e,a7 as s,a8 as c}from"./vendor.js";a.extend(e);a.extend(s);a.extend(c);const i=t=>{const o=a.unix(t);let r="";return o.isValid()?r=o.fromNow():r=a(t).utc().fromNow(),r},u=(t,o=a().utc())=>{const r=a(t).utc(),n=o;return r.diff(n)},v=(t,o="UTC")=>a.unix(t).utc().tz(o).fromNow(),d=(t,o,r="UTC")=>a.unix(t).tz(r).clone().tz(o);export{i as a,d as c,u as d,v as f};

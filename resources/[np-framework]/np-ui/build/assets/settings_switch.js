@@ -1,1 +1,0 @@
-import{j as t}from"./index.js";import{o as n}from"./vendor.js";const o="_handle_q428x_13",i={switch:"_switch_q428x_1",handle:o},c=s=>t.jsx("div",{className:i.switch,"data-ison":s.value,onClick:s.onClick,children:t.jsx(n.div,{className:i.handle,layout:!0,transition:{type:"spring",stiffness:700,damping:30}})});export{c as S};

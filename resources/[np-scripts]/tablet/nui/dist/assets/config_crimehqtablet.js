@@ -1,1 +1,0 @@
-import{A as e,C as r}from"./context.js";import{q as t}from"./vendor.js";import"./v-packages.js";import"./vite.js";import"./contract.js";import"./index_shared.js";import"./commonjsHelpers.js";const c={icon:e,enabled:!0,onDock:!1,name:"crime_hq",label:"HQ",description:"Manage the HQ and unlock new features",isEnabled:!0,render:()=>t(r,{isTablet:!0})};export{c as default};

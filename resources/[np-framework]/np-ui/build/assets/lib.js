@@ -1,1 +1,0 @@
-import{W as e,E as r}from"./index.js";const m=(t,s=null)=>{const n=e.find(c=>c.number.toString()===t.toString()),a=!!n,o=a?n.name:t.toString().length===10?r(t):t;return{hasName:a,name:o}};export{m as c};

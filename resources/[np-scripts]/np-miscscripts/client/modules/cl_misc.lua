@@ -1,1 +1,0 @@
--- np-miscscripts client module

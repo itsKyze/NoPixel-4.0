@@ -4,18 +4,12 @@ node_modules/
 .pnpm-store/
 
 # Large Asset & Stream Packs (3D Maps, Clothing, Vehicles, Props)
-resources/\[np-clothing\]/
-resources/\[np-maps\]/
-resources/\[np-props\]/
-resources/\[np-vehicles\]/
-resources/\[np-housing\]/
-resources/\[np-weapons\]/
-\[np-clothing\]/
-\[np-maps\]/
-\[np-props\]/
-\[np-vehicles\]/
-\[np-housing\]/
-\[np-weapons\]/
+server-data/resources/\[np-clothing\]/
+server-data/resources/\[np-maps\]/
+server-data/resources/\[np-props\]/
+server-data/resources/\[np-vehicles\]/
+server-data/resources/\[np-housing\]/
+server-data/resources/\[np-weapons\]/
 
 # Archives & Temporary files
 *.zip
@@ -24,24 +18,30 @@ resources/\[np-weapons\]/
 *.tar.gz
 *.bak
 *.tmp
-*.log
 
 # FiveM Server Cache & Crash Dumps
-cache/
-crash/
-dumps/
-logs/
+server-data/cache/
+server-data/crashes/
+server-data/logs/
+server-data/db/
+GTAServerFXS/crashes/
+GTAServerFXS/playerdump/
+*.log
+
+# Server Binaries & txAdmin Data
+/GTAServerFXS/
+/txData/
+.replxx_history
+
+# Local dev config (contains sensitive keys)
+server-data/local.cfg
+database.json
 
 # OS & Editor files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
-# Server Binaries & txAdmin Data
-/server/
-/txData/
-.replxx_history
 
 .turbo/
 **/.turbo/

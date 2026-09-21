@@ -1,1 +1,0 @@
-const e="coordinate-picker",t={key:e,initialState:{selectedCoordinates:[],focusedDotIndex:-1,isDragging:!1,dragOffset:{x:0,y:0},gridSize:50,shiftSize:5,maxCoordinates:3,submitUrl:"np-ui:submitCoordinates"}};export{e as appName,t as default};
