@@ -1,0 +1,2 @@
+-- [Auto Server Stub] Resource: np-i18n
+-- Server-side handler placeholder

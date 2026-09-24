@@ -1,0 +1,1 @@
+-- np-locales sv_locales.lua

@@ -1,0 +1,10 @@
+{
+  "name": "np_4.0_fp_fov",
+  "version": "1.0.0",
+  "description": "NoPixel 4.0 - np_4.0_fp_fov",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "watch": "node esbuild.config.js --watch",
+    "typecheck": "tsc --noEmit"
+  }
+}

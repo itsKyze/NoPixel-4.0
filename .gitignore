@@ -3,13 +3,13 @@ node_modules/
 **/node_modules/
 .pnpm-store/
 
-# Large Asset & Stream Packs (3D Maps, Clothing, Vehicles, Props)
-server-data/resources/\[np-clothing\]/
-server-data/resources/\[np-maps\]/
-server-data/resources/\[np-props\]/
-server-data/resources/\[np-vehicles\]/
-server-data/resources/\[np-housing\]/
-server-data/resources/\[np-weapons\]/
+# Large Asset & Stream Packs (3D Maps, Clothing, Vehicles, Props - huge gigabytes)
+**/resources/\[np-clothing\]/
+**/resources/\[np-maps\]/
+**/resources/\[np-props\]/
+**/resources/\[np-vehicles\]/
+**/resources/\[np-housing\]/
+**/resources/\[np-weapons\]/
 
 # Archives & Temporary files
 *.zip
@@ -20,21 +20,23 @@ server-data/resources/\[np-weapons\]/
 *.tmp
 
 # FiveM Server Cache & Crash Dumps
-server-data/cache/
-server-data/crashes/
-server-data/logs/
-server-data/db/
+**/cache/
+**/crashes/
+**/logs/
+**/db/
 GTAServerFXS/crashes/
 GTAServerFXS/playerdump/
 *.log
 
 # Server Binaries & txAdmin Data
-/GTAServerFXS/
+# Ignore root FXServer binaries (exe, dll, etc.) but track server-data
+/GTAServerFXS/*
+!/GTAServerFXS/server-data/
 /txData/
 .replxx_history
 
 # Local dev config (contains sensitive keys)
-server-data/local.cfg
+**/local.cfg
 database.json
 
 # OS & Editor files

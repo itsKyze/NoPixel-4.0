@@ -1,0 +1,1 @@
+import{o}from"./vite.js";import{q as r,_ as t}from"./vendor.js";import{A as a}from"./index_shared.js";import"./v-packages.js";import"./commonjsHelpers.js";const n=()=>r(a,{get name(){return e.name},get children(){return[t(()=>e.name)," app"]}}),e={icon:o,enabled:!0,onDock:!0,name:"explorer",label:"Explorer",isEnabled:!1,render:()=>r(n,{})};export{e as default};

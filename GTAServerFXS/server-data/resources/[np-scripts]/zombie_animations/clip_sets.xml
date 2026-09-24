@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fwClipSetManager>
+  <clipSets>
+    <Item type="fwClipSet" key="clipset@anim@ingame@melee@unarmed@streamed_core_zombie">
+      <fallbackId>melee@unarmed@streamed_core</fallbackId>
+      <clipDictionaryName>anim@ingame@melee@unarmed@streamed_core_zombie</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@ingame@melee@unarmed@streamed_variations_zombie">
+      <fallbackId>melee@unarmed@streamed_core</fallbackId>
+      <clipDictionaryName>anim@ingame@melee@unarmed@streamed_variations_zombie</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+	<Item type="fwClipSet" key="clipset@anim@ingame@melee@unarmed@streamed_taunts_zombie">
+      <fallbackId>melee@unarmed@streamed_core</fallbackId>
+      <clipDictionaryName>anim@ingame@melee@unarmed@streamed_taunts_zombie</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@ingame@move_m@zombie@core">
+      <fallbackId>move_m@generic</fallbackId>
+      <clipDictionaryName>anim@ingame@move_m@zombie@core</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@anim@ingame@move_m@zombie@strafe">
+      <fallbackId>move_strafe_melee_unarmed</fallbackId>
+      <clipDictionaryName>anim@ingame@move_m@zombie@strafe</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>	
+  </clipSets>
+  <clipDictionaryMetadatas>
+    <Item key="anim@ingame@melee@unarmed@streamed_core_zombie">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Melee</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@ingame@move_m@zombie@core">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_CoreMovement</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+	<Item key="anim@ingame@move_m@zombie@strafe">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Melee</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+  </clipDictionaryMetadatas>
+</fwClipSetManager>

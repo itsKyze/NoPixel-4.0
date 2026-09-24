@@ -1,0 +1,20 @@
+DebugConfig = {
+    forceServerSettingsDefault = false,
+    allowClientMenu = true,
+    clutchKeyId = 26, -- LMENU
+    clutchKeyGamepadId = 205,
+    storeB4 = true,
+    defaultGearRatio = 1.0,
+    finalDrivePosLimit = 0.5,
+    finalDriveNegLimit = -0.5,
+    gearRatioMaxLimit = 3.0,
+    storeB1 = true,
+    minFlywheelWeight = 0.1,
+    maxFlywheelWeight = 10.0,
+    storeB2 = true,
+    storeB3 = true,
+    isUsingGamepad = false,
+    rightAlignMenu = false,
+    menuInImperialUnits = false,
+    invertReverseControls = false,
+}
